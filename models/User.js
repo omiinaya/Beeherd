@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize")
-const db = require(".../database/db")
+const db = require("../database/db")
 
-module.exports = db.squelize.define(
+module.exports = db.sequelize.define(
     'user',
     {
         id: {
@@ -10,6 +10,9 @@ module.exports = db.squelize.define(
             autoIncrement: true
         },
         username: {
+            type: Sequelize.STRING
+        },
+        email: {
             type: Sequelize.STRING
         },
         password: {
