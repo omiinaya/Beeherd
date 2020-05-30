@@ -13,13 +13,12 @@ app.post('/register', (req, res)=> {
     const today = new Date()
     const userData = {
         username: req.body.username,
-        email: req.body.email,
         password: req.body.password,
         created: today
     }
     User.findOne({
         where: {
-            email: req.body.email
+            username: req.body.username
         }
     })
     .then(user => {
@@ -28,7 +27,7 @@ app.post('/register', (req, res)=> {
                 userData.password = hash
                 User.create(userData)
                 .then(user => {
-                    res.json({status: user.email + 'registered'})
+                    res.json({status: user.username + ' registered'})
                 })
                 .catch(err => {
                     res.send("error: " + err)
@@ -42,6 +41,29 @@ app.post('/register', (req, res)=> {
     })
     .catch(err => {
         res.send("error: " + err)
+    })
+})
+
+app.post('/login', (req, res) => {
+    User.findOne({
+        where: {
+            username: req.body.username
+        }
+    })
+    .then(user => {
+        if(user) {
+            if (bcrypt.compareSync(req.body.password, user.password)) {
+                let token = jwt.sign(user.dataValues, process.env.SECRET_KEY, {
+                    expiresIn: 1440
+                })
+                res.send(token)
+            }
+        } else {
+            res.status(400).json({error: "User does not exist"})
+        }
+    })
+    .catch(err => {
+        res.status(400).json({error: err})
     })
 })
 
