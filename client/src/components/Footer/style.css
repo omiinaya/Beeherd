@@ -11,5 +11,9 @@
     left: 0;
     right: 0;
     padding: 3px;
+<<<<<<< HEAD:client/src/components/Footer/style.css
     background: rgb(237, 5, 245);
+=======
+    background: rgb(143, 4, 155);
+>>>>>>> 3c21e7c4527346e309f41faa8f78f5339eb04890:src/components/Footer/style.css
   }
