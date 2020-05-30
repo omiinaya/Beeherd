@@ -9,7 +9,7 @@ class Register extends Component {
             password: ''
         }
         this.onChange = this.onChange.bind(this)
-        this.onChange = this.onSubmit.bind(this)
+        this.onSubmit = this.onSubmit.bind(this)
     }
 
     onChange(e) {
@@ -53,7 +53,7 @@ class Register extends Component {
                                 className="form-control"
                                 name="password"
                                 placeholder="Enter password"
-                                value={this.state.username}
+                                value={this.state.password}
                                 onChange={this.onChange}
                                 />
                             </div>

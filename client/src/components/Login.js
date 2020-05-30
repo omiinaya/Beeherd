@@ -10,7 +10,7 @@ class Login extends Component {
         }
 
         this.onChange = this.onChange.bind(this)
-        this.onChange = this.onSubmit.bind(this)
+        this.onSubmit = this.onSubmit.bind(this)
     }
 
     onChange(e){
@@ -41,7 +41,7 @@ class Login extends Component {
                             <h1 className="h3 mb-3 font-weight-normal">Please sign in.</h1>
                             <div className="form-group">
                                 <label htmlFor="username">Username</label>
-                                <input type="text" 
+                                <input type="username" 
                                 className="form-control"
                                 name="username"
                                 placeholder="Enter username"
@@ -51,11 +51,11 @@ class Login extends Component {
                             </div>
                             <div className="form-group">
                                 <label htmlFor="password">Password</label>
-                                <input type="text"
+                                <input type="password"
                                 className="form-control"
                                 name="password"
                                 placeholder="Enter password"
-                                value={this.state.username}
+                                value={this.state.password}
                                 onChange={this.onChange}
                                 />
                             </div>
