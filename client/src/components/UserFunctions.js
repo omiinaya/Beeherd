@@ -7,7 +7,9 @@ export const register = newUser => {
         password: newUser.password
     })
     .then(res => {
+        //need if statement incase already registered
         console.log("Registered.")
+        return res.data
     })
 }
 
