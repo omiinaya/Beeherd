@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {login} from './UserFunctions'
+import { login } from './UserFunctions'
 
 class Login extends Component {
     constructor() {
@@ -13,11 +13,11 @@ class Login extends Component {
         this.onSubmit = this.onSubmit.bind(this)
     }
 
-    onChange(e){
+    onChange(e) {
         this.setState({[e.target.name]: e.target.value})
     }
 
-    onSubmit(e){
+    onSubmit(e) {
         e.preventDefault()
 
         const user = {
@@ -41,7 +41,7 @@ class Login extends Component {
                             <h1 className="h3 mb-3 font-weight-normal">Please sign in.</h1>
                             <div className="form-group">
                                 <label htmlFor="username">Username</label>
-                                <input type="username" 
+                                <input type="username"
                                 className="form-control"
                                 name="username"
                                 placeholder="Enter username"
