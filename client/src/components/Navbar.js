@@ -45,7 +45,7 @@ class Navbar extends Component {
             aria-controls="narbar1" 
             aria-expanded="false" 
             aria-label="Toggle navigation">
-                <span className="navbar-toggle-icon"></span>test
+                <span className="navbar-toggle-icon">☰</span>
             </button>
 
             <div className="collapse navbar-collapse justify-content-md-center" 
