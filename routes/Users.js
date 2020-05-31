@@ -16,17 +16,18 @@ users.post('/register', (req, res)=> {
         password: req.body.password,
         created: today
     }
-
     User.findOne({
         where: {
             username: req.body.username
         }
     })
     .then(user => {
-        if(!user) {
-            console.log("Test5")
-            console.log(req.body.password)
-            console.log(user.password)
+        if (user) {
+            res.json({
+                error: "User already exists"
+            })
+        } else {
+            console.log("success!")
             bcrypt.hash(req.body.password, 10, (err, hash) => {
                 userData.password = hash
                 User.create(userData)
@@ -37,8 +38,6 @@ users.post('/register', (req, res)=> {
                     res.send("error: " + err)
                     })
                 })
-        } else {
-            res.json({error: "User already exists"})
         }
     })
     .catch(err => {
@@ -53,16 +52,9 @@ users.post('/login', (req, res) => {
         }
     })
     .then(user => {
-        console.log("Test1")
         if(user) {
-            console.log("Test2")
-            console.log(user.dataValues)
-            console.log("req user: "+req.body.username)
-            console.log("req pwd: "+req.body.password)
-            console.log("db: "+user.password)
             var passwordIsValid = bcrypt.compareSync(req.body.password, user.password);
             if (passwordIsValid) {
-                console.log("Test3")
                 let token = jwt.sign(user.dataValues, process.env.SECRET_KEY, {
                     expiresIn: 1440
                 })
