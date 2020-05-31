@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <Link className="navbar-brand" to="/">
-        venTTown
+      <h1><img src="" alt="logo" />ventTTown</h1>
       </Link>
       <div>
         <ul className="navbar-nav">

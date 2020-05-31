@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "../components/Hero";
 import Container from "../components/Container";
 
-function About() {
+function Home() {
   return (
     <div>
       <Hero backgroundImage="https://images.unsplash.com/photo-1549814892-f6a520afc97d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
@@ -115,25 +115,10 @@ function About() {
               </div>
             </div>
           </div>
-          <div
-            className="card text-white bg-primary mb-3"
-            style={{ width: "18rem" }}
-          >
-            <div className="card-header">Vented</div>
-            <div className="card-body">
-              <h5 className="card-title">Primary card title</h5>
-              <p className="card-text">
-                Lately, it’s been more than difficult to watch the news and it
-                is becoming even harder to bear witness to our country’s slow
-                and agonizing destruction. It is as if we are passengers on a
-                plane that has been hijacked by a group....
-              </p>
-            </div>
-          </div>
         </div>
       </Container>
     </div>
   );
 }
 
-export default About;
+export default Home;

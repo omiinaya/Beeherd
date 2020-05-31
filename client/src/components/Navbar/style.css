@@ -1,3 +1,16 @@
 nav.navbar.navbar-default {
     margin-bottom: 0;
   }
+  h1{
+    font-size: 40px; 
+    color: #d909f5;
+    display: inline-block;
+    position: relative;
+    padding: 20px 20px 0 0;
+    display: inline-block;
+}
+.h1-img {
+  height: 9%;
+  width: 15%;
+  
+}

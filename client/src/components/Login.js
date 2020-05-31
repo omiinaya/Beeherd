@@ -34,20 +34,21 @@ class Login extends Component {
 
     render() {
         return (
-            <div className="container">
-                <div className="row">
+            <div class="container">
+                <div id="loginform">
                     <div className="col-md-6 mt-5 mx-auto">
                         <form noValidate onSubmit={this.onSubmit}>
-                            <h1 className="h3 mb-3 font-weight-normal">Please sign in.</h1>
+                            <h1 id="headerTitle">Login</h1>
+
                             <div className="form-group">
-                                <label htmlFor="username">Username</label>
+                                <label htmlFor="username">Username</label>                          
                                 <input type="username"
                                 className="form-control"
                                 name="username"
                                 placeholder="Enter username"
                                 value={this.state.username}
                                 onChange={this.onChange}
-                                />
+                                /> 
                             </div>
                             <div className="form-group">
                                 <label htmlFor="password">Password</label>
@@ -60,8 +61,8 @@ class Login extends Component {
                                 />
                             </div>
                             <button type="submit"
-                            className="btn btn-lg btn-primary btn-block">
-                                Sign in
+                            id="button">
+                                Welcome
                             </button>
                         </form>
                     </div>
