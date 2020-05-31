@@ -1,13 +1,43 @@
-* {
-  box-sizing: border-box;
+body{
+  background: #12c2e9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "work sans";
+}
+#loginform{
+  max-width: 500px;
+  min-width: 300px;
+  max-height: 700px;
+  width: 30%;
+  height: 60%;
+  margin: 100px auto;
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+#headerTitle{
+  text-align: center;
+  font-family: 'open sans', sans-serif;
+  padding: 2rem 0;
+  margin: 0;
+  font-size: 2rem;
+}
+#button{
+  border-radius: 25px;
+  width: 80%;
+  height: 40px;
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 1700;
+  background: #2980b9;
+  
+  cursor: pointer;
+  transition: opacity 0.25s ease-out;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-bottom: 1.5rem;
+  
+}
+#button:hover{
+  opacity: 0.5;
 }
 
-html,
-body,
-#root,
-#root > div,
-div[data-reactroot] {
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
