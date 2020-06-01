@@ -12,7 +12,7 @@ import Informed from "./pages/Informed";
 import SuicidePrevent from "./components/SuicidePrevent";
 import MoodDisorders from "./components/MoodDisorders";
 import Addiction from "./components/Addiction";
-
+import Resources from "./components/Resources";
 
 
 class App extends Component {
@@ -32,6 +32,8 @@ class App extends Component {
             <Route exact path="/suicide" component={SuicidePrevent} />
             <Route exact path="/mood" component={MoodDisorders} />
             <Route exact path="/addiction" component={Addiction} />
+            <Route exact path="/resources" component={Resources} />
+
           </div>
         </div>
       </Router>
