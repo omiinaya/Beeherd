@@ -1,5 +1,6 @@
 const Sequelize = require("sequelize")
 const db = {}
+
 const sequelize = new Sequelize("okaj_db", "root", "root", {
     host: 'localhost',
     dialect: 'mysql',
