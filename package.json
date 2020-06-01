@@ -4,9 +4,11 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "npm run dev"
   },
   "repository": {
     "type": "git",
@@ -28,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/omiinaya/OKAJ/issues"
   },
-  "homepage": "https://github.com/omiinaya/OKAJ#readme"
+  "homepage": "https://github.com/omiinaya/OKAJ#readme",
+  "devDependencies": {
+    "concurrently": "^5.2.0"
+  }
 }

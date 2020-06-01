@@ -27,3 +27,14 @@ export const login = user => {
         console.log("test"+err)
     })
 }
+
+export const upload = newPost => {
+    return axios
+    .post('posts/post', {
+        content: newPost.content
+    })
+    .then(res => {
+        console.log("Registered.")
+        return res.data
+    })
+}

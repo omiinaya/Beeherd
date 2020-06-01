@@ -10,8 +10,10 @@ app.use(cors())
 app.use(bodyParser.urlencoded({extended: false}))
 
 var Users = require('./routes/Users')
+var Posts = require('./routes/Posts')
 
 app.use('/users/', Users)
+app.use('/posts/', Posts)
 
 //listener
 app.listen(port, () => {
