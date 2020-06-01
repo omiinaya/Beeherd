@@ -54,19 +54,19 @@ font-family: 'Maven Pro', sans-serif;
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
-  width:200px;
-  height:60px;
+  width:116px;
+  height:36px;
   text-align: center;
-  line-height:60px;
+  line-height:30px;
   color:#fff;
-  font-size: 24px;
+  font-size: 18px;
   text-transform:uppercase;
   text-decoration:none;
-  font-family:sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   box-sizing:border-box;
   background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
   background-size:400%;
-  border-radius: 30px;
+  border-radius: 12px;
   }
   
   #button:hover
@@ -96,7 +96,7 @@ font-family: 'Maven Pro', sans-serif;
   z-index:-1;
   background:linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
   background-size:400%;
-  border-radius: 40px;
+  border-radius: 12px;
   opacity:0;
   }
   
