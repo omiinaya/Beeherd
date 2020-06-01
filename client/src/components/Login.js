@@ -38,7 +38,7 @@ class Login extends Component {
                 <div id="loginform">
                     <div className="col-md-6 mt-5 mx-auto">
                         <form noValidate onSubmit={this.onSubmit}>
-                            <h1 id="headerTitle">Login</h1>
+                            <h1 id="headerTitle">Sign In</h1>
 
                             <div className="form-group">
                                 <label htmlFor="username">Username</label>                          
@@ -62,7 +62,7 @@ class Login extends Component {
                             </div>
                             <button type="submit"
                             id="button">
-                                Welcome
+                                Login
                             </button>
                         </form>
                     </div>
