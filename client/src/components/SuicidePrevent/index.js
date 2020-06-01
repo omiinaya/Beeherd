@@ -5,11 +5,12 @@ import "./style.css";
 
 
 
-function MoodDisorders() {
+function Suicide() {
   return (
     
       <div>
-          <h1>Mood Disorders page</h1>
+          <h1>Suicide Prevention page</h1>
+          <h2> You Matter!</h2>
       
                 </div>
     
@@ -17,4 +18,4 @@ function MoodDisorders() {
   );
 }
 
-export default MoodDisorders;
+export default Suicide;
