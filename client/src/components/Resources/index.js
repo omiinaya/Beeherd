@@ -15,6 +15,15 @@ function Resources() {
           </div>
           <div class="col-lg-5">
             <h1 class="font-weight-light">Get Informed</h1>
+            <a href="/suicide" className="btn btn-primary">
+                  Let's talk Suicide
+                </a>
+                <a href="/mood" className="btn btn-primary">
+                  Let's talk Depression
+                </a>
+                <a href="/addiction" className="btn btn-primary">
+                  Let's talk Addiction
+                </a>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
