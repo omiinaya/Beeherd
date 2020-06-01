@@ -10,10 +10,10 @@ var Posts = db.sequelize.define(
             autoIncrement: true
         },
         creator_id: {
-            type: Sequelize.INTEGER,
+            type: Sequelize.INTEGER
         },
         content: {
-            type: Sequelize.TEXT
+            type: Sequelize.STRING
         },
         created: {
             type: Sequelize.DATE,

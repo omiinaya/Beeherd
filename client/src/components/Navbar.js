@@ -30,6 +30,11 @@ class Navbar extends Component {
                     </Link>
                 </li>
                 <li className="nav-item">
+                    <Link to="/post" className="nav-link">
+                        Post
+                    </Link>
+                </li>
+                <li className="nav-item">
                     <a href="" onClick={this.logOut.bind(this)} className="nav-link">
                         Logout
                     </a>
@@ -56,11 +61,6 @@ class Navbar extends Component {
                         Home
                         </Link>
                     </li>
-                    <li className="nav-item">
-                    <Link to="/post" className="nav-link">
-                        Post
-                    </Link>
-                </li>
                 </ul>
                 {localStorage.usertoken ? userLink : loginRegLink}
             </div>

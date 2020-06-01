@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import { upload } from './UserFunctions'
 
 class Post extends Component {
@@ -12,7 +12,7 @@ class Post extends Component {
     }
 
     onChange(e) {
-        this.setState({[e.target.name]: e.target.value})
+        this.setState({ [e.target.name]: e.target.value })
     }
 
     onSubmit(e) {
@@ -23,35 +23,32 @@ class Post extends Component {
         }
 
         upload(post).then(res => {
-            if(res) {
+            if (res) {
                 console.log(post)
-                //this.props.history.push('/login')
             }
         })
     }
     render() {
         return (
             <div class="container">
-                <div id="loginform">
-                    <div className="col-md-6 mt-5 mx-auto">
-                        <form noValidate onSubmit={this.onSubmit}>
-                            <h1 id="headerTitle">Post</h1>
-                            <div className="form-group">
-                                <label htmlFor="content">Post</label>
-                                <input type="content"
+                <div className="col-md-6 mt-5 mx-auto">
+                    <form noValidate onSubmit={this.onSubmit}>
+                        <h1 id="headerTitle">WIP</h1>
+                        <div className="form-group">
+                            <label htmlFor="content">Post</label>
+                            <input type="content"
                                 className="form-control"
                                 name="content"
                                 placeholder="Enter content"
                                 value={this.state.content}
                                 onChange={this.onChange}
-                                />
-                            </div>
-                            <button type="submit"
+                            />
+                        </div>
+                        <button type="submit"
                             id="button">
-                                Submit
+                            Submit
                             </button>
-                        </form>
-                    </div>
+                    </form>
                 </div>
             </div>
         )
