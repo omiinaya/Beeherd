@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import Profile from "./components/Profile";
+import Post from "./components/Post";
+
 import Home from "./pages/Home";
 import Informed from "./pages/Informed";
 import SuicidePrevent from "./components/SuicidePrevent";
@@ -24,11 +26,12 @@ class App extends Component {
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/profile" component={Profile} />
+            <Route exact path="/post" component={Post} />
+            
             <Route exact path="/informed" component={Informed} />
             <Route exact path="/suicide" component={SuicidePrevent} />
             <Route exact path="/mood" component={MoodDisorders} />
             <Route exact path="/addiction" component={Addiction} />
-
           </div>
         </div>
       </Router>
