@@ -1,6 +1,8 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Container from "../components/Container";
+import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardImage,
+  MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn } from "mdbreact";
 
 function Home() {
   return (
@@ -13,114 +15,133 @@ function Home() {
                   Get Informed
                 </a>
       </Hero>
-      <Container style={{ marginTop: 30 }}>
-        <div className="row">
-          <div className="col-sm-6">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Vented</h5>
-                <p className="card-text">
-                  {" "}
-                  Old lady (55) looking for older to chat. (Not blocking anyone,
-                  though) Covid isolation is doing me in. So tired of being
-                  locked in home with my adult kids and my pets. A bit buzzed,
-                  who wants to chat?{" "}
-                </p>
-                <a href="/" className="btn btn-primary">
-                  Go somewhere
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-6">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Vented</h5>
-                <p className="card-text">
-                  {" "}
-                  Old lady (55) looking for older to chat. (Not blocking anyone,
-                  though) Covid isolation is doing me in. So tired of being
-                  locked in home with my adult kids and my pets. A bit buzzed,
-                  who wants to chat?{" "}
-                </p>
-                <a href="/" className="btn btn-primary">
-                  Go somewhere
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-sm-6">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Vented</h5>
-                <p className="card-text">
-                  {" "}
-                  Old lady (55) looking for older to chat. (Not blocking anyone,
-                  though) Covid isolation is doing me in. So tired of being
-                  locked in home with my adult kids and my pets. A bit buzzed,
-                  who wants to chat?{" "}
-                </p>
-                <a href="/" className="btn btn-primary">
-                  Go somewhere
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-6">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Vented</h5>
-                <p className="card-text">
-                  Lately, it’s been more than difficult to watch the news and it
-                  is becoming even harder to bear witness to our country’s slow
-                  and agonizing destruction. It is as if we are passengers on a
-                  plane that has been hijacked by a group...
-                </p>
-                <a href="/" className="btn btn-primary">
-                  Go somewhere
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-sm-6">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Vented</h5>
-                <p className="card-text">
-                  {" "}
-                  Old lady (55) looking for older to chat. (Not blocking anyone,
-                  though) Covid isolation is doing me in. So tired of being
-                  locked in home with my adult kids and my pets. A bit buzzed,
-                  who wants to chat?{" "}
-                </p>
-                <a href="/" className="btn btn-primary">
-                  Go somewhere
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-6">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Vented</h5>
-                <p className="card-text">
-                  Lately, it’s been more than difficult to watch the news and it
-                  is becoming even harder to bear witness to our country’s slow
-                  and agonizing destruction. It is as if we are passengers on a
-                  plane that has been hijacked by a group...
-                </p>
-                <a href="/" className="btn btn-primary">
-                  Go somewhere
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Container>
+      <div>
+      <p><b>
+      We aim to be the friendliest forum for support with mental health issues.
+      </b></p>
+
+      <p>On the beeheard Forum you can share experiences, ask questions or vent your emotions with people who know what’s it’s like to experience mental health difficulties and everything that goes alongside them.</p>
+      </div>
+      
+      <MDBContainer>
+      <MDBCarousel activeItem={1} length={3} slide={true} showControls={true} showIndicators={true} multiItem>
+        <MDBCarouselInner>
+          <MDBRow>
+            <MDBCarouselItem itemId="1">
+              <MDBCol md="4">
+                <MDBCard className="mb-2">
+                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" />
+                  <MDBCardBody>
+                    <MDBCardTitle>beeheard</MDBCardTitle>
+                    <MDBCardText>
+                    I just hope you are willing to put in a little bit of effort into our conversation. If you think it isn’t working out, just tell me! After all you can’t get along with every damn person. Also I’d appreciate it if you were a little closer to my age.
+                    </MDBCardText>            
+                  </MDBCardBody>
+                </MDBCard>
+              </MDBCol>
+              <MDBCol md="4">
+                <MDBCard className="mb-2">
+                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-10.jpg" />
+                  <MDBCardBody>
+                    <MDBCardTitle>beeheard</MDBCardTitle>
+                    <MDBCardText>
+                    I just hope you are willing to put in a little bit of effort into our conversation. If you think it isn’t working out, just tell me! After all you can’t get along with every damn person. Also I’d appreciate it if you were a little closer to my age.
+                    </MDBCardText>       
+                  </MDBCardBody>
+                </MDBCard>
+              </MDBCol>
+              <MDBCol md="4">
+                <MDBCard className="mb-2">
+                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-13.jpg" />
+                  <MDBCardBody>
+                    <MDBCardTitle>beeheard</MDBCardTitle>
+                    <MDBCardText>
+                    I just hope you are willing to put in a little bit of effort into our conversation. If you think it isn’t working out, just tell me! After all you can’t get along with every damn person. Also I’d appreciate it if you were a little closer to my age.
+                    </MDBCardText>
+                  </MDBCardBody>
+                </MDBCard>
+              </MDBCol>
+            </MDBCarouselItem>
+            <MDBCarouselItem itemId="2">
+              <MDBCol md="4">
+                <MDBCard className="mb-2">
+                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-4.jpg" />
+                  <MDBCardBody>
+                    <MDBCardTitle>beeheard</MDBCardTitle>
+                    <MDBCardText>
+                    I really want to blow my brains out right now. I stayed friends with my caretaker after she quit her job and she just ended our friendship while blaming it on the power differential, while she always talked openly with me about all her problems.
+                    </MDBCardText>
+                    
+                  </MDBCardBody>
+                </MDBCard>
+              </MDBCol>
+              <MDBCol md="4">
+                <MDBCard className="mb-2">
+                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" />
+                  <MDBCardBody>
+                    <MDBCardTitle>beeheard</MDBCardTitle>
+                    <MDBCardText>
+                    I really want to blow my brains out right now. I stayed friends with my caretaker after she quit her job and she just ended our friendship while blaming it on the power differential, while she always talked openly with me about all her problems.
+                    </MDBCardText>
+                    
+                  </MDBCardBody>
+                </MDBCard>
+              </MDBCol>
+              <MDBCol md="4">
+                <MDBCard className="mb-2">
+                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" />
+                  <MDBCardBody>
+                    <MDBCardTitle>beeheard</MDBCardTitle>
+                    <MDBCardText>
+                    I really want to blow my brains out right now. I stayed friends with my caretaker after she quit her job and she just ended our friendship while blaming it on the power differential, while she always talked openly with me about all her problems.
+                    </MDBCardText>
+                    
+                  </MDBCardBody>
+                </MDBCard>
+              </MDBCol>
+            </MDBCarouselItem>
+            <MDBCarouselItem itemId="3">
+              <MDBCol md="4">
+                <MDBCard className="mb-2">
+                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-7.jpg" />
+                  <MDBCardBody>
+                    <MDBCardTitle>beeheard</MDBCardTitle>
+                    <MDBCardText>
+                    Man this sucks been feeling alright recently and today just kinda crashed. Depression can suck my left
+                    </MDBCardText>
+                    
+                  </MDBCardBody>
+                </MDBCard>
+              </MDBCol>
+              <MDBCol md="4">
+                <MDBCard className="mb-2">
+                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" />
+                  <MDBCardBody>
+                    <MDBCardTitle>beeheard</MDBCardTitle>
+                    <MDBCardText>
+                    Man this sucks been feeling alright recently and today just kinda crashed. Depression can suck my left
+                    </MDBCardText>
+                    
+                  </MDBCardBody>
+                </MDBCard>
+              </MDBCol>
+              <MDBCol md="4">
+                <MDBCard className="mb-2">
+                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-9.jpg" />
+                  <MDBCardBody>
+                    <MDBCardTitle>beeheard</MDBCardTitle>
+                    <MDBCardText>
+                    Man this sucks been feeling alright recently and today just kinda crashed. Depression can suck my left
+                    </MDBCardText>
+                    
+                  </MDBCardBody>
+                </MDBCard>
+              </MDBCol>
+            </MDBCarouselItem>
+          </MDBRow>
+        </MDBCarouselInner>
+      </MDBCarousel>
+    </MDBContainer>
     </div>
   );
 }
