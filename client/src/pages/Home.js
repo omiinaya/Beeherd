@@ -15,6 +15,13 @@ function Home() {
                   Get Informed
                 </a>
       </Hero>
+      <div>
+      <p><b>
+      We aim to be the friendliest forum for support with mental health issues.
+      </b></p>
+
+      <p>On the beeheard Forum you can share experiences, ask questions or vent your emotions with people who know what’s it’s like to experience mental health difficulties and everything that goes alongside them.</p>
+      </div>
       
       <MDBContainer>
       <MDBCarousel activeItem={1} length={3} slide={true} showControls={true} showIndicators={true} multiItem>
@@ -25,7 +32,7 @@ function Home() {
                 <MDBCard className="mb-2">
                   <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" />
                   <MDBCardBody>
-                    <MDBCardTitle>MDBCard title</MDBCardTitle>
+                    <MDBCardTitle>beeheard</MDBCardTitle>
                     <MDBCardText>
                     I just hope you are willing to put in a little bit of effort into our conversation. If you think it isn’t working out, just tell me! After all you can’t get along with every damn person. Also I’d appreciate it if you were a little closer to my age.
                     </MDBCardText>            
@@ -36,7 +43,7 @@ function Home() {
                 <MDBCard className="mb-2">
                   <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-10.jpg" />
                   <MDBCardBody>
-                    <MDBCardTitle>MDBCard title</MDBCardTitle>
+                    <MDBCardTitle>beeheard</MDBCardTitle>
                     <MDBCardText>
                     I just hope you are willing to put in a little bit of effort into our conversation. If you think it isn’t working out, just tell me! After all you can’t get along with every damn person. Also I’d appreciate it if you were a little closer to my age.
                     </MDBCardText>       
@@ -47,7 +54,7 @@ function Home() {
                 <MDBCard className="mb-2">
                   <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-13.jpg" />
                   <MDBCardBody>
-                    <MDBCardTitle>MDBCard title</MDBCardTitle>
+                    <MDBCardTitle>beeheard</MDBCardTitle>
                     <MDBCardText>
                     I just hope you are willing to put in a little bit of effort into our conversation. If you think it isn’t working out, just tell me! After all you can’t get along with every damn person. Also I’d appreciate it if you were a little closer to my age.
                     </MDBCardText>
@@ -60,11 +67,11 @@ function Home() {
                 <MDBCard className="mb-2">
                   <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-4.jpg" />
                   <MDBCardBody>
-                    <MDBCardTitle>MDBCard title</MDBCardTitle>
+                    <MDBCardTitle>beeheard</MDBCardTitle>
                     <MDBCardText>
                     I really want to blow my brains out right now. I stayed friends with my caretaker after she quit her job and she just ended our friendship while blaming it on the power differential, while she always talked openly with me about all her problems.
                     </MDBCardText>
-                    <MDBBtn color="primary">MDBBtn</MDBBtn>
+                    
                   </MDBCardBody>
                 </MDBCard>
               </MDBCol>
@@ -72,11 +79,11 @@ function Home() {
                 <MDBCard className="mb-2">
                   <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" />
                   <MDBCardBody>
-                    <MDBCardTitle>MDBCard title</MDBCardTitle>
+                    <MDBCardTitle>beeheard</MDBCardTitle>
                     <MDBCardText>
                     I really want to blow my brains out right now. I stayed friends with my caretaker after she quit her job and she just ended our friendship while blaming it on the power differential, while she always talked openly with me about all her problems.
                     </MDBCardText>
-                    <MDBBtn color="primary">MDBBtn</MDBBtn>
+                    
                   </MDBCardBody>
                 </MDBCard>
               </MDBCol>
@@ -84,11 +91,11 @@ function Home() {
                 <MDBCard className="mb-2">
                   <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" />
                   <MDBCardBody>
-                    <MDBCardTitle>MDBCard title</MDBCardTitle>
+                    <MDBCardTitle>beeheard</MDBCardTitle>
                     <MDBCardText>
                     I really want to blow my brains out right now. I stayed friends with my caretaker after she quit her job and she just ended our friendship while blaming it on the power differential, while she always talked openly with me about all her problems.
                     </MDBCardText>
-                    <MDBBtn color="primary">MDBBtn</MDBBtn>
+                    
                   </MDBCardBody>
                 </MDBCard>
               </MDBCol>
@@ -98,11 +105,11 @@ function Home() {
                 <MDBCard className="mb-2">
                   <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-7.jpg" />
                   <MDBCardBody>
-                    <MDBCardTitle>MDBCard title</MDBCardTitle>
+                    <MDBCardTitle>beeheard</MDBCardTitle>
                     <MDBCardText>
                     Man this sucks been feeling alright recently and today just kinda crashed. Depression can suck my left
                     </MDBCardText>
-                    <MDBBtn color="primary">MDBBtn</MDBBtn>
+                    
                   </MDBCardBody>
                 </MDBCard>
               </MDBCol>
@@ -110,11 +117,11 @@ function Home() {
                 <MDBCard className="mb-2">
                   <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" />
                   <MDBCardBody>
-                    <MDBCardTitle>MDBCard title</MDBCardTitle>
+                    <MDBCardTitle>beeheard</MDBCardTitle>
                     <MDBCardText>
                     Man this sucks been feeling alright recently and today just kinda crashed. Depression can suck my left
                     </MDBCardText>
-                    <MDBBtn color="primary">MDBBtn</MDBBtn>
+                    
                   </MDBCardBody>
                 </MDBCard>
               </MDBCol>
@@ -122,11 +129,11 @@ function Home() {
                 <MDBCard className="mb-2">
                   <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-9.jpg" />
                   <MDBCardBody>
-                    <MDBCardTitle>MDBCard title</MDBCardTitle>
+                    <MDBCardTitle>beeheard</MDBCardTitle>
                     <MDBCardText>
                     Man this sucks been feeling alright recently and today just kinda crashed. Depression can suck my left
                     </MDBCardText>
-                    <MDBBtn color="primary">MDBBtn</MDBBtn>
+                    
                   </MDBCardBody>
                 </MDBCard>
               </MDBCol>
