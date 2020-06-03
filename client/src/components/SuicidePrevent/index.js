@@ -10,19 +10,13 @@ function Suicide() {
     
     <div className="about">
     <div class="container">
-      <div class="row align-items-center my-5">
+      <div class="">
       <h1 class="font-weight-light">You Matter</h1>
-        <div class="col-lg-5">
-          <img
-            class="img-fluid rounded mb-4 mb-lg-0"
-            src="https://www.bettycjung.net/BG2018/SuicideWarningSigns.jpg"
-            alt=""
-          />
-        </div>
+        
         <div class="col-lg-10">
           
-          <h2 class="font-weight-light">It's ok to talk about suicide...</h2>
-          <a className="text-support" href="https://www.crisistextline.org">Text For Suport - Completely Confidential</a>
+          <h2 class="font-weight-light">It's OK to Talk About Suicide...</h2>
+          <a className="text-support" href="https://www.crisistextline.org">Text to Talk - Completely Confidential</a>
           <div class="col-lg-7">
           <img
             class="img-fluid rounded mb-4 mb-lg-0"
@@ -41,9 +35,9 @@ Suicide is a leading cause of death. It’s also preventable. In U.S. alone, we 
 <br></br>
 But, hold up. Before we get to saving the world, let’s check-in. If you’re feeling like ending your life, you can always ask for help managing your emotions. Asking for help is brave. You are brave. You are valuable You are important. And, the world needs you.
         </p>
-        <h2>
+        <h5>
         How to Get Help If You’re Thinking About Ending Your Life
- </h2>
+ </h5>
 
  <p>
  Here are a few ways to get through the next second, minute, hour, and even a whole day.
@@ -66,6 +60,21 @@ US and Canada: text 741741
 <br></br>
 UK: text 85258 | Ireland: text 086 1800 280
  </div>
+<h6>Requesting Support?</h6>
+<h7>We Can Locate The Nearest Support Center For You</h7>
+ <div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Enter your Zipcode" aria-label="Requesting Support?" aria-describedby="button-addon2"/>
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Help</button>
+  </div>
+</div>
+ <div class="col-lg-5">
+          <img
+            class="img-fluid rounded mb-6 mb-lg-0"
+            src="https://www.bettycjung.net/BG2018/SuicideWarningSigns.jpg"
+            alt=""
+          />
+        </div>
       </div>
          </div>
       </div>
