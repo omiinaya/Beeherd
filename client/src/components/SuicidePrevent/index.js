@@ -60,7 +60,14 @@ US and Canada: text 741741
 <br></br>
 UK: text 85258 | Ireland: text 086 1800 280
  </div>
-
+<h6>Requesting Support?</h6>
+<h7>We Can Locate The Nearest Support Center For You</h7>
+ <div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Enter your Zipcode" aria-label="Requesting Support?" aria-describedby="button-addon2"/>
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Help</button>
+  </div>
+</div>
  <div class="col-lg-5">
           <img
             class="img-fluid rounded mb-6 mb-lg-0"

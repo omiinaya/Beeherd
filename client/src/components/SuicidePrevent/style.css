@@ -2,12 +2,12 @@ h1{
     font-size: 130px;
     font-family: 'Maven Pro', sans-serif;
     color:rgb(103, 101, 102);
-    padding-bottom:2%;
+    padding-bottom:0;
     padding-top: 2%;
 }
 
 h3{
-    font-size: 70px;
+    font-size: 50px;
     font-family: 'Maven Pro', sans-serif;
     color:rgb(123, 74, 120);
     padding:2%;
@@ -21,12 +21,25 @@ h5{
 }
 
 h2{
-    font-size: 90px;
+    font-size: 110px;
     font-family: 'Source Sans Pro', sans-serif;
     color:rgb(103, 95, 102);
     padding-top:5%;
+    padding-bottom: 2%;
 }
 
+h6{
+    font-family: 'Source Sans Pro', sans-serif;
+    color:rgba(238, 197, 30, 0.728);
+    padding-top:5%;
+    font-size:40px
+}
+ 
+h7{
+    font-family: 'Source Sans Pro', sans-serif;
+    color:rgb(103, 95, 102);
+    font-size:20px;
+}
 p{
     font-family: 'Source Sans Pro', sans-serif; 
     font-size: medium;
