@@ -19,7 +19,6 @@ import Suicide from "./pages/Suicide";
 import Mood from "./pages/Mood";
 import Addiction from "./pages/Addiction";
 
-
 class App extends Component {
   render() {
     return (
