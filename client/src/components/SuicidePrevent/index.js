@@ -9,7 +9,7 @@ function Suicide() {
   return (
     
     <div className="about">
-    <div class="container">
+    <div class="container-fluid">
       <div class="">
       <h1 class="font-weight-light">You Matter</h1>
         
