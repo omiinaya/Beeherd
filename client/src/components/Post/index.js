@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { upload } from './UserFunctions'
+import { upload } from '../UserFunctions'
+import "./style.css";
 
 class Post extends Component {
     constructor() {

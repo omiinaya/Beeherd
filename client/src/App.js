@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
-import Navbar from "./components/Navbar";
-import Login from "./components/Login";
-import Register from "./components/Register";
-import Profile from "./components/Profile";
-import Post from "./components/Post";
+import Navbar from "./components/Navbar/";
+import Login from "./components/Login/";
+import Register from "./components/Register/";
+import Post from "./components/Post/";
+import Profile from "./components/Profile/";
+import Home from "./components/Home/";
 
-import Home from "./pages/Home";
-import Informed from "./pages/Informed";
-import SuicidePrevent from "./components/SuicidePrevent";
-import MoodDisorders from "./components/MoodDisorders";
-import Addiction from "./components/Addiction";
+import Informed from "./components/Informed/";
+import SuicidePrevent from "./pages/Suicide";
+import MoodDisorders from "./pages/Mood";
+import Addiction from "./pages/Addiction";
 import Resources from "./components/Resources";
 import Footer from "./components/Footer";
 

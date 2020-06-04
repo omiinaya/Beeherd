@@ -10,7 +10,7 @@ posts.use(cors())
 posts.post('/post', (req, res) => {
     const today = new Date()
     const postData = {
-        content: req.body.password,
+        content: req.body.content,
         created: today
     }
 

@@ -1,9 +1,8 @@
 import React from "react";
-import Hero from "../components/Hero";
-import Container from "../components/Container";
+import Hero from "../Hero";
 import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardImage,
   MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn } from "mdbreact";
-import "./Home.css"
+import "./style.css"
   
 function Home() {
   return (
