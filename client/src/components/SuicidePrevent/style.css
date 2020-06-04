@@ -1,3 +1,6 @@
+body{
+    background-color: black;
+}
 h1{
     font-size: 130px;
     font-family: 'Maven Pro', sans-serif;
@@ -64,4 +67,7 @@ p{
     padding:2%;
 }
 
-*{background:url(./../../cubesPurple.jpg) no-repeat;}
+.about{background:url(./../../cubesPurple.jpg) no-repeat;
+height:auto;
+width:100%;
+}
