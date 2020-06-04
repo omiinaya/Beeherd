@@ -1,28 +1,30 @@
 import React from "react";
 import Hero from "../Hero";
-import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardImage,
-  MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn } from "mdbreact";
 import "./style.css"
+
+import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardImage,
+  MDBCardBody, MDBCardTitle, MDBCardText } from "mdbreact";
   
 function Home() {
   return (
-    <div className="homeContainer">
+    <div className="home">
       <Hero backgroundImage="https://images.unsplash.com/photo-1549814892-f6a520afc97d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
         <h1>beeherd</h1>
         <h2>Leave your troubles here</h2>
-        
-                <a href="/resources" className="btn btn-primary">
-                  Get Informed
-                </a>
+        <a href="/resources" className="btn btn-primary">
+          Get Informed
+        </a>
       </Hero>
       <div>
-      <p><b>
-      We aim to be the friendliest forum for support with mental health issues.
-      </b></p>
-
-      <p>On the beeheard Forum you can share experiences, ask questions or vent your emotions with people who know what’s it’s like to experience mental health difficulties and everything that goes alongside them.</p>
+        <p>
+          <b>
+            We aim to be the friendliest forum for support with mental health issues.
+          </b>
+        </p>
+        <p>
+          On the beeheard Forum you can share experiences, ask questions or vent your emotions with people who know what’s it’s like to experience mental health difficulties and everything that goes alongside them.
+        </p>
       </div>
-      
       <MDBContainer>
       <MDBCarousel activeItem={1} length={3} slide={true} showControls={true} showIndicators={true} multiItem>
         <MDBCarouselInner>
@@ -71,7 +73,6 @@ function Home() {
                     <MDBCardText>
                     I really want to blow my brains out right now. I stayed friends with my caretaker after she quit her job and she just ended our friendship while blaming it on the power differential, while she always talked openly with me about all her problems.
                     </MDBCardText>
-                    
                   </MDBCardBody>
                 </MDBCard>
               </MDBCol>
@@ -82,8 +83,7 @@ function Home() {
                     <MDBCardTitle>beeheard</MDBCardTitle>
                     <MDBCardText>
                     I really want to blow my brains out right now. I stayed friends with my caretaker after she quit her job and she just ended our friendship while blaming it on the power differential, while she always talked openly with me about all her problems.
-                    </MDBCardText>
-                    
+                    </MDBCardText> 
                   </MDBCardBody>
                 </MDBCard>
               </MDBCol>
@@ -95,7 +95,6 @@ function Home() {
                     <MDBCardText>
                     I really want to blow my brains out right now. I stayed friends with my caretaker after she quit her job and she just ended our friendship while blaming it on the power differential, while she always talked openly with me about all her problems.
                     </MDBCardText>
-                    
                   </MDBCardBody>
                 </MDBCard>
               </MDBCol>
@@ -109,7 +108,6 @@ function Home() {
                     <MDBCardText>
                     Man this sucks been feeling alright recently and today just kinda crashed. Depression can suck my left
                     </MDBCardText>
-                    
                   </MDBCardBody>
                 </MDBCard>
               </MDBCol>
@@ -121,7 +119,6 @@ function Home() {
                     <MDBCardText>
                     Man this sucks been feeling alright recently and today just kinda crashed. Depression can suck my left
                     </MDBCardText>
-                    
                   </MDBCardBody>
                 </MDBCard>
               </MDBCol>
@@ -133,7 +130,6 @@ function Home() {
                     <MDBCardText>
                     Man this sucks been feeling alright recently and today just kinda crashed. Depression can suck my left
                     </MDBCardText>
-                    
                   </MDBCardBody>
                 </MDBCard>
               </MDBCol>

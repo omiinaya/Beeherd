@@ -1,22 +1,4 @@
-
-#loginform{
-  max-width: 500px;
-  min-width: 300px;
-  max-height: 700px;
-  width: 30%;
-  height: 60%;
-  margin: 100px auto;
-  background-color: #ffffff;
-  border-radius: 25px;
-}
-#headerTitle{
-  text-align: center;
-  font-family: 'open sans', sans-serif;
-  padding: 2rem 0;
-  margin: 0;
-  font-size: 2rem;
-}
-#button{
+#button {
   border-radius: 25px;
   width: 100%;
   height: 40px;
@@ -29,16 +11,13 @@
   margin-top: 40px;
   margin-bottom: 40px;
   padding-bottom: 1.5rem;
-  
 }
-#button:hover{
+
+#button:hover {
   opacity: 0.5;
 }
 
-
-
-#button{
-
+#button {
   margin-left:50%;
   top:50%;
   left:50%;
@@ -56,10 +35,9 @@
   background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
   background-size:400%;
   border-radius: 12px;
-  }
+}
   
-  #button:hover
-  {
+#button:hover {
   animation: animate 8s linear infinite;
   }
   @keyframes animate
@@ -72,11 +50,9 @@
       {
       background-position: 400%;
        }
-      
   }
   
-  #button:before
-  {
+#button:before {
   content:'';
   top: -5px;
   left:-5px;
@@ -87,9 +63,8 @@
   background-size:400%;
   border-radius: 12px;
   opacity:0;
-  }
+}
   
-  #button:hover::before
-  {
+#button:hover::before {
   filter:blur(20px);
-  }
+}

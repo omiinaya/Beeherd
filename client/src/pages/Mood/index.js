@@ -1,11 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./style.css";
 
 function MoodDisorders() {
-  return (
-    
-        
+  return (   
     <div className="about">
     <div class="container">
       <div class="row align-items-center my-5">

@@ -1,15 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./style.css";
-
-
-
 
 function Suicide() {
   return (
-    
-    <div className="about">
-    <div class="container">
+  <div className="about">
+    <div class="container-fluid">
       <div class="">
       <h1 class="font-weight-light">You Matter</h1>
         
@@ -72,8 +67,7 @@ UK: text 85258 | Ireland: text 086 1800 280
           <img
             class="img-fluid rounded mb-6 mb-lg-0"
             src="https://www.bettycjung.net/BG2018/SuicideWarningSigns.jpg"
-            alt=""
-          />
+            alt=""/>
         </div>
       </div>
          </div>
