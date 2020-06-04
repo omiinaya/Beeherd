@@ -3,10 +3,11 @@ import Hero from "../components/Hero";
 import Container from "../components/Container";
 import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardImage,
   MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn } from "mdbreact";
-
+import "./Home.css"
+  
 function Home() {
   return (
-    <div>
+    <div className="homeContainer">
       <Hero backgroundImage="https://images.unsplash.com/photo-1549814892-f6a520afc97d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
         <h1>beeherd</h1>
         <h2>Leave your troubles here</h2>
