@@ -11,131 +11,77 @@ import {
   MDBCard,
   MDBCardImage,
   MDBCardBody,
-  MDBCardTitle,
-  MDBCardText,
-  MDBBtn,
-  MDBIcon,
 } from "mdbreact";
 
 class Home extends Component {
   render() {
     return (
       <div className="container-home">
-        <header class="image-container">
-          <MDBRow>
-            <MDBCol size="12">
-              <Hero backgroundImage="https://images.pexels.com/photos/775907/pexels-photo-775907.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+        <Hero backgroundImage="https://images.pexels.com/photos/775907/pexels-photo-775907.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+          <MDBContainer>
+            <MDBCarousel activeItem={1} length={3} slide={true} showControls={true} showIndicators={true} multiItem>
+              <MDBCarouselInner>
                 <MDBRow>
-                  <MDBCol size="12">
-                    <h1 class="animate__animated animate__swing">beeherd</h1>
-                    <h2>Leave your troubles here</h2>
-                    <a href="/resources" className="btn">
-                      Get Informed
-                    </a>
-                  </MDBCol>
+                  <MDBCarouselItem itemId="1">
+                    <MDBCol md="12">
+                      <MDBCard className="mb-3">
+                        <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" />
+                        <MDBCardBody>
+                          <div className="card-title">Placeholder Title 1</div>
+                          <div className="card-content">Placeholder Description 1</div>
+                        </MDBCardBody>
+                      </MDBCard>
+                    </MDBCol>
+                  </MDBCarouselItem>
+                  <MDBCarouselItem itemId="2">
+                    <MDBCol md="12">
+                      <MDBCard className="mb-3">
+                        <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" />
+                        <MDBCardBody>
+                          <div className="card-title">Placeholder Title 2</div>
+                          <div className="card-content">Placeholder Description 2</div>
+                        </MDBCardBody>
+                      </MDBCard>
+                    </MDBCol>
+                  </MDBCarouselItem>
+                  <MDBCarouselItem itemId="3">
+                    <MDBCol md="12">
+                      <MDBCard className="mb-3">
+                        <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" />
+                        <MDBCardBody>
+                          <div className="card-title">Placeholder Title 3</div>
+                          <div className="card-content">Placeholder Description 3</div>
+                        </MDBCardBody>
+                      </MDBCard>
+                    </MDBCol>
+                  </MDBCarouselItem>
                 </MDBRow>
-              </Hero>
-            </MDBCol>
-          </MDBRow>
-        </header>
+              </MDBCarouselInner>
+            </MDBCarousel>
+          </MDBContainer>
+        </Hero>
         <MDBContainer>
           <MDBRow>
             <MDBCol size="12">
               <MDBRow>
                 <MDBCol size="3">
+                  <MDBCard narrow className="category-card">
+                    <h10 className="category-title"> Addiction </h10>
+                  </MDBCard>
+                </MDBCol>
+                <MDBCol size="3">
+                  <MDBCard narrow className="category-card">
+                    <h10 className="category-title"> Mood Disorders </h10>
+                  </MDBCard>
+                </MDBCol>
+                <MDBCol size="3" className="category-card">
                   <MDBCard narrow>
-                    <MDBCardImage
-                      className="view view-cascade gradient-card-header purple-gradient"
-                      cascade
-                      tag="div"
-                    >
-                      <h2 className="h2-cards">Mattonit</h2>
-                      <p>The Boar</p>
-
-                    </MDBCardImage>
-                    <MDBCardBody cascade className="text-center">
-                      <MDBCardText>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Voluptatibus, ex, recusandae. Facere modi sunt,
-                        quod quibusdam dignissimos neque rem nihil ratione est
-                        placeat vel, natus non quos laudantium veritatis
-                        sequi.Ut enim ad minima veniam, quis nostrum
-                        exercitationem ullam corporis suscipit laboriosam, nisi
-                        ut aliquid ex ea commodi.
-                      </MDBCardText>
-                    </MDBCardBody>
+                    <h10 className="category-title"> Suicidal Thoughts </h10>
                   </MDBCard>
                 </MDBCol>
-                <MDBCol size="3">
-                <MDBCard narrow>
-                    <MDBCardImage
-                      className="view view-cascade gradient-card-header purple-gradient"
-                      cascade
-                      tag="div"
-                    >
-                      <h2 className="h2-cards">Mattonit</h2>
-                      <p>The Boar</p>
-
-                    </MDBCardImage>
-                    <MDBCardBody cascade className="text-center">
-                      <MDBCardText>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Voluptatibus, ex, recusandae. Facere modi sunt,
-                        quod quibusdam dignissimos neque rem nihil ratione est
-                        placeat vel, natus non quos laudantium veritatis
-                        sequi.Ut enim ad minima veniam, quis nostrum
-                        exercitationem ullam corporis suscipit laboriosam, nisi
-                        ut aliquid ex ea commodi.
-                      </MDBCardText>
-                    </MDBCardBody>
-                  </MDBCard>
-                </MDBCol>
-                <MDBCol size="3">
-                <MDBCard narrow>
-                    <MDBCardImage
-                      className="view view-cascade gradient-card-header purple-gradient"
-                      cascade
-                      tag="div"
-                    >
-                      <h2 className="h2-cards">Mattonit</h2>
-                      <p>The Boar</p>
-
-                    </MDBCardImage>
-                    <MDBCardBody cascade className="text-center">
-                      <MDBCardText>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Voluptatibus, ex, recusandae. Facere modi sunt,
-                        quod quibusdam dignissimos neque rem nihil ratione est
-                        placeat vel, natus non quos laudantium veritatis
-                        sequi.Ut enim ad minima veniam, quis nostrum
-                        exercitationem ullam corporis suscipit laboriosam, nisi
-                        ut aliquid ex ea commodi.
-                      </MDBCardText>
-                    </MDBCardBody>
-                  </MDBCard>
-                </MDBCol>
-                <MDBCol size="3">
-                <MDBCard narrow>
-                    <MDBCardImage
-                      className="view view-cascade gradient-card-header purple-gradient"
-                      cascade
-                      tag="div"
-                    >
-                      <h2 className="h2-cards">Mattonit</h2>
-                      <p>The Boar</p>
-
-                    </MDBCardImage>
-                    <MDBCardBody cascade className="text-center">
-                      <MDBCardText>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Voluptatibus, ex, recusandae. Facere modi sunt,
-                        quod quibusdam dignissimos neque rem nihil ratione est
-                        placeat vel, natus non quos laudantium veritatis
-                        sequi.Ut enim ad minima veniam, quis nostrum
-                        exercitationem ullam corporis suscipit laboriosam, nisi
-                        ut aliquid ex ea commodi.
-                      </MDBCardText>
-                    </MDBCardBody>
+                <MDBCol size="3" className="category-card">
+                  <MDBCard narrow>
+                    <h10 className="category-title"> Resources </h10>
                   </MDBCard>
                 </MDBCol>
               </MDBRow>
