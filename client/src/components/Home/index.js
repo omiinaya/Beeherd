@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Container from "../Container";
 import Hero from "../Hero";
 import "./style.css";
 import {
@@ -71,12 +72,12 @@ class Home extends Component {
                 </MDBCol>
                 <MDBCol size="3">
                   <MDBCard narrow className="category-card">
-                    <h10 className="category-title"> Mood Disorders </h10>
+                    <h10 className="category-title"> Mood </h10>
                   </MDBCard>
                 </MDBCol>
                 <MDBCol size="3" className="category-card">
                   <MDBCard narrow>
-                    <h10 className="category-title"> Suicidal Thoughts </h10>
+                    <h10 className="category-title"> Suicidal </h10>
                   </MDBCard>
                 </MDBCol>
                 <MDBCol size="3" className="category-card">
@@ -88,6 +89,92 @@ class Home extends Component {
             </MDBCol>
           </MDBRow>
         </MDBContainer>
+        <Container style={{ marginTop: 25 }}>
+        <div className="row">
+          <div className="col-sm-12">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Placeholder Title</h5>
+                <p className="card-text">
+                  Placeholder Text
+                </p>
+                <a href="/" className="btn btn-primary">
+                  Go somewhere
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-12">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Placeholder Title</h5>
+                <p className="card-text">
+                  Placeholder Text
+                </p>
+                <a href="/" className="btn btn-primary">
+                  Go somewhere
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+        <div className="col-sm-12">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Placeholder Title</h5>
+                <p className="card-text">
+                  Placeholder Text
+                </p>
+                <a href="/" className="btn btn-primary">
+                  Go somewhere
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-12">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Placeholder Title</h5>
+                <p className="card-text">
+                  Placeholder Text
+                </p>
+                <a href="/" className="btn btn-primary">
+                  Go somewhere
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+        <div className="col-sm-12">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Placeholder Title</h5>
+                <p className="card-text">
+                  Placeholder Text
+                </p>
+                <a href="/" className="btn btn-primary">
+                  Go somewhere
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-12">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Placeholder Title</h5>
+                <p className="card-text">
+                  Placeholder Text
+                </p>
+                <a href="/" className="btn btn-primary">
+                  Go somewhere
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Container>
       </div>
     );
   }
