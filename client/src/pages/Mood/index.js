@@ -115,7 +115,7 @@ function MoodDisorders() {
               <div class="input-group mb-3">
                 <input
                   type="text"
-                  class="form-control"
+                  className="supportInput form-control"
                   placeholder="Enter your Zipcode"
                   aria-label="Requesting Support?"
                   aria-describedby="button-addon2"
