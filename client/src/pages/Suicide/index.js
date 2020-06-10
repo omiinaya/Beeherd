@@ -7,13 +7,13 @@ class Suicide extends Component {
       <div className="about">
         <div class="container-fluid">
           <div class="">
-            <h1 class="font-weight-light">You Matter</h1>
+            <h1 className="neon" data-text="[You Matter]">[You_Matter]</h1>
             <div class="col-lg-10">
-              <h2 class="font-weight-light">It's OK to Talk About Suicide...</h2>
-              <a className="text-support" href="https://www.crisistextline.org">Text to Talk - Completely Confidential</a>
+            <h2 className="heading-suicide font-weight-light">It's OK to Talk About Suicide</h2>
+              <a className="text-support" href="https://www.crisistextline.org">-Text to Talk-</a>
               <div class="col-lg-7">
                 <img
-                  class="img-fluid rounded mb-4 mb-lg-0"
+                  className="suicide-hotline img-fluid rounded mb-4 mb-lg-0"
                   src="https://media.clickorlando.com/photo/2019/03/13/suicidehotlineweb_1552496394301_21530477_ver1.0_1280_720.jpg"
                   alt=""
                 />
