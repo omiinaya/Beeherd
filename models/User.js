@@ -15,6 +15,9 @@ var Users = db.sequelize.define(
         password: {
             type: Sequelize.STRING
         },
+        test: { 
+            type: Sequelize.STRING 
+        },
         created: {
             type: Sequelize.DATE,
             defaultValue: Sequelize.NOW

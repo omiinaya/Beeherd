@@ -7,7 +7,9 @@ class Profile extends Component {
         super()
         this.state = {
             username: '',
-            password: ''
+            password: '',
+            test: ''
+            
         }
     }
     componentDidMount() {
@@ -15,7 +17,8 @@ class Profile extends Component {
         const decoded = jwt_decode(token)
         this.setState({
             username: decoded.username,
-            password: decoded.password
+            password: decoded.password,
+            test: decoded.test
         })
     }
     render() {
@@ -28,8 +31,8 @@ class Profile extends Component {
                     <table className="table col-md-6 mx-auto">
                         <tbody>
                             <tr>
-                                <td>Username</td>
-                                <td>{this.state.username}</td>
+                                <td>Username: {this.state.username}</td>
+                                <td>Test: {this.state.test}</td>
                             </tr>
                         </tbody>
                     </table>

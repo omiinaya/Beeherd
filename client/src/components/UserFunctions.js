@@ -31,6 +31,7 @@ export const login = user => {
 export const upload = newPost => {
     return axios
     .post('posts/post', {
+        creator_id: newPost.creator_id,
         content: newPost.content
     })
     .then(res => {

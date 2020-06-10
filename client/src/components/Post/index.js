@@ -1,15 +1,27 @@
 import React, { Component } from 'react'
 import { upload } from '../UserFunctions'
+import jwt_decode from 'jwt-decode'
 import "./style.css";
 
 class Post extends Component {
     constructor() {
         super()
         this.state = {
-            content: ''
+            content: '',
+            creator_id: ''
         }
         this.onChange = this.onChange.bind(this)
         this.onSubmit = this.onSubmit.bind(this)
+    }
+
+    componentDidMount() {
+        const token = localStorage.usertoken
+        const decoded = jwt_decode(token)
+        this.setState({
+            id: decoded.id,
+            username: decoded.username,
+            password: decoded.password
+        })
     }
 
     onChange(e) {
@@ -20,6 +32,7 @@ class Post extends Component {
         e.preventDefault()
 
         const post = {
+            creator_id: this.state.id,
             content: this.state.content
         }
 
