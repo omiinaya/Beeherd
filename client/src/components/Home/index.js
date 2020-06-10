@@ -13,6 +13,8 @@ import {
   MDBCardBody,
   MDBCardTitle,
   MDBCardText,
+  MDBBtn,
+  MDBIcon,
 } from "mdbreact";
 
 class Home extends Component {
@@ -36,11 +38,110 @@ class Home extends Component {
             </MDBCol>
           </MDBRow>
         </header>
-        <MDBRow>
-          <MDBCol size="6">
+        <MDBContainer>
+          <MDBRow>
+            <MDBCol size="12">
+              <MDBRow>
+                <MDBCol size="3">
+                  <MDBCard narrow>
+                    <MDBCardImage
+                      className="view view-cascade gradient-card-header purple-gradient"
+                      cascade
+                      tag="div"
+                    >
+                      <h2 className="h2-cards">Mattonit</h2>
+                      <p>The Boar</p>
 
-          </MDBCol>
-        </MDBRow>
+                    </MDBCardImage>
+                    <MDBCardBody cascade className="text-center">
+                      <MDBCardText>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Voluptatibus, ex, recusandae. Facere modi sunt,
+                        quod quibusdam dignissimos neque rem nihil ratione est
+                        placeat vel, natus non quos laudantium veritatis
+                        sequi.Ut enim ad minima veniam, quis nostrum
+                        exercitationem ullam corporis suscipit laboriosam, nisi
+                        ut aliquid ex ea commodi.
+                      </MDBCardText>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+                <MDBCol size="3">
+                <MDBCard narrow>
+                    <MDBCardImage
+                      className="view view-cascade gradient-card-header purple-gradient"
+                      cascade
+                      tag="div"
+                    >
+                      <h2 className="h2-cards">Mattonit</h2>
+                      <p>The Boar</p>
+
+                    </MDBCardImage>
+                    <MDBCardBody cascade className="text-center">
+                      <MDBCardText>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Voluptatibus, ex, recusandae. Facere modi sunt,
+                        quod quibusdam dignissimos neque rem nihil ratione est
+                        placeat vel, natus non quos laudantium veritatis
+                        sequi.Ut enim ad minima veniam, quis nostrum
+                        exercitationem ullam corporis suscipit laboriosam, nisi
+                        ut aliquid ex ea commodi.
+                      </MDBCardText>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+                <MDBCol size="3">
+                <MDBCard narrow>
+                    <MDBCardImage
+                      className="view view-cascade gradient-card-header purple-gradient"
+                      cascade
+                      tag="div"
+                    >
+                      <h2 className="h2-cards">Mattonit</h2>
+                      <p>The Boar</p>
+
+                    </MDBCardImage>
+                    <MDBCardBody cascade className="text-center">
+                      <MDBCardText>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Voluptatibus, ex, recusandae. Facere modi sunt,
+                        quod quibusdam dignissimos neque rem nihil ratione est
+                        placeat vel, natus non quos laudantium veritatis
+                        sequi.Ut enim ad minima veniam, quis nostrum
+                        exercitationem ullam corporis suscipit laboriosam, nisi
+                        ut aliquid ex ea commodi.
+                      </MDBCardText>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+                <MDBCol size="3">
+                <MDBCard narrow>
+                    <MDBCardImage
+                      className="view view-cascade gradient-card-header purple-gradient"
+                      cascade
+                      tag="div"
+                    >
+                      <h2 className="h2-cards">Mattonit</h2>
+                      <p>The Boar</p>
+
+                    </MDBCardImage>
+                    <MDBCardBody cascade className="text-center">
+                      <MDBCardText>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Voluptatibus, ex, recusandae. Facere modi sunt,
+                        quod quibusdam dignissimos neque rem nihil ratione est
+                        placeat vel, natus non quos laudantium veritatis
+                        sequi.Ut enim ad minima veniam, quis nostrum
+                        exercitationem ullam corporis suscipit laboriosam, nisi
+                        ut aliquid ex ea commodi.
+                      </MDBCardText>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+              </MDBRow>
+            </MDBCol>
+          </MDBRow>
+        </MDBContainer>
       </div>
     );
   }
