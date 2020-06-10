@@ -25,7 +25,7 @@ class Home extends Component {
               <Hero backgroundImage="https://images.pexels.com/photos/775907/pexels-photo-775907.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
                 <MDBRow>
                   <MDBCol size="12">
-                    <h1>beeherd</h1>
+                    <h1 class="animate__animated animate__swing">beeherd</h1>
                     <h2>Leave your troubles here</h2>
                     <a href="/resources" className="btn">
                       Get Informed
