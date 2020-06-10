@@ -23,4 +23,10 @@ posts.post('/post', (req, res) => {
     })
 })
 
+posts.get("/posts/all", function (req, res) {
+    Post.findAll({}).then(function (results) {
+        res.json(results);
+    });
+});
+
 module.exports = posts
