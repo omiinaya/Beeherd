@@ -6,29 +6,31 @@ import ItsOkto from "../../components/ItsOkTo";
 
 function MoodDisorders() {
     return (
-      <div className="about">
-      <div class="container-fluid">
-      <h2 class= "talk-mood font-weight-light">
+      <div className='containMood container-fluid'>
+      <div className="container-fluid">
+      <h2 className= "talk-mood font-weight-light">
               Let's Talk
             </h2>
         <div className="text-container">
-          <h1>Mood Disorders</h1>
-          <div class="col-lg-10">
-            <h2 class="font-weight-light">
+          <h1 className="moodColors">Mood Disorders</h1>
+          </div>
+        
+            <h2 className="depression font-weight-light">
               And Depression
             </h2>
             <a className="text-support" href=""></a>
             <div class="col-lg-7">
               <img
-                class="img-fluid rounded mb-4 mb-lg-0"
+                className="downPic img-fluid rounded mb-4 mb-lg-0"
                 src="https://th.bing.com/th/id/OIP.XjBEulStIJnFBt8qotpHUgHaEb?pid=Api&rs=1"
                 alt=""
               />
             </div>
-            <div>
-              <h3>Feeling Down Lately?</h3>
-              <p>
-                {" "}
+            </div>
+            <div className="moodTextDiv" >
+              <h3 className="feelingDown">Feeling Down Lately?</h3>
+              <p className="moodText1">
+                
                 If you have a mood disorder, your general emotional state or
                 mood is distorted or inconsistent with your circumstances and
                 interferes with your ability to function. You may be extremely
@@ -36,10 +38,12 @@ function MoodDisorders() {
                 depression alternating with being excessively happy (mania).
                 Anxiety disorders can also affect your mood and often occur
                 along with depression. Mood disorders may increase your risk of
-                suicide.
+                suicide.</p>
                 <br></br>
-                Some examples of mood disorders include:
-                <br></br>
+                <p className="moodText2">Some examples of mood disorders include:
+                </p>
+            
+                <p className="moodText3">
                 Major depressive disorder — prolonged and persistent periods of
                 extreme sadness Bipolar disorder — also called manic depression
                 or bipolar affective disorder, depression that includes
@@ -64,9 +68,9 @@ function MoodDisorders() {
                 after substance use or withdrawal or after exposure to a
                 medication
               </p>
-              <h5>When to see a doctor</h5>
+              <h5 className="moodText4">When to see a doctor</h5>
 
-              <p>
+              <p className="moodText5">
                 If you're concerned that you may have a mood disorder, make an
                 appointment to see your doctor or a mental health professional
                 as soon as you can. If you're reluctant to seek treatment, talk
@@ -80,33 +84,24 @@ function MoodDisorders() {
                 Seek professional help before your mood disorder becomes severe
                 — it may be easier to treat early on.
                 <br></br>
-                But, hold up. Before we get to saving the world, let’s check-in.
-                If you’re feeling like ending your life, you can always ask for
-                help managing your emotions. Asking for help is brave. You are
-                brave. You are valuable You are important. And, the world needs
-                you.
-                <br></br>Distract yourself. Find even one thing that brings you
-                joy. And, hold onto it. Maybe it’s listening to your favorite
-                song (listening to music is one of the most common coping tools
-                for our texters), or maybe it’s looking into the eyes of your
-                adorable pup. Whatever it may be, find one thing to turn to when
-                you feel in the darkest of places.
+                <p className= "moodText6">
                 <br></br>Talk to a pro. If you are thinking about ending your
                 life, or having suicidal thoughts due to your circumstances and
                 state of mind, chances are you are dealing with really painful
                 emotions. Nobody deserves to feel that way and we are so sorry
                 you do. Reach out to a therapist who can help you work through
-                and process your emotions in a healthy way.
-                <br></br>Go somewhere safe. If you feel like you are a danger to
+                and process your emotions in a healthy way.</p>
+                <br></br>
+                <p className= "moodText7">Go somewhere safe. If you feel like you are a danger to
                 yourself, it’s always okay (brave, even!) to call 911 or go to
-                an ER.
+                an ER.</p>
               </p>
-              <h3>
+              <h3 className="NAMI">
                 NAMI Helpline 1-800-950-6264<br></br>You're not alone.
                 Confidential help is available for free.
               </h3>
 
-              <div className="container-hotline1">
+              <div className="container-hotline1" >
                 Text HOME to 741741 to connect with a Crisis Counselor
                 <br></br>
                 Free 24/7 support at your fingertips
@@ -115,8 +110,8 @@ function MoodDisorders() {
                 <br></br>
                 UK: text 85258 | Ireland: text 086 1800 280
               </div>
-              <h6>Requesting Support?</h6>
-              <h7>We Can Locate The Nearest Support Center For You</h7>
+              <h6 className="requestSupport">Requesting Support?</h6>
+              <h6 className="locateSupport">We Can Locate The Nearest Support Center For You</h6>
               <div class="input-group mb-3">
                 <input
                   type="text"
@@ -127,27 +122,18 @@ function MoodDisorders() {
                 />
                 <div class="input-group-append">
                   <button
-                    class="btn btn-outline-secondary"
+                    className=" locateBTN btn btn-outline-secondary"
                     type="button"
                     id="button-addon2"
                   >
-                    Help
+                    Show Me
                   </button>
                 </div>
               </div>
-              <div class="col-lg-5">
-                <img
-                  class="img-fluid rounded mb-6 mb-lg-0"
-                  src="https://www.bing.com/th?id=Ar67DWRf8MkTMQQ1808x1150&w=470&h=298&c=7&rs=1&qlt=80&cdv=1&dpr=2&pid=16.1"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-    );  
-   }
+         </div>
+   </div>      
+    );
+  }
+   
               
 export default MoodDisorders;

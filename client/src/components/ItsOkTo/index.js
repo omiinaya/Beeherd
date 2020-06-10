@@ -45,6 +45,11 @@ function ItsOkTo() {
             <li>abandoned</li>
             <li>pathetic</li>
             <li>different</li>
+            <li>irritable</li>
+            <li>empty</li>
+            <li>incompetent</li>
+            <li>exhausted</li>
+            <li>indignation</li>
 
             
           </ul>

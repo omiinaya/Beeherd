@@ -69,10 +69,10 @@ p{
     padding:2%;
 }
 
-.about{background:url() no-repeat;
-height:auto;
+.containMood{background:url(../../assets/images/moredesignsaddiction.png) no-repeat;
+height:100%;
 width:100%;
-background-color: black;
+background-size: cover no-repeat;
 margin:0px;
 padding:0px;
 }
