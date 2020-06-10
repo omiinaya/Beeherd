@@ -1,48 +1,73 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from 'react'
+import { Link, withRouter } from 'react-router-dom'
 import "./style.css";
 
-// Depending on the current path, this component sets the "active" class on the appropriate navigation link item
-function Navbar() {
-  return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <Link className="navbar-brand" to="/">
-        venTTown
-      </Link>
-      <div>
-        <ul className="navbar-nav">
-          <li className="nav-item">
-            <Link
-              to="/"
-              className={
-                window.location.pathname === "/" || window.location.pathname === "/about"
-                  ? "nav-link active"
-                  : "nav-link"
-              }
-            >
-              About
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/discover"
-              className={window.location.pathname === "/discover" ? "nav-link active" : "nav-link"}
-            >
-              Discover
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/search"
-              className={window.location.pathname === "/search" ? "nav-link active" : "nav-link"}
-            >
-              Search
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  );
+class Navbar extends Component {
+    logOut(e) {
+        e.preventDefault()
+        localStorage.removeItem('usertoken')
+        this.props.history.push('/')
+    }
+    render() {
+        const loginRegLink = (
+            <ul className="navbar-nav">
+                <li className="nav-item">
+                    <Link to="/login" className="nav-link">
+                        Login
+                    </Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/register" className="nav-link">
+                        Register
+                    </Link>
+                </li>
+            </ul>
+        )
+        const userLink = (
+            <ul className="navbar-nav">
+                <li className="nav-item">
+                    <Link to="/profile" className="nav-link">
+                        User
+                    </Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/post" className="nav-link">
+                        Post
+                    </Link>
+                </li>
+                <li className="nav-item">
+                    <a href="" onClick={this.logOut.bind(this)} className="nav-link">
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        )
+        return (
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark rounded">
+            <button className="navbar-toggler" 
+            type="button" 
+            data-toggle="collapse" 
+            data-target="#navbar1" 
+            aria-controls="narbar1" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+                <span className="navbar-toggle-icon">☰</span>
+            </button>
+
+            <div className="collapse navbar-collapse justify-content-md-center" 
+            id="navbar1">
+                <ul className="navbar-nav">
+                    <li className="nav-item">
+                        <Link to="/" className="nav-link">
+                        Home
+                        </Link>
+                    </li>
+                </ul>
+                {localStorage.usertoken ? userLink : loginRegLink}
+            </div>
+        </nav>
+        )
+    }
 }
 
-export default Navbar;
+export default withRouter(Navbar)

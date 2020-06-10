@@ -1,0 +1,110 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+h1{
+    font-size: 130px;
+    font-family: 'Maven Pro', sans-serif;
+    color:rgb(103, 101, 102);
+    padding-bottom:0;
+    padding-top: 2%;
+}
+
+h3{
+    font-size: 50px;
+    font-family: 'Maven Pro', sans-serif;
+    color:rgb(123, 74, 120);
+    padding:2%;
+}
+
+h5{
+    font-size: 44px;
+    font-family: 'Maven Pro', sans-serif;
+    color:rgb(123, 74, 120);
+    padding:2%;
+}
+
+h2{
+    font-size: 110px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color:rgb(103, 95, 102);
+    padding-top:1%;
+    padding-bottom: 2%;
+}
+
+h6{
+    font-family: 'Source Sans Pro', sans-serif;
+    color:rgba(238, 197, 30, 0.728);
+    padding-top:5%;
+    font-size:40px
+}
+ 
+h7{
+    font-family: 'Source Sans Pro', sans-serif;
+    color:rgb(103, 95, 102);
+    font-size:20px;
+}
+p{
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: medium;
+    color:rgba(245, 245, 245, 0.482);
+    padding:2%;
+}
+
+
+.text-support{
+    font-size: 22px;
+    font-weight: bolder;
+    color:rgba(238, 197, 30, 0.728);
+    padding-left:2%;
+    
+}
+
+.container-hotline1{
+
+    font-size: larger;
+    font-weight: bolder;
+    color:rgb(157, 33, 168);
+    padding:2%;
+}
+
+.about{background:url() no-repeat;
+height:auto;
+width:100%;
+background-color: black;
+margin:0px;
+padding:0px;
+}
+
+
+
+
+
+.text-container h1 {
+    font-size: 144px;
+    color: rgba(225, 225, 225, 0.1);
+    background-image: url(./assets/color-frequency.jpg);
+    background-repeat: repeat-x;
+    -webkit-background-clip: text;
+    animation: animate 15s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: Left 0px top 10px;
+    }
+    40% {
+      background-position: Left 800px top 10px;
+    }
+  }
+  
+  .text-container {
+    margin-top: 17%;
+    text-align: center;
+  }
+  
+
+
+
+ 

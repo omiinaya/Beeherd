@@ -1,15 +1,16 @@
 const express = require("express")
-const app = express.Router()
+const users = express.Router()
 const cors = require("cors")
 const jwt = require("jsonwebtoken")
 const bcrypt = require("bcrypt")
 
 const User = require("../models/User")
-app.use(cors())
+
+users.use(cors())
 
 process.env.SECRET_KEY = 'secret'
 
-app.post('/register', (req, res)=> {
+users.post('/register', (req, res)=> {
     const today = new Date()
     const userData = {
         username: req.body.username,
@@ -22,7 +23,12 @@ app.post('/register', (req, res)=> {
         }
     })
     .then(user => {
-        if (!user) {
+        if (user) {
+            res.json({
+                error: "User already exists"
+            })
+        } else {
+            console.log("success!")
             bcrypt.hash(req.body.password, 10, (err, hash) => {
                 userData.password = hash
                 User.create(userData)
@@ -33,10 +39,6 @@ app.post('/register', (req, res)=> {
                     res.send("error: " + err)
                     })
                 })
-        } else {
-            res.json({
-                error: "User already exists"
-            })
         }
     })
     .catch(err => {
@@ -44,7 +46,7 @@ app.post('/register', (req, res)=> {
     })
 })
 
-app.post('/login', (req, res) => {
+users.post('/login', (req, res) => {
     User.findOne({
         where: {
             username: req.body.username
@@ -52,7 +54,8 @@ app.post('/login', (req, res) => {
     })
     .then(user => {
         if(user) {
-            if (bcrypt.compareSync(req.body.password, user.password)) {
+            var passwordIsValid = bcrypt.compareSync(req.body.password, user.password);
+            if (passwordIsValid) {
                 let token = jwt.sign(user.dataValues, process.env.SECRET_KEY, {
                     expiresIn: 1440
                 })
@@ -63,8 +66,8 @@ app.post('/login', (req, res) => {
         }
     })
     .catch(err => {
-        res.status(400).json({error: err})
+        res.status(400).json({ error: err })
     })
 })
 
-module.exports = app
+module.exports = users

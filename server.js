@@ -9,9 +9,15 @@ app.use(bodyParser.json())
 app.use(cors())
 app.use(bodyParser.urlencoded({extended: false}))
 
-var Users = require('./routes/users')
+var Users = require('./routes/Users')
+var Posts = require('./routes/Posts')
+var Replies = require('./routes/Replies')
 
 app.use('/users/', Users)
+app.use('/posts/', Posts)
+app.use('/replies/', Replies)
+
+require("./routes/api")(app);
 
 //listener
 app.listen(port, () => {

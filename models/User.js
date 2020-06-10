@@ -12,8 +12,14 @@ var Users = db.sequelize.define(
         username: {
             type: Sequelize.STRING
         },
+        temp_tag: {
+            type: Sequelize.STRING
+        },
         password: {
             type: Sequelize.STRING
+        },
+        test: { 
+            type: Sequelize.STRING 
         },
         created: {
             type: Sequelize.DATE,
