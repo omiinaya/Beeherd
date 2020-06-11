@@ -5,3 +5,12 @@
     text-align: center;
 }
 
+.mini-post {
+    margin: 1%;
+    text-align: center;
+    justify-content:center;
+}
+
+.mini-post-text:hover {
+    cursor: pointer;
+}
