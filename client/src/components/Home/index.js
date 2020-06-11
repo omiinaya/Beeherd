@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Container from "../Container";
 import Hero from "../Hero";
 import "./style.css";
-import { test } from "./scripts";
+import { redirectToPost } from "./scripts";
 import {
   MDBCarousel,
   MDBCarouselInner,
@@ -28,7 +28,7 @@ class Home extends Component {
           </MDBRow>
         </Hero>
         <div class="mini-post">
-          <input type="test" id="mini-post-text" size="50" placeholder="Say something." onClick={test}></input><button onClick={test}>Post</button>
+          <input type="test" id="mini-post-text" size="50" placeholder="Say something." onClick={redirectToPost}></input><button onClick={redirectToPost}>Post</button>
         </div>
       <Container style={{ marginTop: 25 }}>
         <div className="row">
@@ -38,10 +38,7 @@ class Home extends Component {
                 <h5 className="card-title">Placeholder Title</h5>
                 <p className="card-text">Placeholder Text</p>
                 <a href="/" className="btn">
-                  Post
-                  </a>
-                <a href="/" className="btn">
-                  Delete
+                  See More
                   </a>
               </div>
             </div>

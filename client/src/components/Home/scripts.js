@@ -1,3 +1,3 @@
-export function test() {
+export function redirectToPost() {
     window.open("/post","_self")
 }
