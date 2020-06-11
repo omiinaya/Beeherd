@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import "./style.css";
-import ItsOkTo from '../../components/ItsOkTo';
-
-class Addiction extends Component {
-  render() {
+import Words from '../../components/Words';
+import "../../components/Words/style.css";
+function Addiction(){
+ {
     return (
-     <ItsOkTo />
+     <Words />
     );
   }
 }
