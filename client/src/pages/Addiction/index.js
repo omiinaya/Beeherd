@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import "./style.css";
-import ItsOkTo from '../../components/ItsOkTo';
+import Words from '../../components/Words';
+import "../../components/Words/style.css";
+import InfoCards from '../../components/InfoCards';
 
-class Addiction extends Component {
-  render() {
+function Addiction(){
+ {
     return (
-     <ItsOkTo />
+    <InfoCards />
     );
   }
 }
