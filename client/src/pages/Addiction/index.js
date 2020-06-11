@@ -7,8 +7,10 @@ import InfoCards from '../../components/InfoCards';
 function Addiction(){
  {
     return (
-    <InfoCards />
+      <Words />
+     /*  <InfoCards /> */
     );
+    
   }
 }
 

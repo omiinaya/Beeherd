@@ -8,6 +8,8 @@
   
   .wordsText1 {
     font-size: 45px;
+    text-shadow: o 2px 0 rgbs(0,0,0,5);
+    font-family: "popins sans-serif";
   }
   
   .wordsInner {
@@ -56,3 +58,27 @@
     }
   }
   
+
+
+span::before{
+  content: "different";
+  animation:animate infinite 8s;
+}
+@keyframes animate{
+0%{
+  content: "different";
+}
+
+25%{
+  content: "scared";
+}
+50%{
+  content: "angry";
+}
+75%{
+  content: "lost";
+}
+100%{
+  content: "lonely";
+}
+}
