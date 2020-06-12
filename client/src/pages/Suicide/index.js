@@ -4,19 +4,19 @@ import "./style.css";
 function Suicide() {
   return (
     <div className="containChooseLife">
-      <div class="container-fluid">
+      <div className="container-fluid">
         <div classname="uMatterDiv">
           <h1 className="neon" data-text="[You Matter]">
             [You_Matter]
           </h1>
-          <div class="col-lg-10">
+          <div className="col-lg-10">
             <h2 className="heading-suicide font-weight-light">
               It's OK to Talk About Suicide
             </h2>
             <a className="text-support" href="https://www.crisistextline.org">
               -Text to Talk-
             </a>
-            <div class="col-lg-7">
+            <div className="col-lg-7">
               <img
                 className="suicide-hotline img-fluid rounded mb-4 mb-lg-0"
                 src="https://media.clickorlando.com/photo/2019/03/13/suicidehotlineweb_1552496394301_21530477_ver1.0_1280_720.jpg"
@@ -98,7 +98,7 @@ function Suicide() {
               <h7 className="locateSupport">
                 We Can Locate The Nearest Support Center For You
               </h7>
-              <div class="input-group mb-3">
+              <div className="input-group mb-3">
                 <input
                   type="text"
                   className="supportInput form-control"
@@ -106,9 +106,9 @@ function Suicide() {
                   aria-label="Requesting Support?"
                   aria-describedby="button-addon2"
                 />
-                <div class="input-group-append">
+                <div className="input-group-append">
                   <button
-                    class="locateBTN btn btn-outline-secondary"
+                    className="locateBTN btn btn-outline-secondary"
                     type="button"
                     id="button-addon2"
                   >

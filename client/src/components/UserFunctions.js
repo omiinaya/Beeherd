@@ -8,7 +8,7 @@ export const register = newUser => {
     })
     .then(res => {
         //need if statement incase already registered
-        console.log("Registered.")
+        console.log("User has been egistered.")
         return res.data
     })
 }
@@ -35,7 +35,7 @@ export const upload = newPost => {
         content: newPost.content
     })
     .then(res => {
-        console.log("Registered.")
+        console.log("Post has been uploaded to the database.")
         return res.data
     })
 }

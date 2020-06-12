@@ -17,8 +17,6 @@ app.use('/users/', Users)
 app.use('/posts/', Posts)
 app.use('/replies/', Replies)
 
-require("./routes/api")(app);
-
 //listener
 app.listen(port, () => {
     console.log("Server is running on port: "+port+"!")

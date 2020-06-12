@@ -7,6 +7,7 @@ const Post = require("../models/Post")
 
 posts.use(cors())
 
+//send post to database
 posts.post('/post', (req, res) => {
     const today = new Date()
     const postData = {
@@ -23,7 +24,8 @@ posts.post('/post', (req, res) => {
     })
 })
 
-posts.get("/posts/all", function (req, res) {
+//get posts from database
+posts.get("/all", function (req, res) {
     Post.findAll({}).then(function (results) {
         res.json(results);
     });
