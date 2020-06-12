@@ -8,7 +8,11 @@ class Footer extends Component {
         <div className="container">
           <div className="row">
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-              <p>&copy; All Rights Reserved By <a href="/" target="_blank">OKAJ 2020</a></p>
+            <h1>✌️</h1>
+            <ul>
+              <li><a href="https://github.com/omiinaya/OKAJ" target="_blank">github</a></li>
+              <li><a href="https://github.com/omiinaya/OKAJ" target="_blank">&nbsp; site made by Team OKAJ</a></li>
+            </ul>
             </div>
           </div>
         </div>
@@ -16,5 +20,5 @@ class Footer extends Component {
     );
   }
 }
-
+ 
 export default Footer;
