@@ -4,15 +4,8 @@ import Hero from "../Hero";
 import "./style.css";
 import { redirectToPost } from "./scripts";
 import {
-  MDBCarousel,
-  MDBCarouselInner,
-  MDBCarouselItem,
-  MDBContainer,
   MDBRow,
-  MDBCol,
-  MDBCard,
-  MDBCardImage,
-  MDBCardBody,
+  MDBCol
 } from "mdbreact";
 
 class Home extends Component {
@@ -49,10 +42,7 @@ class Home extends Component {
                 <h5 className="card-title">Placeholder Title</h5>
                 <p className="card-text">Placeholder Text</p>
                 <a href="/" className="btn">
-                  Reply
-                  </a>
-                <a href="/" className="btn">
-                  Delete
+                See More
                   </a>
               </div>
             </div>
@@ -65,10 +55,7 @@ class Home extends Component {
                 <h5 className="card-title">Placeholder Title</h5>
                 <p className="card-text">Placeholder Text</p>
                 <a href="/" className="btn">
-                  Reply
-                  </a>
-                <a href="/" className="btn">
-                  Delete
+                See More
                   </a>
               </div>
             </div>
@@ -79,10 +66,7 @@ class Home extends Component {
                 <h5 className="card-title">Placeholder Title</h5>
                 <p className="card-text">Placeholder Text</p>
                 <a href="/" className="btn">
-                  Reply
-                  </a>
-                <a href="/" className="btn">
-                  Delete
+                See More
                   </a>
               </div>
             </div>
@@ -95,10 +79,7 @@ class Home extends Component {
                 <h5 className="card-title">Placeholder Title</h5>
                 <p className="card-text">Placeholder Text</p>
                 <a href="/" className="btn">
-                  Reply
-                  </a>
-                <a href="/" className="btn">
-                  Delete
+                See More
                   </a>
               </div>
             </div>
@@ -109,10 +90,7 @@ class Home extends Component {
                 <h5 className="card-title">Placeholder Title</h5>
                 <p className="card-text">Placeholder Text</p>
                 <a href="/" className="btn">
-                  Reply
-                  </a>
-                <a href="/" className="btn">
-                  Delete
+                See More
                   </a>
               </div>
             </div>
