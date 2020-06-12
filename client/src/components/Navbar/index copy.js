@@ -11,7 +11,7 @@ class Navbar extends Component {
     }
     render() {
         const loginRegLink = (
-            <ul className="navbar-nav ml-auto">
+            <ul className="navbar-nav">
                 <li className="nav-item">
                     <Link to="/login" className="nav-link">
                         Login
@@ -27,10 +27,12 @@ class Navbar extends Component {
         const userLink = (
             <ul className="navbar-nav">
                 <li className="nav-item">
-                    <Link to="/profile" className="nav-link">User</Link>
+                    <Link to="/profile" className="nav-link">
+                        User
+                    </Link>
                 </li>
                 <li className="nav-item">
-                    <a href="#" onClick={this.logOut.bind(this)} className="nav-link">
+                    <a href="" onClick={this.logOut.bind(this)} className="nav-link">
                         Logout
                     </a>
                 </li>
@@ -48,14 +50,19 @@ class Navbar extends Component {
                     </ul>
                 </div>
                 <div class="mx-auto order-0">
-                    <Link to="/" className="nav-link navbar-brand mx-auto">Home</Link>
+                    <a class="navbar-brand mx-auto" href="#">Home</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
                         <span class="navbar-toggler-icon">☰</span>
                     </button>
                 </div>
                 <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
                     <ul class="navbar-nav ml-auto">
-                        {localStorage.usertoken ? userLink : loginRegLink}
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Register</a>
+                        </li>
                     </ul>
                 </div>
             </nav>

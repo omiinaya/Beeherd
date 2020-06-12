@@ -1,13 +1,9 @@
 import React from 'react';
 import "./style.css";
 
-
-
-
-
 function ItsOkTo() {
-    return (
-      <div className="container-fluid">
+  return (
+    <div className="container-fluid">
       <div className="main">
         <h1 className="itsok">It's OK To Feel</h1>
         <div>
@@ -50,14 +46,11 @@ function ItsOkTo() {
             <li>incompetent</li>
             <li>exhausted</li>
             <li>indignation</li>
-
-            
           </ul>
         </div>
-        </div>
-        </div>
-
-    );
+      </div>
+    </div>
+  );
 }
 
 export default ItsOkTo;
