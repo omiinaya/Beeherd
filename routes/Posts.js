@@ -31,4 +31,15 @@ posts.get("/all", function (req, res) {
     });
 });
 
+//find post by post id
+posts.get("/:id", function (req, res) {
+    Post.findAll({
+        where: {
+            id: req.params.id
+        }
+    }).then(function (results) {
+        res.json(results);
+    });
+});
+
 module.exports = posts
