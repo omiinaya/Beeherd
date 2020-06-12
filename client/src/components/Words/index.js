@@ -22,12 +22,13 @@ function Words() {
 
         <section className="MoodSectionPic">
           <div className="MoodSecPicContainer">
-            <h1 className="mood"></h1>
+            <h1 className="mood">Feeling Down Lately?</h1>
+            
           </div>
         </section>
 
         <div className="moodTextDiv">
-          <h3 className="feelingDown">Feeling Down Lately?</h3>
+          <h3 className="feelingDown"></h3>
           <p className="moodTextp1">
             If you have a mood disorder, your general emotional state or mood is
             distorted or inconsistent with your circumstances and interferes

@@ -10,7 +10,7 @@
 .text-container{
     font-size: 144px;
     color: rgba(225, 225, 225, 0.1);
-    background-image: url(./assets/color-frequency.jpg);
+    background-image: url(./assets/color-swirl.jpg);
     background-repeat: repeat-x;
     -webkit-background-clip: text;
     animation: animate 15s linear infinite;
