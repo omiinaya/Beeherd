@@ -15,12 +15,12 @@ class Home extends Component {
         <Hero backgroundImage="https://images.pexels.com/photos/775907/pexels-photo-775907.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
           <MDBRow>
             <MDBCol size="12">
-              <h1 class="animate__animated animate__swing">beeherd</h1>
+              <h1 className="animate__animated animate__swing">beeherd</h1>
               <h2>Leave your troubles here</h2>
             </MDBCol>
           </MDBRow>
         </Hero>
-        <div class="mini-post">
+        <div className="mini-post">
           <input type="test" id="mini-post-text" size="50" placeholder="Say something." onClick={redirectToPost}></input><button onClick={redirectToPost}>Post</button>
         </div>
       <Container style={{ marginTop: 25 }}>

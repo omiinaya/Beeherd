@@ -19,7 +19,7 @@ function MoodDisorders() {
               And Depression
             </h2>
             <a className="text-support" href=""></a>
-            <div class="col-lg-7">
+            <div className="col-lg-7">
               <img
                 className="downPic img-fluid rounded mb-4 mb-lg-0"
                 src="https://th.bing.com/th/id/OIP.XjBEulStIJnFBt8qotpHUgHaEb?pid=Api&rs=1"
@@ -112,7 +112,7 @@ function MoodDisorders() {
               </div>
               <h6 className="requestSupport">Requesting Support?</h6>
               <h6 className="locateSupport">We Can Locate The Nearest Support Center For You</h6>
-              <div class="input-group mb-3">
+              <div className="input-group mb-3">
                 <input
                   type="text"
                   className="supportInput form-control"
@@ -120,7 +120,7 @@ function MoodDisorders() {
                   aria-label="Requesting Support?"
                   aria-describedby="button-addon2"
                 />
-                <div class="input-group-append">
+                <div className="input-group-append">
                   <button
                     className=" locateBTN btn btn-outline-secondary"
                     type="button"
