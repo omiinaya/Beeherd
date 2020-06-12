@@ -3,6 +3,7 @@ import Container from "../Container";
 import Hero from "../Hero";
 import "./style.css";
 import { redirectToPost } from "./scripts";
+import Footer from '../../components/Footer';
 import {
   MDBCarousel,
   MDBCarouselInner,
@@ -119,6 +120,7 @@ class Home extends Component {
           </div>
         </div>
       </Container>
+      <Footer />
       </div >
     );
   }
