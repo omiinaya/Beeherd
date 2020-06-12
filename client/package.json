@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^19.0.2",
+    "@ckeditor/ckeditor5-react": "^2.1.0",
     "animate.css": "^4.1.0",
     "axios": "^0.19.2",
+    "html-react-parser": "^0.13.0",
     "jwt-decode": "^2.2.0",
     "jwt-decoder": "0.0.0",
     "mdbreact": "^4.27.0",

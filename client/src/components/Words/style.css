@@ -61,7 +61,6 @@
 
 
 span::before{
-  content: "different";
   animation:animate infinite 8s;
 }
 @keyframes animate{

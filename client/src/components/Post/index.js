@@ -46,7 +46,6 @@ class Post extends Component {
     render() {
         return (
             <div class="container">
-                
                 <Editor />
                     <form noValidate onSubmit={this.onSubmit}>
                         <div className="form-group">
