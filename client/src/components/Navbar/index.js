@@ -37,9 +37,9 @@ class Navbar extends Component {
             </ul>
         )
         return (
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-                    <ul class="navbar-nav mr-auto">
+            <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+                <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                    <ul className="navbar-nav mr-auto">
                         <DropdownButton id="dropdown-basic-button" title="Get Informed">
                             <Dropdown.Item href="/suicide">Suicidal Thoughts</Dropdown.Item>
                             <Dropdown.Item href="/mood">Mood Disorders</Dropdown.Item>
@@ -47,14 +47,14 @@ class Navbar extends Component {
                         </DropdownButton>
                     </ul>
                 </div>
-                <div class="mx-auto order-0">
+                <div className="mx-auto order-0">
                     <Link to="/" className="nav-link navbar-brand mx-auto">Home</Link>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-                        <span class="navbar-toggler-icon">☰</span>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                        <span className="navbar-toggler-icon">☰</span>
                     </button>
                 </div>
-                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-                    <ul class="navbar-nav ml-auto">
+                <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                    <ul className="navbar-nav ml-auto">
                         {localStorage.usertoken ? userLink : loginRegLink}
                     </ul>
                 </div>
