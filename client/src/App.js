@@ -9,7 +9,6 @@ import Register from "./components/Register/";
 import Post from "./components/Post/";
 import Profile from "./components/Profile/";
 import Home from "./components/Home/";
-import Informed from "./components/Informed/";
 import Footer from "./components/Footer";
 import { Container } from "./components/Grid";
 
@@ -32,7 +31,6 @@ class App extends Component {
             <Route exact path="/profile" component={Profile} />
             <Route exact path="/post" component={Post} />
 
-            <Route exact path="/informed" component={Informed} />
             <Route exact path="/suicide" component={Suicide} />
             <Route exact path="/mood" component={Mood} />
             <Route exact path="/addiction" component={Addiction} />
