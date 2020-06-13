@@ -3,10 +3,3 @@
     min-height: 100px!important;
     position: relative;
   }
-  
-  ul {
-    list-style-type: none;
-}
-li {
-  display: inline;
-}
