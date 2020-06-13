@@ -11,7 +11,7 @@ class Footer extends Component {
             <h1>✌️</h1>
             <ul>
               <li><a href="https://github.com/omiinaya/OKAJ" target="_blank">github</a></li>
-              <li><a href="https://github.com/omiinaya/OKAJ" target="_blank">&nbsp; site made by Team OKAJ</a></li>
+              <li><a href="https://github.com/omiinaya/OKAJ" target="_blank">/&nbsp; site made by Team OKAJ</a></li>
             </ul>
             </div>
           </div>

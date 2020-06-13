@@ -15,7 +15,7 @@ class Home extends Component {
       <div className="container-home">
         <Hero backgroundImage="https://images.pexels.com/photos/775907/pexels-photo-775907.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
           <MDBRow>
-            <MDBCol size="12">
+            <MDBCol size="8">
               <h1 className="animate__animated animate__swing">beeherd</h1>
               <h2>Leave your troubles here</h2>
             </MDBCol>
@@ -36,6 +36,7 @@ class Home extends Component {
                   </a>
               </div>
             </div>
+            
           </div>
           <div className="col-sm-12">
             <div className="card">
@@ -89,6 +90,30 @@ class Home extends Component {
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">Placeholder Title</h5>
+                <p className="card-text">Placeholder Text</p>
+                <a href="/" className="btn">
+                See More
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-sm-12">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Placeholder Title</h5>
+                <p className="card-text">Placeholder Text</p>
+                <a href="/" className="btn">
+                See More
+                  </a>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-12">
+            <div className="card">
+              <div className="card-body">
+              <h5 className="card-title">Placeholder Title</h5>
                 <p className="card-text">Placeholder Text</p>
                 <a href="/" className="btn">
                 See More
