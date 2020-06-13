@@ -38,7 +38,7 @@ class Home extends Component {
       <div className="container-home">
         <Hero backgroundImage="https://images.pexels.com/photos/775907/pexels-photo-775907.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
           <MDBRow>
-            <MDBCol size="12">
+            <MDBCol size="8">
               <h1 className="animate__animated animate__swing">beeherd</h1>
               <h2>Leave your troubles here</h2>
             </MDBCol>
