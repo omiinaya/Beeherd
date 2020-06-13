@@ -13,7 +13,8 @@
     text-align: center;
     justify-content:center;
     background-color: white;
-    border-radius: 1%;
+    border-radius: 6px;
+
 }
 
 .mini-post-text:hover {
@@ -22,5 +23,6 @@
 
 .post-card {
     background-color: white;
-    margin: 1%;
+    margin: 2%;
+    border-radius: 6px;
 }
