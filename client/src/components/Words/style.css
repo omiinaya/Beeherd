@@ -47,16 +47,20 @@
   margin-bottom: 0px;
 }
 .MoodSec2container {
-  padding: 2%;
+  
   color: rgb(203, 54, 203);
   background: rgb(30, 8, 58);
   border-bottom: 2px solid rgb(244, 159, 94);
+  border-left: 2px solid rgb(244, 159, 94);
+  border-bottom: 2px solid rgb(244, 159, 94);
   border-radius: 6px;
+  margin-left: 0px;
 }
 
 .requestSupport {
   font-size: 25px;
   color: rgb(244, 159, 94);
+  margin-left: 0px;
 }
 
 .text-container .moodColors {
