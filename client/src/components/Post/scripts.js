@@ -25,7 +25,7 @@ export function sendToDB(a) {
     })
     .then(res => {
         console.log("Post successfully sent to database.")
-        
+        window.location.href = "/";
         return res.data
     })
 }

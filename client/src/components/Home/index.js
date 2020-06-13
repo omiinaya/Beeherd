@@ -7,7 +7,6 @@ import EmptyList from '../EmptyList';
 import { Row, Col } from "../Grid";
 import { PostList, PostListItem } from "../PostList";
 import SeeMoreButton from "../SeeMoreButton"
-import { toast } from 'react-toastify';
 import "./style.css";
 import {
   MDBRow,
@@ -29,6 +28,7 @@ class Home extends Component {
     axios.get("/posts/all")
       .then(res => {
         this.setState({ savedPosts: res.data })
+        //console.log(res.data)
       })
       .catch((err => console.log(err)))
   }
@@ -45,7 +45,7 @@ class Home extends Component {
           </MDBRow>
         </Hero>
         <div className="mini-post">
-          <input type="test" id="mini-post-text" size="50" placeholder="Say something." onClick={redirectToPost}></input><button onClick={redirectToPost}>Post</button>
+          <input type="text" id="mini-post-text" size="50" placeholder="Say something." onClick={redirectToPost}></input><button onClick={redirectToPost}>Post</button>
         </div>
         <div>
           <Row>
@@ -64,10 +64,7 @@ class Home extends Component {
                             content={posts.post_content}
                           />
                           <SeeMoreButton
-                            id={posts.author_id}
-                            author={posts.author_tag}
-                            title={posts.post_title}
-                            content={posts.post_content}
+                            id={posts.id}
                           />
                         </div>
                       </div>

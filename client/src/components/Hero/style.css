@@ -22,18 +22,13 @@
     margin-top: 0;
     font-family: 'Shadows into Light', sans-serif;
   }
+  
   .hero h2 {
   margin-top: -17px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.7em;
   }
   
-  a {
-    margin-top: 20px;
-    font-size: 1.3em;
-    font-family: 'Source Sans Pro', sans-serif;;
-
-  }
   .btn {
     display: inline-block;
     width: 200px;

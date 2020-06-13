@@ -40,6 +40,7 @@ posts.get("/:id", function (req, res) {
             id: req.params.id
         }
     }).then(function (results) {
+        console.log(results)
         res.json(results);
     });
 });
