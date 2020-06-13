@@ -134,6 +134,7 @@ text-align:center;
   font-size: 22px;
 text-align: center;
 margin-top:6px;
+margin-bottom: 3px;
   
 }
 .borderDown{
@@ -171,13 +172,14 @@ margin-top:6px;
   margin: 8px 0;
   box-sizing: border-box;
   border: 2px solid rgb(0, 0, 0);
-  border-radius: 4px;
+  border-radius: 6px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   outline: none;
   background-color: rgb(6, 0, 0);
   color: rgb(242, 181, 100);
   font-size: 14px;
+  padding-left: 0px;
 }
 
 .informedButton {
@@ -195,6 +197,7 @@ margin-top:6px;
   margin-top: 1%;
   vertical-align: middle;
   margin-top: auto;
+  padding-left: 0px;
 }
 
 .informedButton .informedSpan {
@@ -211,10 +214,11 @@ margin-top:6px;
   top: 0;
   right: -20px;
   transition: 0.5s;
+  color: rgb(225, 47, 186);
 }
 
 .informedButton:hover .informedSpan {
-  padding-right: 25px;
+  padding-right: 20px;
 }
 
 .informedButton:hover .informedSpan:after {
@@ -223,6 +227,6 @@ margin-top:6px;
 }
 
 .informedButtoninputs {
-  color: rgb(0, 0, 0);
+  color: rgb(226, 159, 72);
   font-family: "Poppins", sans-serif;
 }
