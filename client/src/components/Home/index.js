@@ -1,15 +1,38 @@
 import React, { Component } from "react";
-import Container from "../Container";
 import Hero from "../Hero";
-import "./style.css";
 import { redirectToPost } from "./scripts";
-import Footer from '../../components/Footer';
+import Footer from '../Footer';
+import axios from 'axios';
+import EmptyList from '../EmptyList';
+import { Row, Col } from "../Grid";
+import { PostList, PostListItem } from "../PostList";
+import SeeMoreButton from "../SeeMoreButton"
+import { toast } from 'react-toastify';
+import "./style.css";
 import {
   MDBRow,
   MDBCol
 } from "mdbreact";
 
+
 class Home extends Component {
+  state = {
+    savedPosts: [],
+    initialized: true
+  }
+
+  componentDidMount() {
+    this.getPosts();
+  }
+
+  getPosts = () => {
+    axios.get("/posts/all")
+      .then(res => {
+        this.setState({ savedPosts: res.data })
+      })
+      .catch((err => console.log(err)))
+  }
+
   render() {
     return (
       <div className="container-home">
@@ -24,81 +47,40 @@ class Home extends Component {
         <div className="mini-post">
           <input type="test" id="mini-post-text" size="50" placeholder="Say something." onClick={redirectToPost}></input><button onClick={redirectToPost}>Post</button>
         </div>
-      <Container style={{ marginTop: 25 }}>
-        <div className="row">
-          <div className="col-sm-12">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Placeholder Title</h5>
-                <p className="card-text">Placeholder Text</p>
-                <a href="/" className="btn">
-                  See More
-                  </a>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-12">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Placeholder Title</h5>
-                <p className="card-text">Placeholder Text</p>
-                <a href="/" className="btn">
-                See More
-                  </a>
-              </div>
-            </div>
-          </div>
+        <div>
+          <Row>
+            <Col size="md-12">
+              {this.state.savedPosts.length > 0 ?
+                <PostList>
+                  {this.state.savedPosts.map(posts => {
+                    console.log(posts)
+                    return (
+                      <div className="post-card">
+                        <div>
+                          <PostListItem
+                            id={posts.author_id}
+                            author={posts.author_tag}
+                            title={posts.post_title}
+                            content={posts.post_content}
+                          />
+                          <SeeMoreButton
+                            id={posts.author_id}
+                            author={posts.author_tag}
+                            title={posts.post_title}
+                            content={posts.post_content}
+                          />
+                        </div>
+                      </div>
+                    )
+                  })}
+                </PostList>
+                :
+                <EmptyList />
+              }
+            </Col>
+          </Row>
         </div>
-        <div className="row">
-          <div className="col-sm-12">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Placeholder Title</h5>
-                <p className="card-text">Placeholder Text</p>
-                <a href="/" className="btn">
-                See More
-                  </a>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-12">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Placeholder Title</h5>
-                <p className="card-text">Placeholder Text</p>
-                <a href="/" className="btn">
-                See More
-                  </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-sm-12">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Placeholder Title</h5>
-                <p className="card-text">Placeholder Text</p>
-                <a href="/" className="btn">
-                See More
-                  </a>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-12">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Placeholder Title</h5>
-                <p className="card-text">Placeholder Text</p>
-                <a href="/" className="btn">
-                See More
-                  </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Container>
-      <Footer />
+        <Footer />
       </div >
     );
   }

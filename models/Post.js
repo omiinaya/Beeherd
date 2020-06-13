@@ -9,10 +9,16 @@ var Posts = db.sequelize.define(
             primaryKey: true,
             autoIncrement: true
         },
-        creator_id: {
+        author_id: {
             type: Sequelize.INTEGER
         },
-        content: {
+        author_tag: {
+            type: Sequelize.STRING
+        },
+        post_title: {
+            type: Sequelize.STRING
+        },
+        post_content: {
             type: Sequelize.STRING
         },
         created: {

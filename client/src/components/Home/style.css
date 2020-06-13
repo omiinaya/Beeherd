@@ -19,3 +19,8 @@
 .mini-post-text:hover {
     cursor: pointer;
 }
+
+.post-card {
+    background-color: white;
+    margin: 1%;
+}
