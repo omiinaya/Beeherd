@@ -13,7 +13,8 @@ posts.post('/post', (req, res) => {
     const postData = {
         author_id: req.body.author_id,
         author_tag: req.body.author_tag,
-        post_content: req.body.content,
+        post_title: req.body.post_title,
+        post_content: req.body.post_content,
         created: today
     }
 
