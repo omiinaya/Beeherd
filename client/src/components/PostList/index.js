@@ -25,7 +25,7 @@ export function PostList({children}) {
             <Col size="xs-8 sm-9">
               <h3>{this.props.id}<span><h5>{this.props.author}</h5></span></h3>
               
-                {this.props.content}
+                <div dangerouslySetInnerHTML={{__html:this.props.content}}/>
               
             </Col>
           </Row>
