@@ -1,82 +1,76 @@
-.MoodPageContainer{
-  font:15px/1.5 sans-serif; 
+.MoodPageContainer {
+  font: 15px/1.5 sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 0;
-  margin:0;
+  margin: 0;
   background-color: #020202;
-  color:rgb(152, 150, 150);
+  color: rgb(152, 150, 150);
+  letter-spacing: 1px;
+  
 }
 
-.MHtext1{
-  font-size: 33px;
+.MHtext1 {
+  font-size: 36px;
   color: rgb(151, 150, 152);
 }
 
-.MoodPage{
-width: 80%;
-margin:auto;
-overflow: hidden;
+.MoodPage {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
 }
 
-.moodHeader{
+.moodHeader {
   background-color: black;
   padding-top: 33px;
   min-height: 10px;
   border-bottom: rgb(40, 3, 74) 3px solid;
   float: left;
+}
+
+.moodText1 {
+  font-size: 36px;
+  color: rgb(151, 150, 152);
+  margin-bottom: 0px;
+  float: center;
+}
+
+.MoodSec1container {
+  min-height: 300px;
+  background: url(../../pages/../pages/Suicide/images/cubesPurple.jpg) no-repeat;
+  text-align: left;
+  color: rgb(151, 150, 152);
+  background: black;
+}
+
+.MoodSec1container {
+  font-size: 18px;
+  margin-top: 100px;
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+.MoodSec2container {
   
-  
+  color: rgb(225, 47, 186);
+  background: rgb(1, 1, 1);
+  border-bottom: 2px solid rgb(244, 159, 94);
+padding-top: 1em;
+ padding-bottom:1px;
+  border-radius: 6px;
+  margin-left: 0px;
+  font-size: 14px;
 }
 
-
-
-.moodText1{
-font-size: 44px;
-color: rgb(167, 166, 169);
-margin-bottom:0px;
-float: center;
-}
-
-.MoodSec1container{
-min-height: 300px;
-background: url(../../pages/../pages/Suicide/images/cubesPurple.jpg) no-repeat;
-text-align: left;
-color:rgb(164, 160, 160);
-background: black;
-
-}
-
- .MoodSec1container{
-font-size:22px;
-margin-top: 100px;
-margin-top: 100px;
-margin-bottom: 0px;
-
-
-
-}
-.MoodSec2container{
-padding:2%;
-color: rgb(203, 54, 203);
-background:rgb(30, 8, 58);
-border-bottom: 2px solid rgb(244, 159, 94);
-border-radius: 6px;
-
-
-}
-
-
-.requestSupport{
-  font-size: 33px;
+.requestSupport {
+  font-size: 30px;
   color: rgb(244, 159, 94);
-
+  margin-left: 0px;
 }
 
-
-
-.text-container .moodColors{
-  font-size: 110px;
+.text-container .moodColors {
+  font-size: 111px;
   color: rgba(225, 225, 225, 0.1);
-  
+
   background-repeat: repeat-x;
   -webkit-background-clip: text;
   animation: animate 15s linear infinite;
@@ -93,34 +87,136 @@ border-radius: 6px;
 
 .text-container {
   text-align: left;
- 
-
 }
 
-
-.moodTextDiv2{
-display:inline-block;
-padding-top:2%;
-
+.moodTextDiv2 {
+  display: inline-block;
+  padding-top: 2%;
 }
 
-.moodText2 .feelingDown .moodTextp2{
-font-size: 20px;
-padding-bottom:10px;
+.moodText2 .feelingDown .moodTextp2 {
+  font-size: 10px;
+  padding-bottom: 10px;
 }
 
+.MoodSecPicContainer {
+  background: url(../../pages/Mood/assets/color-swirl.jpg);
+  min-height: 20px;
+  background: cover;
+  opacity: 0.8;
 
+  padding-top: 10px;
+  padding-bottom: 2px;
+  border-radius: 6px;
+  color: rgb(151, 150, 152);
+}
 
+.vl {
+  border-left: 3px solid rgb(151, 150, 152);
+  height: 50px;
+  padding: 0px;
+  display: inline-block;
+}
 
-.MoodSecPicContainer{
+.mooddown {
+  
+  color: rgb(151, 150, 152);
+  text-align: center;
+  padding-top: 15px;
+  font-size: 30px;
+  padding-bottom: 1px;
+}
 
- background: url(../../pages/Mood/assets/color-swirl.jpg);
- min-height:100px;
- background: cover;
- opacity:.8;
+.mooddown2 {
+  font-weight: bolder;
+  color: rgb(151, 150, 152);
+  font-size: 22px;
+text-align: center;
+margin-top:6px;
+  
+}
+.borderDown{
+ border: 3px solid rgb(216, 123, 36);
+ border-radius: 90px;
+ width: 170px;
  text-align: center;
- padding-top:25px;
- border-radius: 6px;
- color:rgb(243, 243, 245);
-  }
+ margin-left: 490px;
+ 
+ margin-top:5px;
+}
 
+
+.moodTextp1{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 15px;
+}
+
+
+
+
+.zipcodeInput[type="text"]:focus {
+  border: 3px solid rgb(0, 0, 0);
+}
+.zipcodeInput[type="text"] {
+  width: 90%;
+  padding: 10px 18px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  background-color: rgb(6, 0, 0);
+  color: rgb(242, 181, 100);
+  font-size: 14px;
+}
+
+.informedButton {
+  display: inline-block;
+  border-radius: 6px;
+  background-color: #000000;
+  border: 2px solid rgb(0, 0, 0);
+  color: rgb(225, 47, 186);
+  text-align: center;
+  font-size: 14px;
+  padding: 8px;
+  width: 90px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 1%;
+  vertical-align: middle;
+  margin-top: auto;
+}
+
+.informedButton .informedSpan {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.informedButton .informedSpan:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.informedButton:hover .informedSpan {
+  padding-right: 25px;
+}
+
+.informedButton:hover .informedSpan:after {
+  opacity: 1;
+  right: 0;
+}
+
+.informedButtoninputs {
+  color: rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+}

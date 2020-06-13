@@ -9,6 +9,16 @@ body {
     font-family: 'Maven Pro', sans-serif;
 }
 
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+ol {
+    padding: 0;
+    list-style: none;
+}
+
 #button {
     border-radius: 25px;
     width: 100%;

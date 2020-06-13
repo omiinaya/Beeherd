@@ -98,24 +98,7 @@ function Suicide() {
               <h7 className="locateSupport">
                 We Can Locate The Nearest Support Center For You
               </h7>
-              <div className="input-group mb-3">
-                <input
-                  type="text"
-                  className="supportInput form-control"
-                  placeholder="Enter your Zipcode"
-                  aria-label="Requesting Support?"
-                  aria-describedby="button-addon2"
-                />
-                <div className="input-group-append">
-                  <button
-                    className="locateBTN btn btn-outline-secondary"
-                    type="button"
-                    id="button-addon2"
-                  >
-                    Show Me
-                  </button>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>

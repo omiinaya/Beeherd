@@ -8,6 +8,9 @@ function Post() {
   const [text, setText] = useState("")
   return (
     <div className="App">
+      <div class="post-title">
+        <input type="text" id="title-input" placeholder="Enter post title. (WIP)"></input>
+      </div>
       <div className="editor">
         <CKEditor
           editor={ClassicEditor}
