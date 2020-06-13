@@ -25,7 +25,7 @@ function Words() {
         </section>
 
         <div className="moodTextDiv">
-          <h1 className="mooddown">it's ok not to be ok</h1>
+          <h1 className="mooddown">It's ok to not be ok</h1>
 
           <div className="borderDown">
             <h1 className="mooddown2">:: down ::</h1>
@@ -53,24 +53,15 @@ function Words() {
           <p className="locateSupport">
             We Can Locate The Nearest Support Center For You{" "}
           </p>
-          <div className=" MoodInput input-group mb-3">
-            <input
-              type="text"
-              className="supportInput form-control"
-              placeholder="Enter Your Zipcode"
-              aria-label="Requesting Support?"
-              aria-describedby="button-addon2"
-            />
-            <div className="moodINPUT input-group-append">
-              <button
-                className=" locateBTN btn btn-outline-secondary"
-                type="button"
-                id="button-addon2"
-              >
-                Show Me
-              </button>
-            </div>
-          </div>
+          <div className="contact-me">
+        <div className="informedInputs">
+         
+          <input type="text" className="zipcodeInput" placeholder="Enter Your Zipcode"></input>
+          <button className="informedButton">
+            <span className="informedSpan">Show Me</span>
+          </button>
+        </div>
+      </div>
         </div>
       </section>
 

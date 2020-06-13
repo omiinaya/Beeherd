@@ -1,9 +1,12 @@
 .MoodPageContainer {
   font: 15px/1.5 sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
   background-color: #020202;
   color: rgb(152, 150, 150);
+  letter-spacing: 1px;
+  
 }
 
 .MHtext1 {
@@ -48,17 +51,18 @@
 }
 .MoodSec2container {
   
-  color: rgb(203, 54, 203);
-  background: rgb(30, 8, 58);
+  color: rgb(225, 47, 186);
+  background: rgb(1, 1, 1);
   border-bottom: 2px solid rgb(244, 159, 94);
-  border-left: 2px solid rgb(244, 159, 94);
-  border-bottom: 2px solid rgb(244, 159, 94);
+padding-top: 1em;
+ padding-bottom:1px;
   border-radius: 6px;
   margin-left: 0px;
+  font-size: 14px;
 }
 
 .requestSupport {
-  font-size: 25px;
+  font-size: 30px;
   color: rgb(244, 159, 94);
   margin-left: 0px;
 }
@@ -115,11 +119,12 @@
 }
 
 .mooddown {
-  font-weight: bold;
+  
   color: rgb(151, 150, 152);
   text-align: center;
-  padding-top: 20px;
+  padding-top: 15px;
   font-size: 30px;
+  padding-bottom: 1px;
 }
 
 .mooddown2 {
@@ -131,13 +136,13 @@ margin-top:6px;
   
 }
 .borderDown{
- border: 3px solid rgb(143, 19, 133);
+ border: 3px solid rgb(216, 123, 36);
  border-radius: 90px;
  width: 170px;
  text-align: center;
- margin-left: 496px;
- margin-bottom: 5px;
- margin-top:13px;
+ margin-left: 490px;
+ 
+ margin-top:5px;
 }
 
 
@@ -145,5 +150,73 @@ margin-top:6px;
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: left;
-  font-size: 17.3px;
+  font-size: 15px;
+}
+
+
+
+
+.zipcodeInput[type="text"]:focus {
+  border: 3px solid rgb(0, 0, 0);
+}
+.zipcodeInput[type="text"] {
+  width: 90%;
+  padding: 10px 18px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  background-color: rgb(6, 0, 0);
+  color: rgb(242, 181, 100);
+  font-size: 14px;
+}
+
+.informedButton {
+  display: inline-block;
+  border-radius: 6px;
+  background-color: #000000;
+  border: 2px solid rgb(0, 0, 0);
+  color: rgb(225, 47, 186);
+  text-align: center;
+  font-size: 14px;
+  padding: 8px;
+  width: 90px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 1%;
+  vertical-align: middle;
+  margin-top: auto;
+}
+
+.informedButton .informedSpan {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.informedButton .informedSpan:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.informedButton:hover .informedSpan {
+  padding-right: 25px;
+}
+
+.informedButton:hover .informedSpan:after {
+  opacity: 1;
+  right: 0;
+}
+
+.informedButtoninputs {
+  color: rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
 }

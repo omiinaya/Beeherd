@@ -37,13 +37,14 @@ class Navbar extends Component {
             </ul>
         )
         return (
-            <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+            <div classname="globalNav">
+            <nav className="navbar navbar-expand-md-">
                 <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                     <ul className="navbar-nav mr-auto">
                         <DropdownButton id="dropdown-basic-button" title="Get Informed">
-                            <Dropdown.Item href="/suicide">Suicidal Thoughts</Dropdown.Item>
+                            <Dropdown.Item href="/suicide">Suicide Talk</Dropdown.Item>
                             <Dropdown.Item href="/mood">Mood Disorders</Dropdown.Item>
-                            <Dropdown.Item href="/addiction">Addiction</Dropdown.Item>
+                            <Dropdown.Item href="/addiction">Substance Abuse</Dropdown.Item>
                         </DropdownButton>
                     </ul>
                 </div>
@@ -59,6 +60,7 @@ class Navbar extends Component {
                     </ul>
                 </div>
             </nav>
+            </div>
         )
     }
 }
