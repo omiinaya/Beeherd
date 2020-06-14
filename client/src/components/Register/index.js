@@ -35,7 +35,7 @@ class Register extends Component {
     render() {
         return (
             <div className="container">
-                <div id="loginform">
+                <div id="registerform">
                     <div className="col-md-6 mt-5 mx-auto">
                         <form noValidate onSubmit={this.onSubmit}>
                             <h1 id="headerTitle">Register</h1>

@@ -36,7 +36,7 @@ render() {
     //  console.log(id)
 
     return (
-            isLoaded ?  <ExpandedPost post={ post } title={title} /> : <div>placeholder loading component</div>
+            isLoaded ?  <ExpandedPost post={post} title={title} /> : <div>placeholder loading component</div>
     );
 }
 }

@@ -14,7 +14,7 @@
   width: 100%;
   background-size: cover;
   background-position: center;
-  transition: all 0.7s ease;
+  transition: all 0.3s ease;
   }
 
   #headerTitle{
@@ -37,6 +37,6 @@
   width: 100%;
   background-size: cover;
   background-position: center;
-  transition: all 0.7s ease;
-  transform: scale(1.3) rotate(3deg);
+  transition: all 0.3s ease;
+  transform: scale(1.05);
   }
