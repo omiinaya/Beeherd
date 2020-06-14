@@ -1,14 +1,5 @@
 
 
-.container-hotline1{
-
-    font-size: larger;
-    font-weight: bolder;
-    color:rgb(157, 33, 168);
-    padding:2%;
-}
-
-
 
 .neon{
     position: absolute;;
@@ -18,8 +9,8 @@
     margin:0;
     padding:0 20px;
     font-size: 6em;
-    color:#fff;
-    text-shadow: 0 0 20px #ff005b;
+    color:rgb(245, 159, 248);
+    text-shadow: 0 0 20px #7a1aa4;
     font-family: "quicksand";
 }
 .neon:after{
@@ -30,7 +21,7 @@
     left:0;
     padding:0 20px;
     z-index: -1;
-    color:#ff005b;
+    color:#6b08b1;
     filter:blur(15px);
 }
 
@@ -42,7 +33,7 @@
     left:0;
     width:100%;
     height:100%;
-    background: #fe3a80;
+    background: #8c3afe;
     z-index: -2;
     opacity: .5;
     filter:blur(40px);
@@ -71,45 +62,65 @@
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    margin:0;
+    margin-bottom:50px;
     padding:0 20px;
-    font-size: 6em;
-    color:#fff;
-    text-shadow: 0 0 20px #ff005b;
-    font-family: "quicksand";
-}
-.neon:after{
-
-    content:attr(data-text);
-    position: absolute;
-    top:0;
-    left:0;
-    padding:0 20px;
-    z-index: -1;
-    color:#ff005b;
-    filter:blur(15px);
-}
-
-.neon:before{
-
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background: #fe3a80;
-    z-index: -2;
-    opacity: .5;
-    filter:blur(40px);
-}
-
-.suicide-hotline{
-    height:200px;
-    padding-top:6%;
-    padding-left: 0px;
-}
-
-.heading-suicide{
     font-size: 4em;
+    color:rgb(196, 171, 235);
+    text-shadow: 0 0 20px #ff005b;
+    font-family: "quicksand";
 }
+.neon:after{
+
+    content:attr(data-text);
+    position: absolute;
+    top:0;
+    left:0;
+    padding:0 20px;
+    z-index: -1;
+    color:#ff005b;
+    filter:blur(15px);
+}
+
+.neon:before{
+
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: #fe3a80;
+    z-index: -2;
+    opacity: .2;
+    filter:blur(40px);
+}
+
+.suicide-hotline{
+    height:200px;
+    padding-top:6%;
+    padding-left: 0px;
+}
+
+
+.lifedivCubes{
+    background: url(../../pages/Mood/assets/color-swirl.jpg) ;
+    height:20px;
+    width:100%;
+    opacity:.6;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom:80px;
+    margin-top:-10px;
+}
+
+.LifeText1 {
+    font-size: 60px;
+    
+    margin-bottom: 80px;
+    float: center;
+    font-size: 500px;
+    color: rgb(72, 69, 67);
+    opacity: 0.1;
+    height:160px;
+   
+  }
