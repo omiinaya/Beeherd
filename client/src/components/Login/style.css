@@ -12,10 +12,7 @@
     border-radius: 25px;
     height: 100%;
     width: 100%;
-    background-size: cover;
-    background-position: center;
     transition: all 0.3s ease;
-    background-image: url(../../assets/images/logo.png);
   }
 
   #headerTitle{
