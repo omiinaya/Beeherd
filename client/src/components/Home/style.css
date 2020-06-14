@@ -31,3 +31,10 @@
     transition: all 0.3s ease;
     transform: scale(1.05);
 }
+
+.content_text {
+    height: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: "ellipsis";
+}

@@ -13,7 +13,6 @@ function Thumbnail({ src }) {
       role="img"
       aria-label="Recipe Image"
       style={{
-        //backgroundImage: `url(${src})`
         backgroundImage: `url(${Placeholder})`
       }}
     />

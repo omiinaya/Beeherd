@@ -23,9 +23,9 @@ export function PostList({children}) {
               <Thumbnail src={this.props.thumbnail} />
             </Col>
             <Col size="xs-8 sm-9">
-              <h2>{this.props.author}</h2>
-              <h3>{this.props.title}</h3>
-                <div dangerouslySetInnerHTML={{__html:this.props.content}}/>
+              <h6>posted by u/{this.props.author}</h6>
+              <h2>{this.props.title}</h2>
+                <div className="content_text" dangerouslySetInnerHTML={{__html:this.props.content}}/>
             </Col>
           </Row>
         </Container>
