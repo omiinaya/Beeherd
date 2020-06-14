@@ -3,23 +3,23 @@ import Button from "../Button";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-class SeeMoreButton extends React.Component {
+class ReplyButton extends React.Component {
 
   loadPost = (Post) => {
     var currentPost = Post.id;
     //console.log(currentPost);
-    window.location.href = "/posts/"+currentPost;
+    window.location.href = "/reply/"+currentPost;
   }
   render() {
     return (
       <div>
-        <Button type="primary" onClick={() => { this.loadPost(this.props) }
+        <Button type="Primary" onClick={() => { this.loadPost(this.props) }
         }>
-          See More
+          Reply
         </Button>
       </div>
     );
   }
 }
 
-export default SeeMoreButton;
+export default ReplyButton;

@@ -13,7 +13,6 @@ import {
   MDBCol
 } from "mdbreact";
 
-
 class Home extends Component {
   state = {
     savedPosts: [],
@@ -89,13 +88,13 @@ class Home extends Component {
             </Col>
             <Col size="md-3">
               <div className="side-bar-top">
-                <p>Placeholder</p>
+                <p>Avatar Placeholder</p>
               </div>
               <div className="side-bar-middle">
-                <p>Placeholder</p>
+                <p>Change Tag placeholder</p>
               </div>
               <div className="side-bar-bottom">
-                <p>Placeholder</p>
+                <p>Ad? Placeholder</p>
               </div>
             </Col>
           </Row>

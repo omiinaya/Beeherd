@@ -18,26 +18,28 @@ export class ExpandPost extends React.Component {
 componentDidMount() {
     var id = this.props.match.params.id;
     axios.get(`/posts/` + id)
-        .then(res => {
-            const post = res.data[0].post_content;
-            const title = res.data[0].post_title;
-            this.setState({ 
-                post,
-                title,
-                isLoaded: true
-            });
-        })
+    .then(res => {
+        const post = res.data[0].post_content;
+        const title = res.data[0].post_title;
+        const author = res.data[0].author_tag;
+        this.setState({ 
+            post,
+            title,
+            author,
+            isLoaded: true
+        });
+    })
 }
 
 render() {
-    const { isLoaded, post, title } = this.state;
+    const { isLoaded, post, title, author } = this.state;
     console.log(this.state);
     //var id=this.props.match.params.id;
     // console.log(this.props)
     //  console.log(id)
 
     return (
-            isLoaded ?  <ExpandedPost post={post} title={title} /> : <Loading />
+            isLoaded ?  <ExpandedPost post={post} title={title} author={author} /> : <Loading />
     );
 }
 }
