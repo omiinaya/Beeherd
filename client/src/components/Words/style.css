@@ -30,9 +30,14 @@
 
 .moodText1 {
   font-size: 48px;
-  color: rgb(151, 150, 152);
+  
   margin-bottom: 80px;
   float: center;
+  font-size: 500px;
+  color: rgb(72, 69, 67);
+  opacity: 0.1;
+  height:160px;
+ 
 }
 
 .MoodSec1container {
@@ -120,22 +125,25 @@
 }
 
 .mooddown {
-  color: rgb(151, 150, 152);
+  color: rgba(187, 143, 60, 0.838);
   text-align: center;
-  padding-top: 15px;
-  font-size: 30px;
-  padding-bottom: 1px;
+  padding-top: 25px;
+  font-size: 60px;
+  padding-bottom: 12px;
+  letter-spacing: 7px;
+  
 }
 
 .mooddown2 {
   font-weight: bolder;
-  color: rgb(210, 166, 84);
+  color: rgba(187, 142, 60, 0.927);
   border: 1px solid rgb(18, 42, 136);
   border-radius: 90px;
   font-size: 22px;
   text-align: center;
   margin-top: 6px;
   margin-bottom: 3px;
+ 
 }
 .borderDown {
   border-radius: 90px;
@@ -156,7 +164,7 @@
 }
 
 .moodTextp2 {
-  color: rgb(211, 44, 169);
+  color: rgb(232, 14, 177);
   font-size: 180px;
   height:100px;
   opacity: 0.2;

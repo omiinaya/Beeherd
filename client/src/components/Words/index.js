@@ -17,7 +17,7 @@ function Words() {
             <div className="text-container">
               <h1 className="moodColors">Mood Disorders</h1>
             </div>
-            <h1 className="moodText1">And Depression</h1>
+            <h1 className="moodText1">And Dep-ression</h1>
           </div>
         </section>
 
