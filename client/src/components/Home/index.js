@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import Hero from "../Hero";
 import { redirectToPost } from "./scripts";
-import Footer from '../Footer';
-import axios from 'axios';
-import EmptyList from '../EmptyList';
+import Footer from "../Footer";
+import axios from "axios";
+import EmptyList from "../EmptyList";
 import { Row, Col } from "../Grid";
 import { PostList, PostListItem } from "../PostList";
-import SeeMoreButton from "../SeeMoreButton"
+import SeeMoreButton from "../SeeMoreButton";
 import "./style.css";
 import {
   MDBRow,
@@ -16,8 +16,8 @@ import {
 class Home extends Component {
   state = {
     savedPosts: [],
-    initialized: true
-  }
+    initialized: true,
+  };
 
   componentDidMount() {
     this.getPosts();
@@ -34,13 +34,14 @@ class Home extends Component {
   }
 
   getPosts = () => {
-    axios.get("/posts/all")
-      .then(res => {
-        this.setState({ savedPosts: res.data })
+    axios
+      .get("/posts/all")
+      .then((res) => {
+        this.setState({ savedPosts: res.data });
         //console.log(res.data)
       })
-      .catch((err => console.log(err)))
-  }
+      .catch((err) => console.log(err));
+  };
 
   render() {
     return (
@@ -56,6 +57,7 @@ class Home extends Component {
         <div className="mini-post">
           <input type="text" id="mini-post-text" size="50" placeholder="Say something." onClick={redirectToPost}></input>
         </div>
+
         <div>
           <Row>
             <Col size="md-9">
@@ -79,12 +81,12 @@ class Home extends Component {
                           </div>
                         </div>
                       </div>
-                    )
+                    );
                   })}
                 </PostList>
-                :
+              ) : (
                 <EmptyList />
-              }
+              )}
             </Col>
             <Col size="md-3">
               <div className="side-bar-top">
@@ -100,7 +102,7 @@ class Home extends Component {
           </Row>
         </div>
         <Footer />
-      </div >
+      </div>
     );
   }
 }

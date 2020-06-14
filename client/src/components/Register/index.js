@@ -44,6 +44,7 @@ class Register extends Component {
         return (
             <Jumbo backgroundImage="https://i.imgur.com/3hCgTuP.png">
                 <div className="container">
+                    <div class="row gap100">
                     <div id="registerform">
                         <div className="col-md-6 mt-5 mx-auto">
                             <form noValidate onSubmit={this.onSubmit}>
@@ -72,6 +73,7 @@ class Register extends Component {
                             </button>
                             </form>
                         </div>
+                    </div>
                     </div>
                 </div>
             </Jumbo>
