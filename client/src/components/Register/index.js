@@ -40,7 +40,7 @@ class Register extends Component {
                         <form noValidate onSubmit={this.onSubmit}>
                             <h1 id="headerTitle">Register</h1>
                             <div className="form-group">
-                                <label htmlFor="username">Username</label>
+                                <label htmlFor="username"></label>
                                 <input type="username"
                                 className="form-control"
                                 name="username"
@@ -50,7 +50,7 @@ class Register extends Component {
                                 />
                             </div>
                             <div className="form-group">
-                                <label htmlFor="password">Password</label>
+                                <label htmlFor="password"></label>
                                 <input type="password"
                                 className="form-control"
                                 name="password"
