@@ -40,7 +40,7 @@
     background-position: center;
     transition: all 0.3s ease;
     transform: scale(1.05);
-     
+  }
   .form-control {
     font-family: 'Shadows into Light', sans-serif;
   }
