@@ -66,16 +66,17 @@
 }
 
 .requestSupport {
-  font-size: 25px;
-  color: rgb(244, 159, 94);
-  margin-left: 0px;
-  letter-spacing: 2px;
+  font-size: 22px;
+  color: rgba(245, 203, 89, 0.733);
+ opacity: .6px;
+  letter-spacing: 7px;
+  
 }
 
 .text-container .moodColors {
-  font-size: 111px;
-  color: rgba(225, 225, 225, 0.1);
-
+  font-size: 121px;
+  color: rgb(9, 9, 9);
+line-height:1;
   background-repeat: repeat-x;
   -webkit-background-clip: text;
   animation: animate 15s linear infinite;
@@ -91,7 +92,8 @@
 }
 
 .text-container {
-  text-align: left;
+  text-align: center;
+  padding:0px;
 }
 
 .moodTextDiv2 {
@@ -128,7 +130,7 @@
   color: rgba(187, 143, 60, 0.838);
   text-align: center;
   padding-top: 25px;
-  font-size: 60px;
+  font-size: 28px;
   padding-bottom: 12px;
   letter-spacing: 7px;
   
@@ -216,7 +218,7 @@
   transition: 0.5s;
   outline: none;
   background-color: rgb(6, 0, 0);
-  color: rgb(242, 181, 100);
+  color: rgb(244, 159, 94);
   font-size: 14px;
   padding-left: 0px;
   margin-left: 0px;
@@ -270,7 +272,7 @@
 }
 
 .informedButtoninputs {
-  color: rgb(226, 159, 72);
+  color: rgb(244, 159, 94);
   font-family: "Poppins", sans-serif;
 }
 
@@ -319,7 +321,7 @@
   height: 100%;
   backface-visibility: hidden;
   background: indigo;
-  color: rgb(216, 85, 85);
+  color: rgb(244, 159, 94);
   font-size: 30px;
   text-align: center;
   padding-top: 25%;
@@ -329,6 +331,7 @@
 .Moodul {
   margin-top :40px;
   margin-bottom: 80px;
+  font-size: small;
 }
 .Moodul .Moodli {
   color: #797a7d;
@@ -364,7 +367,7 @@
 
 .MoodSec3container .moodBox {
   float: left;
-  text-align: left;
+  text-align: right;
   width: 28%;
   padding: 5px;
 }
@@ -378,7 +381,7 @@
   width: 600px;
 
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   margin-left: 30px;
   opacity: 0.6;
   line-height: 20px;
@@ -394,7 +397,7 @@
 .moodTextbox {
   background: rgb(0, 0, 0);
   color: rgb(241, 238, 236);border-radius: 6px;
-  text-align: left;
+  text-align: center;
 }
 
 .crisisHotline {
@@ -402,7 +405,7 @@
   height: 200px;
   width: 200px;
   background: black;
-  font-size: 15px;
+  font-size: 13px;
   opacity:.7;
 }
 
@@ -457,7 +460,11 @@
 }
 
 .MoodSection3{
-  margin-top:0px;
+  margin-top:-15px;
   padding-top:0px;
   line-height: 26px;
+}
+
+.moodText3{
+  margin-top: 60px;
 }

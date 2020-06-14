@@ -26,7 +26,7 @@ function Words() {
         </section>
         <center>
           <div className="moodTextDiv">
-            <h1 className="mooddown">It's ok to not be ok</h1>
+            <h1 className="mooddown">it's ok to not be ok</h1>
 
             <div className="borderDown">
               <h1 className="mooddown2">:: down ::</h1>
@@ -133,15 +133,20 @@ function Words() {
           <div className="moodBox">
             <p className="moodTextbox">
               If you feel like your emotions are interfering with your work,
-              relationships, social activities or other parts of your life. Have
-              trouble with drinking or drugs or have suicidal thoughts or
-              behaviors.
+              relationships, social activities, or other parts of your life. Have
+              trouble with drinking or drugs or have suicidal thoughts and/or
+              behaviors. Let us locate support nearby by providing your zipcode above.
             </p>
           </div>
           <div className="moodBox">
             <p className="moodTextbox">
-              Reach out to a professional. Text to talk - Completely
+              Reach out to a professional -- Text to talk -- Completely
               Confidential
+              <span className="crisisHotline">
+              Text HOME to 741741 to connect with a Crisis Counselor Free 24/7
+              support at your fingertips US and Canada: text 741741 UK: text
+              85258 | Ireland: text 086 1800 280
+            </span>
             </p>
             <span className="crisisHotline">
               Text HOME to 741741 to connect with a Crisis Counselor Free 24/7
@@ -155,7 +160,7 @@ function Words() {
               If you are thinking about ending your life due to your
               circumstances and state of mind, chances are you are dealing with
               really painful emotions. Nobody deserves to feel that way and we
-              are so sorry you do.
+              are so sorry you do. We're here to help. You are not alone.
             </p>
           </div>
         </div>
