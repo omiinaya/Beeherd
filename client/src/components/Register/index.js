@@ -15,6 +15,10 @@ class Register extends Component {
         this.onSubmit = this.onSubmit.bind(this)
     }
 
+    componentDidMount() {
+        generateRandomTag()
+    }
+
     onChange(e) {
         this.setState({ [e.target.name]: e.target.value })
     }
@@ -33,8 +37,6 @@ class Register extends Component {
                 this.props.history.push('/login')
             }
         })
-
-        generateRandomTag()
     }
     render() {
         return (

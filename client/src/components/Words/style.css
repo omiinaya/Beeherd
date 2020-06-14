@@ -30,14 +30,13 @@
 
 .moodText1 {
   font-size: 48px;
-  
+  color: rgb(151, 150, 152);
   margin-bottom: 80px;
   float: center;
   font-size: 500px;
   color: rgb(72, 69, 67);
   opacity: 0.1;
   height:160px;
- 
 }
 
 .MoodSec1container {
