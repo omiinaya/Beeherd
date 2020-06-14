@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import jwt_decode from 'jwt-decode'
+import axios from 'axios';
 import { checkId } from "./script.js";
 import { getCurrentUser } from "./script.js";
 import { getUserPosts } from "./script.js";
@@ -30,6 +31,13 @@ class Profile extends Component {
 
         const currentPosts = await getUserPosts();
         console.log(currentPosts)
+
+        axios.get(`/posts/all`)
+        .then(res => {
+            const posts = res.data;
+            this.setState({ posts });
+            console.log(posts);
+        })
     }
 
     render() {

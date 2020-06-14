@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css"
 import Placeholder from './images/placeholder.png'
-import { urlencoded } from "body-parser";
+//import { urlencoded } from "body-parser";
 
 // The Thumbnail component renders a div that uses some CSS to render a background image
 // It will always keep square proportions at any size without the image warping

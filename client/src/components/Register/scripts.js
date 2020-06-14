@@ -3,6 +3,8 @@ import axios from 'axios';
 var temp_tag;
 
 export function generateRandomTag() {
+
+    
     var wordList = ['January', 'February', 'March', 'April'];
     var newTag = [];
 
