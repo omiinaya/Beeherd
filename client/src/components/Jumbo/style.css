@@ -1,0 +1,26 @@
+.jumbo {
+    height: 100%;
+    width: 142%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position-y: 40%;
+    border-radius: 6px;
+  }
+
+  .btn {
+    display: inline-block;
+    width: 200px;
+    font-weight: bold;
+    padding: 10px;
+    color: #ec38bc;
+    border: 4px solid #ec38bc;
+    text-align: center;
+    outline: none;
+    text-decoration: none;  
+    transition: background-color 0.2s ease-out, color 0.2s ease ease-out;
+  }
+  .btn:hover, .btn:active {
+    background-color: #ec38bc;  
+    color: #000;    
+    transition: background-color 0.3s ease-out, color 0.3s ease ease-out;
+}

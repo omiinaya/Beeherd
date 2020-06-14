@@ -1,8 +1,7 @@
-import React, {Component} from 'react'
-import { login } from '../UserFunctions'
+import React, { Component } from 'react'
+import { login } from './scripts'
+import Jumbo from '../Jumbo'
 import "./style.css";
-import Animation from '../../components/Animation'
-
 
 
 class Login extends Component {
@@ -18,7 +17,7 @@ class Login extends Component {
     }
 
     onChange(e) {
-        this.setState({[e.target.name]: e.target.value})
+        this.setState({ [e.target.name]: e.target.value })
     }
 
     onSubmit(e) {
@@ -30,7 +29,7 @@ class Login extends Component {
         }
 
         login(user).then(res => {
-            if(res) {
+            if (res) {
                 this.props.history.push('/profile')
             }
         })
@@ -38,45 +37,44 @@ class Login extends Component {
 
     render() {
         return (
-            <div className="container animation">
-                
-                <div id="loginform">
-                    <Animation />
-                    <div className="col-md-6 mt-5 mx-auto">
-                        <form noValidate onSubmit={this.onSubmit}>
-                            <h1 id="headerTitle">Sign In</h1>
+            <Jumbo backgroundImage="https://i.imgur.com/3hCgTuP.png">
+                <div className="container animation">
+                    <div id="loginform">
+                        <div className="col-md-6 mt-5 mx-auto">
+                            <form noValidate onSubmit={this.onSubmit}>
+                                <h1 id="headerTitle">Sign In</h1>
+                                <div className="form-group">
+                                    <input type="username"
+                                        className="form-control"
+                                        name="username"
+                                        placeholder="Enter username"
+                                        value={this.state.username}
+                                        onChange={this.onChange}
+                                    />
+                                </div>
+                                <div className="form-group">
+                                    
+                                    <input type="password"
+                                        className="form-control"
+                                        name="password"
+                                        placeholder="Enter password"
+                                        value={this.state.password}
+                                        onChange={this.onChange}
+                                    />
+                                </div>
 
-                            <div className="form-group">
-                                
-                                <label htmlFor="username">Username</label>                          
-                                <input type="username"
-                                className="form-control"
-                                name="username"
-                                placeholder="Enter username"
-                                value={this.state.username}
-                                onChange={this.onChange}
-                                /> 
-                            </div>
-                            <div className="form-group">
-                                <label htmlFor="password">Password</label>
-                                <input type="password"
-                                className="form-control"
-                                name="password"
-                                placeholder="Enter password"
-                                value={this.state.password}
-                                onChange={this.onChange}
-                                />
-                            </div>
-                            
-                            <button type="submit"
-                            id="button">
-                                
-                                Login
+                                <button type="submit"
+                                    id="button">
+
+                                    Login
                             </button>
-                        </form>
+                            </form>
+
+                        </div>
+
                     </div>
                 </div>
-            </div>
+            </Jumbo>
         )
     }
 }
