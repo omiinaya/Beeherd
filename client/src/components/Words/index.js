@@ -40,11 +40,11 @@ function Words() {
         <p className="moodTextp1">
           If you have a mood disorder, your general emotional state or mood is
           distorted or inconsistent with your circumstances and interferes with
-          your ability to function. You may be extremely sad, empty or irritable
-          (depressed), or you may have periods of depression alternating with
-          being excessively happy (mania). Anxiety disorders can also affect
-          your mood and often occur along with depression. Mood disorders may
-          increase your risk of suicide.
+          your ability to function. You may be extremely sad, empty or irritable,
+          or you may have periods of depression alternating with
+          being excessively happy (mania).
+          These may increase your risk of suicide. Anxiety disorders can also affect
+          mood and often occur alongside depression. 
         </p>
 
         <section className="MoodSection2">
@@ -121,16 +121,13 @@ function Words() {
       </div>
 
       <div className="moodText3div">
-        <p className="moodText3">When to see a doctor</p>
+        <p className="moodText3"></p>
       </div>
 
       <div className="moodTextDiv3">
-        <h5 className="moodText4">
-      
-          Talk to a health care professional if you:
-        </h5>
+        
 
-        <p className="moodText5"></p>
+        <p className="moodText5">When to see a doctor</p>
       </div>
 
       <section className="MoodSection3">
@@ -146,21 +143,24 @@ function Words() {
           </div>
           <div className="moodBox">
             <p className="moodTextbox">
+              Reach out to a professional. Text to talk - Completely
+              Confidential 
+            </p>
+            <span className="crisisHotline">Text HOME to 741741 to connect with a Crisis
+              Counselor Free 24/7 support at your fingertips US and Canada: text
+              741741 UK: text 85258 | Ireland: text 086 1800 280</span>
+          </div>
+
+          <div className="moodBox">
+            <p className="moodTextbox">
             
-            If you are thinking about ending your life, or having suicidal
-            thoughts due to your circumstances and state of mind, chances are
+            If you are thinking about ending your life
+            due to your circumstances and state of mind, chances are
             you are dealing with really painful emotions. Nobody
             deserves to feel that way and we are so sorry you do.
           </p>
           </div>
-          <div className="moodBox">
-            <p className="moodTextbox">
-              Reach out to a professional. Text to talk - Completely
-              Confidential <br></br>Text HOME to 741741 to connect with a Crisis
-              Counselor Free 24/7 support at your fingertips US and Canada: text
-              741741 UK: text 85258 | Ireland: text 086 1800 280
-            </p>
-          </div>
+          
         </div>
       </section>
       <section className="Informedfoot">

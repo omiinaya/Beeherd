@@ -6,7 +6,7 @@
   background-color: #020202;
   color: rgb(152, 150, 150);
   letter-spacing: 1px;
-  
+  letter-spacing: 2px;
 }
 
 .MHtext1 {
@@ -62,9 +62,10 @@ padding-top: 1em;
 }
 
 .requestSupport {
-  font-size: 30px;
+  font-size: 25px;
   color: rgb(244, 159, 94);
   margin-left: 0px;
+  letter-spacing: 2px;
 }
 
 .text-container .moodColors {
@@ -151,15 +152,18 @@ margin-bottom: 3px;
 
 
 .moodTextp1{
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 20px;
   text-align: left;
-  font-size: 15px;
+  font-size: 13px;
+  line-height: 20px;
 }
 
 .moodTextp2{
   color:rgb(211, 44, 169); 
-  font-size: 18px;
+  font-size: 40px;
+  margin-top:20px;
+  opacity:.8;
 }
 .moodText3{
   color:rgb(211, 44, 169); 
@@ -167,7 +171,7 @@ margin-bottom: 3px;
 }
 .moodText4
   {
-    color:rgb(211, 44, 169); 
+    color:rgb(247, 154, 79); 
     font-size: 18px;
   }
 
@@ -282,7 +286,7 @@ margin-bottom: 3px;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  background: rgb(155, 40, 164);
+  color:rgb(211, 44, 169); 
   color: rgb(248, 244, 244);
   font-size: 30px;
   text-align: center;
@@ -352,20 +356,19 @@ margin-bottom: 3px;
 
 .moodBox .moodTextbox{
 width:100%;
-color:rgb(245, 240, 245);
+color:rgb(205, 123, 72);
 }
 .moodBox {
-  background: url(../../../src/pages/Mood/assets/oktalk.jpeg) no-repeat;
-  height:300px;
-  width: 100%;
-  background-color: black;
-  text-align:left;
-  font-size:12px;
-  margin-left:20px;
+  height:200px;
+  width: 200px;
+  
+  text-align:center;
+  font-size:14px;
+  margin-left:30px;
   opacity: .6;
   border-radius:6px;
-  font-weight:bold;
-
+ 
+  line-height:-2px;
 }
 .informedFooter{
   padding:20px;
@@ -373,10 +376,38 @@ color:rgb(245, 240, 245);
   color:rgb(130, 46, 227);
   background-color: black;
   text-align: center;
+  opacity: .6;
 }
 .moodTextbox{
-  background:rgb(233, 88, 21);
-  color :white;
+  background:rgb(0, 0, 0);
+  color: rgb(176, 80, 6);
   border-radius: 6px;
-  margin-top:0px;
+  margin-top:20px;
+  text-align: left;
+  
+}
+
+.crisisHotline{
+  
+  color:rgb(130, 46, 227);
+  height:200px;
+  width: 200px;
+  background: black;
+  text-align:center;
+  font-size:15px;
+  
+  
+}
+
+.moodTextDiv3{
+  text-align: center;
+  font-size: 190px;
+  color: rgb(244, 159, 94);
+  opacity: .1;
+  background: black;
+  height:200px;
+  width: 100%;
+  letter-spacing:3px ;
+  line-height: 109px;
+  
 }
