@@ -50,12 +50,11 @@
   margin-bottom: 0px;
 }
 .MoodSec2container {
-  
-  color:rgb(211, 44, 169); 
+  color: rgb(211, 44, 169);
   background: rgb(1, 1, 1);
   border-bottom: 2px solid rgb(244, 159, 94);
-padding-top: 1em;
- padding-bottom:1px;
+  padding-top: 1em;
+  padding-bottom: 1px;
   border-radius: 6px;
   margin-left: 0px;
   font-size: 14px;
@@ -95,10 +94,10 @@ padding-top: 1em;
   padding-top: 2%;
 }
 
-.moodText2 .feelingDown{
+.moodText2 .feelingDown {
   font-size: 10px;
   padding-bottom: 10px;
-  text-align:center;
+  text-align: center;
 }
 
 .MoodSecPicContainer {
@@ -106,7 +105,7 @@ padding-top: 1em;
   min-height: 20px;
   background: cover;
   opacity: 0.8;
-text-align:center;
+  text-align: center;
   padding-top: 10px;
   padding-bottom: 2px;
   border-radius: 6px;
@@ -121,7 +120,6 @@ text-align:center;
 }
 
 .mooddown {
-  
   color: rgb(151, 150, 152);
   text-align: center;
   padding-top: 15px;
@@ -133,25 +131,22 @@ text-align:center;
   font-weight: bolder;
   color: rgb(151, 150, 152);
   font-size: 22px;
-text-align: center;
-margin-top:6px;
-margin-bottom: 3px;
-  
+  text-align: center;
+  margin-top: 6px;
+  margin-bottom: 3px;
 }
-.borderDown{
- border: 3px solid rgb(216, 123, 36);
- border-radius: 90px;
- width: 170px;
- text-align: center;
- margin-left:362px;
- margin-top:3px;
+.borderDown {
+  border: 3px solid rgb(216, 123, 36);
+  border-radius: 90px;
+  width: 170px;
+  text-align: center;
+  margin-left: 362px;
+  margin-top: 3px;
 
- 
- margin-top:5px;
+  margin-top: 5px;
 }
 
-
-.moodTextp1{
+.moodTextp1 {
   margin-top: 30px;
   margin-bottom: 20px;
   text-align: left;
@@ -159,26 +154,43 @@ margin-bottom: 3px;
   line-height: 20px;
 }
 
-.moodTextp2{
-  color:rgb(211, 44, 169); 
-  font-size: 40px;
-  margin-top:20px;
-  opacity:.8;
+.moodTextp2 {
+  color: rgb(211, 44, 169);
+  font-size: 180px;
+  height:100px;
+  opacity: 0.2;
+  text-align: center;
+  text-shadow: black;
+  
+
 }
-.moodText3{
-  color:rgb(211, 44, 169); 
+
+.moodTextp22 {
+  font-size: 100px;
+  color: rgb(241, 238, 236);
+  opacity: 0.3;
+ text-shadow: black;
+
+}
+
+.moodText55 {
+  color: rgb(228, 191, 218);
+  font-size: 100px;
+  
+  opacity: 0.2;
+}
+
+.moodText3 {
+  color: rgb(211, 44, 169);
   font-size: 18px;
 }
-.moodText4
-  {
-    color:rgb(247, 154, 79); 
-    font-size: 18px;
-  }
+.moodText4 {
+  color: rgb(247, 154, 79);
+  font-size: 18px;
+}
 
-
-.moodTextDiv{
+.moodTextDiv {
   text-align: center;
-  
 }
 
 .zipcodeInput[type="text"]:focus {
@@ -198,7 +210,7 @@ margin-bottom: 3px;
   color: rgb(242, 181, 100);
   font-size: 14px;
   padding-left: 0px;
-  margin-left:0px;
+  margin-left: 0px;
 }
 
 .informedButton {
@@ -206,7 +218,7 @@ margin-bottom: 3px;
   border-radius: 6px;
   background-color: #000000;
   border: 2px solid rgb(0, 0, 0);
-  color:rgb(211, 44, 169); 
+  color: rgb(211, 44, 169);
   text-align: center;
   font-size: 14px;
   padding: 8px;
@@ -217,7 +229,7 @@ margin-bottom: 3px;
   vertical-align: middle;
   margin-top: auto;
   padding-left: 0px;
-  margin-left:0px;
+  margin-left: 0px;
 }
 
 .informedButton .informedSpan {
@@ -225,7 +237,7 @@ margin-bottom: 3px;
   display: inline-block;
   position: relative;
   transition: 0.5s;
-  margin-left:0px;
+  margin-left: 0px;
 }
 
 .informedButton .informedSpan:after {
@@ -235,8 +247,8 @@ margin-bottom: 3px;
   top: 0;
   right: -20px;
   transition: 0.5s;
-  color:rgb(211, 44, 169); 
-  margin-left:0px;
+  color: rgb(211, 44, 169);
+  margin-left: 0px;
 }
 
 .informedButton:hover .informedSpan {
@@ -252,8 +264,6 @@ margin-bottom: 3px;
   color: rgb(226, 159, 72);
   font-family: "Poppins", sans-serif;
 }
-
-
 
 .infoCardsMain {
   position: relative;
@@ -281,12 +291,12 @@ margin-bottom: 3px;
   transform: rotateY(180deg);
 }
 
-.infoCardsFront1{
+.infoCardsFront1 {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  color:rgb(211, 44, 169); 
+  color: rgb(211, 44, 169);
   color: rgb(248, 244, 244);
   font-size: 30px;
   text-align: center;
@@ -294,31 +304,28 @@ margin-bottom: 3px;
   border-radius: 20px;
 }
 
-.infoCardsBack1{
+.infoCardsBack1 {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
   background: indigo;
-  color: rgb(250, 246, 246);
+  color: rgb(216, 85, 85);
   font-size: 30px;
   text-align: center;
   padding-top: 25%;
   border-radius: 20px;
   transform: rotateY(180deg);
 }
-
-
-
-
-
-
-
+.Moodul {
+  margin-top :40px;
+  margin-bottom: 80px;
+}
 .Moodul .Moodli {
-  color: #91959b; 
+  color: #797a7d;
   /* set color of list item text */
   display: inline-block;
-  list-style: none; 
+  list-style: none;
   margin: 0 0 16px 1.1225em;
   /* Give the bullet room on the left hand side */
   padding: 0;
@@ -326,88 +333,122 @@ margin-bottom: 3px;
 }
 
 .Moodul .Moodli::before {
-  color:rgb(211, 44, 169); 
+  color: rgb(211, 44, 169);
   /* color of bullet or square */
-  content: "\2022"; 
+  content: "\2022";
   /* Unicode of character to precede the list item */
   display: inline-block;
-  font-size: 1em; 
-  /* use em or % */ 
-  left: -1.1225em; 
+  font-size: 1em;
+  /* use em or % */
+  left: -1.1225em;
   /* use em, line up bullet flush with left hand side */
   position: absolute;
   /* Set the bullet positioned absolutely top left */
-  top: 0em; 
+  top: 0em;
   /* use em or % */
 }
 
-
-.MoodSec3container{
-  margin-top:20px;
-  height: 400px;
+.MoodSec3container {
+  margin-top: 20px;
+  height: 200px;
 }
 
-.MoodSec3container .moodBox{
-  float:left;
+.MoodSec3container .moodBox {
+  float: left;
   text-align: left;
-  width:30%;
-  padding: 30px;
+  width: 28%;
+  padding: 5px;
 }
 
-.moodBox .moodTextbox{
-width:100%;
-color:rgb(205, 123, 72);
+.moodBox .moodTextbox {
+  width: 100%;
+  color: rgb(196, 194, 193);border-radius: 6px;
 }
 .moodBox {
-  height:200px;
-  width: 200px;
-  
-  text-align:center;
-  font-size:14px;
-  margin-left:30px;
-  opacity: .6;
-  border-radius:6px;
- 
-  line-height:-2px;
+  height: 600px;
+  width: 600px;
+
+  text-align: center;
+  font-size: 14px;
+  margin-left: 30px;
+  opacity: 0.6;
+  line-height: 20px;
 }
-.informedFooter{
-  padding:20px;
-  margin-top:20px;
-  color:rgb(130, 46, 227);
+.informedFooter {
+  padding: 20px;
+  margin-top: 80px;
+  color: rgb(241, 238, 236);border-radius: 6px;
   background-color: black;
   text-align: center;
-  opacity: .6;
+  opacity: 0.6;
 }
-.moodTextbox{
-  background:rgb(0, 0, 0);
-  color: rgb(176, 80, 6);
-  border-radius: 6px;
-  margin-top:20px;
+.moodTextbox {
+  background: rgb(0, 0, 0);
+  color: rgb(241, 238, 236);border-radius: 6px;
   text-align: left;
-  
 }
 
-.crisisHotline{
-  
-  color:rgb(130, 46, 227);
-  height:200px;
+.crisisHotline {
+  color: rgb(211, 44, 169);
+  height: 200px;
   width: 200px;
   background: black;
-  text-align:center;
-  font-size:15px;
-  
-  
+  font-size: 15px;
+  opacity:.7;
 }
 
+
 .moodTextDiv3{
+  text-align: left;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+.moodText5{
   text-align: center;
-  font-size: 190px;
-  color: rgb(244, 159, 94);
-  opacity: .1;
-  background: black;
-  height:200px;
-  width: 100%;
-  letter-spacing:3px ;
-  line-height: 109px;
+  font-size: 176px;
   
+  opacity: 0.1;
+  
+  height: 110px;
+  width: 100%;
+  letter-spacing: 0px;
+  line-height: 120px;
+  color: rgb(211, 44, 169);
+  opacity: 0.2;
+ 
+
+}
+
+.moodText55{
+  text-align: center;
+  margin-left:-80px;
+  font-size: 100px;
+  color: rgb(247, 247, 247);
+  opacity: 0.3;
+ text-shadow: black;
+  height: 170px;
+  width: 100%;
+  letter-spacing: 4px;
+  line-height:90px;
+}
+
+.moodText555{
+  text-align: left;
+  font-size: 146px;
+ height: 1px;
+  width: 100%;
+  letter-spacing: 3px;
+  line-height: 30px;
+  color: rgb(218, 169, 206);
+  opacity: 0.3;
+  text-shadow: black;
+  margin-left:120px ;
+
+}
+
+.MoodSection3{
+  margin-top:0px;
+  padding-top:0px;
+  line-height: 26px;
 }
