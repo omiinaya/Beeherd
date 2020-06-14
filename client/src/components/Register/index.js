@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
-import { register } from '../UserFunctions'
+import { register } from './scripts'
+import { generateRandomTag } from './scripts'
 import "./style.css";
 
 class Register extends Component {
@@ -31,6 +32,8 @@ class Register extends Component {
                 this.props.history.push('/login')
             }
         })
+
+        generateRandomTag()
     }
     render() {
         return (

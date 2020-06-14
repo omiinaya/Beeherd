@@ -1,9 +1,6 @@
 import React, {Component} from 'react'
-import { login } from '../UserFunctions'
+import { login } from './scripts'
 import "./style.css";
-import Animation from '../../components/Animation'
-
-
 
 class Login extends Component {
     constructor() {

@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import ExpandedPost from '../ExpandedPost';
+import Loading from '../Loading';
 import "./style.css"
 
 export class ExpandPost extends React.Component {
@@ -36,7 +37,7 @@ render() {
     //  console.log(id)
 
     return (
-            isLoaded ?  <ExpandedPost post={post} title={title} /> : <div>placeholder loading component</div>
+            isLoaded ?  <ExpandedPost post={post} title={title} /> : <Loading />
     );
 }
 }
