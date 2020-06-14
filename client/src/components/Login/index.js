@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import { login } from './scripts'
 import "./style.css";
 
+
 class Login extends Component {
     constructor() {
         super()
@@ -40,7 +41,7 @@ class Login extends Component {
                     <div className="col-md-6 mt-5 mx-auto">
                         <form noValidate onSubmit={this.onSubmit}>
                             <h1 id="headerTitle">Sign In</h1>
-                            <div className="form-group">
+                            <div className="form-group">                        
                                 <label htmlFor="username">Username</label>                          
                                 <input type="username"
                                 className="form-control"
@@ -51,7 +52,7 @@ class Login extends Component {
                                 /> 
                             </div>
                             <div className="form-group">
-                                <label htmlFor="password">Password</label>
+                                <label htmlFor="password"></label>
                                 <input type="password"
                                 className="form-control"
                                 name="password"
@@ -67,7 +68,9 @@ class Login extends Component {
                                 Login
                             </button>
                         </form>
+                        
                     </div>
+                    
                 </div>
             </div>
         )
