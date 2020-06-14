@@ -1,5 +1,11 @@
   
 .footer {
-    min-height: 100px!important;
-    position: relative;
-  }
+  margin: 0 auto;
+  margin-top: 1%;
+  padding-top: 1.5%;
+  width: 98.5%;
+  min-height: 100px!important;
+  position: relative;
+  background-color:rgba(192,192,192,0.3);
+  border-radius: 6px;
+}

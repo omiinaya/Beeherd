@@ -25,13 +25,13 @@ class Home extends Component {
   }
 
   handleOnClick(a) {
-      window.open("/post/"+a.id,"_self")
-      this.loadPost(a)
+    window.open("/post/" + a.id, "_self")
+    this.loadPost(a)
   }
 
   loadPost = (a) => {
     var thisPost = a.id;
-    window.location.href = "/posts/"+thisPost;
+    window.location.href = "/posts/" + thisPost;
   }
 
   getPosts = () => {
@@ -74,9 +74,9 @@ class Home extends Component {
                             content={posts.post_content}
                           />
                           <div className="button-container">
-                          <SeeMoreButton
-                            id={posts.id}
-                          />
+                            <SeeMoreButton
+                              id={posts.id}
+                            />
                           </div>
                         </div>
                       </div>
@@ -88,7 +88,13 @@ class Home extends Component {
               }
             </Col>
             <Col size="md-3">
-              <div className="side-bar">
+              <div className="side-bar-top">
+                <p>Placeholder</p>
+              </div>
+              <div className="side-bar-middle">
+                <p>Placeholder</p>
+              </div>
+              <div className="side-bar-bottom">
                 <p>Placeholder</p>
               </div>
             </Col>
