@@ -55,7 +55,7 @@ class Home extends Component {
           </MDBRow>
         </Hero>
         <div className="mini-post">
-          <input type="text" id="mini-post-text" size="50" placeholder="Say something." onClick={redirectToPost}></input><button onClick={redirectToPost}>Post</button>
+          <input type="text" id="mini-post-text" size="50" placeholder="Say something." onClick={redirectToPost}></input>
         </div>
         <div>
           <Row>

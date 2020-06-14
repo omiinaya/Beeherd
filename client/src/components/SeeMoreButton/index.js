@@ -15,7 +15,7 @@ class SeeMoreButton extends React.Component {
       <div>
         <Button type="primary" onClick={() => { this.loadPost(this.props) }
         }>
-          See More
+          ▼
         </Button>
       </div>
     );
