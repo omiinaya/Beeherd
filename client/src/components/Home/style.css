@@ -75,14 +75,14 @@
 .side-bar-top {
     width: 100%;
     height: 325px;
-    margin-top: 3%;
+    margin-top: 3.5%;
     margin-left: -4%;
     border-radius: 6px;
     background-color:rgba(192,192,192,0.3);
 }
 
 .side-bar-middle {
-    width: 99%;
+    width: 100%;
     height: 210px;
     margin-top: 7%;
     margin-left: -4%;
@@ -91,10 +91,26 @@
 }
 
 .side-bar-bottom {
-    width: 99%;
-    height: 297px;
+    width: 100%;
+    height: 295px;
     margin-top: 7%;
     margin-left: -4%;
     border-radius: 6px;
     background-color:rgba(192,192,192,0.3);
 }
+.jumbotron {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.jumbotron p {
+    text-align: center;
+}
+
+/*--Media Queries--*/
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+}
+
