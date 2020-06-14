@@ -1,9 +1,6 @@
 import React, {Component} from 'react'
-import { login } from '../UserFunctions'
+import { login } from './scripts'
 import "./style.css";
-import Animation from '../../components/Animation'
-
-
 
 
 class Login extends Component {
@@ -40,16 +37,12 @@ class Login extends Component {
     render() {
         return (
             <div className="container animation">
-                
                 <div id="loginform">
-                
                     <div className="col-md-6 mt-5 mx-auto">
                         <form noValidate onSubmit={this.onSubmit}>
                             <h1 id="headerTitle">Sign In</h1>
-
-                            <div className="form-group">
-                                
-                                <label htmlFor="username"></label>                          
+                            <div className="form-group">                        
+                                <label htmlFor="username">Username</label>                          
                                 <input type="username"
                                 className="form-control"
                                 name="username"
