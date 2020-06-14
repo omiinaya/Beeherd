@@ -30,7 +30,7 @@ class Login extends Component {
 
         login(user).then(res => {
             if (res) {
-                this.props.history.push('/profile')
+                this.props.history.push('/')
             }
         })
     }
@@ -53,7 +53,6 @@ class Login extends Component {
                                     />
                                 </div>
                                 <div className="form-group">
-                                    
                                     <input type="password"
                                         className="form-control"
                                         name="password"
@@ -62,12 +61,7 @@ class Login extends Component {
                                         onChange={this.onChange}
                                     />
                                 </div>
-
-                                <button type="submit"
-                                    id="button">
-
-                                    Login
-                            </button>
+                                <button type="submit" id="button">Login</button>
                             </form>
 
                         </div>
