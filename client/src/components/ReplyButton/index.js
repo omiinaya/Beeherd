@@ -7,7 +7,7 @@ class SeeMoreButton extends React.Component {
 
   loadPost = (Post) => {
     var currentPost = Post.id;
-    console.log(currentPost);
+    //console.log(currentPost);
     window.location.href = "/posts/"+currentPost;
   }
   render() {

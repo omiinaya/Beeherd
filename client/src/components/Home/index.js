@@ -29,17 +29,16 @@ class Home extends Component {
       this.loadPost(a)
   }
 
-  loadPost = (Post) => {
-    var currentPost = Post.id;
-    console.log(currentPost);
-    window.location.href = "/posts/"+currentPost;
+  loadPost = (a) => {
+    var thisPost = a.id;
+    window.location.href = "/posts/"+thisPost;
   }
 
   getPosts = () => {
     axios.get("/posts/all")
       .then(res => {
         this.setState({ savedPosts: res.data })
-        console.log(res.data)
+        //console.log(res.data)
       })
       .catch((err => console.log(err)))
   }
@@ -64,7 +63,7 @@ class Home extends Component {
               {this.state.savedPosts.length > 0 ?
                 <PostList>
                   {this.state.savedPosts.map(posts => {
-                    console.log(posts)
+                    //console.log(posts)
                     return (
                       <div className="post-card" onClick={() => this.handleOnClick(posts)}>
                         <div>

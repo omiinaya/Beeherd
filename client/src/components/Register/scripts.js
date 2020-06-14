@@ -10,7 +10,7 @@ export function generateWordList() {
         url: 'https://random-word-api.herokuapp.com/word?number=30',
     })
         .then((res => {
-            console.log(res.data)
+            //console.log(res.data)
             wordList = res.data
         })
     )
@@ -32,7 +32,7 @@ export function generateRandomTag() {
     }
 
     temp_tag = newTag.join("");
-    console.log(temp_tag);
+    //console.log(temp_tag);
 }
 
 export const register = newUser => {

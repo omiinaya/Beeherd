@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import jwt_decode from 'jwt-decode'
 import axios from 'axios';
 import { checkId } from "./script.js";
-import { getCurrentUser } from "./script.js";
-import { getUserPosts } from "./script.js";
+//import { getCurrentUser } from "./script.js";
+//import { getUserPosts } from "./script.js";
 import "./style.css";
 
 class Profile extends Component {
@@ -26,17 +26,17 @@ class Profile extends Component {
             temp_tag: decoded.temp_tag
         })
 
-        const currentUser = await getCurrentUser();
-        console.log(currentUser)
+        //const currentUser = await getCurrentUser();
+        //console.log(currentUser)
 
-        const currentPosts = await getUserPosts();
-        console.log(currentPosts)
+        //const currentPosts = await getUserPosts();
+        //console.log(currentPosts)
 
         axios.get(`/posts/all`)
         .then(res => {
             const posts = res.data;
             this.setState({ posts });
-            console.log(posts);
+            //console.log(posts);
         })
     }
 

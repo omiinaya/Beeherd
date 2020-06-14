@@ -12,9 +12,9 @@ export function sendToDB(a) {
     const temp_tag = decoded.temp_tag;                          //grabs temp tag from decoded token.
     const content = a;                                          //grabs post content from button.
     const title = document.getElementById("title-input").value; 
-    console.log(token)
-    console.log(content)
-    console.log(title)
+    //console.log(token)
+    //console.log(content)
+    //console.log(title)
 
     return axios                                                //use axios to send data to database.
     .post('posts/post', {
