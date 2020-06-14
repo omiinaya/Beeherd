@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import InfoCards from "../InfoCards";
+//import InfoCards from "../InfoCards";
 
 function Words() {
   return (
