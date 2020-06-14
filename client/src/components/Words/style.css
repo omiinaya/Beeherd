@@ -10,7 +10,7 @@
 }
 
 .MHtext1 {
-  font-size: 36px;
+  font-size: 26px;
   color: rgb(151, 150, 152);
 }
 
@@ -29,7 +29,7 @@
 }
 
 .moodText1 {
-  font-size: 36px;
+  font-size: 48px;
   color: rgb(151, 150, 152);
   margin-bottom: 80px;
   float: center;
@@ -101,7 +101,7 @@
 }
 
 .MoodSecPicContainer {
-  background: url(../../pages/Mood/assets/color-swirl.jpg);
+  background: url(../../pages/Mood/assets/color.jpg);
   min-height: 20px;
   background: cover;
   opacity: 0.8;
@@ -129,20 +129,21 @@
 
 .mooddown2 {
   font-weight: bolder;
-  color: rgb(151, 150, 152);
+  color: rgb(210, 166, 84);
+  border: 1px solid rgb(18, 42, 136);
+  border-radius: 90px;
   font-size: 22px;
   text-align: center;
   margin-top: 6px;
   margin-bottom: 3px;
 }
 .borderDown {
-  border: 3px solid rgb(216, 123, 36);
   border-radius: 90px;
   width: 170px;
   text-align: center;
   margin-left: 362px;
   margin-top: 3px;
-
+ 
   margin-top: 5px;
 }
 
@@ -185,7 +186,7 @@
   font-size: 18px;
 }
 .moodText4 {
-  color: rgb(247, 154, 79);
+  color: rgb(240, 201, 168);
   font-size: 18px;
 }
 
