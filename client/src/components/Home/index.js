@@ -24,11 +24,22 @@ class Home extends Component {
     this.getPosts();
   }
 
+  handleOnClick(a) {
+      window.open("/post/"+a.id,"_self")
+      this.loadPost(a)
+  }
+
+  loadPost = (Post) => {
+    var currentPost = Post.id;
+    console.log(currentPost);
+    window.location.href = "/posts/"+currentPost;
+  }
+
   getPosts = () => {
     axios.get("/posts/all")
       .then(res => {
         this.setState({ savedPosts: res.data })
-        //console.log(res.data)
+        console.log(res.data)
       })
       .catch((err => console.log(err)))
   }
@@ -55,7 +66,7 @@ class Home extends Component {
                   {this.state.savedPosts.map(posts => {
                     console.log(posts)
                     return (
-                      <div className="post-card">
+                      <div className="post-card" onClick={() => this.handleOnClick(posts)}>
                         <div>
                           <PostListItem
                             id={posts.author_id}

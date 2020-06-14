@@ -28,6 +28,13 @@
 }
 
 .post-card:hover {
+    cursor: pointer;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.post-card:hover {
     transition: all 0.3s ease;
     transform: scale(1.05);
 }
