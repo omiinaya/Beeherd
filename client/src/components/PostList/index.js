@@ -23,7 +23,8 @@ export function PostList({children}) {
               <Thumbnail src={this.props.thumbnail} />
             </Col>
             <Col size="xs-8 sm-9">
-              <h3>{this.props.author}</h3>
+              <h2>{this.props.author}</h2>
+              <h3>{this.props.title}</h3>
                 <div dangerouslySetInnerHTML={{__html:this.props.content}}/>
             </Col>
           </Row>
