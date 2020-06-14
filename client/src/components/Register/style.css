@@ -1,32 +1,28 @@
 #registerform{
-    max-width: 500px;
-    min-width: 300px;
-    max-height: 700px;
-    width: 30%;
-    height: 60%;
-    margin: 100px auto;
-    background-color: #ffffff;
-    border-radius: 25px;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    transition: all 0.3s ease;
+  max-width: 500px;
+  min-width: 300px;
+  max-height: 700px;
+  width: 30%;
+  height: 60%;
+  margin: 100px auto;
+  margin-left: 28%;
+  background-color: #ffffff;
+  border-radius: 25px;
+  transition: all 0.3s ease;
   }
 
 #registerform:hover {
-    max-width: 500px;
-    min-width: 300px;
-    max-height: 700px;
-    width: 30%;
-    height: 60%;
-    margin: 100px auto;
-    background-color: #ffffff;
-    border-radius: 25px;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    transition: all 0.3s ease;
-    transform: scale(1.05);
+  max-width: 500px;
+  min-width: 300px;
+  max-height: 700px;
+  width: 30%;
+  height: 60%;
+  margin: 100px auto;
+  margin-left: 28%;
+  background-color: #ffffff;
+  border-radius: 25px;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease;
+  transform: scale(1.02);
 }
