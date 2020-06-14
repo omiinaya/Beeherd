@@ -84,9 +84,9 @@ class Home extends Component {
                     );
                   })}
                 </PostList>
-              ) : (
+              : 
                 <EmptyList />
-              )}
+              }
             </Col>
             <Col size="md-3">
               <div className="side-bar-top">
