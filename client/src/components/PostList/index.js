@@ -19,13 +19,13 @@ export function PostList({children}) {
       <li>
         <Container>
           <Row>
-            <Col size="xs-4 sm-2">
+            <Col size="xs-3 sm-2 md-1">
               <Thumbnail src={this.props.thumbnail} />
             </Col>
             <Col size="xs-8 sm-9">
-              <h2>{this.props.author}</h2>
-              <h3>{this.props.title}</h3>
-                <div dangerouslySetInnerHTML={{__html:this.props.content}}/>
+              <h6>posted by u/{this.props.author}</h6>
+              <h2>{this.props.title}</h2>
+                <div className="content_text" dangerouslySetInnerHTML={{__html:this.props.content}}/>
             </Col>
           </Row>
         </Container>

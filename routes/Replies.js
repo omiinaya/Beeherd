@@ -9,12 +9,12 @@ replies.use(cors())
 
 replies.post('/reply', (req, res) => {
     const today = new Date()
-    const postData = {
+    const replyData = {
         content: req.body.content,
         created: today
     }
 
-    Post.create(postData).then(post => {
+    Reply.create(replyData).then(post => {
         res.json({ status: post.content + ' uploaded' })
     })
     .catch(err => {

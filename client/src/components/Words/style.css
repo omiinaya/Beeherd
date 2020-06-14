@@ -24,7 +24,7 @@
   background-color: black;
   padding-top: 33px;
   min-height: 10px;
-  border-bottom: rgb(40, 3, 74) 3px solid;
+  border-bottom: rgb(22, 3, 85) 3px solid;
   float: left;
 }
 
@@ -33,6 +33,10 @@
   color: rgb(151, 150, 152);
   margin-bottom: 80px;
   float: center;
+  font-size: 500px;
+  color: rgb(72, 69, 67);
+  opacity: 0.1;
+  height:160px;
 }
 
 .MoodSec1container {
@@ -61,16 +65,17 @@
 }
 
 .requestSupport {
-  font-size: 25px;
-  color: rgb(244, 159, 94);
-  margin-left: 0px;
-  letter-spacing: 2px;
+  font-size: 22px;
+  color: rgba(245, 203, 89, 0.733);
+ opacity: .6px;
+  letter-spacing: 7px;
+  
 }
 
 .text-container .moodColors {
-  font-size: 111px;
-  color: rgba(225, 225, 225, 0.1);
-
+  font-size: 121px;
+  color: rgb(9, 9, 9);
+line-height:1;
   background-repeat: repeat-x;
   -webkit-background-clip: text;
   animation: animate 15s linear infinite;
@@ -86,7 +91,8 @@
 }
 
 .text-container {
-  text-align: left;
+  text-align: center;
+  padding:0px;
 }
 
 .moodTextDiv2 {
@@ -120,22 +126,25 @@
 }
 
 .mooddown {
-  color: rgb(151, 150, 152);
+  color: rgba(187, 143, 60, 0.838);
   text-align: center;
-  padding-top: 15px;
-  font-size: 30px;
-  padding-bottom: 1px;
+  padding-top: 25px;
+  font-size: 28px;
+  padding-bottom: 12px;
+  letter-spacing: 7px;
+  
 }
 
 .mooddown2 {
   font-weight: bolder;
-  color: rgb(210, 166, 84);
+  color: rgba(187, 142, 60, 0.927);
   border: 1px solid rgb(18, 42, 136);
   border-radius: 90px;
   font-size: 22px;
   text-align: center;
   margin-top: 6px;
   margin-bottom: 3px;
+ 
 }
 .borderDown {
   border-radius: 90px;
@@ -148,7 +157,7 @@
 }
 
 .moodTextp1 {
-  margin-top: 30px;
+  margin-top: 60px;
   margin-bottom: 20px;
   text-align: left;
   font-size: 13px;
@@ -156,7 +165,7 @@
 }
 
 .moodTextp2 {
-  color: rgb(211, 44, 169);
+  color: rgb(232, 14, 177);
   font-size: 180px;
   height:100px;
   opacity: 0.2;
@@ -195,7 +204,7 @@
 }
 
 .zipcodeInput[type="text"]:focus {
-  border: 3px solid rgb(0, 0, 0);
+  border: 3px solid rgb(67, 1, 94);
 }
 .zipcodeInput[type="text"] {
   width: 90%;
@@ -207,8 +216,8 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
   outline: none;
-  background-color: rgb(6, 0, 0);
-  color: rgb(242, 181, 100);
+  background-color: rgb(0, 0, 0);
+  color: rgb(254, 165, 97);
   font-size: 14px;
   padding-left: 0px;
   margin-left: 0px;
@@ -262,7 +271,7 @@
 }
 
 .informedButtoninputs {
-  color: rgb(226, 159, 72);
+  color: rgb(244, 159, 94);
   font-family: "Poppins", sans-serif;
 }
 
@@ -311,7 +320,7 @@
   height: 100%;
   backface-visibility: hidden;
   background: indigo;
-  color: rgb(216, 85, 85);
+  color: rgb(244, 159, 94);
   font-size: 30px;
   text-align: center;
   padding-top: 25%;
@@ -321,6 +330,7 @@
 .Moodul {
   margin-top :40px;
   margin-bottom: 80px;
+  font-size: small;
 }
 .Moodul .Moodli {
   color: #797a7d;
@@ -356,7 +366,7 @@
 
 .MoodSec3container .moodBox {
   float: left;
-  text-align: left;
+  text-align: right;
   width: 28%;
   padding: 5px;
 }
@@ -370,7 +380,7 @@
   width: 600px;
 
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   margin-left: 30px;
   opacity: 0.6;
   line-height: 20px;
@@ -378,15 +388,15 @@
 .informedFooter {
   padding: 20px;
   margin-top: 80px;
-  color: rgb(241, 238, 236);border-radius: 6px;
+  color: rgba(248, 199, 242, 0.897);border-radius: 6px;
   background-color: black;
   text-align: center;
-  opacity: 0.6;
+  opacity: 0.3;
 }
 .moodTextbox {
   background: rgb(0, 0, 0);
   color: rgb(241, 238, 236);border-radius: 6px;
-  text-align: left;
+  text-align: center;
 }
 
 .crisisHotline {
@@ -394,7 +404,7 @@
   height: 200px;
   width: 200px;
   background: black;
-  font-size: 15px;
+  font-size: 13px;
   opacity:.7;
 }
 
@@ -449,7 +459,11 @@
 }
 
 .MoodSection3{
-  margin-top:0px;
+  margin-top:-15px;
   padding-top:0px;
   line-height: 26px;
+}
+
+.moodText3{
+  margin-top: 60px;
 }

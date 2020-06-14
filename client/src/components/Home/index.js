@@ -8,7 +8,10 @@ import { Row, Col } from "../Grid";
 import { PostList, PostListItem } from "../PostList";
 import SeeMoreButton from "../SeeMoreButton";
 import "./style.css";
-import { MDBRow, MDBCol } from "mdbreact";
+import {
+  MDBRow,
+  MDBCol
+} from "mdbreact";
 
 class Home extends Component {
   state = {
@@ -18,6 +21,16 @@ class Home extends Component {
 
   componentDidMount() {
     this.getPosts();
+  }
+
+  handleOnClick(a) {
+    window.open("/post/" + a.id, "_self")
+    this.loadPost(a)
+  }
+
+  loadPost = (a) => {
+    var thisPost = a.id;
+    window.location.href = "/posts/" + thisPost;
   }
 
   getPosts = () => {
@@ -41,37 +54,19 @@ class Home extends Component {
             </MDBCol>
           </MDBRow>
         </Hero>
-        <div class="container-fluid">
-          <div class="row jumbotron">
-            <div class="content">
-              <h4>About this Page</h4>
-              <p>Posts are the heart of a beheard. When logged in to your account, create a new post. Feel free to vent and let your voice beheard. Explore through the website reading existing post and remember, "It okay to feel":</p><br>
-              
-              </br>
-              <input type="text" id="display"></input>
-            </div>
-            <div className="mini-post">
-              <input
-                type="text"
-                id="mini-post-text"
-                size="50"
-                placeholder="Create Post"
-                onClick={redirectToPost}
-              ></input>
-              <button onClick={redirectToPost}>Post</button>
-            </div>
-          </div>
+        <div className="mini-post">
+          <input type="text" id="mini-post-text" size="50" placeholder="Say something." onClick={redirectToPost}></input>
         </div>
 
         <div>
           <Row>
-            <Col size="md-12">
-              {this.state.savedPosts.length > 0 ? (
+            <Col size="md-9">
+              {this.state.savedPosts.length > 0 ?
                 <PostList>
-                  {this.state.savedPosts.map((posts) => {
-                    console.log(posts);
+                  {this.state.savedPosts.map(posts => {
+                    //console.log(posts)
                     return (
-                      <div className="post-card">
+                      <div className="post-card" onClick={() => this.handleOnClick(posts)}>
                         <div>
                           <PostListItem
                             id={posts.author_id}
@@ -79,7 +74,11 @@ class Home extends Component {
                             title={posts.post_title}
                             content={posts.post_content}
                           />
-                          <SeeMoreButton id={posts.id} />
+                          <div className="button-container">
+                            <SeeMoreButton
+                              id={posts.id}
+                            />
+                          </div>
                         </div>
                       </div>
                     );
@@ -88,6 +87,17 @@ class Home extends Component {
               ) : (
                 <EmptyList />
               )}
+            </Col>
+            <Col size="md-3">
+              <div className="side-bar-top">
+                <p>Avatar Placeholder</p>
+              </div>
+              <div className="side-bar-middle">
+                <p>Change Tag placeholder</p>
+              </div>
+              <div className="side-bar-bottom">
+                <p>Ad? Placeholder</p>
+              </div>
             </Col>
           </Row>
         </div>

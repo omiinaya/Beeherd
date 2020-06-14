@@ -4,4 +4,8 @@ div.thumbnail {
     background-position: center;
     width: 100%;
     padding-top: 100%;
+    border-radius: 50%;
+    margin: 40%;
+    margin-left: 20%;
+    transform: scale(1.3);
   }
