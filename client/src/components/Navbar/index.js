@@ -37,7 +37,8 @@ class Navbar extends Component {
             </ul>
         )
         return (
-            <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+            <nav className="navbar navbar-expand-md navbar-dark sticky-top">
+                <div class="container-fluid">
                 <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                     <ul className="navbar-nav mr-auto">
                         <DropdownButton id="dropdown-basic-button" title="Get Informed">
@@ -57,6 +58,7 @@ class Navbar extends Component {
                     <ul className="navbar-nav ml-auto">
                         {localStorage.usertoken ? userLink : loginRegLink}
                     </ul>
+                </div>
                 </div>
             </nav>
         )

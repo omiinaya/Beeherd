@@ -5,7 +5,7 @@ class Footer extends Component {
   render() {
     return (
       <footer className="footer">
-        <div className="container">
+        <div className="container-fluid padding">
           <div className="row">
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
             <span role="img" aria-label="peace">✌️</span>
