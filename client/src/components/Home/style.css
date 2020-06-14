@@ -71,3 +71,21 @@
 .button-container {
     text-align: center;
 }
+
+.side-bar {
+    width: 99%;
+    height: 325px;
+    margin-top: 4%;
+    margin-left: -4%;
+    border-radius: 6px;
+    background-color:rgba(192,192,192,0.3);
+}
+
+.side-bar:hover {
+    cursor: pointer;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    transition: all 0.3s ease;
+    transform: scale(1.03);
+}

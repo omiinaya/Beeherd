@@ -59,7 +59,7 @@ class Home extends Component {
         </div>
         <div>
           <Row>
-            <Col size="md-12">
+            <Col size="md-9">
               {this.state.savedPosts.length > 0 ?
                 <PostList>
                   {this.state.savedPosts.map(posts => {
@@ -86,6 +86,11 @@ class Home extends Component {
                 :
                 <EmptyList />
               }
+            </Col>
+            <Col size="md-3">
+              <div className="side-bar">
+                <p>Placeholder</p>
+              </div>
             </Col>
           </Row>
         </div>
