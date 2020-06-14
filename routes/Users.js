@@ -15,6 +15,7 @@ users.post('/register', (req, res) => {
     const userData = {
         username: req.body.username,
         password: req.body.password,
+        temp_tag: req.body.temp_tag,
         created: today
     }
     User.findOne({
