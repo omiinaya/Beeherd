@@ -1,8 +1,6 @@
 import React from "react";
 import "./style.css";
-import InfoCards from "../InfoCards"
-
-
+import InfoCards from "../InfoCards";
 
 function Words() {
   return (
@@ -49,7 +47,7 @@ function Words() {
           increase your risk of suicide.
         </p>
 
-        <section className="MoodSection1">
+        <section className="MoodSection2">
           <div className="MoodSec2container">
             <h1 className="requestSupport">Requesting Support?</h1>
             <p className="locateSupport">
@@ -128,7 +126,7 @@ function Words() {
 
       <div className="moodTextDiv3">
         <h5 className="moodText4">
-          {" "}
+      
           Talk to a health care professional if you:
         </h5>
 
@@ -140,29 +138,38 @@ function Words() {
           <div className="moodBox">
             <p className="moodTextbox">
               Feel like your emotions are interfering with your work,
-              relationships, social activities or other parts of your life.<br></br> 
+              relationships, social activities or other parts of your life.
+              
               Have trouble with drinking or drugs or have suicidal thoughts or
-              behaviors{" "}
+              behaviors.
             </p>
-          </div>
-          <div className="moodBoxpic">
-          
           </div>
           <div className="moodBox">
             <p className="moodTextbox">
-              If you are thinking about ending your life, or having suicidal
-              thoughts due to your circumstances and state of mind, chances are
-              you are dealing with really painful emotions. <br></br> Nobody deserves to
-              feel that way and we are so sorry you do. Reach out
+            
+            If you are thinking about ending your life, or having suicidal
+            thoughts due to your circumstances and state of mind, chances are
+            you are dealing with really painful emotions. Nobody
+            deserves to feel that way and we are so sorry you do.
+          </p>
+          </div>
+          <div className="moodBox">
+            <p className="moodTextbox">
+              Reach out to a professional. Text to talk - Completely
+              Confidential <br></br>Text HOME to 741741 to connect with a Crisis
+              Counselor Free 24/7 support at your fingertips US and Canada: text
+              741741 UK: text 85258 | Ireland: text 086 1800 280
             </p>
           </div>
         </div>
       </section>
-      <footer className="informedFooter">
-        <p className="informedFooterText">
-          Life Is Now, Copyright &copy; beeherd 2020
-        </p>
-      </footer>
+      <section className="Informedfoot">
+        <footer className="informedFooter">
+          <p className="informedFooterText">
+            Life Is Now, Copyright &copy; beeherd 2020
+          </p>
+        </footer>
+      </section>
     </div>
   );
 }
