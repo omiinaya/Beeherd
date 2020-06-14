@@ -9,9 +9,9 @@ export function sendToDB(a) {
     const token = localStorage.usertoken                        //grabs current user token from localstorage.
     const decoded = jwt_decode(token)                           //decodes token so we can access user data.
     const user_id = decoded.id;                                 //grabs user id from the decoded token.
-    const temp_tag = decoded.temp_tag;                        //grabs user id from the decoded token.
-    const content = a;
-    const title = document.getElementById("title-input").value; //grabs post content from button.
+    const temp_tag = decoded.temp_tag;                          //grabs temp tag from decoded token.
+    const content = a;                                          //grabs post content from button.
+    const title = document.getElementById("title-input").value; 
     console.log(token)
     console.log(content)
     console.log(title)
@@ -29,4 +29,3 @@ export function sendToDB(a) {
         return res.data
     })
 }
-
