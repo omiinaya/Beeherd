@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { register } from './scripts'
+import { generateWordList } from './scripts'
 import { generateRandomTag } from './scripts'
 import Jumbo from "../Jumbo"
 import "./style.css";
@@ -16,7 +17,7 @@ class Register extends Component {
     }
 
     componentDidMount() {
-        generateRandomTag()
+        generateWordList()
     }
 
     onChange(e) {
@@ -25,6 +26,7 @@ class Register extends Component {
 
     onSubmit(e) {
         e.preventDefault()
+        generateRandomTag()
 
         const user = {
             username: this.state.username,
@@ -33,7 +35,7 @@ class Register extends Component {
 
         register(user).then(res => {
             if (res) {
-                console.log(user)
+                //console.log(user)
                 this.props.history.push('/login')
             }
         })
