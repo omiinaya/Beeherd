@@ -24,7 +24,7 @@
   background-color: black;
   padding-top: 33px;
   min-height: 10px;
-  border-bottom: rgb(40, 3, 74) 3px solid;
+  border-bottom: rgb(22, 3, 85) 3px solid;
   float: left;
 }
 
@@ -389,10 +389,10 @@ line-height:1;
 .informedFooter {
   padding: 20px;
   margin-top: 80px;
-  color: rgb(241, 238, 236);border-radius: 6px;
+  color: rgb(245, 81, 223);border-radius: 6px;
   background-color: black;
   text-align: center;
-  opacity: 0.6;
+  opacity: 0.3;
 }
 .moodTextbox {
   background: rgb(0, 0, 0);
