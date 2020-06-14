@@ -3,9 +3,6 @@ import "./style.css"
 import Placeholder from './images/placeholder.png'
 //import { urlencoded } from "body-parser";
 
-// The Thumbnail component renders a div that uses some CSS to render a background image
-// It will always keep square proportions at any size without the image warping
-// The "role" and "aria label" are there to identify the element's purpose as an image for accessibility purposes
 function Thumbnail({ src }) {
   return (
     <div
@@ -13,6 +10,7 @@ function Thumbnail({ src }) {
       role="img"
       aria-label="Recipe Image"
       style={{
+        //backgroundImage: `url(${src})`
         backgroundImage: `url(${Placeholder})`
       }}
     />

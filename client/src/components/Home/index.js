@@ -63,9 +63,11 @@ class Home extends Component {
                             title={posts.post_title}
                             content={posts.post_content}
                           />
+                          <div className="button-container">
                           <SeeMoreButton
                             id={posts.id}
                           />
+                          </div>
                         </div>
                       </div>
                     )

@@ -19,7 +19,7 @@ export function PostList({children}) {
       <li>
         <Container>
           <Row>
-            <Col size="xs-4 sm-2">
+            <Col size="xs-3 sm-2 md-1">
               <Thumbnail src={this.props.thumbnail} />
             </Col>
             <Col size="xs-8 sm-9">

@@ -33,8 +33,21 @@
 }
 
 .content_text {
-    height: 100px;
+    margin-top: 2%;
+    width: 100%;
+    margin-left: 5%;
+    height: 90px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: "ellipsis";
+}
+
+.btn-md {
+    width: 10%;
+    background-color: white;
+    color: blue;
+}
+
+.button-container {
+    /*rules for button*/
 }
