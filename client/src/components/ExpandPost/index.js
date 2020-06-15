@@ -15,17 +15,17 @@ class ExpandPost extends React.Component {
     componentDidMount() {
         var id = this.props.match.params.id;
         axios.get(`/posts/` + id)
-            .then(res => {
-                const post = res.data[0].post_content;
-                const title = res.data[0].post_title;
-                const author = res.data[0].author_tag;
-                this.setState({
-                    post,
-                    title,
-                    author,
-                    toggleReply: true
-                });
-            })
+        .then(res => {
+            const post = res.data[0].post_content;
+            const title = res.data[0].post_title;
+            const author = res.data[0].author_tag;
+            this.setState({
+                post,
+                title,
+                author,
+                toggleReply: false
+            });
+        })
     }
 
     handleClick() {

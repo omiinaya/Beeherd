@@ -43,5 +43,19 @@ posts.get("/:id", function (req, res) {
         res.json(results);
     });
 });
+//update post route
+posts.put("/id/:id", function (req, res) {
+    Post.update(
+        { post_content: req.body.post_content },
+        {
+            where: {
+                id: req.params.id
+            }
+        }
+    )
+    .then(function (response) {
+        res.json(response)
+    })
+})
 
 module.exports = posts

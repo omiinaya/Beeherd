@@ -1,10 +1,6 @@
 import jwt_decode from 'jwt-decode'
 import axios from 'axios'
 
-export function viewPost() {
-    console.log("test");
-}
-
 export function sendToDB(a) {
     const token = localStorage.usertoken                        //grabs current user token from localstorage.
     const decoded = jwt_decode(token)                           //decodes token so we can access user data.
@@ -16,14 +12,13 @@ export function sendToDB(a) {
     console.log(content)
     console.log(title)
 
-    if (content ==="" || title ==="") {
+    if (content ==="") {
         console.log("Please fill out all required fields.")
     } else {
         return axios                                                //use axios to send data to database.
-        .post('posts/post', {
+        .post('reply/post', {
             author_id: user_id,
             author_tag: temp_tag,
-            post_title: title,
             post_content: content
         })
         .then(res => {

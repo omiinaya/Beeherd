@@ -12,6 +12,9 @@ var Replies = db.sequelize.define(
         creator_id: {
             type: Sequelize.INTEGER,
         },
+        post_id: {
+            type: Sequelize.INTEGER,
+        },
         content: {
             type: Sequelize.TEXT
         },
