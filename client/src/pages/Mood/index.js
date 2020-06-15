@@ -77,7 +77,9 @@ function MoodDisorders() {
           <ul className="Moodul">
             <li className="Moodli">
               Major depressive disorder — prolonged and persistent periods of
-              extreme sadness
+              extreme sadness <a className="text-support" href="https://nami.org/About-Mental-Illness">
+              :: Learn More ::
+            </a>
             </li>
             <li className="Moodli">
               Bipolar disorder — also called manic depression or bipolar

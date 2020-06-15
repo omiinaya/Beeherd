@@ -11,7 +11,7 @@ function Suicide() {
         </header>
 
         <section className="MoodSection1">
-          <div className="MoodSec1container">
+          <div className="LifeSec1container">
             <div className="text-container">
               <h1 className="moodColors">About Suicide</h1>
             </div>
@@ -20,20 +20,20 @@ function Suicide() {
         </section>
 
         <section className="MoodSectionPic">
-          <div className="MoodSecPicContainer"></div>
+          <div className="LifeSecPicContainer"></div>
         </section>
         <center>
           <div className="moodTextDiv">
-            <h1 className="mooddown">it's ok to talk about suicide</h1>
+            <h1 className="mooddown"></h1>
 
             <div className="borderDown">
-              <h1 className="mooddown2">:: now ::</h1>
+              <h1 className="mooddown2">:: be ::</h1>
             </div>
           </div>
           <h3 className="mooddown"></h3>
         </center>
         <section className="MoodSectionPic">
-          <div className="MoodSecPicContainer"></div>
+          <div className="LifeSecPicContainer"></div>
         </section>
         <p className="moodTextp1">
           You are enough. You matter. Your life is worth fighting for. Suicide
@@ -84,7 +84,7 @@ function Suicide() {
               Text us. We’re excellent listeners if we do say so ourselves. And,
               we’re here for you—always. Text HOME to 741741 to connect with a
               real human. No judgment—just straight-up listening. <a className="text-support" href="https://www.crisistextline.org">
-              -Text to Talk-
+              :: Text to Talk ::
             </a>
             </li>
             <li className="Moodli">
