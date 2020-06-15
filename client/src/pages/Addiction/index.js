@@ -25,20 +25,20 @@ function Addiction() {
         </section>
 
         <section className="MoodSectionPic">
-          <div className="LifeSecPicContainer"></div>
+          <div className="AddiSecPicContainer"></div>
         </section>
         <center>
           <div className="moodTextDiv">
             <h1 className="mooddown"></h1>
 
             <div className="borderDown">
-              <h1 className="mooddown2">And Addiction</h1>
+              <h1 className="mooddown2">& <br></br> Addiction</h1>
             </div>
           </div>
           <h3 className="mooddown"></h3>
         </center>
         <section className="MoodSectionPic">
-          <div className="LifeSecPicContainer"></div>
+          <div className="AddiSecPicContainer"></div>
         </section>
         <p className="moodTextp1">
         There is evidence that addictive behaviors share key neurobiological features: 
@@ -70,7 +70,9 @@ function Addiction() {
             </div>
           </div>
         </section>
-
+        <div className="LifeText3div">
+        <p className="LifeText3"></p>
+      </div>
         <div className="moodTextDiv2">
           <p className="moodTextp2">What</p><p className= "moodTextp22">Do we Know?</p>
           <ul className="Moodul">
@@ -96,14 +98,14 @@ function Addiction() {
             Some characteristics, such as a lack of ability to tolerate distress or other strong feelings, have been associated with addiction, but there is no one “addictive personality” type that clearly predicts whether a person will face problems with addiction.
             </li>
             <a className="text-support" href="https://www.psychologytoday.com/us/basics/addiction">
-              :: Learn More ::
+              ::Learn More::
             </a>
           </ul>
         </div>
       </div>
 
-      <div className="moodText3div">
-        <p className="moodText3"></p>
+      <div className="LifeText3div">
+        <p className="LifeText3"></p>
       </div>
 
       <div className="moodTextDiv3">
