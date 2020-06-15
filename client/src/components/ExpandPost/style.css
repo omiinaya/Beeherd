@@ -1,10 +1,17 @@
 .expanded-post-container {
-    background-color: white;
+    background-color:rgba(192,192,192,0.5);
+    /*background-color: white;*/
     border-radius: 6px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+    width: 100%;
+    /*transform: translateX(15px);*/
 }
 
 .reply-container {
-    background-color: white;
+    background-color:rgba(192,192,192,0.5);
+    /*background-color: white;*/
     border-radius: 6px;
 }
 
@@ -14,6 +21,12 @@
 }
 
 .reply-card {
-    background-color: white;
+    background-color:rgba(192,192,192,0.5);
+    /*background-color: white;*/
     border-radius: 6px;
+    margin: 2%;
+    margin-top: 0%;
+    padding: 2%;
+    width: 90%;
+    transform: translateX(10.5%);
 }

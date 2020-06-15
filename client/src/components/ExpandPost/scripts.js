@@ -6,7 +6,7 @@ export function sendToDB(a) {
     const decoded = jwt_decode(token)                           //decodes token so we can access user data.
     const user_id = decoded.id;                                 //grabs user id from the decoded token.
     const temp_tag = decoded.temp_tag;                          //grabs temp tag from decoded token.
-    const id = a;                                          //grabs post content from button.
+    const id = a;                                               //grabs post content from button.
     var content = document.getElementById("reply-bar").value;
     console.log(id)
     console.log(temp_tag)
