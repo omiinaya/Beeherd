@@ -7,7 +7,7 @@ import Footer from "../Footer";
 import axios from "axios";
 import EmptyList from "../EmptyList";
 import SeeMoreButton from "../SeeMoreButton";
-import  TagChanger  from "../TagChanger";
+import  TagSection  from "../TagSection";
 import "./style.css";
 import {
   MDBRow,
@@ -93,7 +93,7 @@ class Home extends Component {
                 <p>Avatar Placeholder</p>
               </div>
               <div className="side-bar-middle">
-                <TagChanger />
+                <TagSection />
               </div>
               <div className="side-bar-bottom">
                 <p>Ad? Placeholder</p>

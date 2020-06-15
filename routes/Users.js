@@ -87,5 +87,31 @@ users.get("/:username", function (req, res) {
     });
 });
 
+users.get("/id/:id", function (req, res) {
+    User.findOne({
+        where: {
+            id: req.params.id
+        }
+    }).then(user => {
+        res.json(user);
+    });
+});
+
+users.put("/id/:id", function (req, res) {
+    User.update(
+        { temp_tag: req.body.temp_tag },
+        {
+            where: {
+                id: req.params.id
+            }
+        }
+    )
+    .then(function (response) {
+        res.json(response)
+    })
+})
+
+
+
 
 module.exports = users
