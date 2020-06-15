@@ -139,6 +139,53 @@ Use continues despite knowing it is causing or exacerbating physical or psycholo
           </div>
         </div>
       </section>
+
+      <div className="crisisAnime">
+        <img
+          width="200"
+          height="150"
+          class="lazy-load"
+          alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
+          data-sizes="auto"
+          onload="this.parentNode.className += ' img-loaded'"
+          src="https://media.giphy.com/media/iG3bIVD6b1tAd8S7Gf/giphy.gif"
+          sizes="auto"
+        ></img>
+        <img
+          width="200"
+          height="150"
+          class="lazy-load"
+          alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
+          data-sizes="auto"
+          onload="this.parentNode.className += ' img-loaded'"
+          src="https://media.giphy.com/media/3ohhwu8IqEYFZYA8Q8/giphy.gif"
+          sizes="auto"
+        ></img>
+
+        <img
+          width="200"
+          height="150"
+          class="lazy-load"
+          alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
+          data-sizes="auto"
+          onload="this.parentNode.className += ' img-loaded'"
+          src="https://media3.giphy.com/media/6CwNO5GckzXH2/giphy.gif"
+          sizes="auto"
+        ></img>
+        <img
+          width="200"
+          height="150"
+          class="lazy-load"
+          alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
+          data-sizes="auto"
+          onload="this.parentNode.className += ' img-loaded'"
+          src="https://media.giphy.com/media/86qNxF8M4GwNO/giphy.gif"
+          sizes="auto"
+        ></img>
+      </div>
+
+
+
       <section className="Informedfoot">
         <footer className="informedFooter">
           <p className="informedFooterText">

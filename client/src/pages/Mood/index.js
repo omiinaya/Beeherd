@@ -69,7 +69,21 @@ function MoodDisorders() {
             </div>
           </div>
         </section>
-
+        <div className="MoodcrisisAnimeDiv">
+          <div className="MoodcrisisAnime">
+            {" "}
+            <img
+              width="200"
+              height="150"
+              class="lazy-load"
+              alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
+              data-sizes="auto"
+              onload="this.parentNode.className += ' img-loaded'"
+              src="https://media.giphy.com/media/iG3bIVD6b1tAd8S7Gf/giphy.gif"
+              sizes="auto"
+            ></img>
+          </div>{" "}
+        </div>
         <div className="moodTextDiv2">
           <p className="moodTextp2">Which</p>
           <p className="moodTextp22">are they?</p>
@@ -77,12 +91,6 @@ function MoodDisorders() {
             <li className="Moodli">
               Major depressive disorder — prolonged and persistent periods of
               extreme sadness{" "}
-              <a
-                className="text-support"
-                href="https://nami.org/About-Mental-Illness"
-              >
-                :: Learn More ::
-              </a>
             </li>
             <li className="Moodli">
               Bipolar disorder — also called manic depression or bipolar
@@ -125,7 +133,31 @@ function MoodDisorders() {
               symptoms that develop during or soon after substance use or
               withdrawal or after exposure to a medication
             </li>
+            <span>
+              <a
+                className="text-support"
+                href="https://nami.org/About-Mental-Illness"
+              >
+                ::learn more::
+              </a>
+            </span>
           </ul>
+        </div>
+      </div>
+
+      <div className="MoodcrisisAnimeDiv">
+        <div className="MoodcrisisAnime1">
+          {" "}
+          <img
+            width="200"
+            height="150"
+            class="lazy-load"
+            alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
+            data-sizes="auto"
+            onload="this.parentNode.className += ' img-loaded'"
+            src="https://media.giphy.com/media/Quz33gDGvspqJLi6DL/giphy.gif"
+            sizes="auto"
+          ></img>
         </div>
       </div>
 
@@ -140,7 +172,7 @@ function MoodDisorders() {
       </div>
 
       <section className="MoodSection3">
-        <div className="MoodSec3container MoodPage">
+        <div className="LifeSec3container MoodPage">
           <div className="moodBox">
             <p className="moodTextbox">
               If you feel like your emotions are interfering with your work,
@@ -177,48 +209,21 @@ function MoodDisorders() {
           </div>
         </div>
       </section>
-      <div className="crisisAnime">
-        <img
-          width="200"
-          height="150"
-          class="lazy-load"
-          alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
-          data-sizes="auto"
-          onload="this.parentNode.className += ' img-loaded'"
-          src="https://media.giphy.com/media/iG3bIVD6b1tAd8S7Gf/giphy.gif"
-          sizes="auto"
-        ></img>
-        <img
-          width="200"
-          height="150"
-          class="lazy-load"
-          alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
-          data-sizes="auto"
-          onload="this.parentNode.className += ' img-loaded'"
-          src="https://media.tenor.com/images/5e53f20c3def5c8a132716ff7bb2ddfb/tenor.gif"
-          sizes="auto"
-        ></img>
 
-        <img
-          width="200"
-          height="150"
-          class="lazy-load"
-          alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
-          data-sizes="auto"
-          onload="this.parentNode.className += ' img-loaded'"
-          src="http://cdn.shopify.com/s/files/1/1568/1251/products/you-are-worthy-600x600_600x.jpg?v=1478125245"
-          sizes="auto"
-        ></img>
-        <img
-          width="200"
-          height="150"
-          class="lazy-load"
-          alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
-          data-sizes="auto"
-          onload="this.parentNode.className += ' img-loaded'"
-          src="https://media.tenor.com/images/5e53f20c3def5c8a132716ff7bb2ddfb/tenor.gif"
-          sizes="auto"
-        ></img>
+      <div className="MoodcrisisAnimefoot">
+        <div className="MoodcrisisAnimefoot">
+          {" "}
+          <img
+            width="200"
+            height="150"
+            class="lazy-load"
+            alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
+            data-sizes="auto"
+            onload="this.parentNode.className += ' img-loaded'"
+            src="https://i.pinimg.com/originals/77/19/cf/7719cf491fb46a1e4b6409caca84918e.gif"
+            sizes="auto"
+          ></img>
+        </div>
       </div>
 
       <section className="Informedfoot">
