@@ -63,7 +63,7 @@ class Home extends Component {
             <Col size="md-9">
               {this.state.savedPosts.length > 0 ?
                 <PostList>
-                  {this.state.savedPosts.map(posts => {
+                  {this.state.savedPosts.slice(0).reverse().map(posts => {
                     //console.log(posts)
                     return (
                       <div className="post-card" onClick={() => this.handleOnClick(posts)}>
