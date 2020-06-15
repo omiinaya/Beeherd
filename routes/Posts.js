@@ -4,6 +4,8 @@ const cors = require("cors")
 const jwt = require("jsonwebtoken")
 
 const Post = require("../models/Post")
+const Reply = require("../models/Reply")
+const replies = require("./Replies")
 
 posts.use(cors())
 

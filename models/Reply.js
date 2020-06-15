@@ -9,13 +9,13 @@ var Replies = db.sequelize.define(
             primaryKey: true,
             autoIncrement: true
         },
-        creator_id: {
+        author_id: {
             type: Sequelize.INTEGER,
         },
         post_id: {
             type: Sequelize.INTEGER,
         },
-        content: {
+        reply_content: {
             type: Sequelize.TEXT
         },
         votes: {

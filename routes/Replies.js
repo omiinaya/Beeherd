@@ -10,7 +10,10 @@ replies.use(cors())
 replies.post('/reply', (req, res) => {
     const today = new Date()
     const replyData = {
-        content: req.body.content,
+        author_id: req.body.author_id,
+        author_tag: req.body.author_tag,
+        post_id: req.body.post_id,
+        reply_content: req.body.reply_content,
         created: today
     }
 

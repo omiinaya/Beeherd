@@ -21,10 +21,12 @@ class ExpandPost extends React.Component {
                 const post = res.data[0].post_content;
                 const title = res.data[0].post_title;
                 const author = res.data[0].author_tag;
+                const id = res.data[0].id
                 this.setState({
                     post,
                     title,
                     author,
+                    id,
                     toggleReply: false
                 });
             })
@@ -54,7 +56,7 @@ class ExpandPost extends React.Component {
       };
 
     render() {
-        const { toggleReply, post, title, author } = this.state;
+        const { toggleReply, post, title, author, id } = this.state;
         const defaultView = (
             <div className="expanded-post-container">
                 <div className="post_author">Author: {author}</div>
@@ -68,7 +70,7 @@ class ExpandPost extends React.Component {
                 {defaultView}
                 <div className="reply-container">
                     <input type="text" id="reply-bar"></input>
-                    <button onClick={() => { sendToDB() }}>Submit</button>
+                    <button onClick={() => { sendToDB(id) }}>Submit</button>
                 </div>
             </div>
         )
