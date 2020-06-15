@@ -40,10 +40,6 @@ class TagSection extends React.Component {
         })*/
     }
 
-    updateStuff() {
-        //mimic relog
-    }
-
     render() {
         var current_tag = this.state.current_tag;
         var current_id = this.state.current_id;
@@ -53,8 +49,8 @@ class TagSection extends React.Component {
                 <div>Current public tag: {current_tag}</div>
                 <input type="text" id="change-tag"></input><button onClick={() => {
                     changeTag(current_id);
-                    this.updateStuff()
-                    window.open("/", "_self");
+                    localStorage.removeItem('usertoken')
+                    window.open("/login", "_self")
                 }
                 }>Change</button>
             </div>

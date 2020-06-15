@@ -1,48 +1,73 @@
-import React from "react";
-import axios from "axios";
-import ExpandedPost from '../ExpandedPost';
-import Loading from '../Loading';
+import React, { useState } from 'react';
+import ReplyButton from "../ReplyButton"
+import axios from "axios"
 import "./style.css"
 
-export class ExpandPost extends React.Component {
-    constructor() {
-        super();
-
+class ExpandPost extends React.Component {
+    constructor(props) {
+        super(props);
+        this.handleClick = this.handleClick.bind(this);
         this.state = {
-            isLoaded: false,
+            toggleReply: false,
             post: null
         };
     }
+    componentDidMount() {
+        var id = this.props.match.params.id;
+        axios.get(`/posts/` + id)
+            .then(res => {
+                const post = res.data[0].post_content;
+                const title = res.data[0].post_title;
+                const author = res.data[0].author_tag;
+                this.setState({
+                    post,
+                    title,
+                    author,
+                    toggleReply: true
+                });
+            })
+    }
 
+    handleClick() {
+        console.log(this.state.toggleReply);
+        if (this.state.toggleReply == false) {
+            this.setState({
+                toggleReply: true
+            })
+        } else {
+            this.setState({
+                toggleReply: false
+            })
+        }
+    }
 
-componentDidMount() {
-    var id = this.props.match.params.id;
-    axios.get(`/posts/` + id)
-    .then(res => {
-        const post = res.data[0].post_content;
-        const title = res.data[0].post_title;
-        const author = res.data[0].author_tag;
-        this.setState({ 
-            post,
-            title,
-            author,
-            isLoaded: true
-        });
-    })
+    render() {
+        const { toggleReply, post, title, author } = this.state;
+        const defaultView = (
+            <div className="expanded-post-container">
+                <div className="post_author">Author: {author}</div>
+                <div className="post_title">Title: {title}</div>
+                <div dangerouslySetInnerHTML={{ __html: post }} className="post_content" />
+                <button onClick={this.handleClick}>Test</button>
+            </div>
+        )
+        const clickedView = (
+            <div>
+                <div className="expanded-post-container">
+                    <div className="post_author">Author: {author}</div>
+                    <div className="post_title">Title: {title}</div>
+                    <div dangerouslySetInnerHTML={{ __html: post }} className="post_content" />
+                    <button onClick={this.handleClick}>Test</button>
+                </div>
+                <div>test2</div>
+            </div>
+        )
+        return (
+            <div>
+                {toggleReply ? clickedView : defaultView}
+            </div>
+        )
+    }
 }
-
-render() {
-    const { isLoaded, post, title, author } = this.state;
-    console.log(this.state);
-    //var id=this.props.match.params.id;
-    // console.log(this.props)
-    //  console.log(id)
-
-    return (
-            isLoaded ?  <ExpandedPost post={post} title={title} author={author} /> : <Loading />
-    );
-}
-}
-
 
 export default ExpandPost;
