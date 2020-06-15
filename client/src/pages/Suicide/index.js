@@ -84,7 +84,7 @@ function Suicide() {
               Text us. We’re excellent listeners if we do say so ourselves. And,
               we’re here for you—always. Text HOME to 741741 to connect with a
               real human. No judgment—just straight-up listening. <a className="text-support" href="https://www.crisistextline.org">
-              -Text to Talk-
+              :: Text to Talk ::
             </a>
             </li>
             <li className="Moodli">
