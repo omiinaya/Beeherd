@@ -13,6 +13,8 @@
     background-color:rgba(192,192,192,0.5);
     /*background-color: white;*/
     border-radius: 6px;
+    padding: 2%;
+    padding-bottom: 5%;
 }
 
 #reply-bar {
@@ -25,8 +27,12 @@
     /*background-color: white;*/
     border-radius: 6px;
     margin: 2%;
-    margin-top: 0%;
     padding: 2%;
     width: 90%;
     transform: translateX(10.5%);
+    margin-bottom: 0%;
+}
+
+#reply-button {
+    float: right;
 }

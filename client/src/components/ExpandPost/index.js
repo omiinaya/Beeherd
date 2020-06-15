@@ -74,7 +74,7 @@ class ExpandPost extends React.Component {
         const replyContainer = (
             <div className="reply-container">
                 <input type="text" id="reply-bar"></input>
-                <button onClick={() => { sendToDB(id) }}>Submit</button>
+                <button id="reply-button" onClick={() => { sendToDB(id) }}>Submit</button>
             </div>
         )
         const replies = (
