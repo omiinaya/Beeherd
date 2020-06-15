@@ -32,7 +32,7 @@ function Addiction() {
             <h1 className="mooddown"> </h1>
 
             <div className="borderDown">
-              <h1 className="mooddown2">& <br></br> Addiction</h1>
+              <h1 className="mooddown2">Addiction</h1>
             </div>
           </div>
           <h3 className="mooddown"> </h3>
