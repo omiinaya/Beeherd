@@ -82,3 +82,68 @@
 
 
   }
+
+
+
+
+  .Additext-container .moodColors {
+    font-size: 110px;
+    color:rgba(2, 2, 2, 0.317);
+  line-height:1;
+    background-repeat: repeat-x;
+    -webkit-background-clip: text;
+    animation: animate 15s linear infinite;
+  
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: Left 0px top 10px;
+    }
+    40% {
+      background-position: Left 800px top 10px;
+    }
+  }
+  
+  .text-container {
+    text-align: center;
+    padding:0px;
+  }
+
+.Additext-container{
+  font-size: 100px;
+  color: rgba(74, 72, 72, 0.1);
+  background-image: url(./assets/addi1.jpeg);
+  background-repeat: repeat-x;
+  -webkit-background-clip: text;
+  animation: animate 15s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: Left 0px top 10px;
+  }
+  40% {
+    background-position: Left 800px top 10px;
+  }
+}
+
+.Additext-container {
+ 
+  text-align: center;
+  margin-bottom: 0px;;
+}
+
+
+
+.LifeSecPicContainer {
+  background: url(../../pages/Addiction/assets/smoke4.jpeg);
+  min-height: 20px;
+  background: cover;
+  opacity: 0.8;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 2px;
+  border-radius: 6px;
+  color: rgb(151, 150, 152);
+}

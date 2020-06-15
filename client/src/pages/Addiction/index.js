@@ -16,28 +16,29 @@ function Addiction() {
 
         <section className="MoodSection1">
           <div className="MoodSec1container">
-            <div className="text-container">
-              <h1 className="moodColors">Addiction & Substance Abuse</h1>
+            <div className="Additext-container">
+              <h1 className="moodColors">Substance Abuse </h1>
+            
             </div>
             <h1 className="moodText1">And Addiction</h1>
           </div>
         </section>
 
         <section className="MoodSectionPic">
-          <div className="MoodSecPicContainer"></div>
+          <div className="LifeSecPicContainer"></div>
         </section>
         <center>
           <div className="moodTextDiv">
             <h1 className="mooddown"></h1>
 
             <div className="borderDown">
-              <h1 className="mooddown2">:: freedom ::</h1>
+              <h1 className="mooddown2">And Addiction</h1>
             </div>
           </div>
           <h3 className="mooddown"></h3>
         </center>
         <section className="MoodSectionPic">
-          <div className="MoodSecPicContainer"></div>
+          <div className="LifeSecPicContainer"></div>
         </section>
         <p className="moodTextp1">
         There is evidence that addictive behaviors share key neurobiological features: 
@@ -73,15 +74,16 @@ function Addiction() {
         <div className="moodTextDiv2">
           <p className="moodTextp2">What</p><p className= "moodTextp22">Do we Know?</p>
           <ul className="Moodul">
+            
             <li className="Moodli">
-            Both substance use disorders and gambling behaviors have an increased likelihood of being accompanied by mental health conditions such as depression and anxiety, or other pre-existing problems. Substance use and gambling disorders not only engage the same brain mechanisms, they respond to many of the same treatment approaches.
+            Because addiction affects the brain’s executive functions, centered in the prefrontal cortex, individuals who develop an addiction may not be aware that their behavior is causing problems for themselves and others. Over time, pursuit of the pleasurable effects of the substance or behavior may dominate an individual’s activities.
             </li>
             <li className="Moodli">
             Another distinguishing feature of addictions is that individuals continue to pursue the activity despite the physical or psychological harm it incurs, even if it the harm is exacerbated by repeated use. Typically, one's tolerance to a substance increases as the body adapts to its presence.
             </li>
 
             <li className="Moodli">
-            Because addiction affects the brain’s executive functions, centered in the prefrontal cortex, individuals who develop an addiction may not be aware that their behavior is causing problems for themselves and others. Over time, pursuit of the pleasurable effects of the substance or behavior may dominate an individual’s activities.
+            Both substance use disorders and gambling behaviors have an increased likelihood of being accompanied by mental health conditions such as depression and anxiety, or other pre-existing problems. Substance use and gambling disorders not only engage the same brain mechanisms, they respond to many of the same treatment approaches.
             </li>
 
             <li className="Moodli">
