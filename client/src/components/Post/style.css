@@ -6,8 +6,16 @@
   
   .editor {
     margin-right: 10em;
+    margin: 10%;
+    padding: 2%;
+    background-color: white;
+    border-radius: 6px;
   }
   
   .ck-editor__editable_inline {
     min-height: 500px;
+  }
+
+  #title-input {
+    width: 100%;
   }

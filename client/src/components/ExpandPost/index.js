@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ReplyButton from "../ReplyButton"
+import Reply from "../Reply"
 import axios from "axios"
 import "./style.css"
 
@@ -48,18 +48,13 @@ class ExpandPost extends React.Component {
                 <div className="post_author">Author: {author}</div>
                 <div className="post_title">Title: {title}</div>
                 <div dangerouslySetInnerHTML={{ __html: post }} className="post_content" />
-                <button onClick={this.handleClick}>Test</button>
+                <button onClick={this.handleClick}>Reply</button>
             </div>
         )
         const clickedView = (
             <div>
-                <div className="expanded-post-container">
-                    <div className="post_author">Author: {author}</div>
-                    <div className="post_title">Title: {title}</div>
-                    <div dangerouslySetInnerHTML={{ __html: post }} className="post_content" />
-                    <button onClick={this.handleClick}>Test</button>
-                </div>
-                <div>test2</div>
+                {defaultView}
+                <Reply />
             </div>
         )
         return (

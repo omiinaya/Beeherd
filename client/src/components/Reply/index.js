@@ -1,0 +1,26 @@
+import ClassicEditor from "@ckeditor/ckeditor5-build-classic"
+import CKEditor from "@ckeditor/ckeditor5-react"
+import React, { useState } from "react"
+import { sendToDB } from "./scripts"
+import "./style.css"
+
+function Reply() {
+  const [text, setText] = useState("")
+  return (
+    <div className="App">
+      <div className="editor-reply">
+        <CKEditor
+          editor={ClassicEditor}
+          data={text}
+          onChange={(event, editor) => {
+            const data = editor.getData()
+            setText(data)
+          }}
+        />
+        <button onClick={() => { sendToDB(text) }}>Submit</button>
+      </div>
+    </div>
+  )
+}
+
+export default Reply;

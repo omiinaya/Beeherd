@@ -9,7 +9,7 @@ function Post() {
   return (
     <div className="App">
       <div className="editor">
-      <input type="text" id="title-input" placeholder="Enter post title. (WIP)"></input>
+      <input type="text" id="title-input" placeholder="Enter post title."></input>
         <CKEditor
           editor={ClassicEditor}
           data={text}
