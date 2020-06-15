@@ -36,7 +36,11 @@ class Register extends Component {
 
     isUser(user.username).then(res => {
             if (res === null) {
-                register(user)
+                register(user).then(res => {
+                    if (res) {
+                        this.props.history.push('/login')
+                    }
+                })
             } else {
                 console.log("user already exists.")
             }

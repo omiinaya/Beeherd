@@ -39,7 +39,7 @@ class Login extends Component {
         return (
             <Jumbo backgroundImage="https://i.imgur.com/3hCgTuP.png">
                 <div className="container animation">
-                <div class="row gap100">
+                <div className="row gap100">
                     <div id="loginform">
                         <div className="col-md-6 mt-5 mx-auto">
                             <form noValidate onSubmit={this.onSubmit}>
