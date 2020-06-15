@@ -4,8 +4,6 @@ import "./style.css";
 //import ItsOkto from "../../components/ItsOkTo";
 //import InfoCards from "../../components/InfoCards";
 
-
-
 function MoodDisorders() {
   return (
     <div className="MoodPageContainer">
@@ -73,13 +71,18 @@ function MoodDisorders() {
         </section>
 
         <div className="moodTextDiv2">
-          <p className="moodTextp2">Which</p><p className= "moodTextp22">are they?</p>
+          <p className="moodTextp2">Which</p>
+          <p className="moodTextp22">are they?</p>
           <ul className="Moodul">
             <li className="Moodli">
               Major depressive disorder — prolonged and persistent periods of
-              extreme sadness <a className="text-support" href="https://nami.org/About-Mental-Illness">
-              :: Learn More ::
-            </a>
+              extreme sadness{" "}
+              <a
+                className="text-support"
+                href="https://nami.org/About-Mental-Illness"
+              >
+                :: Learn More ::
+              </a>
             </li>
             <li className="Moodli">
               Bipolar disorder — also called manic depression or bipolar
@@ -131,7 +134,9 @@ function MoodDisorders() {
       </div>
 
       <div className="moodTextDiv3">
-        <p className="moodText5">When to </p><p className="moodText555">SeeK</p><p className="moodText55">a pro?</p>
+        <p className="moodText5">When to </p>
+        <p className="moodText555">SeeK</p>
+        <p className="moodText55">a pro?</p>
       </div>
 
       <section className="MoodSection3">
@@ -139,9 +144,10 @@ function MoodDisorders() {
           <div className="moodBox">
             <p className="moodTextbox">
               If you feel like your emotions are interfering with your work,
-              relationships, social activities, or other parts of your life. Have
-              trouble with drinking or drugs or have suicidal thoughts and/or
-              behaviors. Let us locate support nearby by providing your zipcode above.
+              relationships, social activities, or other parts of your life.
+              Have trouble with drinking or drugs or have suicidal thoughts
+              and/or behaviors. Let us locate support nearby by providing your
+              zipcode above.
             </p>
           </div>
           <div className="moodBox">
@@ -149,10 +155,10 @@ function MoodDisorders() {
               Reach out to a professional -- Text to talk -- Completely
               Confidential
               <span className="crisisHotline">
-              Text HOME to 741741 to connect with a Crisis Counselor Free 24/7
-              support at your fingertips US and Canada: text 741741 UK: text
-              85258 | Ireland: text 086 1800 280
-            </span>
+                Text HOME to 741741 to connect with a Crisis Counselor Free 24/7
+                support at your fingertips US and Canada: text 741741 UK: text
+                85258 | Ireland: text 086 1800 280
+              </span>
             </p>
             <span className="crisisHotline">
               Text HOME to 741741 to connect with a Crisis Counselor Free 24/7
@@ -171,6 +177,50 @@ function MoodDisorders() {
           </div>
         </div>
       </section>
+      <div className="crisisAnime">
+        <img
+          width="200"
+          height="150"
+          class="lazy-load"
+          alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
+          data-sizes="auto"
+          onload="this.parentNode.className += ' img-loaded'"
+          src="https://media.giphy.com/media/iG3bIVD6b1tAd8S7Gf/giphy.gif"
+          sizes="auto"
+        ></img>
+        <img
+          width="200"
+          height="150"
+          class="lazy-load"
+          alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
+          data-sizes="auto"
+          onload="this.parentNode.className += ' img-loaded'"
+          src="https://media.tenor.com/images/5e53f20c3def5c8a132716ff7bb2ddfb/tenor.gif"
+          sizes="auto"
+        ></img>
+
+        <img
+          width="200"
+          height="150"
+          class="lazy-load"
+          alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
+          data-sizes="auto"
+          onload="this.parentNode.className += ' img-loaded'"
+          src="http://cdn.shopify.com/s/files/1/1568/1251/products/you-are-worthy-600x600_600x.jpg?v=1478125245"
+          sizes="auto"
+        ></img>
+        <img
+          width="200"
+          height="150"
+          class="lazy-load"
+          alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
+          data-sizes="auto"
+          onload="this.parentNode.className += ' img-loaded'"
+          src="https://media.tenor.com/images/5e53f20c3def5c8a132716ff7bb2ddfb/tenor.gif"
+          sizes="auto"
+        ></img>
+      </div>
+
       <section className="Informedfoot">
         <footer className="informedFooter">
           <p className="informedFooterText">
@@ -181,7 +231,5 @@ function MoodDisorders() {
     </div>
   );
 }
-
-
 
 export default MoodDisorders;

@@ -59,7 +59,7 @@
 
 .neon{
     position: absolute;;
-    top:40%;
+    top:55%;
     left:50%;
     transform: translate(-50%,-50%);
     margin-bottom:50px;
@@ -127,7 +127,7 @@
 
 
 
-.text-container .moodColors {
+.Lifetext-container .LifeColors {
     font-size: 121px;
     color: rgb(9, 9, 9);
   line-height:1;
@@ -145,9 +145,9 @@
     }
   }
   
-  .text-container {
+  .Lifetext-container {
     text-align: center;
-    padding:0px;
+    padding:20px;
   }
   
   .moodTextDiv2 {
@@ -205,28 +205,6 @@
     margin-bottom: 0px;
   }
 
-  .text-container .moodColors {
-    font-size: 121px;
-    color: rgb(9, 9, 9);
-  line-height:1;
-    background-repeat: repeat-x;
-    -webkit-background-clip: text;
-    animation: animate 15s linear infinite;
-  }
-  
-  @keyframes animate {
-    0% {
-      background-position: Left 0px top 10px;
-    }
-    40% {
-      background-position: Left 800px top 10px;
-    }
-  }
-  
-  .text-container {
-    text-align: center;
-    padding:0px;
-  }
   
   .moodTextDiv2 {
     display: inline-block;
@@ -240,7 +218,7 @@
   }
   
   .LifeSec1Container {
-    background: url(../../pages/Mood/assets/color-swirl.jpg);
+    background: url(../../pages/Suicide/images/fire1.jpg);
     min-height: 20px;
     background: cover;
     opacity: 0.8;
@@ -251,3 +229,36 @@
     color: rgb(151, 150, 152);
 
   }
+
+  .Curioustext-support{
+    font-size: 14px;
+    font-weight: bolder;
+    color:rgba(255, 217, 64, 0.94);
+    padding-left:2%;
+    
+}
+
+.crisisAnime{
+ padding:2%;
+border-radius: 200px;
+color:black;
+opacity:1;
+width:100%;
+height:auto;
+margin-top: 11%;
+text-align:center!important;
+margin-bottom:-50px;
+margin-left:0%;
+background-color: black;
+opacity: .5;
+z-index: -1;
+
+
+
+
+}
+
+.crisispic1{
+  border-radius: 16px;
+  opacity:2;
+}

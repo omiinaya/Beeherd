@@ -12,8 +12,8 @@ function Suicide() {
 
         <section className="MoodSection1">
           <div className="LifeSec1container">
-            <div className="text-container">
-              <h1 className="moodColors">About Suicide</h1>
+            <div className="Lifetext-container">
+              <h1 className="LifeColors">About Suicide</h1>
             </div>
             <h1 className="LifeText1 ">You Matter</h1>
           </div>
@@ -132,7 +132,9 @@ function Suicide() {
             <li className="Moodli">
               Go somewhere safe. If you feel like you are a danger to yourself,
               it’s always okay (brave, even!) to call 911 or go to an ER.
-            </li>
+            </li><a className="text-support" href="https://www.crisistextline.org/topics/suicide/">
+              :: help a friend ::
+            </a>
           </ul>
         </div>
       </div>
@@ -168,11 +170,14 @@ function Suicide() {
                 Text HOME to 741741: US & CANADA
               </span>
               <span className="moodTextbox">
-                Your life is worth living. I know it must not feel like that
-                right now. I invite you to place your hands over your heart and
+                Your life is worth living. I know it may not feel like that
+                right now. I invite you to place both hands over your heart and
                 after a few deep breaths,
               </span>
-              <span className="crisisHotline">ask yourself: Who am I?</span>
+              <span className="crisisHotline">ask yourself: Who am I really?</span>
+              <a className="Curioustext-support" href="https://www.youtube.com/watch?v=e71exrhEBQc">
+              :: curious ::
+            </a>
             </p>
           </div>
 
@@ -191,11 +196,25 @@ function Suicide() {
 
         </div>
       </section>
+      <div className="crisisAnime">
+      <img width="200" height="150" class="lazy-load" alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741" data-sizes="auto" onload="this.parentNode.className += ' img-loaded'"src="https://ci3.googleusercontent.com/proxy/2Z5gmEg5Bc3oHP75lTuGWbd890h2w1clQYIRh0_4jRKaqEjrLOZ0eodlNSNkceldBNrodE__c37zN4xPRad1WTst08FQPMstK5W89G-ij6jA75CXh2ykBZNq_tK9oBECZCxicSCeNpmrldsbyWylfJkoZWs=s0-d-e1-ft#http://24.media.tumblr.com/da962029a0a2c7e6dd6f16df651c3128/tumblr_mwjk8lNQyK1qc4uvwo1_500.gif
+" sizes="auto">
+      </img>
+      
+      <img width="200" height="150" class="lazy-load" alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741" data-sizes="auto" onload="this.parentNode.className += ' img-loaded'"src="http://cdn.shopify.com/s/files/1/1568/1251/products/you-are-worthy-600x600_600x.jpg?v=1478125245" sizes="auto">
+      </img>
+      <img width="200" height="150" class="lazy-load" alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741" data-sizes="auto" onload="this.parentNode.className += ' img-loaded'"src="https://media.tenor.com/images/5e53f20c3def5c8a132716ff7bb2ddfb/tenor.gif" sizes="auto">
+      </img>
+
+      <img width="200" height="150" class="lazy-load" alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741" data-sizes="auto" onload="this.parentNode.className += ' img-loaded'" data-src="https://www.crisistextline.org/wp-content/uploads/2020/03/happy-sad-1.gif" data-srcset="" src="https://www.crisistextline.org/wp-content/uploads/2020/03/happy-sad-1.gif" sizes="auto">
+      </img>
+      <img className= "crisispic1"width="200" height="150" class="lazy-load" alt="Dialog bubbles, one reading &quot;I'm not ok&quot; and the other &quot;I'm here and listening&quot; with the 741741 Crisis Text Line SMS number." data-sizes="auto" onload="this.parentNode.className += ' img-loaded'" data-src="https://www.crisistextline.org/wp-content/uploads/2020/03/300x250_redbackground-1-1.gif" data-srcset="" src="https://www.crisistextline.org/wp-content/uploads/2020/03/300x250_redbackground-1-1.gif" sizes="auto"></img>
+      </div>
       <section className="Informedfoot">
         <footer className="informedFooter">
       
           <p className="informedFooterText">
-            Life Is Now, Copyright &copy; beeherd 2020
+            Life Is Now, Copyright&copy; beeherd 2020
           </p>
         </footer>
       </section>
