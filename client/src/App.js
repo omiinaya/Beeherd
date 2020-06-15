@@ -12,6 +12,7 @@ import Home from "./components/Home/";
 import Footer from "./components/Footer";
 import { Container } from "./components/Grid";
 import ExpandPost from "./components/ExpandPost";
+import ExpandedPost from "./components/ExpandedPost";
 import About from "./components/About/";
 
 //pages
@@ -36,9 +37,7 @@ class App extends Component {
             <Route exact path="/profile" component={Profile} />
             <Route exact path="/post" component={Post} />
             
-            
-            
-            <Route path="/posts/:id" component={ExpandPost} />  
+            <Route path="/posts/:id" component={ExpandedPost} /> 
 
             <Route exact path="/suicide" component={Suicide} />
             
