@@ -1,7 +1,6 @@
 import React from 'react'
 import jwt_decode from 'jwt-decode'
-import { updateUser } from './scripts'
-import { loadUser } from './scripts'
+import { changeTag } from './scripts'
 
 class TagSection extends React.Component {
     constructor() {
@@ -13,18 +12,15 @@ class TagSection extends React.Component {
     }
 
     componentDidMount() {
-        const token = localStorage.usertoken
-        console.log(token);
         if (localStorage.usertoken != null) {
-            const token = localStorage.usertoken
-            const decoded = jwt_decode(token)
-            const temp_tag = decoded.temp_tag;
-            const user_id = decoded.id;
+            var token = localStorage.usertoken
+            var decoded = jwt_decode(token)
+            var temp_tag = decoded.temp_tag;
+            var user_id = decoded.id;
             this.setState({
                 current_tag: temp_tag,
                 current_id: user_id
             })
-            loadUser()
         } else {
             const temp_tag = "test1";
             const current_id = "test2";
@@ -37,18 +33,30 @@ class TagSection extends React.Component {
         //console.log(currentPosts)
     }
 
+    viewCurrentState(a) {
+        console.log(a)
+        /*this.setState({
+            current_tag: a
+        })*/
+    }
+
+    updateStuff() {
+        //mimic relog
+    }
+
     render() {
-        const current_tag = this.state.current_tag;
-        const current_id = this.state.current_id;
+        var current_tag = this.state.current_tag;
+        var current_id = this.state.current_id;
+        this.viewCurrentState(this.state.current_tag);
         const loggedInMenu = (
             <div>
                 <div>Current public tag: {current_tag}</div>
-                <input type="text" id="change-tag"></input><button onClick={ () => 
-                    { 
-                        updateUser(current_id);
-                        window.open("/", "_self");
-                    }
-                    }>Change</button>
+                <input type="text" id="change-tag"></input><button onClick={() => {
+                    changeTag(current_id);
+                    this.updateStuff()
+                    window.open("/", "_self");
+                }
+                }>Change</button>
             </div>
         )
         const loggedOutMenu = (
