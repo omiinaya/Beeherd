@@ -15,7 +15,7 @@ function Suicide() {
             <div className="Lifetext-container">
               <h1 className="LifeColors">About Suicide</h1>
             </div>
-            <h1 className="LifeText1 ">You Matter</h1>
+            <h1 className="LifeText1">You</h1>
           </div>
         </section>
 
@@ -77,21 +77,18 @@ function Suicide() {
               Text us. We’re excellent listeners if we do say so ourselves. And,
               we’re here for you—always. Text HOME to 741741 to connect with a
               real human. No judgment—just straight-up listening.{" "}
-              
             </li>
             <li className="Moodli">
               Tell a friend. No matter how alone you feel, know that there are
               so many people in this world who not only want you in it, but they
               want to help you.
             </li>
-
             <li className="Moodli">
               (Hi—have you met us? We’re included in this group! See above)
               Here, at beeherd, we are committed to helping you see you are
               powerful enough to choose life no matter what shows up in your
               space!
             </li>
-
             <li className="Moodli">
               Confiding in someone can help you build a support system for times
               when you are feeling in a really dark place. Nervous about
@@ -112,7 +109,6 @@ function Suicide() {
               my heart and simply being with the pain that I feel. Something
               amazing will happen when you trust that feeling is healing.
             </li>
-
             <li className="Moodli">
               Talk to a pro. If you are thinking about ending your life, chances
               are you are dealing with really painful emotions. Nobody deserves
@@ -120,20 +116,19 @@ function Suicide() {
               therapist who can help you work through and process your emotions
               in a healthy way.
             </li>
-
             <li className="Moodli">
               Go somewhere safe. If you feel like you are a danger to yourself,
               it’s always okay (brave, even!) to call 911 or go to an ER.
-            </li>     <a className="text-support" href="https://www.crisistextline.org">
-                :: text to talk ::
-              </a>
+            </li>{" "}
+            <a className="text-support" href="https://www.crisistextline.org">
+              :: text to talk ::
+            </a>
             <a
               className="text-support"
               href="https://www.crisistextline.org/topics/suicide/"
             >
               :: help a friend ::
             </a>
-    
           </ul>
         </div>
       </div>
@@ -141,11 +136,22 @@ function Suicide() {
       <div className="lifedivCubes">
         <p className="LifeText3"></p>
       </div>
-
+      <h1 className="LifeText33">Matter!</h1>
       <div className="moodTextDiv3">
-        <p className="moodText5">YOU</p>
-        <p className="moodText555">are Not</p>
-        <p className="LifeText55">alone</p>
+        <div className="youyou">
+          <img
+            className="youyoupic"
+            width="200"
+            height="150"
+            class="lazy-load"
+            alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
+            data-sizes="auto"
+            onload="this.parentNode.className += ' img-loaded'"
+            src="https://media1.tenor.com/images/1084869ffc5b7a2761c5f79d32170dfc/tenor.gif?itemid=5131794"
+            sizes="auto"
+          ></img>
+        </div>
+        
       </div>
 
       <section className="MoodSection3">
@@ -200,54 +206,7 @@ function Suicide() {
           </div>
         </div>
       </section>
-      <div className="LifecrisisAnime">
-        <img
-          width="200"
-          height="150"
-          class="lazy-load"
-          alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
-          data-sizes="auto"
-          onload="this.parentNode.className += ' img-loaded'"
-          src="http://cdn.shopify.com/s/files/1/1568/1251/products/you-are-worthy-600x600_600x.jpg?v=1478125245"
-          sizes="auto"
-        ></img>
-        <img
-          width="200"
-          height="150"
-          class="lazy-load"
-          alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
-          data-sizes="auto"
-          onload="this.parentNode.className += ' img-loaded'"
-          src="https://media.tenor.com/images/5e53f20c3def5c8a132716ff7bb2ddfb/tenor.gif"
-          sizes="auto"
-        ></img>
-
-        <img
-          width="200"
-          height="150"
-          class="lazy-load"
-          alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
-          data-sizes="auto"
-          onload="this.parentNode.className += ' img-loaded'"
-          data-src="https://www.crisistextline.org/wp-content/uploads/2020/03/happy-sad-1.gif"
-          data-srcset=""
-          src="https://www.crisistextline.org/wp-content/uploads/2020/03/happy-sad-1.gif"
-          sizes="auto"
-        ></img>
-        <img
-          className="crisispic1"
-          width="200"
-          height="150"
-          class="lazy-load"
-          alt='Dialog bubbles, one reading "I&apos;m not ok" and the other "I&apos;m here and listening" with the 741741 Crisis Text Line SMS number.'
-          data-sizes="auto"
-          onload="this.parentNode.className += ' img-loaded'"
-          data-src="https://www.crisistextline.org/wp-content/uploads/2020/03/300x250_redbackground-1-1.gif"
-          data-srcset=""
-          src="https://www.crisistextline.org/wp-content/uploads/2020/03/300x250_redbackground-1-1.gif"
-          sizes="auto"
-        ></img>
-      </div>
+      
       <section className="Informedfoot">
         <footer className="informedFooter">
           <p className="informedFooterText">

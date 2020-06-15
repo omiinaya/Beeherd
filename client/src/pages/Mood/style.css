@@ -206,7 +206,7 @@
   
   .moodTextp2 {
     color: rgb(232, 14, 177);
-    font-size: 180px;
+    font-size: 4em;
     height:100px;
     opacity: 0.2;
     text-align: center;
@@ -216,7 +216,7 @@
   }
   
   .moodTextp22 {
-    font-size: 100px;
+    font-size: 2em;
     color: rgb(241, 238, 236);
     opacity: 0.3;
    text-shadow: black;
@@ -225,7 +225,7 @@
   
   .moodText55 {
     color: rgb(228, 191, 218);
-    font-size: 100px;
+    font-size: 3em;
     
     opacity: 0.2;
   }

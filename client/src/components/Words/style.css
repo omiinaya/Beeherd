@@ -65,10 +65,10 @@
 }
 
 .requestSupport {
-  font-size: 22px;
+  font-size: 2em;
   color: rgba(245, 203, 89, 0.733);
  opacity: .6px;
-  letter-spacing: 7px;
+  letter-spacing: 5px;
   
 }
 
@@ -97,12 +97,11 @@ line-height:1;
 
 .moodTextDiv2 {
   display: inline-block;
-  padding-top: 2%;
+ 
 }
 
-.moodText2 .feelingDown {
-  font-size: 10px;
-  padding-bottom: 10px;
+.moodText2 {
+ 
   text-align: center;
 }
 
@@ -166,8 +165,8 @@ line-height:1;
 
 .moodTextp2 {
   color: rgb(232, 14, 177);
-  font-size: 180px;
-  height:100px;
+  font-size: 9em;
+  height:.9em;
   opacity: 0.2;
   text-align: center;
   text-shadow: black;
@@ -176,7 +175,7 @@ line-height:1;
 }
 
 .moodTextp22 {
-  font-size: 100px;
+  font-size: 4em;
   color: rgb(241, 238, 236);
   opacity: 0.3;
  text-shadow: black;
@@ -185,17 +184,18 @@ line-height:1;
 
 .LifeText55 {
   color: rgb(228, 191, 218);
-  font-size: 130px;
-  margin-left:600px;
+  font-size: 4em;
+text-align:right;
   opacity: 0.2;
   line-height: 100px;
   margin-bottom:80px;
+  margin-right:6em;
 }
 
 
 .moodText55 {
   color: rgb(228, 191, 218);
-  font-size: 100px;
+  
   
   opacity: 0.2;
 }
