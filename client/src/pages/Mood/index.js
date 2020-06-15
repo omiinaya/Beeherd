@@ -6,7 +6,7 @@ import "./style.css";
 
 function MoodDisorders() {
   return (
-    <div className="MoodPageContainer">
+    <div className="BlueMoodPageContainer">
       <div className="MoodPage">
         <header className="moodHeader">
           <div className="MHcontainer">
