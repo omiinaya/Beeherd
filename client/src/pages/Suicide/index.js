@@ -65,27 +65,19 @@ function Suicide() {
                 </button>
               </div>
             </div>
-            
-        
           </div>
-          
         </section>
-     
 
         <div className="moodTextDiv2">
           <p className="moodTextp2">Having </p>
           <p className="moodTextp22">Suicidal Thoughts?</p>
-          <p className="LifeText2">
-          
-           
-          </p>
+          <p className="LifeText2"></p>
           <ul className="Moodul">
             <li className="Moodli">
               Text us. We’re excellent listeners if we do say so ourselves. And,
               we’re here for you—always. Text HOME to 741741 to connect with a
-              real human. No judgment—just straight-up listening. <a className="text-support" href="https://www.crisistextline.org">
-              :: Text to Talk ::
-            </a>
+              real human. No judgment—just straight-up listening.{" "}
+              
             </li>
             <li className="Moodli">
               Tell a friend. No matter how alone you feel, know that there are
@@ -132,9 +124,16 @@ function Suicide() {
             <li className="Moodli">
               Go somewhere safe. If you feel like you are a danger to yourself,
               it’s always okay (brave, even!) to call 911 or go to an ER.
-            </li><a className="text-support" href="https://www.crisistextline.org/topics/suicide/">
+            </li>     <a className="text-support" href="https://www.crisistextline.org">
+                :: text to talk ::
+              </a>
+            <a
+              className="text-support"
+              href="https://www.crisistextline.org/topics/suicide/"
+            >
               :: help a friend ::
             </a>
+    
           </ul>
         </div>
       </div>
@@ -174,10 +173,15 @@ function Suicide() {
                 right now. I invite you to place both hands over your heart and
                 after a few deep breaths,
               </span>
-              <span className="crisisHotline">ask yourself: Who am I really?</span>
-              <a className="Curioustext-support" href="https://www.youtube.com/watch?v=e71exrhEBQc">
-              :: curious ::
-            </a>
+              <span className="crisisHotline">
+                ask yourself: Who am I really?
+              </span>
+              <a
+                className="Curioustext-support"
+                href="https://www.youtube.com/watch?v=e71exrhEBQc"
+              >
+                ::curious::
+              </a>
             </p>
           </div>
 
@@ -190,29 +194,62 @@ function Suicide() {
             </p>
           </div>
           <div classname="uMatterDiv">
-          <h1 className="neon" data-text="[You Matter]">
-            [You_Matter]
-          </h1> </div>
-
+            <h1 className="neon" data-text="[You Matter]">
+              [You_Matter]
+            </h1>{" "}
+          </div>
         </div>
       </section>
-      <div className="crisisAnime">
-      <img width="200" height="150" class="lazy-load" alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741" data-sizes="auto" onload="this.parentNode.className += ' img-loaded'"src="https://ci3.googleusercontent.com/proxy/2Z5gmEg5Bc3oHP75lTuGWbd890h2w1clQYIRh0_4jRKaqEjrLOZ0eodlNSNkceldBNrodE__c37zN4xPRad1WTst08FQPMstK5W89G-ij6jA75CXh2ykBZNq_tK9oBECZCxicSCeNpmrldsbyWylfJkoZWs=s0-d-e1-ft#http://24.media.tumblr.com/da962029a0a2c7e6dd6f16df651c3128/tumblr_mwjk8lNQyK1qc4uvwo1_500.gif
-" sizes="auto">
-      </img>
-      
-      <img width="200" height="150" class="lazy-load" alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741" data-sizes="auto" onload="this.parentNode.className += ' img-loaded'"src="http://cdn.shopify.com/s/files/1/1568/1251/products/you-are-worthy-600x600_600x.jpg?v=1478125245" sizes="auto">
-      </img>
-      <img width="200" height="150" class="lazy-load" alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741" data-sizes="auto" onload="this.parentNode.className += ' img-loaded'"src="https://media.tenor.com/images/5e53f20c3def5c8a132716ff7bb2ddfb/tenor.gif" sizes="auto">
-      </img>
+      <div className="LifecrisisAnime">
+        <img
+          width="200"
+          height="150"
+          class="lazy-load"
+          alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
+          data-sizes="auto"
+          onload="this.parentNode.className += ' img-loaded'"
+          src="http://cdn.shopify.com/s/files/1/1568/1251/products/you-are-worthy-600x600_600x.jpg?v=1478125245"
+          sizes="auto"
+        ></img>
+        <img
+          width="200"
+          height="150"
+          class="lazy-load"
+          alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
+          data-sizes="auto"
+          onload="this.parentNode.className += ' img-loaded'"
+          src="https://media.tenor.com/images/5e53f20c3def5c8a132716ff7bb2ddfb/tenor.gif"
+          sizes="auto"
+        ></img>
 
-      <img width="200" height="150" class="lazy-load" alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741" data-sizes="auto" onload="this.parentNode.className += ' img-loaded'" data-src="https://www.crisistextline.org/wp-content/uploads/2020/03/happy-sad-1.gif" data-srcset="" src="https://www.crisistextline.org/wp-content/uploads/2020/03/happy-sad-1.gif" sizes="auto">
-      </img>
-      <img className= "crisispic1"width="200" height="150" class="lazy-load" alt="Dialog bubbles, one reading &quot;I'm not ok&quot; and the other &quot;I'm here and listening&quot; with the 741741 Crisis Text Line SMS number." data-sizes="auto" onload="this.parentNode.className += ' img-loaded'" data-src="https://www.crisistextline.org/wp-content/uploads/2020/03/300x250_redbackground-1-1.gif" data-srcset="" src="https://www.crisistextline.org/wp-content/uploads/2020/03/300x250_redbackground-1-1.gif" sizes="auto"></img>
+        <img
+          width="200"
+          height="150"
+          class="lazy-load"
+          alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
+          data-sizes="auto"
+          onload="this.parentNode.className += ' img-loaded'"
+          data-src="https://www.crisistextline.org/wp-content/uploads/2020/03/happy-sad-1.gif"
+          data-srcset=""
+          src="https://www.crisistextline.org/wp-content/uploads/2020/03/happy-sad-1.gif"
+          sizes="auto"
+        ></img>
+        <img
+          className="crisispic1"
+          width="200"
+          height="150"
+          class="lazy-load"
+          alt='Dialog bubbles, one reading "I&apos;m not ok" and the other "I&apos;m here and listening" with the 741741 Crisis Text Line SMS number.'
+          data-sizes="auto"
+          onload="this.parentNode.className += ' img-loaded'"
+          data-src="https://www.crisistextline.org/wp-content/uploads/2020/03/300x250_redbackground-1-1.gif"
+          data-srcset=""
+          src="https://www.crisistextline.org/wp-content/uploads/2020/03/300x250_redbackground-1-1.gif"
+          sizes="auto"
+        ></img>
       </div>
       <section className="Informedfoot">
         <footer className="informedFooter">
-      
           <p className="informedFooterText">
             Life Is Now, Copyright&copy; beeherd 2020
           </p>
