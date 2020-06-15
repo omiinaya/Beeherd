@@ -160,3 +160,84 @@
 .lifeColorsh1{
   opacity:1;
 }
+
+
+
+.MoodcrisisAnimeDiv{
+  padding:2%;
+
+  opacity:1;
+  width:100%;
+  height:auto;
+  margin-top: 2%;
+  text-align:center!important;
+  margin-bottom:120px;
+  margin-left:0%;
+  justify-content: space-around;
+  
+  opacity: .5;
+  
+
+}
+
+
+
+
+.MoodcrisisAnime{
+  padding:2%;
+
+  opacity:1;
+  width:100%;
+  height:auto;
+  margin-top: 2%;
+  text-align:center!important;
+  
+  margin-left:0%;
+  justify-content: space-around;
+  
+  opacity: .5;
+}
+
+.MoodcrisisAnimefoot{
+  padding:2%;
+
+  opacity:1;
+  width:100%;
+  height:auto;
+  margin-top: 4%;
+  text-align:center!important;
+  margin-bottom: -70px;
+  margin-left:0%;
+  justify-content: space-around;
+  
+  opacity: .5;
+}
+
+
+
+.MoodcrisisAnime1{
+  float:right;
+ margin-right:20%;
+
+}
+
+.LifeSec3container{
+
+}
+
+
+.LifecrisisAnime{
+  padding:2%;
+  border-radius: 200px;
+  color:black;
+  opacity:1;
+  width:100%;
+  height:auto;
+  margin-top: 11%;
+  text-align:center!important;
+  margin-bottom:-50px;
+  margin-left:0%;
+  background-color: black;
+  opacity: .5;
+  z-index: -1;
+}
