@@ -17,7 +17,7 @@ function Addiction() {
         <section className="MoodSection1">
           <div className="MoodSec1container">
             <div className="Additext-container">
-              <h1 className="moodColors">Substance Abuse </h1>
+              <h1 className="moodColors lifeColorsh1">Substance Abuse </h1>
             
             </div>
             <h1 className="moodText1">And Addiction</h1>
