@@ -200,7 +200,7 @@ function Suicide() {
           </div>
         </div>
       </section>
-      <div className="crisisAnime">
+      <div className="LifecrisisAnime">
         <img
           width="200"
           height="150"

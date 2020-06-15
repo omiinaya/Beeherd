@@ -222,5 +222,22 @@
 }
 
 .LifeSec3container{
-  
+
+}
+
+
+.LifecrisisAnime{
+  padding:2%;
+  border-radius: 200px;
+  color:black;
+  opacity:1;
+  width:100%;
+  height:auto;
+  margin-top: 11%;
+  text-align:center!important;
+  margin-bottom:-50px;
+  margin-left:0%;
+  background-color: black;
+  opacity: .5;
+  z-index: -1;
 }

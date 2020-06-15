@@ -28,10 +28,10 @@ function MoodDisorders() {
         </section>
         <center>
           <div className="moodTextDiv">
-            <h1 className="mooddown">it's ok to not be ok</h1>
+            <h1 className="mooddown">it's ok to not be</h1>
 
             <div className="borderDown">
-              <h1 className="mooddown2">:: down ::</h1>
+              <h1 className="mooddown2">:: ok ::</h1>
             </div>
           </div>
           <h3 className="mooddown"> </h3>
@@ -172,7 +172,7 @@ function MoodDisorders() {
       </div>
 
       <section className="MoodSection3">
-        <div className="LifeSec3container MoodPage">
+        <div className="MoodSec3container MoodPage">
           <div className="moodBox">
             <p className="moodTextbox">
               If you feel like your emotions are interfering with your work,
