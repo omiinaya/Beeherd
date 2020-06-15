@@ -59,12 +59,12 @@
 
 .neon{
     position: absolute;;
-    top:50%;
+    top:40%;
     left:50%;
     transform: translate(-50%,-50%);
     margin-bottom:50px;
     padding:0 20px;
-    font-size: 4em;
+    font-size: 3em;
     color:rgb(196, 171, 235);
     text-shadow: 0 0 20px #ff005b;
     font-family: "quicksand";
