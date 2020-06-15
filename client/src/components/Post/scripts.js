@@ -11,21 +11,25 @@ export function sendToDB(a) {
     const user_id = decoded.id;                                 //grabs user id from the decoded token.
     const temp_tag = decoded.temp_tag;                          //grabs temp tag from decoded token.
     const content = a;                                          //grabs post content from button.
-    const title = document.getElementById("title-input").value; 
+    const title = document.getElementById("title-input").value;
     //console.log(token)
-    //console.log(content)
-    //console.log(title)
+    console.log(content)
+    console.log(title)
 
-    return axios                                                //use axios to send data to database.
-    .post('posts/post', {
-        author_id: user_id,
-        author_tag: temp_tag,
-        post_title: title,
-        post_content: content
-    })
-    .then(res => {
-        console.log("Post successfully sent to database.")
-        window.location.href = "/";
-        return res.data
-    })
+    if (content ==="" || title ==="") {
+        console.log("Please fill out all required fields.")
+    } else {
+        return axios                                                //use axios to send data to database.
+        .post('posts/post', {
+            author_id: user_id,
+            author_tag: temp_tag,
+            post_title: title,
+            post_content: content
+        })
+        .then(res => {
+            console.log("Post successfully sent to database.")
+            window.location.href = "/";
+            return res.data
+        })
+    }
 }
