@@ -6,7 +6,6 @@ import axios from "axios"
 import { Row, Col } from "../Grid";
 import { PostList, PostListItem } from "../PostList";
 import EmptyList from "../EmptyList";
-import SeeMoreButton from "../SeeMoreButton";
 import "./style.css"
 
 class ExpandPost extends React.Component {
@@ -64,50 +63,57 @@ class ExpandPost extends React.Component {
 
     render() {
         const { toggleReply, post, title, author, id } = this.state;
-        const defaultView = (
-            <div>
-                <div className="expanded-post-container">
-                    <div className="post_author">Author: {author}</div>
-                    <div className="post_title">Title: {title}</div>
-                    <div dangerouslySetInnerHTML={{ __html: post }} className="post_content" />
-                    <button onClick={this.handleClick}>Reply</button>
-                </div>
-                <Col size="md-9">
-                    {this.state.savedReplies.length > 0 ?
-                        <PostList>
-                            {this.state.savedReplies.slice(0).reverse().map(replies => {
-                                //console.log(posts)
-                                return (
-                                    <div className="post-card" onClick={() => this.handleOnClick(replies)}>
-                                        <div>
-                                            <PostListItem
-                                                id={replies.author_id}
-                                                author={replies.author_tag}
-                                                content={replies.reply_content}
-                                            />
-                                            <div className="button-container">
-                                                <SeeMoreButton
-                                                    id={replies.id}
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                );
-                            })}
-                        </PostList>
-                        :
-                        <EmptyList />
-                    }
-                </Col>
+        const originalPost = (
+            <div className="expanded-post-container">
+                <div className="post_author">Author: {author}</div>
+                <div className="post_title">Title: {title}</div>
+                <div dangerouslySetInnerHTML={{ __html: post }} className="post_content" />
+                <button onClick={this.handleClick}>Reply</button>
             </div>
         )
+        const replyContainer = (
+            <div className="reply-container">
+                <input type="text" id="reply-bar"></input>
+                <button onClick={() => { sendToDB(id) }}>Submit</button>
+            </div>
+        )
+        const replies = (
+            <Col size="md-12">
+                {this.state.savedReplies.length > 0 ?
+                    <PostList>
+                        {this.state.savedReplies.slice(0).reverse().map(replies => {
+                            //console.log(posts)
+                            return (
+                                <div className="reply-card" onClick={() => this.handleOnClick(replies)}>
+                                    <div>
+                                        <PostListItem
+                                            id={replies.author_id}
+                                            author={replies.author_tag}
+                                            content={replies.reply_content}
+                                        />
+                                    </div>
+                                </div>
+                            );
+                        })}
+                    </PostList>
+                    :
+                    <EmptyList />
+                }
+            </Col>
+        )
+
+        const defaultView = (
+            <div>
+                {originalPost}
+                {replies}
+            </div>
+        )
+
         const clickedView = (
             <div>
-                {defaultView}
-                <div className="reply-container">
-                    <input type="text" id="reply-bar"></input>
-                    <button onClick={() => { sendToDB(id) }}>Submit</button>
-                </div>
+                {originalPost}
+                {replyContainer}
+                {replies}
             </div>
         )
         return (

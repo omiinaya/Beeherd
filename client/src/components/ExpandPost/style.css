@@ -1,15 +1,9 @@
 .expanded-post-container {
-    margin: 10%;
-    padding: 2%;
     background-color: white;
     border-radius: 6px;
 }
 
 .reply-container {
-    margin: auto;
-    margin-top: -8%;
-    padding: 2%;
-    width: 80%;
     background-color: white;
     border-radius: 6px;
 }
@@ -17,4 +11,9 @@
 #reply-bar {
     width: 100%;
     height: 100px;
+}
+
+.reply-card {
+    background-color: white;
+    border-radius: 6px;
 }
