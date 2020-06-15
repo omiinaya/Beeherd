@@ -7,10 +7,8 @@ export function sendToDB(a) {
     const user_id = decoded.id;                                 //grabs user id from the decoded token.
     const temp_tag = decoded.temp_tag;                          //grabs temp tag from decoded token.
     const content = a;                                          //grabs post content from button.
-    const title = document.getElementById("title-input").value;
     //console.log(token)
     console.log(content)
-    console.log(title)
 
     if (content ==="") {
         console.log("Please fill out all required fields.")
@@ -19,7 +17,7 @@ export function sendToDB(a) {
         .post('reply/post', {
             author_id: user_id,
             author_tag: temp_tag,
-            post_content: content
+            content: content
         })
         .then(res => {
             console.log("Post successfully sent to database.")
