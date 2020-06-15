@@ -45,6 +45,7 @@ class Navbar extends Component {
                             <Dropdown.Item href="/suicide">Suicidal Thoughts</Dropdown.Item>
                             <Dropdown.Item href="/mood">Mood Disorders</Dropdown.Item>
                             <Dropdown.Item href="/addiction">Addiction</Dropdown.Item>
+                            <Dropdown.Item href="/about">About</Dropdown.Item>
                         </DropdownButton>
                     </ul>
                 </div>
