@@ -43,6 +43,16 @@ class ExpandPost extends React.Component {
         }
     }
 
+    getReplies = () => {
+        axios
+          .get("/replies/all")
+          .then((res) => {
+            this.setState({ savedReplies: res.data });
+            //console.log(res.data)
+          })
+          .catch((err) => console.log(err));
+      };
+
     render() {
         const { toggleReply, post, title, author } = this.state;
         const defaultView = (

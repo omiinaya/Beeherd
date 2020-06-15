@@ -48,7 +48,7 @@ class Register extends Component {
     }
     render() {
         return (
-            <Jumbo backgroundImage="https://i.imgur.com/3hCgTuP.png">
+            <Jumbo backgroundImage="https://i.imgur.com/bnRAKRp.png" backgroundPositionY="40%" backgroundPositionX="48%">
                 <div className="container">
                     <div className="row gap100">
                     <div id="registerform">

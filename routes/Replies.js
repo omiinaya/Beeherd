@@ -22,4 +22,11 @@ replies.post('/reply', (req, res) => {
     })
 })
 
+//get posts from database
+replies.get("/all", function (req, res) {
+    Reply.findAll({}).then(function (results) {
+        res.json(results);
+    });
+});
+
 module.exports = replies

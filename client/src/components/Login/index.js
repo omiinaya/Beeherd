@@ -37,7 +37,7 @@ class Login extends Component {
 
     render() {
         return (
-            <Jumbo backgroundImage="https://i.imgur.com/3hCgTuP.png">
+            <Jumbo backgroundImage="https://i.imgur.com/3hCgTuP.png" backgroundPositionY="40%" backgroundPositionX="3%">
                 <div className="container animation">
                 <div className="row gap100">
                     <div id="loginform">
