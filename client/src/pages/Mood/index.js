@@ -69,21 +69,9 @@ function MoodDisorders() {
             </div>
           </div>
         </section>
-        <div className="MoodcrisisAnimeDiv">
-          <div className="MoodcrisisAnime">
-            {" "}
-            <img
-              width="200"
-              height="150"
-              class="lazy-load"
-              alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
-              data-sizes="auto"
-              onload="this.parentNode.className += ' img-loaded'"
-              src="https://media.giphy.com/media/iG3bIVD6b1tAd8S7Gf/giphy.gif"
-              sizes="auto"
-            ></img>
-          </div>{" "}
-        </div>
+        
+          <p></p>
+       
         <div className="moodTextDiv2">
           <p className="moodTextp2">Which</p>
           <p className="moodTextp22">are they?</p>
@@ -142,7 +130,7 @@ function MoodDisorders() {
               </a>
             </span>
           </ul>
-        </div>
+  
       </div>
 
       <div className="MoodcrisisAnimeDiv">
@@ -233,6 +221,7 @@ function MoodDisorders() {
           </p>
         </footer>
       </section>
+    </div>
     </div>
   );
 }
