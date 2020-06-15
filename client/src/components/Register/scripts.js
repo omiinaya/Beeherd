@@ -4,6 +4,8 @@ var temp_tag;
 var wordList;
 var wordListFixed = [];
 
+var userCheck;
+
 export function generateWordList() {
     axios({
         method: 'get',
@@ -13,7 +15,7 @@ export function generateWordList() {
             //console.log(res.data)
             wordList = res.data
         })
-    )
+        )
 }
 
 export function capitalizeFirst() {
@@ -35,16 +37,24 @@ export function generateRandomTag() {
     //console.log(temp_tag);
 }
 
+export function isUser(a) {
+    return axios
+    .get('users/' + a)
+    .then(function (res) {
+        userCheck = res.data
+        return userCheck;
+    })
+}
+
 export const register = newUser => {
     return axios
-        .post('users/register', {
-            username: newUser.username,
-            password: newUser.password,
-            temp_tag: temp_tag
-        })
-        .then(res => {
-            //need if statement incase already registered
-            console.log("User has been egistered.")
-            return res.data
-        })
+    .post('users/register', {
+        username: newUser.username,
+        password: newUser.password,
+        temp_tag: temp_tag
+    })
+    .then(res => {
+        console.log("User has been egistered.")
+        return res.data
+    })
 }

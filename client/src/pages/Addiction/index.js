@@ -1,6 +1,6 @@
 import React from 'react'
 import "./style.css";
-import Words from '../../components/Words';
+//import Words from '../../components/Words';
 import "../../components/Words/style.css";
 //import InfoCards from '../../components/InfoCards';
 
@@ -29,13 +29,13 @@ function Addiction() {
         </section>
         <center>
           <div className="moodTextDiv">
-            <h1 className="mooddown"></h1>
+            <h1 className="mooddown"> </h1>
 
             <div className="borderDown">
               <h1 className="mooddown2">And Addiction</h1>
             </div>
           </div>
-          <h3 className="mooddown"></h3>
+          <h3 className="mooddown"> </h3>
         </center>
         <section className="MoodSectionPic">
           <div className="LifeSecPicContainer"></div>

@@ -71,8 +71,18 @@ users.post('/login', (req, res) => {
         })
 })
 
-users.get("/api/", function (req, res) {
+users.get("/all", function (req, res) {
     User.findAll().then(user => {
+        res.json(user);
+    });
+});
+
+users.get("/:username", function (req, res) {
+    User.findOne({
+        where: {
+            username: req.params.username
+        }
+    }).then(user => {
         res.json(user);
     });
 });
