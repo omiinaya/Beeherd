@@ -7,7 +7,7 @@ class Navbar extends Component {
     logOut(e) {
         e.preventDefault()
         localStorage.removeItem('usertoken')
-        this.props.history.push('/')
+        window.open("/","_self")
     }
     render() {
         const loginRegLink = (

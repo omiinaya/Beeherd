@@ -1,12 +1,13 @@
 import React, { Component } from "react";
-import Hero from "../Hero";
+import { Row, Col } from "../Grid";
 import { redirectToPost } from "./scripts";
+import { PostList, PostListItem } from "../PostList";
+import Hero from "../Hero";
 import Footer from "../Footer";
 import axios from "axios";
 import EmptyList from "../EmptyList";
-import { Row, Col } from "../Grid";
-import { PostList, PostListItem } from "../PostList";
 import SeeMoreButton from "../SeeMoreButton";
+import  TagChanger  from "../TagChanger";
 import "./style.css";
 import {
   MDBRow,
@@ -57,7 +58,6 @@ class Home extends Component {
         <div className="mini-post">
           <input type="text" id="mini-post-text" size="50" placeholder="Say something." onClick={redirectToPost}></input>
         </div>
-
         <div>
           <Row>
             <Col size="md-9">
@@ -93,7 +93,7 @@ class Home extends Component {
                 <p>Avatar Placeholder</p>
               </div>
               <div className="side-bar-middle">
-                <p>Change Tag placeholder</p>
+                <TagChanger />
               </div>
               <div className="side-bar-bottom">
                 <p>Ad? Placeholder</p>
