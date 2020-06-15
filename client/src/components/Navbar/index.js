@@ -13,6 +13,9 @@ class Navbar extends Component {
         const loginRegLink = (
             <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
+                    <Link to="/about" className="nav-link">About</Link>
+                </li>
+                <li className="nav-item">
                     <Link to="/login" className="nav-link">
                         Login
                     </Link>
@@ -26,6 +29,9 @@ class Navbar extends Component {
         )
         const userLink = (
             <ul className="navbar-nav">
+                <li className="nav-item">
+                    <Link to="/about" className="nav-link">About</Link>
+                </li>
                 <li className="nav-item">
                     <Link to="/profile" className="nav-link">User</Link>
                 </li>
@@ -45,7 +51,6 @@ class Navbar extends Component {
                             <Dropdown.Item href="/suicide">Suicidal Thoughts</Dropdown.Item>
                             <Dropdown.Item href="/mood">Mood Disorders</Dropdown.Item>
                             <Dropdown.Item href="/addiction">Addiction</Dropdown.Item>
-                            <Dropdown.Item href="/about">About</Dropdown.Item>
                         </DropdownButton>
                     </ul>
                 </div>
