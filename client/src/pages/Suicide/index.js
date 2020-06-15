@@ -144,7 +144,7 @@ function Suicide() {
       <div className="moodTextDiv3">
         <p className="moodText5">YOU</p>
         <p className="moodText555">are Not</p>
-        <p className="moodText55">alone</p>
+        <p className="LifeText55">alone</p>
       </div>
 
       <section className="MoodSection3">
