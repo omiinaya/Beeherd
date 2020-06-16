@@ -7,15 +7,18 @@
     width: 98.5%;
     word-wrap: break-word;
     transform: translateX(8px);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
 .reply-container {
     background-color: rgba(192, 192, 192, 0.5);
-    /*background-color: white;*/
     border-radius: 6px;
     margin-top: 2%;
+    margin-left: 0.7%;
+    margin-right: 0.7%;
     padding: 2%;
     padding-bottom: 5%;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
 #reply-bar {
@@ -25,7 +28,7 @@
 
 .reply-card {
     background-color: rgba(192, 192, 192, 0.5);
-    /*background-color: white;*/
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     margin: 2%;
     padding: 2%;
