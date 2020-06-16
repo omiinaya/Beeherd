@@ -4,6 +4,7 @@ var current_skin;
 var current_eyes;
 var current_hair;
 var current_outfit;
+var current_place;
 
 function avatarBackend() {
     $("#standard1").mouseenter(function () {
@@ -157,12 +158,16 @@ function avatarBackend() {
             "background-image",
             "url('/avatar/place/place1.gif')"
         );
+        current_place = '/avatar/place/place1.png';
+        console.log(current_place);
     });
 
     $("#bb2").click(function () {
         $(".es99").css("background-image", "url('/avatar/place/place2.gif')");
         $(".es99").css("background-position", "289px 227px");
         $(".es99").css("background-size", "287px 201px");
+        current_place = '/avatar/place/place2.png';
+        console.log(current_place);
     });
 }
 

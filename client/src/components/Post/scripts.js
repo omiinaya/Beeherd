@@ -20,7 +20,7 @@ export function sendToDB(a) {
         console.log("Please fill out all required fields.")
     } else {
         return axios                                                //use axios to send data to database.
-        .post('posts/post', {
+        .post('post', {
             author_id: user_id,
             author_tag: temp_tag,
             post_title: title,

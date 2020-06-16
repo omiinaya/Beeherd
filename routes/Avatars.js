@@ -4,10 +4,10 @@ const cors = require("cors")
 const Avatar = require("../models/Avatar")
 
 //vars
-const avatars = express.Router()
+const Avatars = express.Router()
 avatars.use(cors())
 
 //routes
 //
 
-module.exports = avatars
+module.exports = Avatars

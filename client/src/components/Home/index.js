@@ -33,7 +33,7 @@ class Home extends Component {
 
   handleOnClickB(a) {
     if (localStorage.usertoken != null) {
-      this.props.history.push("/post/")
+      this.props.history.push("/posts/")
     } else {
       this.props.history.push("/login")
     }
