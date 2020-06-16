@@ -1,22 +1,13 @@
 .dropdown-div {
-    background-color: white;
-    margin-top: 1%;
-    margin-left: -1.5%;
-    margin-right: -1.5%;
+    margin: 0 auto;
     padding: 2%;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
 }
 
-.avatar-container {
-    background-color: white;
-    margin-left: -1.5%;
-    margin-right: -1.5%;
-    margin-top: -2%;
-    padding: 2%;
-    padding-left: 0.5%;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
+.avatar-box {
+    border-radius: 6px;
+    margin: 0 auto;
+    background-color: black;
+    /*moves avatar section*/
 }
 
 body>div>div:nth-child(1)>div.col-sm-3.a>div.col-3.logo>img {
@@ -87,9 +78,9 @@ body>div>div>div.col-sm-9.b>div:nth-child(3)>div>div {
 }
 
 #bodyimage {
-    width: 132px;
+    width: 99px;
     margin-left: 68px;
-    margin-top: -208px;
+    margin-top: -257px;
 }
 
 #bodyimages {
@@ -211,7 +202,7 @@ body>div>div>div.col-sm-9.b>div:nth-child(3)>div>div {
 #ropaimage {
     width: 95px;
     margin-left: 26px;
-    margin-top: -604px;
+    margin-top: -654px;
 }
 
 #ropaimages {

@@ -3,6 +3,7 @@ import jwt_decode from 'jwt-decode'
 import { checkId } from "./script.js";
 import TagSection from '../TagSection';
 import Avatar from '../Avatar';
+import Footer from '../Footer';
 //import axios from 'axios';
 import "./style.css";
 
@@ -32,13 +33,12 @@ class Profile extends Component {
         checkId(user_id)
         return (
             <div>
-                <div className="jumbotron mt-5">
-                    <div className="col-sm-8 mx-auto">
-                        <h1 className="text-center">Profile</h1>
-                    </div>
-                    <TagSection />
-                </div>
+                <div className="profile-container">
+                    <h1 className="text-center">Profile</h1>
+                <TagSection />
                 <Avatar />
+                </div>
+                <Footer/>
             </div>
         )
     }
