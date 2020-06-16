@@ -4,9 +4,9 @@
     border-radius: 6px;
     margin-bottom: 0%;
     padding: 2%;
-    width: 99.2%;
+    width: 98.5%;
     word-wrap: break-word;
-    /*transform: translateX(15px);*/
+    transform: translateX(8px);
 }
 
 .reply-container {

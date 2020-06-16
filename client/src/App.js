@@ -1,6 +1,7 @@
 //dependencies
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Sticky from 'react-stickynode'
 
 //components
 import Navbar from "./components/Navbar/";
@@ -20,13 +21,13 @@ import Suicide from "./pages/Suicide";
 import Mood from "./pages/Mood";
 import Addiction from "./pages/Addiction";
 
-
 class App extends Component {
   render() {
     return (
       <Router>
-        <Navbar />
-        
+        <Sticky innerZ={5}>
+          <Navbar />
+        </Sticky>
         <Container>
           <Switch>
             <Route exact path="/" component={Home} />
@@ -35,11 +36,9 @@ class App extends Component {
             <Route exact path="/login" component={Login} />
             <Route exact path="/profile" component={Profile} />
             <Route exact path="/post" component={Post} />
-            
-            <Route path="/posts/:id" component={ExpandPost} /> 
+            <Route path="/posts/:id" component={ExpandPost} />
 
             <Route exact path="/suicide" component={Suicide} />
-            
             <Route exact path="/mood" component={Mood} />
             <Route exact path="/addiction" component={Addiction} />
             <Route exact path="/resources" component={Resources} />

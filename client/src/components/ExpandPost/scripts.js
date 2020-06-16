@@ -24,7 +24,7 @@ export function sendToDB(a) {
         })
         .then(res => {
             console.log("Post successfully sent to database.")
-            //window.location.reload();
+            window.location.reload();
             return res.data
         })
     }
