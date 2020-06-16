@@ -32,7 +32,7 @@
   height: 100%;
   background: #a30db1;
   z-index: -2;
-  opacity: .5;
+  
   filter: blur(40px);
 }
 
@@ -115,7 +115,7 @@
   background: url(../../pages/Suicide/images/color-swirl.jpg);
   height: 2em;
   width: 100%;
-  opacity: .6;
+  
   border-radius: 6px;
   text-align: center;
   margin-bottom: 3em;
@@ -127,7 +127,7 @@
   margin-bottom: 2em;
   float: center;
   color: rgb(72, 69, 67);
-  opacity: 0.1;
+  
 }
 
 .LifeColors {
@@ -173,7 +173,7 @@
   background: url(../../pages/Suicide/images/color-swirl.jpg);
   min-height: 2em;
   background: cover;
-  opacity: 0.5;
+ 
   text-align: center;
   border-radius: 6px;
   color: rgb(151, 150, 152);
@@ -184,7 +184,7 @@
   float: center;
   font-size: 500px;
   color: rgb(72, 69, 67);
-  opacity: 0.1;
+  
   height: 160px;
   margin-left: 0%;
 }
@@ -194,7 +194,7 @@
   float: center;
   font-size: 400px;
   color: rgb(72, 69, 67);
-  opacity: 0.1;
+  
   height: 170px;
   margin-left: 0%;
 }
@@ -227,7 +227,7 @@
   background: url(../../pages/Suicide/images/color-swirl.jpg);
   min-height: 20px;
   background: cover;
-  opacity: 0.8;
+ 
   text-align: center;
   padding-top: 10px;
   padding-bottom: 2px;
@@ -252,17 +252,22 @@
   margin-bottom: -50px;
   margin-left: 0%;
   background-color: black;
-  opacity: .5;
+  
   z-index: -1;
 }
 
 .crisispic1 {
   border-radius: 16px;
-  opacity: 2;
+  
 }
 
 .youyoupic {
   margin-left: 15%;
   margin-top: 0px;
   margin-bottom: -150px;
+}
+
+.divisionLife{
+height:50%;
+width:50%;
 }

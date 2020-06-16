@@ -2,10 +2,12 @@ import React from "react";
 //import { Link } from "react-router-dom";
 import "./style.css";
 //import ItsOkto from "../../components/ItsOkTo";
-//import InfoCards from "../../components/InfoCards";
+import InfoCards from "../../components/InfoCards";
+
 
 function MoodDisorders() {
   return (
+   
     <div className="BlueMoodPageContainer">
       <div className="MoodPage">
         <header className="moodHeader">
@@ -19,7 +21,7 @@ function MoodDisorders() {
             <div className="text-container">
               <h1 className="moodColors">Mood Disorders</h1>
             </div>
-            <h1 className="moodText1">And Dep-ression</h1>
+            <h1 className="moodText1"></h1>
           </div>
         </section>
 
@@ -163,7 +165,7 @@ function MoodDisorders() {
         <div className="MoodSec3container MoodPage">
           <div className="moodBox">
             <p className="moodTextbox">
-              If you feel like your emotions are interfering with your work,
+              Talk to a pro if you feel like your emotions are interfering with your work,
               relationships, social activities, or other parts of your life.
               Have trouble with drinking or drugs or have suicidal thoughts
               and/or behaviors. Let us locate support nearby by providing your
@@ -217,7 +219,7 @@ function MoodDisorders() {
       <section className="Informedfoot">
         <footer className="informedFooter">
           <p className="informedFooterText">
-            Life Is Now, Copyright &copy; beeherd 2020
+            Life Is Now, Copyright&copy; beeherd 2020
           </p>
         </footer>
       </section>
