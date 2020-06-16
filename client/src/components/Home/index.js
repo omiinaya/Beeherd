@@ -23,8 +23,20 @@ class Home extends Component {
     this.getPosts();
   }
 
-  handleOnClick(a) {
-    this.props.history.push("/posts/" + a.id)
+  handleOnClickA(a) {
+    if (localStorage.usertoken != null) {
+      this.props.history.push("/posts/" + a.id)
+    } else {
+      this.props.history.push("/login")
+    }
+  }
+
+  handleOnClickB(a) {
+    if (localStorage.usertoken != null) {
+      this.props.history.push("/post/")
+    } else {
+      this.props.history.push("/login")
+    }
   }
 
   getPosts = () => {
@@ -49,7 +61,7 @@ class Home extends Component {
           </MDBRow>
         </Hero>
         <div className="mini-post">
-          <input type="text" id="mini-post-text" size="50" placeholder="Say something." onClick={() => this.props.history.push("/post")}></input>
+          <input type="text" id="mini-post-text" size="50" placeholder="Say something." onClick={() => this.handleOnClickB()}></input>
         </div>
         <div>
           <Row>
@@ -58,7 +70,7 @@ class Home extends Component {
                 <PostList>
                   {this.state.savedPosts.slice(0).reverse().map(posts => {
                     return (
-                      <div className="post-card" onClick={() => this.handleOnClick(posts)} >
+                      <div className="post-card" onClick={() => this.handleOnClickA(posts)} >
                         <div>
                           <PostListItem
                             id={posts.author_id}
