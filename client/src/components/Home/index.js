@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Row, Col } from "../Grid";
-import { redirectToPost } from "./scripts";
 import { PostList, PostListItem } from "../PostList";
 import Hero from "../Hero";
 import Footer from "../Footer";
@@ -58,9 +57,8 @@ class Home extends Component {
               {this.state.savedPosts.length > 0 ?
                 <PostList>
                   {this.state.savedPosts.slice(0).reverse().map(posts => {
-                    //console.log(posts)
                     return (
-                      <div className="post-card" onClick={() => this.handleOnClick(posts)}>
+                      <div className="post-card" onClick={() => this.handleOnClick(posts)} >
                         <div>
                           <PostListItem
                             id={posts.author_id}
