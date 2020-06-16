@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import { Row, Col } from "../Grid";
-import { redirectToPost } from "./scripts";
 import { PostList, PostListItem } from "../PostList";
 import Hero from "../Hero";
 import Footer from "../Footer";
 import axios from "axios";
 import EmptyList from "../EmptyList";
 import SeeMoreButton from "../SeeMoreButton";
-import  TagSection  from "../TagSection";
+import TagSection from "../TagSection";
 import "./style.css";
 import {
   MDBRow,
@@ -24,14 +23,20 @@ class Home extends Component {
     this.getPosts();
   }
 
-  handleOnClick(a) {
-    window.open("/post/" + a.id, "_self")
-    this.loadPost(a)
+  handleOnClickA(a) {
+    if (localStorage.usertoken != null) {
+      this.props.history.push("/posts/" + a.id)
+    } else {
+      this.props.history.push("/login")
+    }
   }
 
-  loadPost = (a) => {
-    var thisPost = a.id;
-    window.location.href = "/posts/" + thisPost;
+  handleOnClickB(a) {
+    if (localStorage.usertoken != null) {
+      this.props.history.push("/post/")
+    } else {
+      this.props.history.push("/login")
+    }
   }
 
   getPosts = () => {
@@ -56,7 +61,7 @@ class Home extends Component {
           </MDBRow>
         </Hero>
         <div className="mini-post">
-          <input type="text" id="mini-post-text" size="50" placeholder="Say something." onClick={redirectToPost}></input>
+          <input type="text" id="mini-post-text" size="50" placeholder="Say something." onClick={() => this.handleOnClickB()}></input>
         </div>
         <div>
           <Row>
@@ -64,9 +69,8 @@ class Home extends Component {
               {this.state.savedPosts.length > 0 ?
                 <PostList>
                   {this.state.savedPosts.slice(0).reverse().map(posts => {
-                    //console.log(posts)
                     return (
-                      <div className="post-card" onClick={() => this.handleOnClick(posts)}>
+                      <div className="post-card" onClick={() => this.handleOnClickA(posts)} >
                         <div>
                           <PostListItem
                             id={posts.author_id}
@@ -84,7 +88,7 @@ class Home extends Component {
                     );
                   })}
                 </PostList>
-              : 
+                :
                 <EmptyList />
               }
             </Col>

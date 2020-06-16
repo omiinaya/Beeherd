@@ -8,8 +8,10 @@ function Post() {
   const [text, setText] = useState("")
   return (
     <div className="App">
+      <div className="post-title-container">
+        <input type="text" id="post-title-input" placeholder="Enter post title."></input>
+      </div>
       <div className="editor">
-      <input type="text" id="title-input" placeholder="Enter post title."></input>
         <CKEditor
           editor={ClassicEditor}
           data={text}
@@ -18,7 +20,9 @@ function Post() {
             setText(data)
           }}
         />
-        <button onClick={() => { sendToDB(text) }}>Submit</button>
+      </div>
+      <div className="post-button-container">
+      <button onClick={() => { sendToDB(text) }}>Submit</button>
       </div>
     </div>
   )

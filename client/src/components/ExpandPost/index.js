@@ -1,17 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 //import ClassicEditor from "@ckeditor/ckeditor5-build-classic"
 import { sendToDB } from "./scripts"
 //import CKEditor from "@ckeditor/ckeditor5-react"
 import axios from "axios"
-import { Row, Col } from "../Grid";
-import { PostList, PostListItem } from "../PostList";
+import { Col } from "../Grid";
+import { PostList, PostListItemExpanded } from "../PostList";
 import EmptyList from "../EmptyList";
+import Footer from "../Footer";
 import "./style.css"
 
 class ExpandPost extends React.Component {
     constructor(props) {
         super(props);
         this.handleClick = this.handleClick.bind(this);
+        this.getReplies = this.getReplies.bind(this);
         this.state = {
             toggleReply: false,
             savedReplies: [],
@@ -29,34 +31,36 @@ class ExpandPost extends React.Component {
                 const author = res.data[0].author_tag;
                 const id = res.data[0].id
                 this.setState({
+                    id,
                     post,
                     title,
                     author,
-                    id,
                     toggleReply: false
                 });
             })
     }
 
     handleClick() {
-        console.log(this.state.toggleReply);
-        if (this.state.toggleReply == false) {
-            this.setState({
-                toggleReply: true
-            })
+        if (localStorage.usertoken != null) {
+            if (this.state.toggleReply === false) {
+                this.setState({
+                    toggleReply: true
+                })
+            } else {
+                this.setState({
+                    toggleReply: false
+                })
+            }
         } else {
-            this.setState({
-                toggleReply: false
-            })
+            this.props.history.push("/login")
         }
     }
 
-    getReplies = () => {
-        axios
-            .get("/replies/all")
+    getReplies() {
+        var id = this.props.match.params.id;
+        axios.get("/replies/" + id)
             .then((res) => {
                 this.setState({ savedReplies: res.data });
-                console.log(res.data)
             })
             .catch((err) => console.log(err));
     };
@@ -81,13 +85,12 @@ class ExpandPost extends React.Component {
             <Col size="md-12">
                 {this.state.savedReplies.length > 0 ?
                     <PostList>
-                        {this.state.savedReplies.slice(0).reverse().map(replies => {
-                            //console.log(posts)
+                        {this.state.savedReplies.map(replies => {
                             return (
-                                <div className="reply-card" onClick={() => this.handleOnClick(replies)}>
+                                <div className="reply-card" /*onClick={() => this.handleOnClick(replies)}*/>
                                     <div>
-                                        <PostListItem
-                                            id={replies.author_id}
+                                        <PostListItemExpanded
+                                            post_id={replies.author_id}
                                             author={replies.author_tag}
                                             content={replies.reply_content}
                                         />
@@ -118,7 +121,10 @@ class ExpandPost extends React.Component {
         )
         return (
             <div>
-                {toggleReply ? clickedView : defaultView}
+                <div>
+                    {toggleReply ? clickedView : defaultView}
+                </div>
+                <Footer />
             </div>
         )
     }

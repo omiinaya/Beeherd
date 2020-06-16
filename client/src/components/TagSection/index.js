@@ -29,21 +29,11 @@ class TagSection extends React.Component {
                 current_id: current_id
             })
         }
-        //const currentPosts = await getUserPosts();
-        //console.log(currentPosts)
-    }
-
-    viewCurrentState(a) {
-        console.log(a)
-        /*this.setState({
-            current_tag: a
-        })*/
     }
 
     render() {
         var current_tag = this.state.current_tag;
         var current_id = this.state.current_id;
-        this.viewCurrentState(this.state.current_tag);
         const loggedInMenu = (
             <div>
                 <div>Current public tag: {current_tag}</div>

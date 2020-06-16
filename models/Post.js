@@ -19,7 +19,7 @@ var Posts = db.sequelize.define(
             type: Sequelize.STRING
         },
         post_content: {
-            type: Sequelize.STRING
+            type: Sequelize.TEXT
         },
         created: {
             type: Sequelize.DATE,

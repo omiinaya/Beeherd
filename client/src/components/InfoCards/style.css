@@ -1,17 +1,40 @@
 .infoCardsMain {
-  position: relative;
-  width: 250px;
-  height: 320px;
+  position: absolute;
+  width: 300px;
+  height:200px;
+  
+ justify-content: space-evenly;
+  display: inline-block;
 }
 
-.infoCardsCard1 .infoCardsCard2 .infoCardsCard3 {
+.infoCardsCard1{
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 100px;
+  height: 150px;
   transform-style: preserve-3d;
   transition: all 0.5s ease;
-  font-weight: bold;
+  font-size:10px;
 }
+
+
+ .infoCardsCard2{
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  font-size:10px;
+}
+
+.infoCardsCard3 {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  font-size:10px;
+}
+
 
 .infoCardsCard1:hover {
   transform: rotateY(180deg);
@@ -20,31 +43,86 @@
 .infoCardsCard2:hover {
   transform: rotateY(180deg);
 }
+
 .infoCardsCard3:hover {
   transform: rotateY(180deg);
 }
 
-.infoCardsFront1 .infoCardsFront2 .infoCardsFront3 {
+.infoCardsFront1{
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 100px;
+  height: 150px;
   backface-visibility: hidden;
   background: rgb(155, 40, 164);
   color: rgb(248, 244, 244);
-  font-size: 30px;
+  font-size:10px;
   text-align: center;
   padding-top: 45%;
   border-radius: 20px;
 }
 
-.infoCardsBack1 .infoCardsBack2 .infoCardsBack3 {
+.infoCardsFront2 {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 100px;
+  height: 150px;
+  backface-visibility: hidden;
+  background: rgb(155, 40, 164);
+  color: rgb(248, 244, 244);
+  font-size:10px;
+  text-align: center;
+  padding-top: 45%;
+  border-radius: 20px;
+}
+ .infoCardsFront3 {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  backface-visibility: hidden;
+  background: rgb(155, 40, 164);
+  color: rgb(248, 244, 244);
+  font-size:10px;
+  text-align: center;
+  padding-top: 45%;
+  border-radius: 20px;
+}
+
+
+.infoCardsBack1{
+  position: absolute;
+  width: 100px;
+  height: 150px;
   backface-visibility: hidden;
   background: indigo;
   color: rgb(250, 246, 246);
-  font-size: 30px;
+  font-size:10px;
+  text-align: center;
+  padding-top: 25%;
+  border-radius: 20px;
+  transform: rotateY(180deg);
+}
+
+.infoCardsBack2  {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  backface-visibility: hidden;
+  background: indigo;
+  color: rgb(250, 246, 246);
+  font-size:10px;
+  text-align: center;
+  padding-top: 25%;
+  border-radius: 20px;
+  transform: rotateY(180deg);
+}
+
+ .infoCardsBack3 {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  backface-visibility: hidden;
+  background: indigo;
+  color: rgb(250, 246, 246);
+  font-size:10px;
   text-align: center;
   padding-top: 25%;
   border-radius: 20px;

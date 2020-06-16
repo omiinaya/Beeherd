@@ -32,4 +32,14 @@ replies.get("/all", function (req, res) {
     });
 });
 
+replies.get("/:id", function (req, res) {
+    Reply.findAll({
+        where: {
+            post_id: req.params.id
+        }
+    }).then(function (results) {
+        res.json(results);
+    });
+});
+
 module.exports = replies

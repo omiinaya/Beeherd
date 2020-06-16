@@ -1,51 +1,51 @@
 .hero {
-    height: 100%;
-    width: 98%;
-    margin: 0 auto;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    background-repeat: no-repeat;
-    border-radius: 6px;
-  }
-    
-  .hero * {
-    position: relative;
-    z-index: 2;
-  }
-  
-  .hero h1, .hero h2 {
-    color: #ec38bc;
-  }
-  
-  .hero h1 {
-    font-size: 7em;
-    font-weight: bold;
-    padding-top: 2%;
-    margin-top: 0;
-    font-family: 'Shadows into Light', sans-serif;
-  }
-  
-  .hero h2 {
+  height: 100%;
+  width: 98%;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+  border-radius: 6px;
+}
+
+.hero * {
+  position: relative;
+}
+
+.hero h1, .hero h2 {
+  color: #ec38bc;
+}
+
+.hero h1 {
+  font-size: 7em;
+  font-weight: bold;
+  padding-top: 2%;
+  margin-top: 0;
+  font-family: 'Shadows into Light', sans-serif;
+}
+
+.hero h2 {
   margin-top: -17px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.7em;
-  }
-  
-  .btn {
-    display: inline-block;
-    width: 200px;
-    font-weight: bold;
-    padding: 10px;
-    color: #ec38bc;
-    border: 4px solid #ec38bc;
-    text-align: center;
-    outline: none;
-    text-decoration: none;  
-    transition: background-color 0.2s ease-out, color 0.2s ease ease-out;
-  }
-  .btn:hover, .btn:active {
-    background-color: #ec38bc;  
-    color: #000;    
-    transition: background-color 0.3s ease-out, color 0.3s ease ease-out;
+}
+
+.btn {
+  display: inline-block;
+  width: 200px;
+  font-weight: bold;
+  padding: 10px;
+  color: #ec38bc;
+  border: 4px solid #ec38bc;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out, color 0.2s ease ease-out;
+}
+
+.btn:hover, .btn:active {
+  background-color: #ec38bc;
+  color: #000;
+  transition: background-color 0.3s ease-out, color 0.3s ease ease-out;
 }

@@ -1,5 +1,9 @@
 import React from "react";
 import "./style.css";
+import InfoCards from "../../components/InfoCards"
+
+
+
 function Suicide() {
   return (
     <div className="MoodPageContainer">
@@ -143,7 +147,7 @@ function Suicide() {
             className="youyoupic"
             width="200"
             height="150"
-            class="lazy-load"
+            className="lazy-load"
             alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
             data-sizes="auto"
             onload="this.parentNode.className += ' img-loaded'"
@@ -151,7 +155,7 @@ function Suicide() {
             sizes="auto"
           ></img>
         </div>
-        
+
       </div>
 
       <section className="MoodSection3">
@@ -206,7 +210,25 @@ function Suicide() {
           </div>
         </div>
       </section>
-      
+
+
+<div className="infoCardsCard2">
+        <div className="infoCardsFront2">What if I'm not worthy of life, love, abundance, freedom, or success?</div>
+        <div className="infoCardsBack2">
+          How ironic! You are worthy just because you exist. There's nothing you need to do
+          or be to prove yourself. You are worthy beyond belief simply because
+          you're here.
+        </div>
+      </div>
+      <div className="infoCardsCard3">
+        <div className="infoCardsFront3">What if Im not important or useful?</div>
+        <div className="infoCardsBack3">
+          You matter so much that everything you do
+          and think has a direct effect on the entire world. You are a master creator made of energy and frequency. Go play, little bee,
+          and co-create with the humans.
+        </div>
+      </div>
+
       <section className="Informedfoot">
         <footer className="informedFooter">
           <p className="informedFooterText">

@@ -1,0 +1,13 @@
+.content_text {
+    margin-top: 2%;
+    width: 100%;
+    margin-left: 5%;
+    height: 90px;
+    overflow: hidden;
+    word-wrap: break-word;
+    text-overflow: "fade";
+}
+
+.content_text_expanded {
+    word-wrap: break-word;
+}

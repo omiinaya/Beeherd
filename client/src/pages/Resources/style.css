@@ -38,3 +38,45 @@
   }
 
 
+.SHwrapper{
+  width:600px;
+  background: orange;
+  margin:0 auto 0 auto;
+
+}
+
+.SHtitle{
+  height:100px;
+  background: red;
+  padding:20px;
+  text-align: center;
+}
+
+.SH{
+  height:50px;
+  background: grey;
+}
+
+.SHcontentmain{
+min-height:400px;
+background: hotpink;
+width:400px;
+float:left;
+
+}
+
+.SHcontentside{
+width: 200px;
+float:right;
+background: indigo;
+min-height: 400px;
+}
+
+.SHcontentlow{
+  clear:both;
+  background: lightgreen;
+  height:40px;
+  color:white;
+  text-align: center;
+  padding:10px;
+}
