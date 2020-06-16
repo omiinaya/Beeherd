@@ -18,16 +18,10 @@ var Avatars = db.sequelize.define(
         hair: {
             type: Sequelize.STRING
         },
-        face: {
-            type: Sequelize.STRING
-        },
         eyes: {
             type: Sequelize.STRING
         },
-        top: {
-            type: Sequelize.STRING
-        },
-        bottom: {
+        outfit: {
             type: Sequelize.STRING
         },
         background: {

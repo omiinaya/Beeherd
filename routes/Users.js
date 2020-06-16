@@ -1,15 +1,19 @@
+//dependencies
 const express = require("express")
-const users = express.Router()
 const cors = require("cors")
 const jwt = require("jsonwebtoken")
 const bcrypt = require("bcrypt")
-
 const User = require("../models/User")
 
+//vars
+const users = express.Router()
 users.use(cors())
 
+//token encryption key
 process.env.SECRET_KEY = 'secret'
 
+//routes
+//register user
 users.post('/register', (req, res) => {
     const today = new Date()
     const userData = {
@@ -47,6 +51,7 @@ users.post('/register', (req, res) => {
         })
 })
 
+//login user
 users.post('/login', (req, res) => {
     User.findOne({
         where: {
@@ -71,12 +76,14 @@ users.post('/login', (req, res) => {
         })
 })
 
+//find all users
 users.get("/all", function (req, res) {
     User.findAll().then(user => {
         res.json(user);
     });
 });
 
+//find user by username
 users.get("/:username", function (req, res) {
     User.findOne({
         where: {
@@ -87,6 +94,7 @@ users.get("/:username", function (req, res) {
     });
 });
 
+//find user by id
 users.get("/id/:id", function (req, res) {
     User.findOne({
         where: {
@@ -97,6 +105,7 @@ users.get("/id/:id", function (req, res) {
     });
 });
 
+//update user by id
 users.put("/id/:id", function (req, res) {
     User.update(
         { temp_tag: req.body.temp_tag },
@@ -110,8 +119,5 @@ users.put("/id/:id", function (req, res) {
         res.json(response)
     })
 })
-
-
-
 
 module.exports = users

@@ -13,8 +13,8 @@ class Avatar extends Component {
         return (
             <div>
                 <div className="Avatar">
-                    <div class="avatar-container">
-                        <div class="row">
+                    <div className="avatar-container">
+                        <div className="row">
 
                             <div className="dropdown-div">
                                 <div className="dropdown">
@@ -55,16 +55,16 @@ class Avatar extends Component {
                             </div>
 
                         </div>
-                        <div class="col-4 avatar-box">
-                            <div class="col-12">
-                                <div class="col-12 avatardisplay es99">
-                                    <div class="col-12 avatardisplay es1">
-                                        <div class="col-12 avatardisplay es2">
-                                            <div class="col-12 avatardisplay es3">
-                                                <div class="col-12 avatardisplay es4">
-                                                    <div class="col-12 avatardisplay es5">
+                        <div className="col-4 avatar-box">
+                            <div className="col-12">
+                                <div className="col-12 avatardisplay es99">
+                                    <div className="col-12 avatardisplay es1">
+                                        <div className="col-12 avatardisplay es2">
+                                            <div className="col-12 avatardisplay es3">
+                                                <div className="col-12 avatardisplay es4">
+                                                    <div className="col-12 avatardisplay es5">
                                                     </div>
-                                                    <div class="col-12 avatardisplay">
+                                                    <div className="col-12 avatardisplay">
                                                     </div>
                                                 </div>
                                             </div>
