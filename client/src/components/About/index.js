@@ -32,7 +32,7 @@ function About() {
 
                 <MDBCardText className="middle-page">
                   Hey, little bee!
-                  Here at beeherd, your posts are the essence of the site. The greatest good you can do for one another is to share who you are being here and now in order to create connection and community.
+                  Here at beeherd, your posts are the essence of this site. The greatest good you can do for one another is to share who you are being here and now in order to create connection and community.
                   Feel free to resgister anonymously. Sign-in, vent on, and let yourself beeherd.
                 </MDBCardText>
 
