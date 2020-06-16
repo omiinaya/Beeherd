@@ -151,7 +151,7 @@ function Suicide() {
             sizes="auto"
           ></img>
         </div>
-        
+
       </div>
 
       <section className="MoodSection3">
@@ -206,7 +206,7 @@ function Suicide() {
           </div>
         </div>
       </section>
-      
+
       <section className="Informedfoot">
         <footer className="informedFooter">
           <p className="informedFooterText">

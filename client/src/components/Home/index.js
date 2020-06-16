@@ -7,7 +7,7 @@ import Footer from "../Footer";
 import axios from "axios";
 import EmptyList from "../EmptyList";
 import SeeMoreButton from "../SeeMoreButton";
-import  TagSection  from "../TagSection";
+import TagSection from "../TagSection";
 import "./style.css";
 import {
   MDBRow,
@@ -25,13 +25,7 @@ class Home extends Component {
   }
 
   handleOnClick(a) {
-    window.open("/post/" + a.id, "_self")
-    this.loadPost(a)
-  }
-
-  loadPost = (a) => {
-    var thisPost = a.id;
-    window.location.href = "/posts/" + thisPost;
+    this.props.history.push("/posts/" + a.id)
   }
 
   getPosts = () => {
@@ -56,7 +50,7 @@ class Home extends Component {
           </MDBRow>
         </Hero>
         <div className="mini-post">
-          <input type="text" id="mini-post-text" size="50" placeholder="Say something." onClick={redirectToPost}></input>
+          <input type="text" id="mini-post-text" size="50" placeholder="Say something." onClick={() => this.props.history.push("/post")}></input>
         </div>
         <div>
           <Row>
@@ -84,7 +78,7 @@ class Home extends Component {
                     );
                   })}
                 </PostList>
-              : 
+                :
                 <EmptyList />
               }
             </Col>

@@ -10,14 +10,14 @@ class Avatar extends Component {
         });
 
         $(".inicio99").click(function () {
-            $(".es99").css("background-image", "url('beelogoanimation.gif')");
+            $(".es99").css("background-image", "url('./beelogoanimation.gif')");
             $(".avatardisplay").show();
             $("#follow9").remove();
             $("#vamosa9").remove();
         });
 
         $("#incognito").mouseenter(function () {
-            $(".es1").append("<img id='bodyimage' src='blackfire.png'></img>");
+            $(".es1").append("<img id='bodyimage' src='./blackfire.png'></img>");
         });
 
         $("#incognito").mouseleave(function () {
@@ -25,7 +25,7 @@ class Avatar extends Component {
         });
 
         $("#blaster").mouseenter(function () {
-            $(".es1").append("<img id='bodyimage' src='coolcrazy.png'></img>");
+            $(".es1").append("<img id='bodyimage' src='./coolcrazy.png'></img>");
         });
 
         $("#blaster").mouseleave(function () {
@@ -33,7 +33,7 @@ class Avatar extends Component {
         });
 
         $("#standard1").mouseenter(function () {
-            $(".es1").append("<img id='bodyimage' src='whitey.png'></img>");
+            $(".es1").append("<img id='bodyimage' src='./whitey.png'></img>");
         });
 
         $("#standard1").mouseleave(function () {
@@ -41,7 +41,7 @@ class Avatar extends Component {
         });
 
         $("#standard2").mouseenter(function () {
-            $(".es1").append("<img id='bodyimage' src='brown.png'></img>");
+            $(".es1").append("<img id='bodyimage' src='./brown.png'></img>");
         });
 
         $("#standard2").mouseleave(function () {
@@ -49,7 +49,7 @@ class Avatar extends Component {
         });
 
         $("#standard3").mouseenter(function () {
-            $(".es1").append("<img id='bodyimage' src='greendude.png'></img>");
+            $(".es1").append("<img id='bodyimage' src='./greendude.png'></img>");
         });
 
         $("#standard3").mouseleave(function () {
@@ -59,7 +59,7 @@ class Avatar extends Component {
         $("#incognito").click(function () {
             $(".cleani").remove();
             $("#bodyimage").replaceWith(
-                "<img class='cleani' id='bodyimages' src='blackfire.png'></img>"
+                "<img class='cleani' id='bodyimages' src='./blackfire.png'></img>"
             );
         });
 
@@ -388,7 +388,7 @@ class Avatar extends Component {
             $(".es99").css("background-position", "406px 177px");
             $(".es99").css("background-size", "598px 293x");
         });
-        
+
         $("#bb11").click(function () {
             $(".es99").css("background-image", "url('waterfall.gif')");
         });

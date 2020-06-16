@@ -1,316 +1,268 @@
-
-
-
-.neon{
-    position: absolute;;
-    top:90%;
-    left:50%;
-    transform: translate(-90%,-50%);
-    margin:0;
-    padding:0 20px;
-    font-size: 2em;
-    color:rgb(150, 24, 146);
-    text-shadow: 0 0 20px #980e81;
-    font-family: "quicksand";
-}
-.neon:after{
-
-    content:attr(data-text);
-    position: absolute;
-    top:0;
-    left:0;
-    padding:0 20px;
-    z-index: -1;
-    color:#d70fb6;
-    filter:blur(15px);
+.neon {
+  position: absolute;
+  ;
+  top: 90%;
+  left: 50%;
+  transform: translate(-90%, -50%);
+  margin: 0;
+  padding: 0 20px;
+  font-size: 2em;
+  color: rgb(150, 24, 146);
+  text-shadow: 0 0 20px #980e81;
+  font-family: "quicksand";
 }
 
-.neon:before{
-
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background: #a30db1;
-    z-index: -2;
-    opacity: .5;
-    filter:blur(40px);
+.neon:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 20px;
+  z-index: -1;
+  color: #d70fb6;
+  filter: blur(15px);
 }
 
-.suicide-hotline{
-    height:4em;
-    padding-top:6%;
-    padding-left: 0px;
+.neon:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #a30db1;
+  z-index: -2;
+  opacity: .5;
+  filter: blur(40px);
 }
 
-
-
-.container-hotline1{
-
-    font-size: larger;
-    font-weight: bolder;
-    color:rgb(157, 33, 168);
-    padding:2%;
+.suicide-hotline {
+  height: 4em;
+  padding-top: 6%;
+  padding-left: 0px;
 }
 
+.container-hotline1 {
+  font-size: larger;
+  font-weight: bolder;
+  color: rgb(157, 33, 168);
+  padding: 2%;
+}
 
-
-
-
-.neon{
-  position: absolute;;
-  top:340%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  margin-bottom:2em;
-  padding:0 20px;
+.neon {
+  position: absolute;
+  ;
+  top: 340%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 2em;
+  padding: 0 20px;
   font-size: 3em;
-  opacity:.7;
-  color:rgb(244, 5, 252);
+  opacity: .7;
+  color: rgb(244, 5, 252);
   text-shadow: 0 0 20px #b20ac1;
   font-family: "quicksand";
-  bottom:6em;
+  bottom: 6em;
 }
 
-
-
-
-.neon{
-    position: absolute;;
-    top:280%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    margin-bottom:2em;
-    padding:0 20px;
-    font-size: 5em;
-    opacity:.7;
-    color:rgb(244, 5, 252);
-    text-shadow: 0 0 20px #b20ac1;
-    font-family: "quicksand";
-    bottom:6em;
-}
-.neon:after{
-
-    content:attr(data-text);
-    position: absolute;
-    top:0;
-    left:0;
-    padding:0 20px;
-    z-index: -1;
-    color:#6c0181;
-    filter:blur(15px);
+.neon {
+  position: absolute;
+  ;
+  top: 280%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 2em;
+  padding: 0 20px;
+  font-size: 5em;
+  opacity: .7;
+  color: rgb(244, 5, 252);
+  text-shadow: 0 0 20px #b20ac1;
+  font-family: "quicksand";
+  bottom: 6em;
 }
 
-.neon:before{
-
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background: #d508bae3;
-    z-index: -2;
-    opacity: .2;
-    filter:blur(40px);
+.neon:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 20px;
+  z-index: -1;
+  color: #6c0181;
+  filter: blur(15px);
 }
 
-.suicide-hotline{
-    height:6em;
-    padding-top:6%;
-    padding-left: 0px;
+.neon:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #d508bae3;
+  z-index: -2;
+  opacity: .2;
+  filter: blur(40px);
 }
 
+.suicide-hotline {
+  height: 6em;
+  padding-top: 6%;
+  padding-left: 0px;
+}
 
-.lifedivCubes{
-  background: url(../../pages/Suicide/images/color-swirl.jpg) ;
-    height:2em;
-    width:100%;
-    opacity:.6;
-    border-radius: 6px;
-    text-align: center;
-    margin-bottom:3em;
-    margin-top:2em;
+.lifedivCubes {
+  background: url(../../pages/Suicide/images/color-swirl.jpg);
+  height: 2em;
+  width: 100%;
+  opacity: .6;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 3em;
+  margin-top: 2em;
 }
 
 .LifeText1 {
-    font-size:4em;
-    
-    margin-bottom: 2em;
-    float: center;
-    
-    color: rgb(72, 69, 67);
-    opacity: 0.1;
-    
-   
-  }
+  font-size: 4em;
+  margin-bottom: 2em;
+  float: center;
+  color: rgb(72, 69, 67);
+  opacity: 0.1;
+}
 
-  .LifeColors{
-    background: url(../../pages/Suicide/images/fire5.jpg) ;
-    
-    background: url(../../pages/Suicide/images/color-swirl.jpg) no-repeat ;
-
-
-
-  }
+.LifeColors {
+  background: url(../../pages/Suicide/images/fire5.jpg);
+  background: url(../../pages/Suicide/images/color-swirl.jpg) no-repeat;
+}
 
 .Lifetext-container .LifeColors {
-    font-size: 5em;
-    color: rgba(40, 15, 15, 0.379);
-    line-height:1;
-    background-repeat: repeat-x;
-    -webkit-background-clip: text;
-    animation: animate 20s linear infinite;
+  font-size: 5em;
+  color: rgba(40, 15, 15, 0.379);
+  line-height: 1;
+  background-repeat: repeat-x;
+  -webkit-background-clip: text;
+  animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: Left 0px top 10px;
   }
-  
-  @keyframes animate {
-    0% {
-      background-position: Left 0px top 10px;
-    }
-    40% {
-      background-position: Left 800px top 10px;
-    }
+  40% {
+    background-position: Left 800px top 10px;
   }
-  
-  .Lifetext-container {
-    text-align: center;
-    
-  }
-  
-  .moodTextDiv2 {
-    display: inline-block;
+}
+
+.Lifetext-container {
+  text-align: center;
+}
+
+.moodTextDiv2 {
+  display: inline-block;
   margin-top: 2em;
-    margin-bottom: 2em;
-  }
-  
-  .moodText2 {
-    font-size: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-  }
-  
-  .LifeSecPicContainer {
-    background: url(../../pages/Suicide/images/color-swirl.jpg) ;
-    min-height: 2em;
-    background: cover;
-    opacity: 0.5;
-    text-align: center;
-    
-    border-radius: 6px;
-    color: rgb(151, 150, 152);
-  }
-  
-
-
-
-
-
-
-  .LifeText1 {
-  
-    
-    margin-bottom: 80px;
-    float: center;
-    font-size: 500px;
-    color: rgb(72, 69, 67);
-    opacity: 0.1;
-    height:160px;
-    margin-left:0%;
-   
-  }
-
-
-
-  .LifeText33 {
-  
-    
-    margin-bottom: 80px;
-    float: center;
-    font-size: 400px;
-    color: rgb(72, 69, 67);
-    opacity: 0.1;
-    height:170px;
-    margin-left:0%;
-   
-  }
-  
-  .LifeSec1container {
-    min-height: 6em;
-   
-    text-align: left;
-    color: rgb(151, 150, 152);
-    background: black;
-  }
-  
-  .LifeSec1container {
-    font-size: 18px;
-    margin-top: 100px;
-    margin-top: 100px;
-    margin-bottom: 0px;
-  }
-
-  
-  .moodTextDiv2 {
-    display: inline-block;
-   
-  }
-  
-  .moodText2 .feelingDown {
-    font-size: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-  }
-  
-  .LifeSec1Container {
-    background: url(../../pages/Suicide/images/color-swirl.jpg) ;
-    min-height: 20px;
-    background: cover;
-    opacity: 0.8;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 2px;
-    border-radius: 6px;
-    color: rgb(151, 150, 152);
-
-  }
-
-  .Curioustext-support{
-    font-size: 14px;
-    font-weight: bolder;
-    color:rgba(255, 217, 64, 0.94);
-    padding-left:2%;
-    
+  margin-bottom: 2em;
 }
 
-.crisisAnime{
- padding:2%;
-
-color:black;
-
-width:100%;
-height:auto;
-margin-top: 11%;
-text-align:center!important;
-margin-bottom:-50px;
-margin-left:0%;
-background-color: black;
-opacity: .5;
-z-index: -1;
-
-
-
-
+.moodText2 {
+  font-size: 10px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
-.crisispic1{
+.LifeSecPicContainer {
+  background: url(../../pages/Suicide/images/color-swirl.jpg);
+  min-height: 2em;
+  background: cover;
+  opacity: 0.5;
+  text-align: center;
+  border-radius: 6px;
+  color: rgb(151, 150, 152);
+}
+
+.LifeText1 {
+  margin-bottom: 80px;
+  float: center;
+  font-size: 500px;
+  color: rgb(72, 69, 67);
+  opacity: 0.1;
+  height: 160px;
+  margin-left: 0%;
+}
+
+.LifeText33 {
+  margin-bottom: 80px;
+  float: center;
+  font-size: 400px;
+  color: rgb(72, 69, 67);
+  opacity: 0.1;
+  height: 170px;
+  margin-left: 0%;
+}
+
+.LifeSec1container {
+  min-height: 6em;
+  text-align: left;
+  color: rgb(151, 150, 152);
+  background: black;
+}
+
+.LifeSec1container {
+  font-size: 18px;
+  margin-top: 100px;
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+
+.moodTextDiv2 {
+  display: inline-block;
+}
+
+.moodText2 .feelingDown {
+  font-size: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.LifeSec1Container {
+  background: url(../../pages/Suicide/images/color-swirl.jpg);
+  min-height: 20px;
+  background: cover;
+  opacity: 0.8;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 2px;
+  border-radius: 6px;
+  color: rgb(151, 150, 152);
+}
+
+.Curioustext-support {
+  font-size: 14px;
+  font-weight: bolder;
+  color: rgba(255, 217, 64, 0.94);
+  padding-left: 2%;
+}
+
+.crisisAnime {
+  padding: 2%;
+  color: black;
+  width: 100%;
+  height: auto;
+  margin-top: 11%;
+  text-align: center!important;
+  margin-bottom: -50px;
+  margin-left: 0%;
+  background-color: black;
+  opacity: .5;
+  z-index: -1;
+}
+
+.crisispic1 {
   border-radius: 16px;
-  opacity:2;
+  opacity: 2;
 }
 
-.youyoupic{
-  margin-left:15%;
-  margin-top:0px;
-margin-bottom: -150px;
+.youyoupic {
+  margin-left: 15%;
+  margin-top: 0px;
+  margin-bottom: -150px;
 }
