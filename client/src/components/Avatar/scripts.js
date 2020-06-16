@@ -172,7 +172,7 @@ export function avatarBackend() {
     });
 }
 
-export function sendToDB(a) {
+export function sendToCreate(a) {
     return axios
     .post('avatars/create', {
         owner_id: a,
@@ -184,6 +184,21 @@ export function sendToDB(a) {
     })
     .then(res => {
         console.log("Avatar has been created.")
+        return res.data
+    })
+}
+
+export function sendToUpdate(a) {
+    return axios
+    .put('avatars/id/'+a, {
+        skin: current_skin,
+        hair: current_hair,
+        eye: current_eyes,
+        outfit: current_outfit,
+        background: current_place
+    })
+    .then(res => {
+        console.log("Avatar has been updated.")
         return res.data
     })
 }

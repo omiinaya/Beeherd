@@ -29,4 +29,33 @@ avatars.post('/create', (req, res) => {
     })
 })
 
+avatars.get("/:id", function (req, res) {
+    avatar.findAll({
+        where: {
+            owner_id: req.params.id
+        }
+    }).then(function (results) {
+        res.json(results);
+    });
+});
+
+avatars.put("/id/:id", function (req, res) {
+    avatar.update({ 
+            skin: req.body.skin,
+            hair: req.body.hair,
+            eyes: req.body.eye,
+            outfit: req.body.outfit,
+            background: req.body.background, 
+        },
+        {
+            where: {
+                id: req.params.id
+            }
+        }
+    )
+    .then(function (response) {
+        res.json(response)
+    })
+})
+
 module.exports = avatars
