@@ -34,7 +34,7 @@ class Profile extends Component {
         return (
             <div>
                 <div className="profile-container">
-                    <h1 className="text-center">Profile</h1>
+                    <h1 className="profile-title text-center">Profile</h1>
                 <TagSection />
                 <Avatar />
                 </div>

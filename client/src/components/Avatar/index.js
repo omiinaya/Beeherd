@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import avatarBackend from './scripts';
-import { Link } from 'react-router-dom'
+//import { Link } from 'react-router-dom'
 import "./style.css";
 
 class Avatar extends Component {
@@ -32,7 +32,7 @@ class Avatar extends Component {
                                     </div>
                                 </div>
                                 <div className="dropdown">
-                                    <button className="avatar-dropbtn">Style ⯆</button>
+                                    <button className="avatar-dropbtn">Hair ⯆</button>
                                     <div className="dropdown-content">
                                         <h6 id="hair1">Style1</h6>
                                         <h6 id="hair2">Style2</h6>
@@ -57,15 +57,15 @@ class Avatar extends Component {
                         </div>
                         <div class="col-4 avatar-box">
                             <div class="col-12">
-                                <div class="col-12  avatardisplay es99">
-                                    <div class="col-12  avatardisplay es1">
-                                        <div class="col-12  avatardisplay es2">
-                                            <div class="col-12  avatardisplay es3">
-                                                <div class="col-12  avatardisplay es4">
-                                                    <div class="col-12  avatardisplay es5">
-
+                                <div class="col-12 avatardisplay es99">
+                                    <div class="col-12 avatardisplay es1">
+                                        <div class="col-12 avatardisplay es2">
+                                            <div class="col-12 avatardisplay es3">
+                                                <div class="col-12 avatardisplay es4">
+                                                    <div class="col-12 avatardisplay es5">
                                                     </div>
-                                                    <div class="col-12  avatardisplay"> </div>
+                                                    <div class="col-12 avatardisplay">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

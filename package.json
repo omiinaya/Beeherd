@@ -33,7 +33,8 @@
     "react-transition-group": "^4.4.1",
     "reactstrap": "^8.4.1",
     "sequelize": "^5.21.13",
-    "serve": "^11.3.2"
+    "serve": "^11.3.2",
+    "serve-index": "^1.9.1"
   },
   "bugs": {
     "url": "https://github.com/omiinaya/OKAJ/issues"

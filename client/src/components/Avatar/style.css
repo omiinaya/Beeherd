@@ -6,7 +6,6 @@
 .avatar-box {
     border-radius: 6px;
     margin: 0 auto;
-    background-color: black;
     /*moves avatar section*/
 }
 
@@ -24,6 +23,7 @@ body>div>div:nth-child(1)>div.col-sm-3.a>div.col-3.logo>img {
 .avatardisplay {
     height: 200px;
     width: 300px;
+    border-radius: 6px;
 }
 
 .avatardisplay:hover {
