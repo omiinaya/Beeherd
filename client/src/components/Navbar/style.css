@@ -1,6 +1,7 @@
 .navbar{
     color: rgba(192,192,192,0.3);
     background-color:rgba(192,192,192,0.3);
+    background-image: url("./images/test.png");
     margin-bottom: 1.3%;
 }
 
