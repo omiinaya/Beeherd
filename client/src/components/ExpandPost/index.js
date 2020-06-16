@@ -41,14 +41,18 @@ class ExpandPost extends React.Component {
     }
 
     handleClick() {
-        if (this.state.toggleReply === false) {
-            this.setState({
-                toggleReply: true
-            })
+        if (localStorage.usertoken != null) {
+            if (this.state.toggleReply === false) {
+                this.setState({
+                    toggleReply: true
+                })
+            } else {
+                this.setState({
+                    toggleReply: false
+                })
+            }
         } else {
-            this.setState({
-                toggleReply: false
-            })
+            this.props.history.push("/login")
         }
     }
 
