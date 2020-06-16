@@ -31,9 +31,9 @@ function About() {
               <MDBCardBody>
 
                 <MDBCardText className="middle-page">
-                  At beeherd posts are the essence of the site. The greatest good you can do for one another is to share and connect with one another.
-                  Feel free to resgister anonynously. Sign-in, vent on, and let your
-                  voice beeheard.
+                  Hey, little bee!
+                  Here at beeherd, your posts are the essence of the site. The greatest good you can do for one another is to share who you are being here and now in order to create connection and community.
+                  Feel free to resgister anonymously. Sign-in, vent on, and let yourself beeherd.
                 </MDBCardText>
 
                 <MDBCol className="d-flex justify-content-center mt-4" md="12">
