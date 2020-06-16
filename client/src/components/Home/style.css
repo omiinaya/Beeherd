@@ -12,8 +12,8 @@
     padding: 1%;
     width: 98.5%;
     text-align: center;
-    justify-content:center;
-    background-color:rgba(192,192,192,0.3);
+    justify-content: center;
+    background-color: rgba(192, 192, 192, 0.3);
     border-radius: 6px;
 }
 
@@ -27,8 +27,9 @@
 }
 
 .post-card {
-    background-color:rgba(192,192,192,0.3);
+    background-color: rgba(192, 192, 192, 0.3);
     margin: 1%;
+    margin-bottom: 1%;
     border-radius: 6px;
 }
 
@@ -46,15 +47,15 @@
 
 .btn-md {
     width: 8%;
-    background-color:rgba(192,192,192,0.0);
-    border-color: rgba(192,192,192,0.0);
+    background-color: rgba(192, 192, 192, 0.0);
+    border-color: rgba(192, 192, 192, 0.0);
     color: black;
 }
 
 .btn-md:hover {
     width: 8%;
-    background-color:rgba(192,192,192,0.0);
-    border-color: rgba(192,192,192,0.0);
+    background-color: rgba(192, 192, 192, 0.0);
+    border-color: rgba(192, 192, 192, 0.0);
     color: black;
 }
 
@@ -68,7 +69,7 @@
     margin-top: 3.5%;
     margin-left: -4%;
     border-radius: 6px;
-    background-color:rgba(192,192,192,0.3);
+    background-color: rgba(192, 192, 192, 0.3);
 }
 
 .side-bar-middle {
@@ -77,7 +78,7 @@
     margin-top: 7%;
     margin-left: -4%;
     border-radius: 6px;
-    background-color:rgba(192,192,192,0.3);
+    background-color: rgba(192, 192, 192, 0.3);
 }
 
 .side-bar-bottom {
@@ -86,21 +87,22 @@
     margin-top: 7%;
     margin-left: -4%;
     border-radius: 6px;
-    background-color:rgba(192,192,192,0.3);
+    background-color: rgba(192, 192, 192, 0.3);
 }
+
 .jumbotron {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 .jumbotron p {
     text-align: center;
 }
 
 /*--Media Queries--*/
-@media (max-width: 992px) {
-}
-@media (max-width: 768px) {
-}
-@media (max-width: 576px) {
-}
 
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}

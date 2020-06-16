@@ -6,6 +6,7 @@ import axios from "axios"
 import { Row, Col } from "../Grid";
 import { PostList, PostListItemExpanded } from "../PostList";
 import EmptyList from "../EmptyList";
+import Footer from "../Footer";
 import "./style.css"
 
 class ExpandPost extends React.Component {
@@ -118,7 +119,10 @@ class ExpandPost extends React.Component {
         )
         return (
             <div>
-                {toggleReply ? clickedView : defaultView}
+                <div>
+                    {toggleReply ? clickedView : defaultView}
+                </div>
+                <Footer />
             </div>
         )
     }

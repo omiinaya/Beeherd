@@ -139,7 +139,7 @@ function MoodDisorders() {
           <img
             width="200"
             height="150"
-            class="lazy-load"
+            className="lazy-load"
             alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
             data-sizes="auto"
             onload="this.parentNode.className += ' img-loaded'"
@@ -204,7 +204,7 @@ function MoodDisorders() {
           <img
             width="200"
             height="150"
-            class="lazy-load"
+            className="lazy-load"
             alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
             data-sizes="auto"
             onload="this.parentNode.className += ' img-loaded'"

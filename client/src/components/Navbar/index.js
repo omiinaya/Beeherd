@@ -47,9 +47,9 @@ class Navbar extends Component {
                 <div className="container-fluid">
                     <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                         <ul className="navbar-nav mr-auto">
-                            <div class="dropdown">
-                                <button class="dropbtn">Get Informed ⯆</button>
-                                <div class="dropdown-content">
+                            <div className="dropdown">
+                                <button className="dropbtn">Get Informed ⯆</button>
+                                <div className="dropdown-content">
                                     <Link to="/suicide">Suicidal Thoughts</Link>
                                     <Link to="/mood">Mood Disorders</Link>
                                     <Link to="/addiction">Addiction</Link>
