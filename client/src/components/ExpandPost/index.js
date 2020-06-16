@@ -81,7 +81,7 @@ class ExpandPost extends React.Component {
             <Col size="md-12">
                 {this.state.savedReplies.length > 0 ?
                     <PostList>
-                        {this.state.savedReplies.slice(0).reverse().map(replies => {
+                        {this.state.savedReplies.map(replies => {
                             //console.log(posts)
                             return (
                                 <div className="reply-card" onClick={() => this.handleOnClick(replies)}>
