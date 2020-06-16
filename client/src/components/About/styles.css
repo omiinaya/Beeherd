@@ -1,14 +1,18 @@
-.card-title{
+.card-title {
   font-family: 'Shadows into Light', sans-serif;
   font-size: 7em;
   color: #ec38bc;
 }
 
-.text-center{
-  background-color: rgba(0,0,0,.03);
+.about {
+  background-color: rgba(192, 192, 192, 0.3)
 }
 
 .middle-page {
   font-family: 'Shadows into Light', sans-serif;
   font-size: 3em;
+}
+
+#classicformpage {
+  margin-top: -6%;
 }

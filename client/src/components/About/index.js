@@ -19,7 +19,7 @@ function About() {
       <MDBContainer className="mt-5 text-center">
         <MDBRow>
           <MDBCol>
-            <MDBJumbotron className="text-center">
+            <MDBJumbotron className="about text-center">
               <MDBCardTitle className="card-title h4 pb-2">
                 <strong>beeherd</strong>
               </MDBCardTitle>
