@@ -1,54 +1,54 @@
 import React from "react";
 //import { BrowserRouter as Router } from "react-router-dom";
-import {
-  MDBMask,
-  MDBRow,
-  MDBBtn,
-  MDBView,
-  MDBContainer,
-  MDBAnimation
-} from "mdbreact";
 import "./styles.css";
+import {
+  MDBJumbotron,
+  MDBContainer,
+  MDBRow,
+  MDBCol,
+  MDBBtn,
+  MDBCardTitle,
+  MDBCardImage,
+  MDBCardBody,
+  MDBCardText,
+} from "mdbreact";
 
 function About() {
+  return (
+    <div id="classicformpage">
+      <MDBContainer className="mt-5 text-center">
+        <MDBRow>
+          <MDBCol>
+            <MDBJumbotron className="text-center">
+              <MDBCardTitle className="card-title h4 pb-2">
+                <strong>beeherd</strong>
+              </MDBCardTitle>
 
+              <MDBCardImage
+                src="https://mdbootstrap.com/img/Photos/Slides/img%20(134).jpg"
+                className="img-fluid"
+              />
+              <MDBCardBody>
 
+                <MDBCardText className="middle-page">
+                  At beeherd posts are the essence of the site. The greatest good you can do for one another is to share and connect with one another.
+                  Feel free to resgister anonynously. Sign-in, vent on, and let your
+                  voice beeheard.
+                </MDBCardText>
 
-    return (
-      <div id="classicformpage">
-
-
-        <MDBView>
-          <MDBMask className="d-flex justify-content-center align-items-center gradient">
-            <MDBContainer>
-              <MDBRow>
-                <MDBAnimation
-                  type="fadeInLeft"
-                  delay=".3s"
-                  className="white-text text-center text-md-left col-md-6 mt-xl-5 mb-5"
-                >
-                  <h1 className="h1-responsive font-weight-bold">
-                    beeheard
-                  </h1>
-                  <hr className="hr-light" />
-                  <h6 className="mb-4">
-                  Posts are the heart of a beheard. When logged in to your account, create a new post. Feel free to vent and let your voice beheard. Explore through the website reading existing post and remember, "It okay to feel":
-                  </h6>
-                  <MDBBtn outline color="white">
-                    Learn More
-                  </MDBBtn>
-                </MDBAnimation>
-
-                
-              </MDBRow>
-            </MDBContainer>
-          </MDBMask>
-        </MDBView>
-
-
-      </div>
-    );
-  }
-
+                <MDBCol className="d-flex justify-content-center mt-4" md="12">
+                  <MDBCol md="3" className="d-flex justify-content-around">
+                  <MDBBtn href="/" gradient="purple">Posts</MDBBtn>
+                  
+                  </MDBCol>
+                </MDBCol>
+              </MDBCardBody>
+            </MDBJumbotron>
+          </MDBCol>
+        </MDBRow>
+      </MDBContainer>
+    </div>
+  );
+}
 
 export default About;
