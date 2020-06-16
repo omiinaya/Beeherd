@@ -1,4 +1,5 @@
 import $ from 'jquery'
+import axios from 'axios'
 
 var current_skin;
 var current_eyes;
@@ -6,7 +7,7 @@ var current_hair;
 var current_outfit;
 var current_place;
 
-function avatarBackend() {
+export function avatarBackend() {
     $("#standard1").mouseenter(function () {
         //$('<img />').attr('src', 'white.png').appendTo("#es1");
         $(".es1").append("<img id='bodyimage' src='/avatar/skin/white.png'></img>");
@@ -171,4 +172,17 @@ function avatarBackend() {
     });
 }
 
-export default avatarBackend;
+export function sendToDB(a) {
+    return axios
+    .post('avatars/create', {
+        owner_id: a,
+        skin: current_skin,
+        hair: current_hair,
+        eye: current_eyes,
+        outfit: current_outfit
+    })
+    .then(res => {
+        console.log("Avatar has been created.")
+        return res.data
+    })
+}

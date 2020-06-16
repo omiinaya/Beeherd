@@ -1,15 +1,39 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import avatarBackend from './scripts';
+import { avatarBackend } from './scripts';
+import jwt_decode from 'jwt-decode'
+import { sendToDB } from './scripts'
 //import { Link } from 'react-router-dom'
 import "./style.css";
 
 class Avatar extends Component {
+    constructor() {
+        super()
+        this.state = {
+            owner_id: ''
+        };
+    }
+
     componentDidMount() {
         avatarBackend()
+
+        if (localStorage.usertoken != null) {
+            var token = localStorage.usertoken
+            var decoded = jwt_decode(token)
+            var a = decoded.id
+            this.setState({
+                owner_id: a,
+            })
+        } else {
+            const owner_id = "test";
+            this.setState({
+                owner_id: owner_id
+            })
+        }
     }
 
     render() {
+        var owner_id = this.state.owner_id;
         return (
             <div>
                 <div className="Avatar">
@@ -75,6 +99,12 @@ class Avatar extends Component {
                         </div>
                     </div>
                 </div>
+                <button onClick={() => {
+                    sendToDB(owner_id);
+                    localStorage.removeItem('usertoken')
+                    window.open("/login", "_self")
+                }
+                }>Change</button>
             </div>
         )
     }

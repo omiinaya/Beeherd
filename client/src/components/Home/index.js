@@ -20,6 +20,7 @@ class Home extends Component {
   };
 
   componentDidMount() {
+    document.title = "Beeherd | Home";
     this.getPosts();
   }
 
