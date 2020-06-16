@@ -13,6 +13,7 @@ class ExpandPost extends React.Component {
     constructor(props) {
         super(props);
         this.handleClick = this.handleClick.bind(this);
+        this.getReplies = this.getReplies.bind(this);
         this.state = {
             toggleReply: false,
             savedReplies: [],
@@ -30,6 +31,7 @@ class ExpandPost extends React.Component {
                 const author = res.data[0].author_tag;
                 const id = res.data[0].id
                 this.setState({
+                    id,
                     post,
                     title,
                     author,
@@ -41,6 +43,7 @@ class ExpandPost extends React.Component {
 
     handleClick() {
         console.log(this.state.toggleReply);
+        console.log(this.state.id);
         if (this.state.toggleReply == false) {
             this.setState({
                 toggleReply: true
@@ -52,9 +55,9 @@ class ExpandPost extends React.Component {
         }
     }
 
-    getReplies = () => {
-        axios
-            .get("/replies/all")
+    getReplies() {
+        var id = this.props.match.params.id;
+        axios.get("/replies/"+id)
             .then((res) => {
                 this.setState({ savedReplies: res.data });
                 console.log(res.data)
@@ -88,7 +91,7 @@ class ExpandPost extends React.Component {
                                 <div className="reply-card" /*onClick={() => this.handleOnClick(replies)}*/>
                                     <div>
                                         <PostListItemExpanded
-                                            id={replies.author_id}
+                                            post_id={replies.author_id}
                                             author={replies.author_tag}
                                             content={replies.reply_content}
                                         />
