@@ -76,7 +76,7 @@ export function avatarBackend() {
         $("#eyesimage").replaceWith(
             "<img class='cleani2' id='eyesimages' src='/avatar/eye/eye2.png'></img>"
         );
-        var current_eyes = "/avatar/eye/eye2.png";
+        current_eyes = "/avatar/eye/eye2.png";
         console.log(current_eyes);
     });
 
@@ -179,7 +179,8 @@ export function sendToDB(a) {
         skin: current_skin,
         hair: current_hair,
         eye: current_eyes,
-        outfit: current_outfit
+        outfit: current_outfit,
+        background: current_place
     })
     .then(res => {
         console.log("Avatar has been created.")

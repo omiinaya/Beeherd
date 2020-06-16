@@ -15,9 +15,9 @@ avatars.post('/create', (req, res) => {
         owner_id: req.body.owner_id,
         skin: req.body.skin,
         hair: req.body.hair,
-        eye: req.body.eye,
+        eyes: req.body.eye,
         outfit: req.body.outfit,
-        emotion: req.body.emotion,
+        background: req.body.background,
         created: today
     }
 
