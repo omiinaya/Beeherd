@@ -142,12 +142,6 @@ function avatarBackend() {
         $(".es99").css("background-position", "289px 227px");
         $(".es99").css("background-size", "287px 201px");
     });
-
-    $("#bb3").click(function () {
-        $(".es99").css("background-image", "url('dp.gif')");
-        $(".es99").css("background-position", "431px 171px");
-        $(".es99").css("background-size", "538px 182px");
-    });
 }
 
 export default avatarBackend;
