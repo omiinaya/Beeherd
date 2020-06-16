@@ -5,6 +5,7 @@ import { checkId } from "./script.js";
 //import { getCurrentUser } from "./script.js";
 //import { getUserPosts } from "./script.js";
 import "./style.css";
+import TagSection from '../TagSection'
 
 class Profile extends Component {
     constructor() {
@@ -53,6 +54,7 @@ class Profile extends Component {
                         <div className="username-text">Username: {this.state.username}</div>
                         <div className="tag-text">Temp Tag: {this.state.temp_tag}</div>
                     </div>
+                    <TagSection />
                 </div>
             </div>
         )
