@@ -44,16 +44,6 @@
     transform: scale(1.03);
 }
 
-.content_text {
-    margin-top: 2%;
-    width: 100%;
-    margin-left: 5%;
-    height: 90px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: "ellipsis";
-}
-
 .btn-md {
     width: 8%;
     background-color:rgba(192,192,192,0.0);

@@ -4,7 +4,7 @@ import { sendToDB } from "./scripts"
 //import CKEditor from "@ckeditor/ckeditor5-react"
 import axios from "axios"
 import { Row, Col } from "../Grid";
-import { PostList, PostListItem } from "../PostList";
+import { PostList, PostListItemExpanded } from "../PostList";
 import EmptyList from "../EmptyList";
 import "./style.css"
 
@@ -84,9 +84,9 @@ class ExpandPost extends React.Component {
                         {this.state.savedReplies.map(replies => {
                             //console.log(posts)
                             return (
-                                <div className="reply-card" onClick={() => this.handleOnClick(replies)}>
+                                <div className="reply-card" /*onClick={() => this.handleOnClick(replies)}*/>
                                     <div>
-                                        <PostListItem
+                                        <PostListItemExpanded
                                             id={replies.author_id}
                                             author={replies.author_tag}
                                             content={replies.reply_content}

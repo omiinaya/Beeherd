@@ -2,10 +2,10 @@
     background-color:rgba(192,192,192,0.5);
     /*background-color: white;*/
     border-radius: 6px;
-    
     margin-bottom: 0%;
     padding: 2%;
     width: 100%;
+    word-wrap: break-word;
     /*transform: translateX(15px);*/
 }
 
