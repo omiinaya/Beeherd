@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
 import jwt_decode from 'jwt-decode'
-import axios from 'axios';
 import { checkId } from "./script.js";
-//import { getCurrentUser } from "./script.js";
-//import { getUserPosts } from "./script.js";
+import TagSection from '../TagSection';
+import Avatar from '../Avatar';
+//import axios from 'axios';
 import "./style.css";
-import TagSection from '../TagSection'
 
 class Profile extends Component {
     constructor() {
@@ -26,19 +25,6 @@ class Profile extends Component {
             password: decoded.password,
             temp_tag: decoded.temp_tag
         })
-
-        //const currentUser = await getCurrentUser();
-        //console.log(currentUser)
-
-        //const currentPosts = await getUserPosts();
-        //console.log(currentPosts)
-
-        axios.get(`/posts/all`)
-        .then(res => {
-            const posts = res.data;
-            this.setState({ posts });
-            //console.log(posts);
-        })
     }
 
     render() {
@@ -55,6 +41,7 @@ class Profile extends Component {
                         <div className="tag-text">Temp Tag: {this.state.temp_tag}</div>
                     </div>
                     <TagSection />
+                    <Avatar />
                 </div>
             </div>
         )
