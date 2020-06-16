@@ -31,18 +31,14 @@ class Profile extends Component {
         const user_id = this.state.id;
         checkId(user_id)
         return (
-            <div className="container">
+            <div>
                 <div className="jumbotron mt-5">
                     <div className="col-sm-8 mx-auto">
                         <h1 className="text-center">Profile</h1>
                     </div>
-                    <div className="user-info">
-                        <div className="username-text">Username: {this.state.username}</div>
-                        <div className="tag-text">Temp Tag: {this.state.temp_tag}</div>
-                    </div>
                     <TagSection />
-                    <Avatar />
                 </div>
+                <Avatar />
             </div>
         )
     }
