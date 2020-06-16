@@ -1,6 +1,3 @@
-$(document).ready(function () {
-  $(".avatardisplay").hide();
-});
 $(".inicio99").click(function () {
   $(".es99").css("background-image", "url('beelogoanimation.gif')");
   $(".avatardisplay").show();

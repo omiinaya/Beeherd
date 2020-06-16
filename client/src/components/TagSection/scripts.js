@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-var temp_tag;
 var wordList;
 var userCheck;
 var wordListFixed = [];
@@ -26,7 +25,7 @@ export function generateWordList() {
             //console.log(res.data)
             wordList = res.data
         })
-        )
+    )
 }
 
 export function capitalizeFirst() {
@@ -43,9 +42,6 @@ export function generateRandomTag() {
     for (var i = 0; i < 3; i++) {
         newTag.push(wordListFixed[Math.floor(Math.random() * wordListFixed.length)])
     }
-
-    temp_tag = newTag.join("");
-    //console.log(temp_tag);
 }
 
 export function isUser(a) {

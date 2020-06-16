@@ -8,9 +8,6 @@ export function sendToDB(a) {
     const temp_tag = decoded.temp_tag;                          //grabs temp tag from decoded token.
     const id = a;                                               //grabs post content from button.
     var content = document.getElementById("reply-bar").value;
-    console.log(id)
-    console.log(temp_tag)
-    console.log(content)
 
     if (content ==="") {
         console.log("Please fill out all required fields.")

@@ -1,8 +1,323 @@
 button {
     font-size: 25px;
-  }
-  
-  .red {
+}
+
+.red {
     color: red;
-  }
-  
+}
+
+.a {
+    width: 750px;
+    height: 250px;
+}
+
+.a:hover {
+    border-radius: 3%;
+    width: 750px;
+    height: 270px;
+}
+
+.b {
+    margin-left: -47px;
+    margin-top: 106px;
+    border-radius: 2%;
+    width: 750px;
+    height: 550px;
+}
+
+.inicio99 {
+    font-family: monospace;
+}
+
+.inicio99:hover {
+    cursor: pointer;
+    text-align: right;
+    font-family: monospace;
+    color: blueviolet;
+    font-weight: bolder;
+}
+
+.name {
+    background-size: cover;
+    float: left;
+    height: 150px;
+}
+
+.name:hover {
+    background-size: 120%;
+    float: left;
+    height: 200px;
+}
+
+body>div>div:nth-child(1)>div.col-sm-3.a>div.col-3.logo>img {
+    width: 185%;
+}
+
+.logo {
+    margin-left: -10px;
+    margin-top: 13px;
+    float: left;
+}
+
+.second {
+    height: 150px;
+    border: 1px solid burlywood;
+}
+
+.yayo {
+    background-color: cyan;
+    font-family: monospace;
+}
+
+.userposts {
+    border: 2px solid purple;
+    height: 117px;
+    background-color: #fff8dcad;
+}
+
+#welcomeuser {
+    margin-top: -9px;
+}
+
+.this {
+    height: 35px;
+}
+
+#avatarmenu:hover {
+    margin-left: -9px;
+    filter: sepia();
+    font-family: monospace;
+    font-size: xx-large;
+}
+
+.avatardisplay {
+    height: 200px;
+    width: 300px;
+}
+
+.avatardisplay:hover {
+    height: 200px;
+    width: 300px;
+    background-color: transparent;
+}
+
+.es99 {
+    object-fit: cover;
+    overflow: hidden;
+    background-position-x: center;
+    background-position: center;
+    border: 1px dashed hsl(0, 0%, 0%, 0.4);
+    /* background-image: url(https://cutewallpaper.org/21/retro-game-backgrounds/Game-background-GIFs-Get-the-best-GIF-on-GIPHY.gif); */
+}
+
+.es1:hover {
+    border: 1px solid black;
+}
+
+.es2:hover {
+    border: 1px solid black;
+}
+
+.es3:hover {
+    border: 1px solid black;
+}
+
+.es4:hover {
+    border: 1px solid black;
+}
+
+.es5:hover {
+    border: 1px solid black;
+}
+
+body>div>div>div.col-sm-9.b>div.row.col-6.this>div>div>div>div>div>div:nth-child(2) {
+    margin-left: -301px;
+}
+
+.Backround {
+    background-size: inherit;
+}
+
+body>div>div>div.col-sm-9.b>div.row.col-6.this>div {
+    margin-top: -92px;
+    margin-left: -194px;
+}
+
+body>div>div>div.col-sm-9.b>div:nth-child(3)>div>div {
+    margin-top: 39px;
+    margin-left: 248px;
+}
+
+.bodya {
+    color: white;
+    background-color: Black;
+    height: 20px;
+    border: 1px solid purple;
+    overflow-y: scroll;
+}
+
+.bodya:hover {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    height: 149px;
+    border: 1px solid purple;
+    overflow-y: scroll;
+}
+
+.bodya::-webkit-scrollbar {
+    display: none;
+}
+
+#bodyimage {
+    width: 132px;
+    margin-left: 68px;
+    margin-top: -208px;
+}
+
+#bodyimages {
+    width: 99px;
+    margin-left: 68px;
+    margin-top: -208px;
+}
+
+.eyesa {
+    color: white;
+    background-color: Black;
+    height: 20px;
+    border: 1px solid purple;
+    overflow-y: scroll;
+}
+
+.eyesa:hover {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    height: 99px;
+    border: 1px solid purple;
+    overflow-y: scroll;
+}
+
+.eyesa::-webkit-scrollbar {
+    display: none;
+}
+
+#eyesimage {
+    width: 65px;
+    margin-left: 68px;
+    margin-top: -280px;
+}
+
+#eyesimages {
+    width: 65px;
+    margin-left: 68px;
+    margin-top: -255px;
+}
+
+.haira {
+    color: white;
+    background-color: Black;
+    height: 20px;
+    border: 1px solid purple;
+    overflow-y: scroll;
+}
+
+.haira:hover {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    height: 99px;
+    border: 1px solid purple;
+    overflow-y: scroll;
+}
+
+.haira::-webkit-scrollbar {
+    display: none;
+}
+
+#hairimage {
+    width: 89px;
+    margin-left: 40px;
+    margin-top: -264px;
+}
+
+#hairimages {
+    width: 89px;
+    margin-left: 40px;
+    margin-top: -264px;
+}
+
+#hairimages2 {
+    width: 104px;
+    margin-left: 33px;
+    margin-top: -203px;
+}
+
+.cloth {
+    color: white;
+    margin-left: -16px;
+    background-color: Black;
+    height: 20px;
+    border: 1px solid purple;
+    overflow-y: scroll;
+}
+
+.cloth:hover {
+    margin-left: -16px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    height: 99px;
+    border: 1px solid purple;
+    overflow-y: scroll;
+}
+
+.cloth::-webkit-scrollbar {
+    display: none;
+}
+
+.Backround {
+    color: white;
+    margin-left: -16px;
+    background-color: Black;
+    height: 20px;
+    border: 1px solid purple;
+    overflow-y: scroll;
+}
+
+.Backround:hover {
+    margin-left: -16px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    height: 99px;
+    border: 1px solid purple;
+    overflow-y: scroll;
+}
+
+.Backround::-webkit-scrollbar {
+    display: none;
+}
+
+/* body > div > div > div.col-sm-9.b > div.row.col-6.this > div {
+    background-image: url(back9.gif);
+    background-size: 438px 271px;
+    background-position: 183px 241px;
+  } */
+
+#ropaimage {
+    width: 95px;
+    margin-left: 26px;
+    margin-top: -604px;
+}
+
+#ropaimages {
+    width: 95px;
+    margin-left: 26px;
+    margin-top: -604px;
+}
+
+body>div>div>div.col-sm-9.b>div.row.col-6.this {
+    margin-top: -200px;
+    margin-left: 147px;
+}

@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 //import ClassicEditor from "@ckeditor/ckeditor5-build-classic"
 import { sendToDB } from "./scripts"
 //import CKEditor from "@ckeditor/ckeditor5-react"
 import axios from "axios"
-import { Row, Col } from "../Grid";
+import { Col } from "../Grid";
 import { PostList, PostListItemExpanded } from "../PostList";
 import EmptyList from "../EmptyList";
 import Footer from "../Footer";
@@ -35,16 +35,13 @@ class ExpandPost extends React.Component {
                     post,
                     title,
                     author,
-                    id,
                     toggleReply: false
                 });
             })
     }
 
     handleClick() {
-        console.log(this.state.toggleReply);
-        console.log(this.state.id);
-        if (this.state.toggleReply == false) {
+        if (this.state.toggleReply === false) {
             this.setState({
                 toggleReply: true
             })
@@ -57,10 +54,9 @@ class ExpandPost extends React.Component {
 
     getReplies() {
         var id = this.props.match.params.id;
-        axios.get("/replies/"+id)
+        axios.get("/replies/" + id)
             .then((res) => {
                 this.setState({ savedReplies: res.data });
-                console.log(res.data)
             })
             .catch((err) => console.log(err));
     };
@@ -86,7 +82,6 @@ class ExpandPost extends React.Component {
                 {this.state.savedReplies.length > 0 ?
                     <PostList>
                         {this.state.savedReplies.map(replies => {
-                            //console.log(posts)
                             return (
                                 <div className="reply-card" /*onClick={() => this.handleOnClick(replies)}*/>
                                     <div>
