@@ -410,6 +410,7 @@
     width: 28%;
     padding: 5px;
     border: 1px solid purple;
+    border-top:black;
   }
   
   .moodBox .moodTextbox {
