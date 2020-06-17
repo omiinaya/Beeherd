@@ -230,7 +230,6 @@ function Suicide() {
           </div>
         </div>
       </section>
-
       <section className="Informedfoot">
         <footer className="informedFooter">
           <p className="informedFooterText">

@@ -2,7 +2,6 @@ import $ from 'jquery'
 import axios from 'axios'
 import jwt_decode from 'jwt-decode'
 
-const token = localStorage.usertoken;
 var owner_id;
 var current_avatar;
 var current_skin;
@@ -12,9 +11,7 @@ var current_outfit;
 var current_place;
 
 export function avatarBackend() {
-    decodeAvatar()
-    getAvatar(owner_id)
-    //loadCurrent()
+    //ifAThenB();
     $("#standard1").mouseenter(function () {
         $(".es1").append("<img id='bodyimage' src='/avatar/skin/white.png'></img>");
     });
@@ -160,7 +157,7 @@ export function avatarBackend() {
     //background//
 
     $("#bb1").click(function () {
-        $(".es99").css("background-image","url('/avatar/place/place1.gif')");
+        $(".es99").css("background-image", "url('/avatar/place/place1.gif')");
         current_place = '/avatar/place/place1.gif';
         console.log(current_place);
     });
@@ -205,31 +202,43 @@ export function sendToUpdate(a) {
         })
 }
 
-function decodeAvatar() {
-    var decode = jwt_decode(token);
-    owner_id = decode.id;
+function ifAThenB() {
+    if (localStorage.usertoken != null) {
+        decodeAvatar()
+    } else {
+        window.open("/login", "_self")
+    }
 }
 
-function getAvatar(owner_id) {
+function decodeAvatar() {
+    var token = localStorage.usertoken;
+    var decode = jwt_decode(token);
+    owner_id = decode.id;
+    getAvatar(owner_id)
+}
+
+function getAvatar(a) {
     axios.get("avatars/" + owner_id)
         .then((res) => {
             current_avatar = res.data[0];
+            loadCurrent(current_avatar)
             console.log(current_avatar)
         })
-        .catch((err) => console.log(err));
+        .catch((err) => { console.log(err)
+        });
 }
 
-export function loadCurrent() {
-    var db_skin = current_avatar.skin;
+export function loadCurrent(a) {
+    var db_skin = a.skin;
     //console.log(db_skin);
-    var db_eyes = current_avatar.eyes;
+    var db_eyes = a.eyes;
     //console.log(db_eyes);
-    var db_hair = current_avatar.hair;
-    var db_outfit = current_avatar.outfit;
-    var db_background = current_avatar.background;
-    $(".es1").append("<img class='cleanai' id='bodyimages' src='"+db_skin+"'></img>");
-    $(".es2").append("<img class='cleanai2' id='eyesimages' src='"+db_eyes+"'></img>");
-    $(".es3").append("<img class='cleanai3' id='hairimages' src='"+db_hair+"'></img>");
-    $(".es4").append("<img class='cleanai4' id='ropaimages' src='"+db_outfit+"'></img>");
-    $(".es99").css("background-image","url('"+db_background+"')");
+    var db_hair = a.hair;
+    var db_outfit = a.outfit;
+    var db_background = a.background;
+    $(".es1").append("<img class='cleanai' id='bodyimages' src='" + db_skin + "'></img>");
+    $(".es2").append("<img class='cleanai2' id='eyesimages' src='" + db_eyes + "'></img>");
+    $(".es3").append("<img class='cleanai3' id='hairimages' src='" + db_hair + "'></img>");
+    $(".es4").append("<img class='cleanai4' id='ropaimages' src='" + db_outfit + "'></img>");
+    $(".es99").css("background-image", "url('" + db_background + "')");
 }

@@ -14,6 +14,7 @@ import Footer from "./components/Footer";
 import { Container } from "./components/Grid";
 import ExpandPost from "./components/ExpandPost";
 import About from "./components/About/";
+import Customize from "./components/Customize";
 
 //pages
 import Resources from "./pages/Resources";
@@ -36,6 +37,8 @@ class App extends Component {
             <Route exact path="/login" component={Login} />
             <Route exact path="/profile" component={Profile} />
             <Route exact path="/posts" component={Post} />
+            <Route exact path="/customize" component={Customize} />
+
             <Route path="/posts/:id" component={ExpandPost} />
 
             <Route exact path="/suicide" component={Suicide} />
