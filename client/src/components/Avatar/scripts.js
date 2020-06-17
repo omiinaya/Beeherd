@@ -2,7 +2,6 @@ import $ from 'jquery'
 import axios from 'axios'
 import jwt_decode from 'jwt-decode'
 
-const token = localStorage.usertoken;
 var owner_id;
 var current_avatar;
 var current_skin;
@@ -12,10 +11,7 @@ var current_outfit;
 var current_place;
 
 export function avatarBackend() {
-    decodeAvatar()
-    //waitOnAThenB()
-    getAvatar(owner_id)
-    //loadCurrent()
+    ifAThenB();
     $("#standard1").mouseenter(function () {
         $(".es1").append("<img id='bodyimage' src='/avatar/skin/white.png'></img>");
     });
@@ -206,12 +202,22 @@ export function sendToUpdate(a) {
         })
 }
 
-function decodeAvatar() {
-    var decode = jwt_decode(token);
-    owner_id = decode.id;
+function ifAThenB() {
+    if (localStorage.usertoken != null) {
+        decodeAvatar()
+    } else {
+        window.open("/login", "_self")
+    }
 }
 
-function getAvatar(owner_id) {
+function decodeAvatar() {
+    var token = localStorage.usertoken;
+    var decode = jwt_decode(token);
+    owner_id = decode.id;
+    getAvatar(owner_id)
+}
+
+function getAvatar(a) {
     axios.get("avatars/" + owner_id)
         .then((res) => {
             current_avatar = res.data[0];
