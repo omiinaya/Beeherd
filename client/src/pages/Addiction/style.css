@@ -69,10 +69,10 @@
   line-height: 30px;
 }
 
-.Additext-container .moodColors {
+.Additext-container{
   font-size: 110px;
   color: rgba(2, 2, 2, 0.317);
-  line-height: 1;
+  
   background-repeat: repeat-x;
   -webkit-background-clip: text;
   animation: animate 15s linear infinite;
@@ -111,8 +111,9 @@
 
 .Additext-container {
   text-align: center;
-  margin-bottom: -10px;
-  ;
+  margin-top: 1em;
+
+  font-size: 100px;
 }
 
 .AddiSecPicContainer {
@@ -179,7 +180,7 @@
   margin-right: 15%;
 }
 
-.LifeSec3container {}
+
 
 .LifecrisisAnime {
   padding-top: 4%;
@@ -194,4 +195,75 @@
   background-color: black;
   
   z-index: -1;
+}
+
+.AddiPageContainer{
+  background-color: black;
+  font: 15px/1.5 sans-serif;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #020202;
+  color: rgb(152, 150, 150);
+  letter-spacing: 1px;
+  letter-spacing: 2px;
+
+}
+
+
+.AddiText1{
+  font-size: 48px;
+  color: rgb(151, 150, 152);
+  margin-bottom: 80px;
+  float: center;
+  font-size: 500px;
+  color: rgba(72, 69, 67, 0.119);
+  
+  height: 160px;
+}
+
+.lifeColorsh1{
+  font-size: 100px;
+  text-align: center;
+  color: #3e24047b;
+}
+
+.addiSeparatorSupport{
+
+  height: 2em;
+  width: 100%;
+  background: url(/client/src/pages/Addiction/assets/skull.webp);
+}
+
+.AddiText55{
+  color: rgba(255, 255, 255, 0.488);
+
+
+}
+
+.AddiSection1{
+  text-align: right;
+}
+
+.Additext-container{
+  text-align: right;
+  margin-top:60px;
+}
+
+
+
+.AddiinformedFooter{
+  padding: 20px;
+  margin-top: 80px;
+  color: rgba(248, 199, 242, 0.897);
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.29);
+  text-align: center;
+  margin-top: -25%;
+  
+}
+
+.MoodcrisisAnimefoot{
+  margin-bottom: 7.1%;
+
 }
