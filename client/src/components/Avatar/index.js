@@ -107,7 +107,7 @@ export class Avatar extends Component {
                 <div id="avatar-button">
                 <button id="avatar-update-button" onClick={() => {
                     this.handleClick()
-                    window.location.reload();
+                    window.open("/", "_self")
                 }
                 }>Submit</button>
                 </div>
