@@ -1,20 +1,12 @@
-.profile-container {
+.customize-container {
     background-color: rgba(192, 192, 192, 0.3);
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
     padding: 2%;
     width: 98.5%;
-    margin: auto;
+    margin: 0 auto;
     border-radius: 6px;
-    margin-bottom: 2%;
-    margin-top: 1%;
 }
 
-.profile-title {
+.customize-title {
     font-family: 'Shadows into Light', sans-serif;
-}
-
-.profile-buttons {
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: rgba(192, 192, 192, 0.0);
 }

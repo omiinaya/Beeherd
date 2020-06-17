@@ -57,7 +57,9 @@ class Navbar extends Component {
                         </ul>
                     </div>
                     <div className="mx-auto order-0">
-                        <Link to="/" className="nav-link navbar-brand mx-auto"><span role="img" aria-label="bee">🐝</span></Link>
+                        <Link to="/" className="nav-link navbar-brand mx-auto">
+                            <span role="img" aria-label="bee">🐝</span>
+                        </Link>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
                             <span className="navbar-toggler-icon">☰</span>
                         </button>

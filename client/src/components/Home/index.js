@@ -7,6 +7,7 @@ import axios from "axios";
 import EmptyList from "../EmptyList";
 import SeeMoreButton from "../SeeMoreButton";
 import TagSection from "../TagSection";
+import { AvatarTesting } from "../AvatarTesting";
 import "./style.css";
 import {
   MDBRow,
@@ -44,7 +45,6 @@ class Home extends Component {
       .get("/posts/all")
       .then((res) => {
         this.setState({ savedPosts: res.data });
-        //console.log(res.data)
       })
       .catch((err) => console.log(err));
   };
@@ -94,7 +94,11 @@ class Home extends Component {
             </Col>
             <Col size="md-3">
               <div className="side-bar-top">
-                <p>Avatar Placeholder</p>
+                <AvatarTesting className="avatar-display-home" />
+                <button onClick={() => {
+                    this.props.history.push("/customize")
+                }
+                }>Customize</button>
               </div>
               <div className="side-bar-middle">
                 <TagSection />

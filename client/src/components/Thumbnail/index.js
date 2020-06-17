@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css"
-import Placeholder from './images/placeholder.png'
+import Placeholder from './images/placeholder2.png'
 //import { urlencoded } from "body-parser";
 
 function Thumbnail({ src }) {

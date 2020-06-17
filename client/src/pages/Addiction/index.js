@@ -6,7 +6,7 @@ import "../../components/Words/style.css";
 
 function Addiction() {
   return (
-    <div className="MoodPageContainer">
+    <div className="AddiPageContainer">
       <div className="MoodPage">
         <header className="moodHeader">
           <div className="MHcontainer">
@@ -14,12 +14,12 @@ function Addiction() {
           </div>
         </header>
 
-        <section className="MoodSection1">
+        <section className="AddiSection1">
           <div className="MoodSec1container">
             <div className="Additext-container">
-              <h1 className="moodColors lifeColorsh1">Substance Abuse </h1>
+              <h1 className="lifeColorsh1">Substance Abuse </h1>
             </div>
-            <h1 className="moodText1">And Addiction</h1>
+            <h1 className="AddiText1">And</h1>
           </div>
         </section>
 
@@ -30,11 +30,11 @@ function Addiction() {
           <div className="moodTextDiv">
             <h1 className="mooddown"> </h1>
 
-            <div className="borderDown">
-              <h1 className="mooddown2">Addiction</h1>
+            <div className="AddiborderDown">
+              <h1 className="mooddown2"></h1>
             </div>
           </div>
-          <h3 className="mooddown"> </h3>
+          <h3 className="mooddown"></h3>
         </center>
         <section className="MoodSectionPic">
           <div className="AddiSecPicContainer"></div>
@@ -50,7 +50,7 @@ function Addiction() {
           changes are reversible after the substance use or behavior is
           discontinued.
         </p>
-
+<div className="addiSeparatorSupport"></div>
         <section className="MoodSection2">
           <div className="MoodSec2container">
             <h1 className="requestSupport">Requesting Support?</h1>
@@ -69,6 +69,9 @@ function Addiction() {
                 </button>
               </div>
             </div>
+          </div>
+          <div className="addiSeparatorSupport">
+          <h1 className="AddiText1">Addiction</h1>
           </div>
         </section>
         <div className="LifeText3div">
@@ -176,8 +179,8 @@ function Addiction() {
         </div>
       </section>
 
-      <div className="MoodcrisisAnimefoot">
-        <div className="MoodcrisisAnimefoot">
+      <div className="LifecrisisAnimefoot">
+        <div className="LifecrisisAnimefoot">
           {" "}
           <img
             width="200"
@@ -193,7 +196,7 @@ function Addiction() {
       </div>
 
       <section className="Informedfoot">
-        <footer className="informedFooter">
+        <footer className="AddiinformedFooter">
           <p className="informedFooterText">
             Life Is Now, Copyright&copy; beeherd 2020
           </p>

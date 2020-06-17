@@ -1,40 +1,17 @@
 .neon {
   position: absolute;
   ;
-  top: 90%;
-  left: 50%;
+  top: 242%;
+  left: 78%;
   transform: translate(-90%, -50%);
   margin: 0;
   padding: 0 20px;
-  font-size: 2em;
-  color: rgb(150, 24, 146);
+  font-size: 4em;
+  color: rgba(249, 27, 241, 0.988);
   text-shadow: 0 0 20px #980e81;
   font-family: "quicksand";
 }
 
-.neon:after {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 0 20px;
-  z-index: -1;
-  color: #d70fb6;
-  filter: blur(15px);
-}
-
-.neon:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #a30db1;
-  z-index: -2;
-  
-  filter: blur(40px);
-}
 
 .suicide-hotline {
   height: 4em;
@@ -49,37 +26,7 @@
   padding: 2%;
 }
 
-.neon {
-  position: absolute;
-  ;
-  top: 340%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-bottom: 2em;
-  padding: 0 20px;
-  font-size: 3em;
-  opacity: .7;
-  color: rgb(244, 5, 252);
-  text-shadow: 0 0 20px #b20ac1;
-  font-family: "quicksand";
-  bottom: 6em;
-}
 
-.neon {
-  position: absolute;
-  ;
-  top: 280%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-bottom: 2em;
-  padding: 0 20px;
-  font-size: 5em;
-  opacity: .7;
-  color: rgb(244, 5, 252);
-  text-shadow: 0 0 20px #b20ac1;
-  font-family: "quicksand";
-  bottom: 6em;
-}
 
 .neon:after {
   content: attr(data-text);
@@ -126,7 +73,7 @@
   font-size: 4em;
   margin-bottom: 2em;
   float: center;
-  color: rgb(72, 69, 67);
+  color: rgba(72, 69, 67, 0.557);
   
 }
 
@@ -137,7 +84,7 @@
 
 .Lifetext-container .LifeColors {
   font-size: 5em;
-  color: rgba(40, 15, 15, 0.379);
+  color: rgba(0, 0, 0, 0.214);
   line-height: 1;
   background-repeat: repeat-x;
   -webkit-background-clip: text;
@@ -155,6 +102,8 @@
 
 .Lifetext-container {
   text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  
 }
 
 .moodTextDiv2 {
@@ -183,7 +132,7 @@
   margin-bottom: 80px;
   float: center;
   font-size: 500px;
-  color: rgb(72, 69, 67);
+  color: rgba(72, 69, 67, 0.098);
   
   height: 160px;
   margin-left: 0%;
@@ -193,7 +142,7 @@
   margin-bottom: 80px;
   float: center;
   font-size: 400px;
-  color: rgb(72, 69, 67);
+  color: rgba(72, 69, 67, 0.098);
   
   height: 170px;
   margin-left: 0%;
@@ -265,9 +214,165 @@
   margin-left: 15%;
   margin-top: 0px;
   margin-bottom: -150px;
+
 }
 
 .divisionLife{
 height:50%;
 width:50%;
 }
+
+
+
+
+.infoCardsMain {
+  position: absolute;
+  width: 300px;
+  height:400px;
+  display: inline-block;
+}
+
+.infoCardsCard1{
+  position: absolute;
+  width: 180px;
+  height: 250px;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  font-size:11px;
+}
+
+
+ .infoCardsCard2{
+  position: absolute;
+  width: 180px;
+  height: 250px;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  font-size:11px;
+  text-align: center;
+  line-height:16px;
+  float:left;
+  margin-top:-40.5em;
+  margin-left:42%;
+}
+
+.infoCardsCard3 {
+  position: absolute;
+  width: 180px;
+  height: 250px;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  font-size:11px;
+  margin-top:-41em;
+  margin-left:47%;
+}
+
+
+.infoCardsCard1:hover {
+  transform: rotateY(180deg);
+}
+
+.infoCardsCard2:hover {
+  transform: rotateY(180deg);
+}
+
+.infoCardsCard3:hover {
+  transform: rotateY(180deg);
+}
+
+.infoCardsFront1{
+  position: absolute;
+  width: 180px;
+  height: 250px;
+  backface-visibility: hidden;
+  background: rgb(33, 29, 33);
+  color: rgb(248, 244, 244);
+  font-size:10px;
+  text-align: center;
+  padding-top: 5%;
+  border-radius: 20px;
+}
+
+.infoCardsFront2 {
+  position: absolute;
+  width: 180px;
+  height: 250px;
+  backface-visibility: hidden;
+  background: rgba(219, 7, 230, 0.276);
+  color: rgb(248, 244, 244);
+  font-size:15px;
+  text-align: center;
+  padding-top: 49%;
+  border-radius: 20px;
+  line-height: 24px;
+}
+ .infoCardsFront3 {
+  position: absolute;
+  width: 180px;
+  height: 250px;
+  backface-visibility: hidden;
+  background: rgba(123, 7, 238, 0.31);
+  color: rgb(248, 244, 244);
+  font-size:15px;
+  text-align: center;
+  padding-top: 50%;
+  border-radius: 20px;
+}
+
+
+.infoCardsBack1{
+  position: absolute;
+  width: 180px;
+  height: 250px;
+  backface-visibility: hidden;
+  background: rgba(76, 0, 130, 0.749);
+  color: rgba(250, 246, 246, 0.913);
+  font-size:10px;
+  text-align: center;
+  padding-top: 5%;
+  border-radius: 20px;
+  transform: rotateY(180deg);
+}
+
+.infoCardsBack2  {
+  position:absolute;
+  width: 180px;
+  height: 250px;
+  backface-visibility: hidden;
+  background: rgba(76, 0, 130, 0.749);
+  color: rgb(250, 246, 246);
+  font-size:10px;
+  text-align: center;
+  padding-top:5%;
+  border-radius: 20px;
+  transform: rotateY(180deg);
+  line-height: 24px;
+  
+}
+
+ .infoCardsBack3 {
+  position: absolute;
+  width: 180px;
+  height: 250px;
+  backface-visibility: hidden;
+  background: rgba(219, 7, 230, 0.276);
+  color: rgb(250, 246, 246);
+  font-size:11px;
+  text-align: center;
+  padding-top: 5%;
+  border-radius: 20px;
+  transform: rotateY(180deg);
+}
+
+.LifePageContainer{
+  background-color: black;
+  font: 15px/1.5 sans-serif;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #020202;
+  color: rgb(152, 150, 150);
+  letter-spacing: 1px;
+  letter-spacing: 2px;
+}
+
