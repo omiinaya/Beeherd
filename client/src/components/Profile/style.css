@@ -12,3 +12,9 @@
 .profile-title {
     font-family: 'Shadows into Light', sans-serif;
 }
+
+.profile-buttons {
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgba(192, 192, 192, 0.0);
+}
