@@ -6,7 +6,7 @@ import Footer from '../Footer';
 //import axios from 'axios';
 import "./style.css";
 
-class Profile extends Component {
+class Customize extends Component {
     constructor() {
         super()
         this.state = {
@@ -42,4 +42,4 @@ class Profile extends Component {
     }
 }
 
-export default Profile
+export default Customize

@@ -7,8 +7,7 @@ import axios from "axios";
 import EmptyList from "../EmptyList";
 import SeeMoreButton from "../SeeMoreButton";
 import TagSection from "../TagSection";
-import { AvatarDisplay } from "../Avatar";
-import { avatarBackend } from "../Avatar/scripts"
+import { AvatarTesting } from "../AvatarTesting";
 import "./style.css";
 import {
   MDBRow,
@@ -22,7 +21,6 @@ class Home extends Component {
   };
 
   componentDidMount() {
-    avatarBackend()
     this.getPosts();
   }
 
@@ -96,7 +94,7 @@ class Home extends Component {
             </Col>
             <Col size="md-3">
               <div className="side-bar-top">
-                <AvatarDisplay className="avatar-display-home" />
+                <AvatarTesting className="avatar-display-home" />
                 <button onClick={() => {
                     this.props.history.push("/customize")
                 }

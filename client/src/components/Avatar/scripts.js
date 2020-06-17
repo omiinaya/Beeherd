@@ -11,7 +11,7 @@ var current_outfit;
 var current_place;
 
 export function avatarBackend() {
-    ifAThenB();
+    //ifAThenB();
     $("#standard1").mouseenter(function () {
         $(".es1").append("<img id='bodyimage' src='/avatar/skin/white.png'></img>");
     });
