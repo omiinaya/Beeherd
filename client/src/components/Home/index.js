@@ -7,7 +7,7 @@ import axios from "axios";
 import EmptyList from "../EmptyList";
 import SeeMoreButton from "../SeeMoreButton";
 import TagSection from "../TagSection";
-import Avatar from "../Avatar";
+import { Avatar, AvatarDisplay } from "../Avatar";
 import "./style.css";
 import {
   MDBRow,
@@ -95,7 +95,7 @@ class Home extends Component {
             </Col>
             <Col size="md-3">
               <div className="side-bar-top">
-                <p>Avatar Placeholder</p>
+                <AvatarDisplay className="avatar-display-home" />
               </div>
               <div className="side-bar-middle">
                 <TagSection />

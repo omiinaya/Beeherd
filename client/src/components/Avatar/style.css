@@ -4,8 +4,7 @@
 }
 
 .avatar-box {
-    border-radius: 6px;
-    margin: 0 auto;
+    margin: auto;
     /*moves avatar section*/
 }
 
@@ -23,7 +22,8 @@ body>div>div:nth-child(1)>div.col-sm-3.a>div.col-3.logo>img {
 .avatardisplay {
     height: 200px;
     width: 300px;
-    border-radius: 6px;
+    margin: 0 auto;
+    /*border-radius: 6px;*/
 }
 
 .avatardisplay:hover {
@@ -39,6 +39,7 @@ body>div>div:nth-child(1)>div.col-sm-3.a>div.col-3.logo>img {
     background-position: center;
     border: 1px dashed hsl(0, 0%, 0%, 0.4);
 }
+
 
 body>div>div>div.col-sm-9.b>div.row.col-6.this>div>div>div>div>div>div:nth-child(2) {
     margin-left: -301px;

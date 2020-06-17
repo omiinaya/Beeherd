@@ -119,8 +119,8 @@ export class Avatar extends Component {
 export class AvatarDisplay extends Component {
     render() {
         return (
-            <div className="col-4 avatar-box">
-                <div className="col-12">
+            <div className="avatar-box">
+                <div>
                     <div className="col-12 avatardisplay es99">
                         <div className="col-12 avatardisplay es1">
                             <div className="col-12 avatardisplay es2">
