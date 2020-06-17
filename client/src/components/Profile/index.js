@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import jwt_decode from 'jwt-decode'
+//import jwt_decode from 'jwt-decode'
+import axios from 'axios'
 import Footer from '../Footer';
 import Journals from '../Journals';
 import "./style.css";
@@ -12,7 +13,7 @@ class Profile extends Component {
         }
     }
     componentDidMount() {
-        this.getJournals();
+        //this.getJournals();
         var id = this.props.match.params.id;
         axios.get(`/journals/` + id)
             .then(res => {
