@@ -4,8 +4,13 @@
 }
 
 .avatar-box {
-    margin: auto;
     /*moves avatar section*/
+    margin: 0 auto;
+}
+
+.avatar-box-2 {
+    /*moves avatar section*/
+    margin: 0 auto;
 }
 
 #avatar-update-button {
@@ -47,8 +52,8 @@ body>div>div:nth-child(1)>div.col-sm-3.a>div.col-3.logo>img {
 .avatardisplay {
     height: 200px;
     width: 300px;
-    margin: 0 auto;
     border-radius: 6px;
+    margin: 0 auto;
 }
 
 .avatardisplay:hover {
@@ -111,6 +116,12 @@ body>div>div>div.col-sm-9.b>div:nth-child(3)>div>div {
 
 #bodyimages {
     width: 99px;
+    margin-left: 34px;
+    margin-top: -208px;
+}
+
+#bodyimages-2 {
+    width: 99px;
     margin-left: 68px;
     margin-top: -208px;
 }
@@ -141,6 +152,12 @@ body>div>div>div.col-sm-9.b>div:nth-child(3)>div>div {
 }
 
 #eyesimages {
+    width: 70px;
+    margin-left: 34px;
+    margin-top: -248px;
+}
+
+#eyesimages-2 {
     width: 70px;
     margin-left: 66px;
     margin-top: -248px;
@@ -173,7 +190,7 @@ body>div>div>div.col-sm-9.b>div:nth-child(3)>div>div {
 
 #hairimages {
     width: 89px;
-    margin-left: 42px;
+    margin-left: 8px;
     margin-top: -261px;
 }
 
@@ -232,6 +249,12 @@ body>div>div>div.col-sm-9.b>div:nth-child(3)>div>div {
 }
 
 #ropaimages {
+    width: 95px;
+    margin-left: -10px;
+    margin-top: -604px;
+}
+
+#ropaimages-2 {
     width: 95px;
     margin-left: 26px;
     margin-top: -604px;
