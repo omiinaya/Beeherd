@@ -127,8 +127,7 @@ class Avatar extends Component {
                 </div>
                 <button onClick={() => {
                     this.handleClick()
-                    //localStorage.removeItem('usertoken')
-                    //window.open("/login", "_self")
+                    window.location.reload();
                 }
                 }>Change</button>
             </div>
