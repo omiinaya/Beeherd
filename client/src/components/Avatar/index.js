@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { avatarBackend } from './scripts';
+import { avatarBackend, loadCurrent } from './scripts';
 import jwt_decode from 'jwt-decode'
 import { sendToCreate, sendToUpdate } from './scripts'
 import axios from 'axios'
@@ -42,7 +42,6 @@ export class Avatar extends Component {
                 this.setState({
                     savedAvatar: res.data
                 });
-                console.log(res.data)
             })
             .catch((err) => console.log(err));
     };
@@ -109,6 +108,12 @@ export class Avatar extends Component {
                 <button onClick={() => {
                     this.handleClick()
                     window.location.reload();
+                }
+                }>Submit</button>
+
+                <button onClick={() => {
+                    loadCurrent()
+                    //window.location.reload();
                 }
                 }>Submit</button>
             </div>

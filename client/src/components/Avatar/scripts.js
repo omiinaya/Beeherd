@@ -1,6 +1,10 @@
 import $ from 'jquery'
 import axios from 'axios'
+import jwt_decode from 'jwt-decode'
 
+const token = localStorage.usertoken;
+var owner_id;
+var current_avatar;
 var current_skin;
 var current_eyes;
 var current_hair;
@@ -8,8 +12,10 @@ var current_outfit;
 var current_place;
 
 export function avatarBackend() {
+    decodeAvatar()
+    getAvatar(owner_id)
+    //loadCurrent()
     $("#standard1").mouseenter(function () {
-        //$('<img />').attr('src', 'white.png').appendTo("#es1");
         $(".es1").append("<img id='bodyimage' src='/avatar/skin/white.png'></img>");
     });
 
@@ -42,7 +48,6 @@ export function avatarBackend() {
         current_skin = '/avatar/skin/black.png';
         console.log(current_skin);
     });
-
 
     //eyes/
 
@@ -155,11 +160,8 @@ export function avatarBackend() {
     //background//
 
     $("#bb1").click(function () {
-        $(".es99").css(
-            "background-image",
-            "url('/avatar/place/place1.gif')"
-        );
-        current_place = '/avatar/place/place1.png';
+        $(".es99").css("background-image","url('/avatar/place/place1.gif')");
+        current_place = '/avatar/place/place1.gif';
         console.log(current_place);
     });
 
@@ -167,38 +169,67 @@ export function avatarBackend() {
         $(".es99").css("background-image", "url('/avatar/place/place2.gif')");
         $(".es99").css("background-position", "289px 227px");
         $(".es99").css("background-size", "287px 201px");
-        current_place = '/avatar/place/place2.png';
+        current_place = '/avatar/place/place2.gif';
         console.log(current_place);
     });
 }
 
 export function sendToCreate(a) {
     return axios
-    .post('avatars/create', {
-        owner_id: a,
-        skin: current_skin,
-        hair: current_hair,
-        eye: current_eyes,
-        outfit: current_outfit,
-        background: current_place
-    })
-    .then(res => {
-        console.log("Avatar has been created.")
-        return res.data
-    })
+        .post('avatars/create', {
+            owner_id: a,
+            skin: current_skin,
+            hair: current_hair,
+            eye: current_eyes,
+            outfit: current_outfit,
+            background: current_place
+        })
+        .then(res => {
+            console.log("Avatar has been created.")
+            return res.data
+        })
 }
 
 export function sendToUpdate(a) {
     return axios
-    .put('avatars/id/'+a, {
-        skin: current_skin,
-        hair: current_hair,
-        eye: current_eyes,
-        outfit: current_outfit,
-        background: current_place
-    })
-    .then(res => {
-        console.log("Avatar has been updated.")
-        return res.data
-    })
+        .put('avatars/id/' + a, {
+            skin: current_skin,
+            hair: current_hair,
+            eye: current_eyes,
+            outfit: current_outfit,
+            background: current_place
+        })
+        .then(res => {
+            console.log("Avatar has been updated.")
+            return res.data
+        })
+}
+
+function decodeAvatar() {
+    var decode = jwt_decode(token);
+    owner_id = decode.id;
+}
+
+function getAvatar(owner_id) {
+    axios.get("avatars/" + owner_id)
+        .then((res) => {
+            current_avatar = res.data[0];
+            console.log(current_avatar)
+        })
+        .catch((err) => console.log(err));
+}
+
+export function loadCurrent() {
+    var db_skin = current_avatar.skin;
+    //console.log(db_skin);
+    var db_eyes = current_avatar.eyes;
+    //console.log(db_eyes);
+    var db_hair = current_avatar.hair;
+    var db_outfit = current_avatar.outfit;
+    var db_background = current_avatar.background;
+    $(".es1").append("<img class='cleanai' id='bodyimages' src='"+db_skin+"'></img>");
+    $(".es2").append("<img class='cleanai2' id='eyesimages' src='"+db_eyes+"'></img>");
+    $(".es3").append("<img class='cleanai3' id='hairimages' src='"+db_hair+"'></img>");
+    $(".es4").append("<img class='cleanai4' id='ropaimages' src='"+db_outfit+"'></img>");
+    $(".es99").css("background-image","url('"+db_background+"')");
 }
