@@ -1,12 +1,10 @@
 import React from "react";
 import "./style.css";
-import InfoCards from "../../components/InfoCards"
-
-
+//import InfoCards from "../../components/InfoCards"
 
 function Suicide() {
   return (
-    <div className="MoodPageContainer">
+    <div className="LifePageContainer">
       <div className="MoodPage">
         <header className="moodHeader">
           <div className="MHcontainer">
@@ -155,13 +153,15 @@ function Suicide() {
             sizes="auto"
           ></img>
         </div>
-
       </div>
 
       <div className="infoCardsCard2">
-        <div className="infoCardsFront2">What if I'm not worthy of life, love, abundance, freedom, or success?</div>
+        <div className="infoCardsFront2">
+          What if I'm not worthy of life, love, abundance, freedom, or success?
+        </div>
         <div className="infoCardsBack2">
-          How ironic! Only that which is worthy can question its own worthiness. You are worthy just because you exist. There's nothing you need to do
+          How ironic! Only that which is worthy can question its own worthiness.
+          You are worthy just because you exist. There's nothing you need to do
           or be to prove yourself. You are worthy beyond belief simply because
           you're here - being. How cool is that!?
         </div>
@@ -212,14 +212,16 @@ function Suicide() {
             </p>
           </div>
           <div className="infoCardsCard3">
-        <div className="infoCardsFront3">What if Im not important or useful?</div>
-        <div className="infoCardsBack3">
-          You matter so much that everything you do
-          and think has a direct effect on the entire world. You are a master creator made of energy and frequency. Go play, little bee,
-          and co-create with the humans.
-        </div>
-      </div>
-
+            <div className="infoCardsFront3">
+              What if Im not important or useful?
+            </div>
+            <div className="infoCardsBack3">
+              You matter so much that everything you do and think has a direct
+              effect on the entire world. You are a master creator made of
+              energy and frequency. Go play, little bee, and co-create with the
+              humans.
+            </div>
+          </div>
 
           <div classname="uMatterDiv">
             <h1 className="neon" data-text="[You Matter]">
@@ -229,8 +231,6 @@ function Suicide() {
         </div>
       </section>
 
-
-      
       <section className="Informedfoot">
         <footer className="informedFooter">
           <p className="informedFooterText">

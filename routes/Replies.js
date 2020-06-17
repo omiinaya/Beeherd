@@ -1,12 +1,14 @@
+//dependencies
 const express = require("express")
-const replies = express.Router()
 const cors = require("cors")
-const jwt = require("jsonwebtoken")
-
 const Reply = require("../models/Reply")
 
+//vars
+const replies = express.Router()
 replies.use(cors())
 
+//routes
+//create a reply route
 replies.post('/reply', (req, res) => {
     const today = new Date()
     const replyData = {
@@ -25,13 +27,14 @@ replies.post('/reply', (req, res) => {
     })
 })
 
-//get posts from database
+//get all replies
 replies.get("/all", function (req, res) {
     Reply.findAll({}).then(function (results) {
         res.json(results);
     });
 });
 
+//get repplies by id
 replies.get("/:id", function (req, res) {
     Reply.findAll({
         where: {

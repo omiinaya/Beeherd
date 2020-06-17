@@ -1,14 +1,13 @@
+//dependencies
 const express = require("express")
-const posts = express.Router()
 const cors = require("cors")
-const jwt = require("jsonwebtoken")
-
 const Post = require("../models/Post")
-const Reply = require("../models/Reply")
-const replies = require("./Replies")
 
+//vars
+const posts = express.Router()
 posts.use(cors())
 
+//routes
 //send post to database
 posts.post('/post', (req, res) => {
     const today = new Date()
@@ -28,14 +27,14 @@ posts.post('/post', (req, res) => {
     })
 })
 
-//get posts from database
+//find all posts
 posts.get("/all", function (req, res) {
     Post.findAll({}).then(function (results) {
         res.json(results);
     });
 });
 
-//find post by post id
+//find post by id 
 posts.get("/:id", function (req, res) {
     Post.findAll({
         where: {
@@ -45,7 +44,7 @@ posts.get("/:id", function (req, res) {
         res.json(results);
     });
 });
-//update post route
+//update post by id
 posts.put("/id/:id", function (req, res) {
     Post.update(
         { post_content: req.body.post_content },

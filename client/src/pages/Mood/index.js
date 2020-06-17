@@ -2,7 +2,7 @@ import React from "react";
 //import { Link } from "react-router-dom";
 import "./style.css";
 //import ItsOkto from "../../components/ItsOkTo";
-import InfoCards from "../../components/InfoCards";
+//import InfoCards from "../../components/InfoCards";
 
 
 function MoodDisorders() {
@@ -21,7 +21,6 @@ function MoodDisorders() {
             <div className="text-container">
               <h1 className="moodColors">Mood Disorders</h1>
             </div>
-            <h1 className="moodText1"></h1>
           </div>
         </section>
 
