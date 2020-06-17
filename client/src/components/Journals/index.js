@@ -8,18 +8,21 @@ function Journal() {
   const [text, setText] = useState("")
   return (
     <div className="JournalApp">
-      <div className="journal-editor">
-        <CKEditor
-          editor={ClassicEditor}
-          data={text}
-          onChange={(event, editor) => {
-            const data = editor.getData()
-            setText(data)
-          }}
-        />
+      <div className="testing">
+        <div className="journal-editor">
+          <CKEditor
+            editor={ClassicEditor}
+            data={text}
+            onChange={(event, editor) => {
+              const data = editor.getData()
+              setText(data)
+            }}
+          />
+        </div>
+        <div id="journal-list"></div>
       </div>
       <div className="post-button-container">
-      <button onClick={() => { sendToDB(text) }}>Submit</button>
+        <button onClick={() => { sendToDB(text) }}>Submit</button>
       </div>
     </div>
   )

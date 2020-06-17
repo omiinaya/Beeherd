@@ -25,6 +25,7 @@ class Profile extends Component {
             .then((res) => {
                 if (res.data.length > 0) {
                     this.createDiv(res.data)
+                    this.createDiv2(res.data)
                 } else {
                     console.log(res.data)
                 }
@@ -44,11 +45,27 @@ class Profile extends Component {
         }
     }
 
+    createDiv2(a) {
+        document.getElementById('journal-list').innerText = "";
+        for (var i = 0; i < 4; i++) {
+            const div = document.createElement('div');
+            const last = a.length - 1;
+            div.setAttribute("class", "journal-card")
+            div.innerHTML = ` 
+                <div id="journal_author">Created `+ a[i].created + ` By: ` + a[i].author_tag + `</div>
+                <div id="journal_content">`+ a[i].journal_content + `</div>
+            `;
+            document.getElementById('journal-list').appendChild(div);
+        }
+    }
+
+
     handleClick() {
         if (this.state.toggleEditor === false) {
             this.setState({
                 toggleEditor: true
             })
+            this.getJournals()
             console.log(this.state.toggleEditor)
         } else {
             this.setState({

@@ -5,7 +5,7 @@
 
 .journal-editor {
   height: 250px;
-  width: 98%;
+  width: 50%;
   margin: auto;
   background-color: white;
   overflow-y: scroll;
@@ -46,4 +46,8 @@
   border-bottom-left-radius: 6px;
   background-color: rgba(192, 192, 192, 0.0);
   padding-bottom: 1%;
+}
+
+.testing {
+  display: flex;
 }
