@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
 import jwt_decode from 'jwt-decode'
 import { checkId } from "./script.js";
-import TagSection from '../TagSection';
-import { Avatar } from '../Avatar';
 import Footer from '../Footer';
-//import axios from 'axios';
+import Journals from '../Journals';
 import "./style.css";
 
 class Profile extends Component {
@@ -36,8 +34,10 @@ class Profile extends Component {
                 <div className="profile-container">
                     <h1 className="profile-title text-center">Profile</h1>
                 </div>
-                <div>journals</div>
-                <Footer/>
+                <div className="journals-container">
+                    <Journals />
+                </div>
+                <Footer />
             </div>
         )
     }
