@@ -7,6 +7,7 @@ import axios from "axios";
 import EmptyList from "../EmptyList";
 import SeeMoreButton from "../SeeMoreButton";
 import TagSection from "../TagSection";
+import Avatar from "../Avatar";
 import "./style.css";
 import {
   MDBRow,

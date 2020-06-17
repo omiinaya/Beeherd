@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import "./style.css";
-import InfoCards from "../../components/InfoCards"
+//import InfoCards from "../../components/InfoCards"
 function Resources() {
   return (
       <div className SHwrapper>

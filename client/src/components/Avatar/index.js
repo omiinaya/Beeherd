@@ -7,7 +7,7 @@ import axios from 'axios'
 //import { Link } from 'react-router-dom'
 import "./style.css";
 
-class Avatar extends Component {
+export class Avatar extends Component {
     constructor() {
         super()
         this.state = {
@@ -52,7 +52,7 @@ class Avatar extends Component {
         var avatarExist = this.state.savedAvatar
         console.log(avatarExist.length);
         console.log({ id });
-        if (avatarExist.length == 0) {
+        if (avatarExist.length === 0) {
             sendToCreate(id)
         } else {
             sendToUpdate(this.state.savedAvatar[0].id)
@@ -65,7 +65,6 @@ class Avatar extends Component {
                 <div className="Avatar">
                     <div className="avatar-container">
                         <div className="row">
-
                             <div className="dropdown-div">
                                 <div className="dropdown">
                                     <button className="avatar-dropbtn">Body ⯆</button>
@@ -103,21 +102,33 @@ class Avatar extends Component {
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-                        <div className="col-4 avatar-box">
-                            <div className="col-12">
-                                <div className="col-12 avatardisplay es99">
-                                    <div className="col-12 avatardisplay es1">
-                                        <div className="col-12 avatardisplay es2">
-                                            <div className="col-12 avatardisplay es3">
-                                                <div className="col-12 avatardisplay es4">
-                                                    <div className="col-12 avatardisplay es5">
-                                                    </div>
-                                                    <div className="col-12 avatardisplay">
-                                                    </div>
-                                                </div>
-                                            </div>
+                        <AvatarDisplay />
+                    </div>
+                </div>
+                <button onClick={() => {
+                    this.handleClick()
+                    window.location.reload();
+                }
+                }>Submit</button>
+            </div>
+        )
+    }
+}
+
+export class AvatarDisplay extends Component {
+    render() {
+        return (
+            <div className="col-4 avatar-box">
+                <div className="col-12">
+                    <div className="col-12 avatardisplay es99">
+                        <div className="col-12 avatardisplay es1">
+                            <div className="col-12 avatardisplay es2">
+                                <div className="col-12 avatardisplay es3">
+                                    <div className="col-12 avatardisplay es4">
+                                        <div className="col-12 avatardisplay es5">
+                                        </div>
+                                        <div className="col-12 avatardisplay">
                                         </div>
                                     </div>
                                 </div>
@@ -125,14 +136,7 @@ class Avatar extends Component {
                         </div>
                     </div>
                 </div>
-                <button onClick={() => {
-                    this.handleClick()
-                    window.location.reload();
-                }
-                }>Change</button>
             </div>
         )
     }
 }
-
-export default Avatar;

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import jwt_decode from 'jwt-decode'
 import { checkId } from "./script.js";
 import TagSection from '../TagSection';
-import Avatar from '../Avatar';
+import { Avatar } from '../Avatar';
 import Footer from '../Footer';
 //import axios from 'axios';
 import "./style.css";
