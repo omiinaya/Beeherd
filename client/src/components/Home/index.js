@@ -7,7 +7,8 @@ import axios from "axios";
 import EmptyList from "../EmptyList";
 import SeeMoreButton from "../SeeMoreButton";
 import TagSection from "../TagSection";
-import { Avatar, AvatarDisplay } from "../Avatar";
+import { AvatarDisplay } from "../Avatar";
+import { avatarBackend } from "../Avatar/scripts"
 import "./style.css";
 import {
   MDBRow,
@@ -21,6 +22,7 @@ class Home extends Component {
   };
 
   componentDidMount() {
+    avatarBackend()
     this.getPosts();
   }
 

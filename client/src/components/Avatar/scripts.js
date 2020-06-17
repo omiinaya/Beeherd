@@ -13,6 +13,7 @@ var current_place;
 
 export function avatarBackend() {
     decodeAvatar()
+    //waitOnAThenB()
     getAvatar(owner_id)
     //loadCurrent()
     $("#standard1").mouseenter(function () {
@@ -160,7 +161,7 @@ export function avatarBackend() {
     //background//
 
     $("#bb1").click(function () {
-        $(".es99").css("background-image","url('/avatar/place/place1.gif')");
+        $(".es99").css("background-image", "url('/avatar/place/place1.gif')");
         current_place = '/avatar/place/place1.gif';
         console.log(current_place);
     });
@@ -214,22 +215,24 @@ function getAvatar(owner_id) {
     axios.get("avatars/" + owner_id)
         .then((res) => {
             current_avatar = res.data[0];
+            loadCurrent(current_avatar)
             console.log(current_avatar)
         })
-        .catch((err) => console.log(err));
+        .catch((err) => { console.log(err)
+        });
 }
 
-export function loadCurrent() {
-    var db_skin = current_avatar.skin;
+export function loadCurrent(a) {
+    var db_skin = a.skin;
     //console.log(db_skin);
-    var db_eyes = current_avatar.eyes;
+    var db_eyes = a.eyes;
     //console.log(db_eyes);
-    var db_hair = current_avatar.hair;
-    var db_outfit = current_avatar.outfit;
-    var db_background = current_avatar.background;
-    $(".es1").append("<img class='cleanai' id='bodyimages' src='"+db_skin+"'></img>");
-    $(".es2").append("<img class='cleanai2' id='eyesimages' src='"+db_eyes+"'></img>");
-    $(".es3").append("<img class='cleanai3' id='hairimages' src='"+db_hair+"'></img>");
-    $(".es4").append("<img class='cleanai4' id='ropaimages' src='"+db_outfit+"'></img>");
-    $(".es99").css("background-image","url('"+db_background+"')");
+    var db_hair = a.hair;
+    var db_outfit = a.outfit;
+    var db_background = a.background;
+    $(".es1").append("<img class='cleanai' id='bodyimages' src='" + db_skin + "'></img>");
+    $(".es2").append("<img class='cleanai2' id='eyesimages' src='" + db_eyes + "'></img>");
+    $(".es3").append("<img class='cleanai3' id='hairimages' src='" + db_hair + "'></img>");
+    $(".es4").append("<img class='cleanai4' id='ropaimages' src='" + db_outfit + "'></img>");
+    $(".es99").css("background-image", "url('" + db_background + "')");
 }

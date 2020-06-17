@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { avatarBackend, loadCurrent } from './scripts';
 import jwt_decode from 'jwt-decode'
-import { sendToCreate, sendToUpdate } from './scripts'
+import { avatarBackend, sendToCreate, sendToUpdate } from './scripts'
 import axios from 'axios'
 //import { Link } from 'react-router-dom'
 import "./style.css";
@@ -108,12 +107,6 @@ export class Avatar extends Component {
                 <button onClick={() => {
                     this.handleClick()
                     window.location.reload();
-                }
-                }>Submit</button>
-
-                <button onClick={() => {
-                    loadCurrent()
-                    //window.location.reload();
                 }
                 }>Submit</button>
             </div>
