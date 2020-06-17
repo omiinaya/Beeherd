@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { register } from './scripts'
 import { generateWordList } from './scripts'
 import { generateRandomTag } from './scripts'
+import { Link } from 'react-router-dom'
 import { isUser } from './scripts'
 import Jumbo from "../Jumbo"
 import "./style.css"
@@ -77,6 +78,7 @@ class Register extends Component {
                                     id="button">
                                     Join
                             </button>
+                            <Link to="/login" id="loggin-a">Already have an account?</Link>
                             </form>
                         </div>
                     </div>

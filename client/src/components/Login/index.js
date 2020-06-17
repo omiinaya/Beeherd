@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { login } from './scripts'
+import { Link } from 'react-router-dom'
 import Jumbo from '../Jumbo'
 import "./style.css";
 
@@ -63,10 +64,9 @@ class Login extends Component {
                                     />
                                 </div>
                                 <button type="submit" id="button">Login</button>
+                                <Link to="/register" id="loggin-a">Don't have an account yet?</Link>
                             </form>
-
                         </div>
-
                     </div>
                     </div>
                 </div>
