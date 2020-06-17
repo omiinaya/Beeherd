@@ -47,7 +47,6 @@ class Home extends Component {
       .get("/posts/all")
       .then((res) => {
         this.setState({ savedPosts: res.data });
-        //console.log(res.data)
       })
       .catch((err) => console.log(err));
   };
@@ -98,6 +97,10 @@ class Home extends Component {
             <Col size="md-3">
               <div className="side-bar-top">
                 <AvatarDisplay className="avatar-display-home" />
+                <button onClick={() => {
+                    this.props.history.push("/customize")
+                }
+                }>Customize</button>
               </div>
               <div className="side-bar-middle">
                 <TagSection />

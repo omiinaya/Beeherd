@@ -7,7 +7,7 @@ import "./style.css"
 function Post() {
   const [text, setText] = useState("")
   return (
-    <div className="App">
+    <div className="EditorApp">
       <div className="post-title-container">
         <input type="text" id="post-title-input" placeholder="Enter post title."></input>
       </div>

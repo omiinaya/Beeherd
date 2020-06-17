@@ -104,11 +104,13 @@ export class Avatar extends Component {
                         <AvatarDisplay />
                     </div>
                 </div>
-                <button onClick={() => {
+                <div id="avatar-button">
+                <button id="avatar-update-button" onClick={() => {
                     this.handleClick()
                     window.location.reload();
                 }
                 }>Submit</button>
+                </div>
             </div>
         )
     }
