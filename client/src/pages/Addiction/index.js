@@ -70,7 +70,9 @@ function Addiction() {
               </div>
             </div>
           </div>
-          <div className="addiSeparatorSupport"></div>
+          <div className="addiSeparatorSupport">
+          <h1 className="AddiText1">Addiction</h1>
+          </div>
         </section>
         <div className="LifeText3div">
           <p className="LifeText3"></p>
@@ -177,8 +179,8 @@ function Addiction() {
         </div>
       </section>
 
-      <div className="MoodcrisisAnimefoot">
-        <div className="MoodcrisisAnimefoot">
+      <div className="LifecrisisAnimefoot">
+        <div className="LifecrisisAnimefoot">
           {" "}
           <img
             width="200"
