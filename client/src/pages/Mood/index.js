@@ -21,7 +21,6 @@ function MoodDisorders() {
             <div className="text-container">
               <h1 className="moodColors">Mood Disorders</h1>
             </div>
-            <h1 className="moodText1"> </h1>
           </div>
         </section>
 
