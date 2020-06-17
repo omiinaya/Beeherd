@@ -39,7 +39,7 @@ class App extends Component {
             <Route exact path="/posts" component={Post} />
             <Route exact path="/customize" component={Customize} />
 
-           
+            <Route path="/posts/:id" component={ExpandPost} />
 
             <Route exact path="/suicide" component={Suicide} />
             <Route exact path="/mood" component={Mood} />
