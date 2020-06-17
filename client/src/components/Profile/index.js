@@ -1,34 +1,34 @@
 import React, { Component } from 'react'
 import jwt_decode from 'jwt-decode'
-import { checkId } from "./script.js";
 import Footer from '../Footer';
 import Journals from '../Journals';
 import "./style.css";
 
 class Profile extends Component {
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
         this.state = {
-            id: '',
-            username: '',
-            password: '',
-            temp_tag: ''
+            toggleEditor: false
         }
     }
-    async componentDidMount() {
-        const token = localStorage.usertoken
-        const decoded = jwt_decode(token)
-        this.setState({
-            id: decoded.id,
-            username: decoded.username,
-            password: decoded.password,
-            temp_tag: decoded.temp_tag
-        })
+    componentDidMount() {
+        this.getJournals();
+        var id = this.props.match.params.id;
+        axios.get(`/journals/` + id)
+            .then(res => {
+                const journal_id = res.data[0].id
+                const journal_content = res.data[0].journal_content;
+                const journal_author = res.data[0].author_tag;
+                this.setState({
+                    journal_id,
+                    journal_content,
+                    journal_author,
+                    toggleReply: false
+                });
+            })
     }
 
     render() {
-        const user_id = this.state.id;
-        checkId(user_id)
         return (
             <div>
                 <div className="profile-container">

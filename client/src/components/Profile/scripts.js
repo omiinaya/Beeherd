@@ -3,10 +3,6 @@ import axios from 'axios';
 
 var test;
 
-export function checkId(a) {
-    //console.log(a);
-}
-
 export function getCurrentUser() {
     try {
         const token = localStorage.usertoken
