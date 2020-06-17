@@ -3,33 +3,39 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import Footer from '../Footer';
 import Journals from '../Journals';
+import { JournalListItem, PostList } from '../PostList'
+import { Col } from "../Grid";
+import EmptyList from "../EmptyList";
 import "./style.css";
 
 class Profile extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            toggleEditor: false
+            toggleEditor: false,
+            savedJournals: '',
+            onlyOne: '1'
         }
     }
     componentDidMount() {
-        //this.getJournals();
-        var id = this.props.match.params.id;
-        axios.get(`/journals/` + id)
-            .then(res => {
-                const journal_id = res.data[0].id
-                const journal_content = res.data[0].journal_content;
-                const journal_author = res.data[0].author_tag;
-                this.setState({
-                    journal_id,
-                    journal_content,
-                    journal_author,
-                    toggleReply: false
-                });
-            })
+        this.getJournals();
+
     }
 
+    getJournals = () => {
+        axios
+            .get("/journals/all")
+            .then((res) => {
+                console.log(res.data)
+                this.setState({ savedJournals: res.data });
+            })
+            .catch((err) => console.log(err));
+    };
+
     render() {
+        const journals = (
+           <div>journals</div>
+        )
         return (
             <div>
                 <div className="profile-container">

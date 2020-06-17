@@ -17,11 +17,13 @@ var Users = require('./routes/Users')
 var Posts = require('./routes/Posts')
 var Replies = require('./routes/Replies')
 var Avatars = require('./routes/Avatars')
+var Journals = require('./routes/Journals')
 
 app.use('/users/', Users)
 app.use('/posts/', Posts)
 app.use('/replies/', Replies)
 app.use('/avatars/', Avatars)
+app.use('/journals/', Journals)
 
 app.use(express.static('public'))
 

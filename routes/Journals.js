@@ -27,8 +27,14 @@ journals.post('/post', (req, res) => {
         })
 })
 
+journals.get("/all", function (req, res) {
+    journal.findAll({}).then(function (results) {
+        res.json(results);
+    });
+});
+
 journals.get("/:id", function (req, res) {
-    journals.findAll({
+    journal.findAll({
         where: {
             author_id: req.params.id
         }
@@ -38,7 +44,7 @@ journals.get("/:id", function (req, res) {
 });
 //edit journal by id
 journals.put("/id/:id", function (req, res) {
-    journals.update({
+    journal.update({
         author_tag: req.body.author_tag,
         author_id: req.body.author_id,
         journal_content: req.body.journal_content,
