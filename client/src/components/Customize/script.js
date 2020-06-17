@@ -17,3 +17,18 @@ export function getCurrentUser() {
         return null;
     }
 }
+
+export function getUserPosts() {
+    return axios
+        .get(`/posts/all`)
+        .then(res => {
+            const AllPosts = res.data;
+            var UserPosts = [];
+            for (var i = 0; i < AllPosts.length; i++) {
+                if (res.data[i].creator_id === test.id) {
+                    UserPosts.push(res.data[i]);
+                }
+            }
+            return UserPosts
+        })
+}

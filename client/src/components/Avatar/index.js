@@ -58,16 +58,7 @@ export class Avatar extends Component {
     }
 
     render() {
-        const button = (
-            <div id="avatar-button">
-                <button id="avatar-update-button" onClick={() => {
-                    this.handleClick()
-                    window.location.reload();
-                }
-                }>Submit</button>
-            </div>
-        )
-        const options = (
+        return (
             <div>
                 <div className="Avatar">
                     <div className="avatar-container">
@@ -110,71 +101,22 @@ export class Avatar extends Component {
                                 </div>
                             </div>
                         </div>
+                        <AvatarDisplay />
                     </div>
                 </div>
-            </div>
-        )
-        return (
-            <div>
-                {options}
-                <AvatarDisplayCustomize />
-                {button}
-            </div>
-        )
-    }
-}
-
-export class AvatarDisplayHome extends Component {
-    render() {
-        return (
-            <div className="avatar-box">
-                <div>
-                    <div className="col-12 avatardisplay es99">
-                        <div className="col-12 avatardisplay es1">
-                            <div className="col-12 avatardisplay es2">
-                                <div className="col-12 avatardisplay es3">
-                                    <div className="col-12 avatardisplay es4">
-                                        <div className="col-12 avatardisplay es5">
-                                        </div>
-                                        <div className="col-12 avatardisplay">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div id="avatar-button">
+                <button id="avatar-update-button" onClick={() => {
+                    this.handleClick()
+                    window.location.reload();
+                }
+                }>Submit</button>
                 </div>
             </div>
         )
     }
 }
 
-export class AvatarDisplayCustomize extends Component {
-    render() {
-        return (
-            <div className="avatar-box-2">
-                <div>
-                    <div className="col-12 avatardisplay-2 es99">
-                        <div className="col-12 avatardisplay-2 es1">
-                            <div className="col-12 avatardisplay-2 es2">
-                                <div className="col-12 avatardisplay-2 es3">
-                                    <div className="col-12 avatardisplay-2 es4">
-                                        <div className="col-12 avatardisplay-2 es5">
-                                        </div>
-                                        <div className="col-12 avatardisplay-2">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        )
-    }
-}
-
-export class AvatarDisplayCircle extends Component {
+export class AvatarDisplay extends Component {
     render() {
         return (
             <div className="avatar-box">

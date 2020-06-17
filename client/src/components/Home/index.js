@@ -7,7 +7,7 @@ import axios from "axios";
 import EmptyList from "../EmptyList";
 import SeeMoreButton from "../SeeMoreButton";
 import TagSection from "../TagSection";
-import { AvatarDisplayHome } from "../Avatar";
+import { AvatarDisplay } from "../Avatar";
 import { avatarBackend } from "../Avatar/scripts"
 import "./style.css";
 import {
@@ -96,7 +96,7 @@ class Home extends Component {
             </Col>
             <Col size="md-3">
               <div className="side-bar-top">
-                <AvatarDisplayHome className="avatar-display-home" />
+                <AvatarDisplay className="avatar-display-home" />
                 <button onClick={() => {
                     this.props.history.push("/customize")
                 }
