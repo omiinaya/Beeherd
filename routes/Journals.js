@@ -9,17 +9,16 @@ journals.use(cors())
 
 //routes
 //create journal
-journals.post('/post', (req, res) => {
+journals.post('/journal', (req, res) => {
     const today = new Date()
     const journalData = {
         author_tag: req.body.author_tag,
         author_id: req.body.author_id,
         journal_content: req.body.journal_content,
-        journal_streak: req.body.journal_streak,
         created: today
     }
 
-    journals.create(journalData).then(data => {
+    journal.create(journalData).then(data => {
         res.json({ status: data + ' uploaded' })
     })
         .catch(err => {

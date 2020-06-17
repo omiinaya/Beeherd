@@ -17,7 +17,6 @@ class Profile extends Component {
     }
     componentDidMount() {
         this.getJournals();
-
     }
 
     getJournals = () => {
@@ -33,7 +32,7 @@ class Profile extends Component {
     }
     createDiv(a) {
         document.getElementById('journals-content').innerText = "";
-        for (var i = 0; i < a.length; i++) {
+        for (var i = 0; i < 1; i++) {
             const div = document.createElement('div');
             const last = a.length - 1;
             div.setAttribute("class", "journal-card")
