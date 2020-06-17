@@ -1,40 +1,17 @@
 .neon {
   position: absolute;
   ;
-  top: 90%;
-  left: 50%;
+  top: 242%;
+  left: 78%;
   transform: translate(-90%, -50%);
   margin: 0;
   padding: 0 20px;
-  font-size: 2em;
-  color: rgb(150, 24, 146);
+  font-size: 4em;
+  color: rgba(249, 27, 241, 0.988);
   text-shadow: 0 0 20px #980e81;
   font-family: "quicksand";
 }
 
-.neon:after {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 0 20px;
-  z-index: -1;
-  color: #d70fb6;
-  filter: blur(15px);
-}
-
-.neon:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #a30db1;
-  z-index: -2;
-  
-  filter: blur(40px);
-}
 
 .suicide-hotline {
   height: 4em;
@@ -49,37 +26,7 @@
   padding: 2%;
 }
 
-.neon {
-  position: absolute;
-  ;
-  top: 340%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-bottom: 2em;
-  padding: 0 20px;
-  font-size: 3em;
-  opacity: .7;
-  color: rgb(244, 5, 252);
-  text-shadow: 0 0 20px #b20ac1;
-  font-family: "quicksand";
-  bottom: 6em;
-}
 
-.neon {
-  position: absolute;
-  ;
-  top: 280%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-bottom: 2em;
-  padding: 0 20px;
-  font-size: 5em;
-  opacity: .7;
-  color: rgb(244, 5, 252);
-  text-shadow: 0 0 20px #b20ac1;
-  font-family: "quicksand";
-  bottom: 6em;
-}
 
 .neon:after {
   content: attr(data-text);
@@ -126,7 +73,7 @@
   font-size: 4em;
   margin-bottom: 2em;
   float: center;
-  color: rgb(72, 69, 67);
+  color: rgba(72, 69, 67, 0.557);
   
 }
 
@@ -183,7 +130,7 @@
   margin-bottom: 80px;
   float: center;
   font-size: 500px;
-  color: rgb(72, 69, 67);
+  color: rgba(72, 69, 67, 0.098);
   
   height: 160px;
   margin-left: 0%;
@@ -193,7 +140,7 @@
   margin-bottom: 80px;
   float: center;
   font-size: 400px;
-  color: rgb(72, 69, 67);
+  color: rgba(72, 69, 67, 0.098);
   
   height: 170px;
   margin-left: 0%;
@@ -265,6 +212,7 @@
   margin-left: 15%;
   margin-top: 0px;
   margin-bottom: -150px;
+
 }
 
 .divisionLife{

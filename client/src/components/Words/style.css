@@ -133,13 +133,14 @@
 
 .mooddown2 {
   font-weight: bolder;
-  color: rgba(187, 142, 60, 0.927);
+  color: rgba(237, 180, 75, 0.94);
   border: 1px solid rgb(18, 42, 136);
   border-radius: 90px;
   font-size: 22px;
   text-align: center;
   margin-top: 6px;
   margin-bottom: 3px;
+  margin-left:2em;
 }
 
 .borderDown {
@@ -160,7 +161,7 @@
 }
 
 .moodTextp2 {
-  color: rgb(232, 14, 177);
+  color: rgba(223, 16, 171, 0.653);
   font-size: 9em;
   height: .9em;
   
@@ -170,7 +171,7 @@
 
 .moodTextp22 {
   font-size: 4em;
-  color: rgb(241, 238, 236);
+  color: rgba(241, 238, 236, 0.55);
   
   text-shadow: black;
 }
