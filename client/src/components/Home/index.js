@@ -95,7 +95,7 @@ class Home extends Component {
             <Col size="md-3">
               <div className="side-bar-top">
                 <AvatarTesting className="avatar-display-home" />
-                <button onClick={() => {
+                <button className="customize-button" onClick={() => {
                     this.props.history.push("/customize")
                 }
                 }>Customize</button>

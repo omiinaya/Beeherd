@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Sticky from 'react-stickynode'
+import publicIP from 'react-native-public-ip'
 
 //components
 import Navbar from "./components/Navbar/";
@@ -23,6 +24,17 @@ import Mood from "./pages/Mood";
 import Addiction from "./pages/Addiction";
 
 class App extends Component {
+  componentDidMount() {
+    publicIP() 
+    .then(ip =>{
+      this.ipBlacklisted(ip)
+    })
+  }
+
+  ipBlacklisted(a) {
+    console.log(a)
+  }
+
   render() {
     return (
       <Router>

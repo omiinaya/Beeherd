@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 //import jwt_decode from 'jwt-decode'
-import { Link } from 'react-router-dom'
 import axios from 'axios'
 import Footer from '../Footer';
 import Journals from '../Journals';
@@ -49,7 +48,6 @@ class Profile extends Component {
         document.getElementById('journal-list').innerText = "";
         for (var i = 0; i < 4; i++) {
             const div = document.createElement('div');
-            const last = a.length - 1;
             div.setAttribute("class", "journal-card")
             div.innerHTML = ` 
                 <div id="journal_author">Created `+ a[i].created + ` By: ` + a[i].author_tag + `</div>

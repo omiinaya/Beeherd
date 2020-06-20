@@ -7,7 +7,7 @@ const sequelize = new Sequelize("qww6dau6olmfkfpz", "ph1g0gudqztccot4", "foyffrv
     operatorAliases: false,
 
     pool: {
-        max: 5,
+        max: 15,   
         min: 0,
         acquire: 30000,
         idle: 10000
