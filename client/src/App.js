@@ -33,6 +33,12 @@ class App extends Component {
 
   ipBlacklisted(a) {
     console.log(a)
+    //check if ip is black listed
+  }
+
+  lastKnownIP(a) {
+    console.log(a)
+    //save to database last_known
   }
 
   render() {
