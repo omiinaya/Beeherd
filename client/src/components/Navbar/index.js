@@ -3,11 +3,26 @@ import { Link, withRouter } from 'react-router-dom'
 import "./style.css";
 
 class Navbar extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          theme: 'light',
+        };
+      }
     logOut(e) {
         e.preventDefault()
         localStorage.removeItem('usertoken')
         window.open("/", "_self")
     }
+
+    themeSwap() {
+        if (this.state.theme === 'light') {
+        this.state.theme = 'dark'
+        } else {
+        this.state.theme = 'light'
+        }
+    }
+
     render() {
         const loginRegLink = (
             <ul className="navbar-nav ml-auto">
@@ -29,6 +44,9 @@ class Navbar extends Component {
         const userLink = (
             <ul className="navbar-nav">
                 <li className="nav-item">
+                    <Link to="#" className="nav-link" onClick={() => { this.themeSwap() }}><img src={require('../../assets/images/lightbulb-on.png')} height="20px" width="20px" alt="" /></Link>
+                </li>
+                <li className="nav-item">
                     <Link to="/about" className="nav-link">About</Link>
                 </li>
                 <li className="nav-item">
@@ -41,6 +59,11 @@ class Navbar extends Component {
                 </li>
             </ul>
         )
+        if (this.state.theme === "dark") {
+            document.body.style.background="linear-gradient(to right, #26262B, black)";
+          } else {
+            document.body.style.background="linear-gradient(to right, #EC6EAD, #3494E6)";
+          }
         return (
             <nav className="navbar navbar-expand-md">
                 <div className="container-fluid">
