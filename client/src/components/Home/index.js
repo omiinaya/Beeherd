@@ -55,8 +55,8 @@ class Home extends Component {
         <Hero backgroundImage="https://images.pexels.com/photos/775907/pexels-photo-775907.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
           <MDBRow>
             <MDBCol size="12">
-              <h1 className="animate__animated animate__swing">beeherd</h1>
-              <h2>Leave your troubles here</h2>
+              <h1 className="hero-title animate__animated animate__swing">beeherd</h1>
+              <h2 className="hero-subtitle">Leave your troubles here</h2>
             </MDBCol>
           </MDBRow>
         </Hero>
