@@ -1,9 +1,6 @@
 import $ from 'jquery'
 import axios from 'axios'
-import jwt_decode from 'jwt-decode'
 
-var owner_id;
-var current_avatar;
 var current_skin;
 var current_eyes;
 var current_hair;
@@ -34,7 +31,6 @@ export function avatarBackend() {
             "<img class='cleani' id='bodyimages' src='/avatar/skin/white.png'></img>"
         );
         current_skin = '/avatar/skin/white.png';
-        console.log(current_skin);
     });
 
     $("#standard2").click(function () {
@@ -43,7 +39,6 @@ export function avatarBackend() {
             "<img class='cleani' id='bodyimages' src='/avatar/skin/black.png'></img>"
         );
         current_skin = '/avatar/skin/black.png';
-        console.log(current_skin);
     });
 
     //eyes/
@@ -202,37 +197,9 @@ export function sendToUpdate(a) {
         })
 }
 
-function ifAThenB() {
-    if (localStorage.usertoken != null) {
-        decodeAvatar()
-    } else {
-        window.open("/login", "_self")
-    }
-}
-
-function decodeAvatar() {
-    var token = localStorage.usertoken;
-    var decode = jwt_decode(token);
-    owner_id = decode.id;
-    getAvatar(owner_id)
-}
-
-function getAvatar(a) {
-    axios.get("avatars/" + owner_id)
-        .then((res) => {
-            current_avatar = res.data[0];
-            loadCurrent(current_avatar)
-            console.log(current_avatar)
-        })
-        .catch((err) => { console.log(err)
-        });
-}
-
 export function loadCurrent(a) {
     var db_skin = a.skin;
-    //console.log(db_skin);
     var db_eyes = a.eyes;
-    //console.log(db_eyes);
     var db_hair = a.hair;
     var db_outfit = a.outfit;
     var db_background = a.background;

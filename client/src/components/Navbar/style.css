@@ -7,10 +7,10 @@
 }
 
 .nav-link {
-    color: black;
+    color: white;
 }
 .nav-link:hover {
-    color: black;
+    color: white;
 }
 
 .nav-item:hover {
@@ -23,8 +23,7 @@
 }
 
 .dropbtn {
-    background-image: url("./images/test.png");
-    color: black;
+    color: white;
     padding: 12px;
     font-size: 16px;
     border: none;
@@ -42,14 +41,14 @@
 }
 
 .dropdown-content a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-    color: black;
+    color: white;
     background-image: url("./images/test.png");
 }
 
