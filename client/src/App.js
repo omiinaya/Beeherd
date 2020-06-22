@@ -25,10 +25,10 @@ import Addiction from "./pages/Addiction";
 
 class App extends Component {
   componentDidMount() {
-    publicIP() 
-    .then(ip =>{
-      this.ipBlacklisted(ip)
-    })
+    publicIP()
+      .then(ip => {
+        this.ipBlacklisted(ip)
+      })
   }
 
   ipBlacklisted(a) {
