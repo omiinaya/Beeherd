@@ -6,9 +6,15 @@ class Navbar extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          theme: 'light',
+            theme: 'light',
         };
-      }
+    }
+
+    componentDidMount() {
+        document.body.style.background = "linear-gradient(to right, #EC6EAD, #3494E6)";
+        document.getElementsByClassName('navbar')[0].style.background = "linear-gradient(to right, #EC6EAD, #3494E6)";
+    }
+
     logOut(e) {
         e.preventDefault()
         localStorage.removeItem('usertoken')
@@ -17,9 +23,9 @@ class Navbar extends Component {
 
     themeSwap() {
         if (this.state.theme === 'light') {
-        this.state.theme = 'dark'
+            this.state.theme = 'dark'
         } else {
-        this.state.theme = 'light'
+            this.state.theme = 'light'
         }
     }
 
@@ -59,11 +65,16 @@ class Navbar extends Component {
                 </li>
             </ul>
         )
-        if (this.state.theme === "dark") {
-            document.body.style.background="linear-gradient(to right, #26262B, black)";
-          } else {
-            document.body.style.background="linear-gradient(to right, #EC6EAD, #3494E6)";
-          }
+        //dynamic css rules
+        if (document.getElementsByClassName('navbar')[0] != null) {
+            if (this.state.theme === "dark") {
+                document.body.style.background = "linear-gradient(to right, #26262B, black)";
+                document.getElementsByClassName('navbar')[0].style.background = "linear-gradient(to right, #26262B, black)";
+            } else {
+                document.body.style.background = "linear-gradient(to right, #EC6EAD, #3494E6)";
+                document.getElementsByClassName('navbar')[0].style.background = "linear-gradient(to right, #EC6EAD, #3494E6)";
+            }
+        }
         return (
             <nav className="navbar navbar-expand-md">
                 <div className="container-fluid">
