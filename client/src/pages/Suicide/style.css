@@ -12,6 +12,18 @@
   font-family: "quicksand";
 }
 
+.header-container {
+  background-color: rgba(192, 192, 192, 0.3);
+  border-radius: 6px;
+  padding: 2%;
+  margin-bottom: 2%;
+}
+
+.SuicideBody {
+  background-color: rgba(192, 192, 192, 0.3);
+  border-radius: 6px;
+  padding: 2%;
+}
 
 .suicide-hotline {
   height: 4em;
@@ -25,8 +37,6 @@
   color: rgb(157, 33, 168);
   padding: 2%;
 }
-
-
 
 .neon:after {
   content: attr(data-text);
@@ -67,14 +77,20 @@
   text-align: center;
   margin-bottom: 3em;
   margin-top: 2em;
+
+  position: relative;
+  z-index:5;
 }
 
 .LifeText1 {
   font-size: 4em;
-  margin-bottom: 2em;
   float: center;
-  color: rgba(72, 69, 67, 0.557);
-  
+  color: black;
+  margin-bottom: 80px;
+  margin-top: -100px;
+  font-size: 500px;
+  color: rgba(0, 0, 0, 0.099);
+  height: 160px;
 }
 
 .LifeColors {
@@ -103,13 +119,15 @@
 .Lifetext-container {
   text-align: center;
   background-color: rgba(0, 0, 0, 0);
-  
 }
 
 .moodTextDiv2 {
   display: inline-block;
   margin-top: 2em;
   margin-bottom: 2em;
+  background-color: rgba(192, 192, 192, 0.3);
+  border-radius: 6px;
+  padding: 2%;
 }
 
 .moodText2 {
@@ -126,16 +144,6 @@
   text-align: center;
   border-radius: 6px;
   color: rgb(151, 150, 152);
-}
-
-.LifeText1 {
-  margin-bottom: 80px;
-  float: center;
-  font-size: 500px;
-  color: rgba(72, 69, 67, 0.098);
-  
-  height: 160px;
-  margin-left: 0%;
 }
 
 .LifeText33 {
@@ -157,9 +165,8 @@
 
 .LifeSec1container {
   font-size: 18px;
-  margin-top: 100px;
-  margin-top: 100px;
-  margin-bottom: 0px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .moodTextDiv2 {
