@@ -173,7 +173,7 @@ class Profile extends Component {
                                                 />
                                             </div>
                                             <div className="cp-button-container">
-                                                <button nameClass="cp-post-button" onClick={() => this.handleDelete(posts)}>Delete</button>
+                                                <button className="cp-post-button" onClick={() => this.handleDelete(posts)}>Delete</button>
                                             </div>
                                         </div>
                                     );

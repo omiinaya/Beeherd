@@ -46,9 +46,10 @@ export function PostList({children}) {
             <AvatarDisplay />
             </Col>
             <Col size="xs-9 sm-9">
-              <h6 className="reply-content-text">posted by tag/{this.props.author}</h6>
+              
               <h2>{this.props.title}</h2>
                 <div className="content_text_expanded" dangerouslySetInnerHTML={{__html:this.props.content}}/>
+                <h6 className="reply-content-text">by: {this.props.author}</h6>
             </Col>
           </Row>
         </Container>
