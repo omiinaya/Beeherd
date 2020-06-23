@@ -1,6 +1,7 @@
 import React from "react";
 import Thumbnail from "../Thumbnail";
 import { Container, Row, Col } from "../Grid";
+import {AvatarDisplay} from "../AvatarDisplay"
 import "./style.css"
 
 // PostList renders a bootstrap list item
@@ -19,8 +20,8 @@ export function PostList({children}) {
       <li>
         <Container>
           <Row>
-            <Col size="md-2">
-              <Thumbnail src={this.props.thumbnail} />
+            <Col size="md-3">
+              <AvatarDisplay />
             </Col>
             <Col size="xs-9 sm-9">
               <h6>posted by tag/{this.props.author}</h6>
