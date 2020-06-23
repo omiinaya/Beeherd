@@ -11,7 +11,8 @@
 
 .MHtext1 {
   font-size: 26px;
-  color: rgba(189, 171, 208, 0.838);
+  color: rgb(241, 238, 244);
+ 
 }
 
 .MoodPage {
@@ -110,7 +111,7 @@
 }
 
 .mooddown {
-  color: rgba(187, 143, 60, 0.838);
+  color: rgb(232, 173, 64);
   text-align: center;
   padding-top: 25px;
   font-size: 28px;
@@ -120,8 +121,8 @@
 
 .mooddown2 {
   font-weight: bolder;
-  color: rgba(237, 180, 75, 0.94);
-  border: 1px solid rgb(18, 42, 136);
+  color: rgb(237, 180, 75);
+  
   border-radius: 90px;
   font-size: 22px;
   text-align: center;
@@ -201,7 +202,7 @@
 }
 
 .Moodul .Moodli {
-  color: #797a7d;
+  color: #ffffff;
   /* set color of list item text */
   display: inline-block;
   list-style: none;
@@ -260,7 +261,7 @@
   margin-top: 80px;
   color: rgba(248, 199, 242, 0.897);
   border-radius: 6px;
-  background-color: rgba(0, 0, 0, 0.132);
+  background-color: rgba(0, 0, 0, 0);
   text-align: center;
   
 }
@@ -276,7 +277,7 @@
   color: rgb(211, 44, 169);
   height: 200px;
   width: 200px;
-  background: black;
+  
   font-size: 13px;
  
 }

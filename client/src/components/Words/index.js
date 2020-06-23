@@ -69,7 +69,8 @@ function Words() {
         </section>
 
         <div className="moodTextDiv2">
-          <p className="moodTextp2">Which</p><p className= "moodTextp22">are they?</p>
+          <p className="moodTextp2">Which</p>
+          <p className="moodTextp22">are they?</p>
           <ul className="Moodul">
             <li className="Moodli">
               Major depressive disorder — prolonged and persistent periods of
@@ -125,7 +126,9 @@ function Words() {
       </div>
 
       <div className="moodTextDiv3">
-        <p className="moodText5">When to </p><p className="moodText555">SeeK</p><p className="moodText55">a pro?</p>
+        <p className="moodText5">When to </p>
+        <p className="moodText555">SeeK</p>
+        <p className="moodText55">a pro?</p>
       </div>
 
       <section className="MoodSection3">
@@ -133,9 +136,10 @@ function Words() {
           <div className="moodBox">
             <p className="moodTextbox">
               If you feel like your emotions are interfering with your work,
-              relationships, social activities, or other parts of your life. Have
-              trouble with drinking or drugs or have suicidal thoughts and/or
-              behaviors. Let us locate support nearby by providing your zipcode above.
+              relationships, social activities, or other parts of your life.
+              Have trouble with drinking or drugs or have suicidal thoughts
+              and/or behaviors. Let us locate support nearby by providing your
+              zipcode above.
             </p>
           </div>
           <div className="moodBox">
@@ -143,10 +147,10 @@ function Words() {
               Reach out to a professional -- Text to talk -- Completely
               Confidential
               <span className="crisisHotline">
-              Text HOME to 741741 to connect with a Crisis Counselor Free 24/7
-              support at your fingertips US and Canada: text 741741 UK: text
-              85258 | Ireland: text 086 1800 280
-            </span>
+                Text HOME to 741741 to connect with a Crisis Counselor Free 24/7
+                support at your fingertips US and Canada: text 741741 UK: text
+                85258 | Ireland: text 086 1800 280
+              </span>
             </p>
             <span className="crisisHotline">
               Text HOME to 741741 to connect with a Crisis Counselor Free 24/7

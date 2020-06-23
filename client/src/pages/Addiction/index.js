@@ -8,15 +8,17 @@ function Addiction() {
   return (
     <div className="AddiPageContainer">
       <div className="MoodPage">
-        <div className="addiction-header-container">
-          <div className="MHcontainer">
-            <h1 className="MHtext1">Let's Talk</h1>
-          </div>
-          <div className="MoodSec1container">
-            <div className="Additext-container">
-              <h1 className="lifeColorsh1">Substance Abuse </h1>
+        <div className="addi-header-container">
+          <div className="addiction-header-container">
+            <div className="MHcontainer">
+              <h1 className="MHtext1">Let's Talk</h1>
             </div>
-            <h1 className="AddiText1">And</h1>
+            <div className="MoodSec1container">
+              <div className="Additext-container">
+                <h1 className="lifeColorsh1">Substance Abuse </h1>
+              </div>
+              <h1 className="AddiText1">And</h1>
+            </div>
           </div>
         </div>
 
@@ -25,13 +27,13 @@ function Addiction() {
         </section>
         <center>
           <div className="moodTextDiv">
-            <h1 className="mooddown"> </h1>
+            <h1 className="mooddown"></h1>
 
             <div className="AddiborderDown">
               <h1 className="mooddown2"></h1>
             </div>
           </div>
-          <h3 className="mooddown"></h3>
+          <h3 className="addidown">Addiction</h3>
         </center>
         <section className="MoodSectionPic">
           <div className="AddiSecPicContainer"></div>
@@ -179,7 +181,7 @@ function Addiction() {
       <div className="LifecrisisAnimefoot">
         <div className="LifecrisisAnimefoot">
           {" "}
-          <img
+          {/* <img
             width="200"
             height="150"
             className="lazy-load"
@@ -188,7 +190,7 @@ function Addiction() {
             onload="this.parentNode.className += ' img-loaded'"
             src="http://bestanimations.com/Text/upliftingquotes/you-are-strong-inspiring-worth-it-perfect-positive-inspiration-quote-gif.gif"
             sizes="auto"
-          ></img>
+          ></img> */}
         </div>
       </div>
 
