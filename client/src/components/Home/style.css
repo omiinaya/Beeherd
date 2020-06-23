@@ -94,12 +94,19 @@
     border-radius: 6px;
     background-color: rgba(192, 192, 192, 0.3);
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 .side-bar-bottom:hover {
     transition: all 0.3s ease;
     transform: scale(1.03);
 }
+
+.side-bar-bottom-text{
+    color:white;
+    text-align: center;
+}
+
 
 .jumbotron {
     margin-top: 10px;

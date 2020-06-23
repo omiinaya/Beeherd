@@ -104,7 +104,7 @@ class Home extends Component {
                 <TagSection />
               </div>
               <div className="side-bar-bottom">
-                <p>Ad? Placeholder</p>
+                <p className="side-bar-bottom-text">Ad? Placeholder</p>
               </div>
             </Col>
           </Row>
