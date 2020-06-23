@@ -39,7 +39,7 @@ export class AvatarDisplay extends Component {
         axios
             .get("avatars/" + a)
             .then((res) => {
-                var avatar=res.data[0];
+                var avatar = res.data[0];
                 console.log(avatar)
                 this.setState({
                     eye: avatar.eyes,
@@ -54,9 +54,13 @@ export class AvatarDisplay extends Component {
 
     render() {
         const { eye, hair, outfit, place, skin } = this.state
-        return(
-            <div>
-                {eye},{hair},{outfit},{place},{skin}
+        return (
+            <div style={{ position: 'relative', left: '0', top: '0' }}>
+                <img className="place-image" src={place} />
+                <img className="eyes-image" src={eye} />
+                <img className="hair-image" src={hair} />
+                <img className="outfit-image" src={outfit} />
+                <img className="skin-image" src={skin} />
             </div>
         )
     }
