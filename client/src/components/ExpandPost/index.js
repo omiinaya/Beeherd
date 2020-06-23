@@ -70,10 +70,11 @@ class ExpandPost extends React.Component {
         const originalPost = (
             <div className="expanded-post-container">
                  <div className="post_title"> {title}</div>
-                <div className="post_author">by: {author}</div>
+                
                
                 <div dangerouslySetInnerHTML={{ __html: post }} className="post_content" />
                 <button className="sameCSSbtn" onClick={this.handleClick}>Reply</button>
+                <div className="post_author">by: {author}</div>
             </div>
         )
         const replyContainer = (

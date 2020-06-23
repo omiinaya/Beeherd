@@ -108,4 +108,9 @@
     text-align: right;
     font-size: 14px;
     font-weight: lighter;
+    color: white;
+}
+
+.profile-title{
+    font-size: 26px;
 }
