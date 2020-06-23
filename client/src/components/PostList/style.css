@@ -11,6 +11,14 @@
     word-wrap: break-word;
 }
 
+.reply-content-text {
+    margin-top: 1.5%;
+}
+
+.post-content-text {
+    margin-top: 2%;
+}
+
 .customize-button{
     margin-top: 8px;
     width: 103px;

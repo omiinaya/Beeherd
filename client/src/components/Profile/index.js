@@ -5,7 +5,6 @@ import jwt_decode from 'jwt-decode'
 import Footer from '../Footer';
 import Journals from '../Journals';
 import EmptyList from "../EmptyList";
-import SeeMoreButton from "../SeeMoreButton";
 import { Row, Col } from "../Grid";
 import { PostList, PostListItem } from "../PostList";
 import "./style.css";
@@ -166,11 +165,6 @@ class Profile extends Component {
                                                     title={posts.post_title}
                                                     content={posts.post_content}
                                                 />
-                                                <div className="button-container">
-                                                    <SeeMoreButton
-                                                        id={posts.id}
-                                                    />
-                                                </div>
                                             </div>
                                         </div>
                                     );

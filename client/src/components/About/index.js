@@ -25,7 +25,7 @@ function About() {
                 <strong>beeherd</strong>
               </MDBCardTitle>
               <MDBCardImage
-                src="https://thehill.com/sites/default/files/honeybees_bees_istock.jpg"
+                src="https://i.imgur.com/o4aRBW9.png"
                 className="img-fluid"
               />
               <MDBCardBody>
