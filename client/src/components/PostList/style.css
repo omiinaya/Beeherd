@@ -13,6 +13,11 @@
 
 .reply-content-text {
     margin-top: 1.5%;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: right;
+    margin-top: 15%;
+    margin-right: -10%;
 }
 
 .post-content-text {
