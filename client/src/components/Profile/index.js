@@ -90,8 +90,6 @@ class Profile extends Component {
         }
     }
 
-
-
     handleClick() {
         if (this.state.toggleEditor === false) {
             this.setState({
@@ -106,6 +104,14 @@ class Profile extends Component {
             console.log(this.state.toggleEditor)
         }
     }
+
+    handleOnClickA(a) {
+        if (localStorage.usertoken != null) {
+          this.props.history.push("/posts/" + a.id)
+        } else {
+          this.props.history.push("/login")
+        }
+      }
 
     render() {
         const { toggleEditor } = this.state;

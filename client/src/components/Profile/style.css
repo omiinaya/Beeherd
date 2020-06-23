@@ -28,10 +28,18 @@
     border-bottom-style: solid;
 }
 
+.control-panel-option:hover {
+    cursor: pointer;
+}
+
 .control-panel-option-last {
     padding: 3%;
     text-align: center;
     width: 100%;
+}
+
+.control-panel-option-last:hover {
+    cursor: pointer;
 }
 
 .profile-title {
@@ -43,22 +51,23 @@
     padding-left: 5%;
     padding-right: 5%;
     background-color: rgba(192, 192, 192, 0.0);
-    color:white;
-    border: 2px solid white ;
+    color: white;
+    border: 2px solid white;
     border-radius: 6px;
 }
-.journals-content{
-    color:white;
-    padding:20px;
+
+.journals-content {
+    color: white;
+    padding: 20px;
 }
 
-.journal-list{
-    padding:20px;
-    color:white;
+.journal-list {
+    padding: 20px;
+    color: white;
 }
-.journal-card{
-    color:white;
-    padding:5px;
-  
+
+.journal-card {
+    color: white;
+    padding: 5px;
     text-align: center;
 }
