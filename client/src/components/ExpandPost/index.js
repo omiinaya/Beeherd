@@ -83,6 +83,9 @@ class ExpandPost extends React.Component {
                     try{
                         const reply = await sendToDB(id)
                         this.getReplies()
+                        this.setState({
+                            toggleReply: false
+                        })
                     } 
                     catch(err) {
                         console.log(err)

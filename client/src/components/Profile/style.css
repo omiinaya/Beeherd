@@ -10,12 +10,28 @@
 }
 
 .user-control-panel {
+    padding: 2%;
     margin-top: 3%;
     margin-left: 3%;
-    height: 700px;
+    height: 250px;
     background-color: rgba(192, 192, 192, 0.3);
     border-radius: 6px;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.control-panel-option {
+    padding: 3%;
+    text-align: center;
+    width: 100%;
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+
+.control-panel-option-last {
+    padding: 3%;
+    text-align: center;
+    width: 100%;
 }
 
 .profile-title {

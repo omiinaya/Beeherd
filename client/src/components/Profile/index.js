@@ -138,7 +138,14 @@ class Profile extends Component {
                 </div>
                 <Row>
                     <Col size="md-3">
-                        <div className="user-control-panel">test</div>
+                        <div className="user-control-panel">
+                        <div className="control-panel-option">Change Tag</div>
+                            <div className="control-panel-option" onClick={() => console.log("currently under construction")}>Change Username</div>
+                            <div className="control-panel-option" onClick={() => console.log("currently under construction")}>Change Password</div>
+                            <div className="control-panel-option" onClick={() => console.log("currently under construction")}>Backup All Data</div>
+                            <div className="control-panel-option" onClick={() => console.log("currently under construction")}>Delete All Data</div>
+                            <div className="control-panel-option-last" onClick={() => console.log("currently under construction")}>Close Account</div>
+                        </div>
                     </Col>
                     <Col size="md-9">
                         {this.state.savedPosts.length > 0 ?
