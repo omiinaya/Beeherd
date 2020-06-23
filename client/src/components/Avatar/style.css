@@ -62,7 +62,7 @@ body>div>div:nth-child(1)>div.col-sm-3.a>div.col-3.logo>img {
     overflow: hidden;
     background-position-x: center;
     background-position: center;
-    border: 1px dashed hsl(0, 0%, 0%, 0.4);
+    border: 1px dashed rgba(255, 252, 252, 0.4);
 }
 
 
@@ -240,4 +240,16 @@ body>div>div>div.col-sm-9.b>div:nth-child(3)>div>div {
 body>div>div>div.col-sm-9.b>div.row.col-6.this {
     margin-top: -200px;
     margin-left: 147px;
+}
+
+.avatar-dropbtn{
+    color:white;
+    background: rgba(186, 138, 138, 0);
+    border:0px;
+    border-bottom: 2px solid white;
+    
+}
+.dropdown-content{
+    cursor: pointer;
+    color:white;
 }

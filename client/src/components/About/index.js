@@ -36,7 +36,7 @@ function About() {
                 </MDBCardText>
                 <MDBCol className="d-flex justify-content-center mt-4" md="12">
                   <MDBCol md="3" className="d-flex justify-content-around">
-                    <MDBBtn href="/" gradient="purple" className="PostColor">Posts</MDBBtn>
+                    <MDBBtn href="/" gradient="purple" className="PostColor">Go Say Something</MDBBtn>
                   </MDBCol>
                 </MDBCol>
               </MDBCardBody>
