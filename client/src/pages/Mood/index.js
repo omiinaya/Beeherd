@@ -4,10 +4,8 @@ import "./style.css";
 //import ItsOkto from "../../components/ItsOkTo";
 //import InfoCards from "../../components/InfoCards";
 
-
 function MoodDisorders() {
   return (
-   
     <div className="BlueMoodPageContainer">
       <div className="MoodPage">
         <div className="header-container">
@@ -19,7 +17,6 @@ function MoodDisorders() {
               <h1 className="moodColors">Mood Disorders</h1>
             </div>
           </div>
-        
         </div>
 
         <section className="MoodSectionPic">
@@ -68,9 +65,9 @@ function MoodDisorders() {
             </div>
           </div>
         </section>
-        
-          <p></p>
-       
+
+        <p></p>
+
         <div className="moodTextDiv2">
           <p className="moodTextp2">Which</p>
           <p className="moodTextp22">are they?</p>
@@ -129,98 +126,98 @@ function MoodDisorders() {
               </a>
             </span>
           </ul>
-  
-      </div>
-
-      <div className="MoodcrisisAnimeDiv">
-        <div className="MoodcrisisAnime1">
-          {" "}
-          <img
-            width="200"
-            height="150"
-            className="lazy-load"
-            alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
-            data-sizes="auto"
-            onload="this.parentNode.className += ' img-loaded'"
-            src="https://media.giphy.com/media/Quz33gDGvspqJLi6DL/giphy.gif"
-            sizes="auto"
-          ></img>
         </div>
-      </div>
 
-      <div className="moodText3div">
-        <p className="moodText3"></p>
-      </div>
-
-      <div className="moodTextDiv3">
-        <p className="moodText5">When to </p>
-        <p className="moodText555">SeeK</p>
-        <p className="moodText55">a pro?</p>
-      </div>
-
-      <section className="MoodSection3">
-        <div className="MoodSec3container MoodPage">
-          <div className="moodBox">
-            <p className="moodTextbox">
-              Talk to a pro if you feel like your emotions are interfering with your work,
-              relationships, social activities, or other parts of your life.
-              Have trouble with drinking or drugs or have suicidal thoughts
-              and/or behaviors. Let us locate support nearby by providing your
-              zipcode above.
-            </p>
+        <div className="MoodcrisisAnimeDiv">
+          <div className="MoodcrisisAnime1">
+            {" "}
+            <img
+              width="200"
+              height="150"
+              className="lazy-load"
+              alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
+              data-sizes="auto"
+              onload="this.parentNode.className += ' img-loaded'"
+              src="https://media.giphy.com/media/Quz33gDGvspqJLi6DL/giphy.gif"
+              sizes="auto"
+            ></img>
           </div>
-          <div className="moodBox">
-            <p className="moodTextbox">
-              Reach out to a professional -- Text to talk -- Completely
-              Confidential
+        </div>
+
+        <div className="moodText3div">
+          <p className="moodText3"></p>
+        </div>
+
+        <div className="moodTextDiv3">
+          <p className="moodText5">When to </p>
+          <p className="moodText555">SeeK</p>
+          <p className="moodText55">a pro?</p>
+        </div>
+
+        <section className="MoodSection3">
+          <div className="MoodSec3container MoodPage">
+            <div className="moodBox">
+              <p className="moodTextbox">
+                Talk to a pro if you feel like your emotions are interfering
+                with your work, relationships, social activities, or other parts
+                of your life. Have trouble with drinking or drugs or have
+                suicidal thoughts and/or behaviors. Let us locate support nearby
+                by providing your zipcode above.
+              </p>
+            </div>
+            <div className="moodBox">
+              <p className="moodTextbox">
+                Reach out to a professional -- Text to talk -- Completely
+                Confidential
+                <span className="crisisHotline">
+                  Text HOME to 741741 to connect with a Crisis Counselor Free
+                  24/7 support at your fingertips US and Canada: text 741741 UK:
+                  text 85258 | Ireland: text 086 1800 280
+                </span>
+              </p>
               <span className="crisisHotline">
                 Text HOME to 741741 to connect with a Crisis Counselor Free 24/7
                 support at your fingertips US and Canada: text 741741 UK: text
                 85258 | Ireland: text 086 1800 280
               </span>
-            </p>
-            <span className="crisisHotline">
-              Text HOME to 741741 to connect with a Crisis Counselor Free 24/7
-              support at your fingertips US and Canada: text 741741 UK: text
-              85258 | Ireland: text 086 1800 280
-            </span>
-          </div>
+            </div>
 
-          <div className="moodBox">
-            <p className="moodTextbox">
-              If you are thinking about ending your life due to your
-              circumstances and state of mind, chances are you are dealing with
-              really painful emotions. Nobody deserves to feel that way and we
-              are so sorry you do. We're here to help. You are not alone.
-            </p>
+            <div className="moodBox">
+              <p className="moodTextbox">
+                If you are thinking about ending your life due to your
+                circumstances and state of mind, chances are you are dealing
+                with really painful emotions. Nobody deserves to feel that way
+                and we are so sorry you do. We're here to help. You are not
+                alone.
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <div className="MoodcrisisAnimefoot">
         <div className="MoodcrisisAnimefoot">
-          {" "}
-          <img
-            width="200"
-            height="150"
-            className="lazy-load"
-            alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
-            data-sizes="auto"
-            onload="this.parentNode.className += ' img-loaded'"
-            src="https://i.pinimg.com/originals/77/19/cf/7719cf491fb46a1e4b6409caca84918e.gif"
-            sizes="auto"
-          ></img>
+          <div className="MoodcrisisAnimefoot">
+            {" "}
+            <img
+              width="200"
+              height="150"
+              className="lazy-load"
+              alt="Animated gif with Sad then Happy Faces and instructions to text HOME to 741741"
+              data-sizes="auto"
+              onload="this.parentNode.className += ' img-loaded'"
+              src="https://i.pinimg.com/originals/77/19/cf/7719cf491fb46a1e4b6409caca84918e.gif"
+              sizes="auto"
+            ></img>
+          </div>
         </div>
-      </div>
 
-      <section className="Informedfoot">
-        <footer className="informedFooter">
-          <p className="informedFooterText">
-            Life Is Now, Copyright&copy; beeherd 2020
-          </p>
-        </footer>
-      </section>
-    </div>
+        <section className="Informedfoot">
+          <footer className="informedFooter">
+            <p className="informedFooterText">
+              Life Is Now, Copyright&copy; beeherd 2020
+            </p>
+          </footer>
+        </section>
+      </div>
     </div>
   );
 }

@@ -8,18 +8,18 @@ function Addiction() {
   return (
     <div className="AddiPageContainer">
       <div className="MoodPage">
-      <div className="addi-header-container">
-        <div className="addiction-header-container">
-          <div className="MHcontainer">
-            <h1 className="MHtext1">Let's Talk</h1>
-          </div>
-          <div className="MoodSec1container">
-            <div className="Additext-container">
-              <h1 className="lifeColorsh1">Substance Abuse </h1>
+        <div className="addi-header-container">
+          <div className="addiction-header-container">
+            <div className="MHcontainer">
+              <h1 className="MHtext1">Let's Talk</h1>
             </div>
-            <h1 className="AddiText1">And</h1>
+            <div className="MoodSec1container">
+              <div className="Additext-container">
+                <h1 className="lifeColorsh1">Substance Abuse </h1>
+              </div>
+              <h1 className="AddiText1">And</h1>
+            </div>
           </div>
-        </div>
         </div>
 
         <section className="MoodSectionPic">
@@ -181,7 +181,7 @@ function Addiction() {
       <div className="LifecrisisAnimefoot">
         <div className="LifecrisisAnimefoot">
           {" "}
-         {/* <img
+          {/* <img
             width="200"
             height="150"
             className="lazy-load"
