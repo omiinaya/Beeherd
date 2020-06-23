@@ -16,6 +16,7 @@ import { Container } from "./components/Grid";
 import ExpandPost from "./components/ExpandPost";
 import About from "./components/About/";
 import Customize from "./components/Customize";
+import { AvatarDisplay } from "./components/AvatarDisplay";
 
 //pages
 import Resources from "./pages/Resources";
@@ -56,6 +57,7 @@ class App extends Component {
             <Route exact path="/profile" component={Profile} />
             <Route exact path="/posts" component={Post} />
             <Route exact path="/customize" component={Customize} />
+            <Route exact path="/testing" component={AvatarDisplay} />
 
             <Route path="/posts/:id" component={ExpandPost} />
 
