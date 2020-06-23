@@ -26,7 +26,7 @@ class Suicide extends Component {
             </section>
             <center>
               <div className="moodTextDiv">
-                <h1 className="mooddown"></h1>
+                <h1 className="mooddown"> </h1>
 
                 <div className="borderDown">
                   <h1 className="mooddown2">:: be ::</h1>

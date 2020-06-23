@@ -24,9 +24,9 @@ class Navbar extends Component {
 
     themeSwap() {
         if (this.state.theme === 'light') {
-            this.state.theme = 'dark'
+            this.setState({ theme: "dark" })
         } else {
-            this.state.theme = 'light'
+            this.setState({ theme: "light" })
         }
     }
 

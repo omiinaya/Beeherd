@@ -5,7 +5,7 @@ import Placeholder from './images/ad.jpg'
 
 function Thumbnail({ src }) {
     return (
-        <a href="https://www.geico.com" add target="_blank">
+        <a href="https://www.geico.com" add target="_blank" rel="noopener noreferrer">
             <div
                 className="thumbnail"
                 role="img"

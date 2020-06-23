@@ -27,10 +27,10 @@ function Addiction() {
         </section>
         <center>
           <div className="moodTextDiv">
-            <h1 className="mooddown"></h1>
+            <h1 className="mooddown"> </h1>
 
             <div className="AddiborderDown">
-              <h1 className="mooddown2"></h1>
+              <h1 className="mooddown2"> </h1>
             </div>
           </div>
           <h3 className="addidown">Addiction</h3>

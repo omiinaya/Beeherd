@@ -30,7 +30,7 @@ function MoodDisorders() {
               <h1 className="mooddown2">:: ok ::</h1>
             </div>
           </div>
-          <h3 className="mooddown"></h3>
+          <h3 className="mooddown"> </h3>
         </center>
         <section className="MoodSectionPic">
           <div className="MoodSecPicContainer"></div>

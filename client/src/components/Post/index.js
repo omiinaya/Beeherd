@@ -1,7 +1,7 @@
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic"
 import CKEditor from "@ckeditor/ckeditor5-react"
 import React, { useState } from "react"
-import { sendToDB, init } from "./scripts"
+import { init } from "./scripts"
 import "./style.css"
 
 function Post() {

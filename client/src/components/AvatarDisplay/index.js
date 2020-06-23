@@ -56,11 +56,11 @@ export class AvatarDisplay extends Component {
         const { eye, hair, outfit, place, skin } = this.state
         return (
                 <div style={{ position: 'relative', left: '0', top: '0' }}>
-                    <img className="place-image" src={place} />
-                    <img className="eyes-image" src={eye} />
-                    <img className="hair-image" src={hair} />
-                    <img className="outfit-image" src={outfit} />
-                    <img className="skin-image" src={skin} />
+                    <img className="place-image" alt='#' src={place} />
+                    <img className="eyes-image" alt='#' src={eye} />
+                    <img className="hair-image" alt='#' src={hair} />
+                    <img className="outfit-image" alt='#' src={outfit} />
+                    <img className="skin-image" alt='#' src={skin} />
                 </div>
         )
     }
