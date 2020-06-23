@@ -1,0 +1,116 @@
+.category-card {
+    width: 250px;
+    height: 166px;
+    line-height: 166px;
+    text-align: center;
+}
+
+.mini-post {
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    padding: 1%;
+    width: 98.5%;
+    text-align: center;
+    justify-content:center;
+    background-color:rgba(192,192,192,0.3);
+    border-radius: 6px;
+}
+
+.mini-post:hover {
+    cursor: pointer;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    transition: all 0.3s ease;
+    transform: scale(1.03);
+}
+
+.post-card {
+    background-color:rgba(192,192,192,0.3);
+    margin: 1%;
+    border-radius: 6px;
+}
+
+.post-card:hover {
+    cursor: pointer;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.post-card:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.03);
+}
+
+.content_text {
+    margin-top: 2%;
+    width: 100%;
+    margin-left: 5%;
+    height: 90px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: "ellipsis";
+}
+
+.btn-md {
+    width: 8%;
+    background-color:rgba(192,192,192,0.0);
+    border-color: rgba(192,192,192,0.0);
+    color: black;
+}
+
+.btn-md:hover {
+    width: 8%;
+    background-color:rgba(192,192,192,0.0);
+    border-color: rgba(192,192,192,0.0);
+    color: black;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.side-bar-top {
+    width: 100%;
+    height: 325px;
+    margin-top: 3.5%;
+    margin-left: -4%;
+    border-radius: 6px;
+    background-color:rgba(192,192,192,0.3);
+}
+
+.side-bar-middle {
+    width: 100%;
+    height: 210px;
+    margin-top: 7%;
+    margin-left: -4%;
+    border-radius: 6px;
+    background-color:rgba(192,192,192,0.3);
+}
+
+.side-bar-bottom {
+    width: 100%;
+    height: 295px;
+    margin-top: 7%;
+    margin-left: -4%;
+    border-radius: 6px;
+    background-color:rgba(192,192,192,0.3);
+}
+.jumbotron {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.jumbotron p {
+    text-align: center;
+}
+
+/*--Media Queries--*/
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+}
+

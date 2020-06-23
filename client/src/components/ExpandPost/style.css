@@ -1,0 +1,39 @@
+.expanded-post-container {
+    background-color:rgba(192,192,192,0.5);
+    /*background-color: white;*/
+    border-radius: 6px;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    padding: 2%;
+    width: 100%;
+    /*transform: translateX(15px);*/
+}
+
+.reply-container {
+    background-color:rgba(192,192,192,0.5);
+    /*background-color: white;*/
+    border-radius: 6px;
+    margin-top: 2%;
+    padding: 2%;
+    padding-bottom: 5%;
+}
+
+#reply-bar {
+    width: 100%;
+    height: 100px;
+}
+
+.reply-card {
+    background-color:rgba(192,192,192,0.5);
+    /*background-color: white;*/
+    border-radius: 6px;
+    margin: 2%;
+    padding: 2%;
+    width: 90%;
+    transform: translateX(10.5%);
+    margin-bottom: 0%;
+}
+
+#reply-button {
+    float: right;
+}

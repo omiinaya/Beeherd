@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/omiinaya/OKAJstatic/css/main.3cfe2975.chunk.css",
+    "main.js": "/omiinaya/OKAJstatic/js/main.57bcae82.chunk.js",
+    "main.js.map": "/omiinaya/OKAJstatic/js/main.57bcae82.chunk.js.map",
+    "runtime-main.js": "/omiinaya/OKAJstatic/js/runtime-main.a2bb8deb.js",
+    "runtime-main.js.map": "/omiinaya/OKAJstatic/js/runtime-main.a2bb8deb.js.map",
+    "static/js/2.c1d3e922.chunk.js": "/omiinaya/OKAJstatic/js/2.c1d3e922.chunk.js",
+    "static/js/2.c1d3e922.chunk.js.map": "/omiinaya/OKAJstatic/js/2.c1d3e922.chunk.js.map",
+    "index.html": "/omiinaya/OKAJindex.html",
+    "precache-manifest.4d0015d94107230292cd583d1ecf9f6b.js": "/omiinaya/OKAJprecache-manifest.4d0015d94107230292cd583d1ecf9f6b.js",
+    "service-worker.js": "/omiinaya/OKAJservice-worker.js",
+    "static/css/main.3cfe2975.chunk.css.map": "/omiinaya/OKAJstatic/css/main.3cfe2975.chunk.css.map",
+    "static/js/2.c1d3e922.chunk.js.LICENSE.txt": "/omiinaya/OKAJstatic/js/2.c1d3e922.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a2bb8deb.js",
+    "static/js/2.c1d3e922.chunk.js",
+    "static/css/main.3cfe2975.chunk.css",
+    "static/js/main.57bcae82.chunk.js"
+  ]
+}
