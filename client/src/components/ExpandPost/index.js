@@ -87,6 +87,7 @@ class ExpandPost extends React.Component {
                         this.setState({
                             toggleReply: false
                         })
+                        this.getReplies()
                 
                     }}>Submit</button>
             </div>
