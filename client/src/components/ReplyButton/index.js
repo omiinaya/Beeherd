@@ -13,7 +13,7 @@ class ReplyButton extends React.Component {
   render() {
     return (
       <div>
-        <Button type="Primary" onClick={() => { this.loadPost(this.props) }
+        <Button className ="sameCSSbtn" type="Primary" onClick={() => { this.loadPost(this.props) }
         }>
           Reply
         </Button>

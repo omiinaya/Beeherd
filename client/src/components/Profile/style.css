@@ -24,4 +24,16 @@
 }
 .journals-content{
     color:white;
+    padding:20px;
+}
+
+.journal-list{
+    padding:20px;
+    color:white;
+}
+.journal-card{
+    color:white;
+    padding:5px;
+  
+    text-align: center;
 }
