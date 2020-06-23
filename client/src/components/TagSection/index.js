@@ -50,8 +50,8 @@ class TagSection extends React.Component {
         const loggedInMenu = (
             <div>
                 <div className="current-tag">
-                    <div className="sameCSStext text-center">Current public tag: </div>
-                    <div className="text-center">{current_tag}</div>
+                    <div className="text-center taggy">Current public tag: </div>
+                    <div className="text-center taggy">{current_tag}</div>
                 </div>
                 <div className="tag-input text-center">
                     <input type="text" id="change-tag"></input>
