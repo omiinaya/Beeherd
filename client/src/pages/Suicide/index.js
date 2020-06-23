@@ -1,8 +1,13 @@
-import React from "react";
+import React, {Component} from "react";
 import "./style.css";
+import {test} from './scripts.js'
 //import InfoCards from "../../components/InfoCards"
 
-function Suicide() {
+class Suicide extends Component {
+  componentDidMount() {
+    test()
+  }
+  render() {
   return (
     <div className="LifePageContainer">
       <div className="MoodPage">
@@ -58,10 +63,11 @@ function Suicide() {
               <div className="informedInputs">
                 <input
                   type="text"
-                  className="zipcodeInput "
+                  className="zipcodeInput"
+                  id="zipcode-search"
                   placeholder="Enter Your Zipcode"
                 ></input>
-                <button className="informedButton">
+                <button className="informedButton" onClick={() => { test() }}>
                   <span className="informedSpan">Show Me</span>
                 </button>
               </div>
@@ -239,5 +245,7 @@ function Suicide() {
     </div>
   );
 }
+}
+
 
 export default Suicide;
