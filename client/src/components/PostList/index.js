@@ -43,8 +43,8 @@ export function PostList({children}) {
       <li>
         <Container>
           <Row>
-            <Col size="md-2">
-              <Thumbnail src={this.props.thumbnail} />
+            <Col size="md-3">
+            <AvatarDisplay />
             </Col>
             <Col size="xs-9 sm-9">
               <h6>posted by tag/{this.props.author}</h6>

@@ -37,10 +37,10 @@ export class AvatarDisplay extends Component {
 
     getAvatar = (a) => {
         axios
-            .get("avatars/" + a)
+            .get("/avatars/" + a)
             .then((res) => {
                 var avatar = res.data[0];
-                console.log(avatar)
+                console.log(res.data[0])
                 this.setState({
                     eye: avatar.eyes,
                     hair: avatar.hair,
