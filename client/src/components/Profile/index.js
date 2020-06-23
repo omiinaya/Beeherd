@@ -4,6 +4,10 @@ import axios from 'axios'
 import jwt_decode from 'jwt-decode'
 import Footer from '../Footer';
 import Journals from '../Journals';
+import EmptyList from "../EmptyList";
+import SeeMoreButton from "../SeeMoreButton";
+import { Row, Col } from "../Grid";
+import { PostList, PostListItem } from "../PostList";
 import "./style.css";
 
 class Profile extends Component {
@@ -55,7 +59,6 @@ class Profile extends Component {
                     savedPosts: res.data
                 })
                 console.log(this.state.savedPosts);
-                this.createDiv3(this.state.savedPosts);
             }).catch((err) => console.log(err));
     }
 
@@ -87,20 +90,6 @@ class Profile extends Component {
         }
     }
 
-    createDiv3(a) {
-        document.getElementById('journals-content').innerText = "";
-        for (var i = 0; i < a.length; i++) {
-            const div = document.createElement('div');
-            div.setAttribute("class", "journal-card")
-            div.innerHTML = ` 
-                <div class="profile-title">User Posts</div>
-                <div id="journal_author">Created `+ a[i].created + ` By: ` + a[i].author_tag + `</div>
-                <div id="journal_content">`+ a[i].post_content + `</div>
-            `;
-            document.getElementById('journals-content').appendChild(div);
-        }
-    }
-
 
 
     handleClick() {
@@ -111,7 +100,6 @@ class Profile extends Component {
             this.getJournals()
             console.log(this.state.toggleEditor)
         } else {
-            this.createDiv3(this.state.savedPosts)
             this.setState({
                 toggleEditor: false
             })
@@ -148,9 +136,40 @@ class Profile extends Component {
                         </div>
                     </center>
                 </div>
-                <div id="journals-content">There are no journals to display.</div>
+                <Row>
+                    <Col size="md-3">
+                        <div className="user-control-panel">test</div>
+                    </Col>
+                    <Col size="md-9">
+                        {this.state.savedPosts.length > 0 ?
+                            <PostList>
+                                {this.state.savedPosts.slice(0).reverse().map(posts => {
+                                    return (
+                                        <div className="post-card" onClick={() => this.handleOnClickA(posts)} >
+                                            <div>
+                                                <PostListItem
+                                                    id={posts.author_id}
+                                                    author={posts.author_tag}
+                                                    title={posts.post_title}
+                                                    content={posts.post_content}
+                                                />
+                                                <div className="button-container">
+                                                    <SeeMoreButton
+                                                        id={posts.id}
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    );
+                                })}
+                            </PostList>
+                            :
+                            <EmptyList />
+                        }
+                    </Col>
+                </Row>
                 <Footer />
-            </div>
+            </div >
         )
         return (
             <div>
