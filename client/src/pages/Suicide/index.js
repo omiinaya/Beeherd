@@ -6,49 +6,48 @@ function Suicide() {
   return (
     <div className="LifePageContainer">
       <div className="MoodPage">
-        <header className="moodHeader">
+        <div className="header-container">
           <div className="MHcontainer">
             <h1 className="MHtext1">Let's Talk</h1>
           </div>
-        </header>
-
-        <section className="MoodSection1">
           <div className="LifeSec1container">
             <div className="Lifetext-container">
               <h1 className="LifeColors">About Suicide</h1>
             </div>
+          </div>
+        </div>
+        <div className="SuicideBody">
+          <div>
             <h1 className="LifeText1">You</h1>
           </div>
-        </section>
+          <section className="MoodSectionPic">
+            <div className="LifeSecPicContainer"></div>
+          </section>
+          <center>
+            <div className="moodTextDiv">
+              <h1 className="mooddown"> </h1>
 
-        <section className="MoodSectionPic">
-          <div className="LifeSecPicContainer"></div>
-        </section>
-        <center>
-          <div className="moodTextDiv">
-            <h1 className="mooddown"> </h1>
-
-            <div className="borderDown">
-              <h1 className="mooddown2">:: be ::</h1>
+              <div className="borderDown">
+                <h1 className="mooddown2">:: be ::</h1>
+              </div>
             </div>
-          </div>
-          <h3 className="mooddown"> </h3>
-        </center>
-        <section className="MoodSectionPic">
-          <div className="LifeSecPicContainer"></div>
-        </section>
-        <p className="moodTextp1">
-          You are enough. You matter. Your life is worth fighting for. Suicide
-          is a leading cause of death. It’s also preventable. In U.S. alone, we
-          have the ability to save nearly 45,000 lives every year. Globally,
-          that number is closer to 800,000. But, hold up. Before we get to
-          saving the world, let’s check-in. If you’re feeling like ending your
-          life, you can always ask for help managing your emotions. Asking for
-          help is brave. You are brave. You are valuable! You are important!
-          And, the world needs you. Please share your gifts with the world,
-          little bee.
-        </p>
-
+            <h3 className="mooddown"> </h3>
+          </center>
+          <section className="MoodSectionPic">
+            <div className="LifeSecPicContainer"></div>
+          </section>
+          <p className="moodTextp1">
+            You are enough. You matter. Your life is worth fighting for. Suicide
+            is a leading cause of death. It’s also preventable. In U.S. alone, we
+            have the ability to save nearly 45,000 lives every year. Globally,
+            that number is closer to 800,000. But, hold up. Before we get to
+            saving the world, let’s check-in. If you’re feeling like ending your
+            life, you can always ask for help managing your emotions. Asking for
+            help is brave. You are brave. You are valuable! You are important!
+            And, the world needs you. Please share your gifts with the world,
+            little bee.
+          </p>
+        </div>
         <section className="MoodSection2">
           <div className="MoodSec2container">
             <h1 className="requestSupport">Requesting Support?</h1>
