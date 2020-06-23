@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Sticky from 'react-stickynode'
+import publicIP from 'react-native-public-ip'
 
 //components
 import Navbar from "./components/Navbar/";
@@ -14,6 +15,7 @@ import Footer from "./components/Footer";
 import { Container } from "./components/Grid";
 import ExpandPost from "./components/ExpandPost";
 import About from "./components/About/";
+import Customize from "./components/Customize";
 
 //pages
 import Resources from "./pages/Resources";
@@ -22,6 +24,23 @@ import Mood from "./pages/Mood";
 import Addiction from "./pages/Addiction";
 
 class App extends Component {
+  componentDidMount() {
+    publicIP()
+      .then(ip => {
+        this.ipBlacklisted(ip)
+      })
+  }
+
+  ipBlacklisted(a) {
+    console.log(a)
+    //check if ip is black listed
+  }
+
+  lastKnownIP(a) {
+    console.log(a)
+    //save to database last_known
+  }
+
   render() {
     return (
       <Router>
@@ -35,7 +54,9 @@ class App extends Component {
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/profile" component={Profile} />
-            <Route exact path="/post" component={Post} />
+            <Route exact path="/posts" component={Post} />
+            <Route exact path="/customize" component={Customize} />
+
             <Route path="/posts/:id" component={ExpandPost} />
 
             <Route exact path="/suicide" component={Suicide} />

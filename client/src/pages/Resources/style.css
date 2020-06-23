@@ -1,0 +1,82 @@
+#container {
+    border: 2px dashed #444;
+    height: 125px;
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+    /* just for demo */
+    min-width: 612px;
+  }
+  
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    width: 150px;
+    height: 125px;
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1
+  }
+  
+  .stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+  }
+  
+  .box1,
+  .box3 {
+    background: #ccc
+  }
+  
+  .box2,
+  .box4 {
+    background: #0ff
+  }
+
+
+.SHwrapper{
+  width:600px;
+  background: orange;
+  margin:0 auto 0 auto;
+
+}
+
+.SHtitle{
+  height:100px;
+  background: red;
+  padding:20px;
+  text-align: center;
+}
+
+.SH{
+  height:50px;
+  background: grey;
+}
+
+.SHcontentmain{
+min-height:400px;
+background: hotpink;
+width:400px;
+float:left;
+
+}
+
+.SHcontentside{
+width: 200px;
+float:right;
+background: indigo;
+min-height: 400px;
+}
+
+.SHcontentlow{
+  clear:both;
+  background: lightgreen;
+  height:40px;
+  color:white;
+  text-align: center;
+  padding:10px;
+}

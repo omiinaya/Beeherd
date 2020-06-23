@@ -61,7 +61,7 @@
   margin-left: 160px;
   font-size: 110px;
   color: rgb(247, 247, 247);
-  opacity: 0.3;
+  
   text-shadow: black;
   height: 170px;
   width: 100%;
@@ -69,10 +69,10 @@
   line-height: 30px;
 }
 
-.Additext-container .moodColors {
+.Additext-container{
   font-size: 110px;
   color: rgba(2, 2, 2, 0.317);
-  line-height: 1;
+  
   background-repeat: repeat-x;
   -webkit-background-clip: text;
   animation: animate 15s linear infinite;
@@ -111,15 +111,16 @@
 
 .Additext-container {
   text-align: center;
-  margin-bottom: -10px;
-  ;
+  margin-top: 1em;
+
+  font-size: 100px;
 }
 
 .AddiSecPicContainer {
   background: url(../../pages/Addiction/assets/smoke4.jpeg);
   min-height: 20px;
   background: cover;
-  opacity: 0.8;
+  
   text-align: center;
   padding-top: 10px;
   padding-bottom: 2px;
@@ -138,7 +139,7 @@
 
 .MoodcrisisAnimeDiv {
   padding: 2%;
-  opacity: 1;
+  
   width: 100%;
   height: auto;
   margin-top: 2%;
@@ -146,24 +147,24 @@
   margin-bottom: 7em;
   margin-left: 0%;
   justify-content: space-around;
-  opacity: .5;
+  
 }
 
 .MoodcrisisAnime {
   padding: 2%;
-  opacity: 1;
+ 
   width: 100%;
   height: auto;
   margin-top: 2%;
   text-align: center!important;
   margin-left: 0%;
   justify-content: space-around;
-  opacity: .5;
+  
 }
 
 .MoodcrisisAnimefoot {
   padding: 2%;
-  opacity: 1;
+  
   width: 100%;
   height: auto;
   margin-top: 4%;
@@ -171,7 +172,7 @@
   margin-bottom: -70px;
   margin-left: 0%;
   justify-content: space-around;
-  opacity: .5;
+  
 }
 
 .MoodcrisisAnime1 {
@@ -179,12 +180,12 @@
   margin-right: 15%;
 }
 
-.LifeSec3container {}
+
 
 .LifecrisisAnime {
   padding-top: 4%;
   color: black;
-  opacity: 0;
+ 
   width: 100%;
   height: auto;
   margin-top: 20%;
@@ -192,6 +193,90 @@
   margin-bottom: -120px;
   margin-left: 0%;
   background-color: black;
-  opacity: .5;
+  
   z-index: -1;
+}
+
+.AddiPageContainer{
+  background-color: black;
+  font: 15px/1.5 sans-serif;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #020202;
+  color: rgb(152, 150, 150);
+  letter-spacing: 1px;
+  letter-spacing: 2px;
+
+}
+
+
+.AddiText1{
+  font-size: 48px;
+  color: rgb(151, 150, 152);
+  margin-bottom: 80px;
+  float: center;
+  font-size: 500px;
+  color: rgba(72, 69, 67, 0.119);
+  
+  height: 160px;
+}
+
+.lifeColorsh1{
+  font-size: 96px;
+  text-align: center;
+  color: #3e24047b;
+}
+
+.addiSeparatorSupport{
+
+  height: 2em;
+  width: 100%;
+  background: url(/client/src/pages/Addiction/assets/skull.webp);
+}
+
+.AddiText55{
+  color: rgba(255, 255, 255, 0.488);
+
+
+}
+
+.AddiSection1{
+  text-align: right;
+}
+
+.Additext-container{
+  text-align: right;
+  margin-top:90px;
+  margin-bottom: -70px;
+}
+
+
+
+.AddiinformedFooter{
+  padding: 20px;
+  margin-top: 80px;
+  color: rgba(248, 199, 242, 0.897);
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.29);
+  text-align: center;
+  margin-top: -25%;
+  
+}
+
+.LifecrisisAnimefoot{
+  margin-bottom: 7.1%;
+  padding: 2%;
+  
+  width: 100%;
+  height: auto;
+  margin-top: 4%;
+  text-align: center!important;
+  
+  margin-left: 0%;
+  justify-content: space-around;
+}
+
+.moodBox{
+  border: 1px solid pink;
 }

@@ -1,0 +1,45 @@
+.avatar-box-2 {
+    margin: 0 auto;
+    /*moves avatar section*/
+}
+
+body>div>div:nth-child(1)>div.col-sm-3.a>div.col-3.logo>img {
+    width: 185%;
+}
+
+.avatardisplay-2 {
+    height: 200px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+.avatardisplay-2:hover {
+    height: 200px;
+    width: 300px;
+    background-color: transparent;
+}
+
+#bodyimages-2 {
+    width: 99px;
+    margin-left: 34px;
+    margin-top: -208px;
+}
+
+#eyesimages-2 {
+    width: 70px;
+    margin-left: 34px;
+    margin-top: -248px;
+}
+
+#hairimages-2 {
+    width: 89px;
+    margin-left: 8px;
+    margin-top: -261px;
+}
+
+#ropaimages-2 {
+    width: 95px;
+    margin-left: -10px;
+    margin-top: -604px;
+}

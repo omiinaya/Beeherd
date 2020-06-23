@@ -7,6 +7,7 @@ import axios from "axios";
 import EmptyList from "../EmptyList";
 import SeeMoreButton from "../SeeMoreButton";
 import TagSection from "../TagSection";
+import { AvatarTesting } from "../AvatarTesting";
 import "./style.css";
 import {
   MDBRow,
@@ -33,7 +34,7 @@ class Home extends Component {
 
   handleOnClickB(a) {
     if (localStorage.usertoken != null) {
-      this.props.history.push("/post/")
+      this.props.history.push("/posts/")
     } else {
       this.props.history.push("/login")
     }
@@ -44,7 +45,6 @@ class Home extends Component {
       .get("/posts/all")
       .then((res) => {
         this.setState({ savedPosts: res.data });
-        //console.log(res.data)
       })
       .catch((err) => console.log(err));
   };
@@ -55,8 +55,8 @@ class Home extends Component {
         <Hero backgroundImage="https://images.pexels.com/photos/775907/pexels-photo-775907.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
           <MDBRow>
             <MDBCol size="12">
-              <h1 className="animate__animated animate__swing">beeherd</h1>
-              <h2>Leave your troubles here</h2>
+              <h1 className="hero-title animate__animated animate__swing">beeherd</h1>
+              <h2 className="hero-subtitle">Leave your troubles here</h2>
             </MDBCol>
           </MDBRow>
         </Hero>
@@ -94,7 +94,11 @@ class Home extends Component {
             </Col>
             <Col size="md-3">
               <div className="side-bar-top">
-                <p>Avatar Placeholder</p>
+                <AvatarTesting className="avatar-display-home" />
+                <button className="customize-button" onClick={() => {
+                    this.props.history.push("/customize")
+                }
+                }>Customize</button>
               </div>
               <div className="side-bar-middle">
                 <TagSection />

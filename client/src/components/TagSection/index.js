@@ -1,6 +1,7 @@
 import React from 'react'
 import jwt_decode from 'jwt-decode'
 import { changeTag } from './scripts'
+import axios from 'axios';
 
 class TagSection extends React.Component {
     constructor() {
@@ -12,6 +13,10 @@ class TagSection extends React.Component {
     }
 
     componentDidMount() {
+        this.getCurrentId()
+    }
+
+    getCurrentId() {
         if (localStorage.usertoken != null) {
             var token = localStorage.usertoken
             var decoded = jwt_decode(token)
@@ -22,25 +27,32 @@ class TagSection extends React.Component {
                 current_id: user_id
             })
         } else {
-            const temp_tag = "test1";
-            const current_id = "test2";
-            this.setState({
-                current_tag: temp_tag,
-                current_id: current_id
-            })
+            window.open("/login", "_self")
         }
     }
 
+    getCurrentTag(a) {
+        axios.get('/users/id/'+a)
+        .then((res) => {
+            console.log(res.data.temp_tag)
+            this.setState({
+                current_tag: res.data.temp_tag
+            })
+        })
+    }
+
+    getTagFromDB(a) {
+        console.log(a)
+    }
+
     render() {
-        var current_tag = this.state.current_tag;
-        var current_id = this.state.current_id;
+        const { current_tag, current_id } = this.state; 
         const loggedInMenu = (
             <div>
                 <div>Current public tag: {current_tag}</div>
                 <input type="text" id="change-tag"></input><button onClick={() => {
                     changeTag(current_id);
-                    localStorage.removeItem('usertoken')
-                    window.open("/login", "_self")
+                    this.getCurrentTag(current_id);
                 }
                 }>Change</button>
             </div>

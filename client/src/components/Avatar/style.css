@@ -4,6 +4,7 @@
 }
 
 .avatar-box {
+<<<<<<< HEAD
   border-radius: 6px;
   margin: 0 auto;
   /*moves avatar section*/
@@ -11,6 +12,39 @@
 
 body > div > div:nth-child(1) > div.col-sm-3.a > div.col-3.logo > img {
   width: 185%;
+=======
+    margin: auto;
+    /*moves avatar section*/
+}
+
+#avatar-update-button {
+    /*border-style: none; */
+    margin-top: 2%;
+    width: 116px;
+    height: 36px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Maven Pro', sans-serif;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 12px;
+}
+
+#avatar-update-button:hover {
+    animation: animate 8s linear infinite;
+}
+
+#avatar-button {
+    text-align: center;
+}
+
+body>div>div:nth-child(1)>div.col-sm-3.a>div.col-3.logo>img {
+    width: 185%;
+>>>>>>> b5487625fa4af18e39af5a210e53ceac93248635
 }
 
 #avatarmenu:hover {
@@ -21,9 +55,16 @@ body > div > div:nth-child(1) > div.col-sm-3.a > div.col-3.logo > img {
 }
 
 .avatardisplay {
+<<<<<<< HEAD
   height: 200px;
   width: 300px;
   border-radius: 6px;
+=======
+    height: 200px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 6px;
+>>>>>>> b5487625fa4af18e39af5a210e53ceac93248635
 }
 
 .avatardisplay:hover {
@@ -33,6 +74,7 @@ body > div > div:nth-child(1) > div.col-sm-3.a > div.col-3.logo > img {
 }
 
 .es99 {
+<<<<<<< HEAD
   object-fit: cover;
   overflow: hidden;
   background-position-x: center;
@@ -52,6 +94,18 @@ body
   > div
   > div:nth-child(2) {
   margin-left: -301px;
+=======
+    object-fit: cover;
+    overflow: hidden;
+    background-position-x: center;
+    background-position: center;
+    border: 1px dashed rgba(255, 252, 252, 0.4);
+}
+
+
+body>div>div>div.col-sm-9.b>div.row.col-6.this>div>div>div>div>div>div:nth-child(2) {
+    margin-left: -301px;
+>>>>>>> b5487625fa4af18e39af5a210e53ceac93248635
 }
 
 .Backround {
@@ -232,7 +286,26 @@ body > div > div > div.col-sm-9.b > div:nth-child(3) > div > div {
   margin-top: -604px;
 }
 
+<<<<<<< HEAD
 body > div > div > div.col-sm-9.b > div.row.col-6.this {
   margin-top: -200px;
   margin-left: 147px;
 }
+=======
+body>div>div>div.col-sm-9.b>div.row.col-6.this {
+    margin-top: -200px;
+    margin-left: 147px;
+}
+
+.avatar-dropbtn{
+    color:white;
+    background: rgba(186, 138, 138, 0);
+    border:0px;
+    border-bottom: 2px solid white;
+    
+}
+.dropdown-content{
+    cursor: pointer;
+    color:white;
+}
+>>>>>>> b5487625fa4af18e39af5a210e53ceac93248635

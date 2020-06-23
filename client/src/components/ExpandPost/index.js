@@ -69,16 +69,25 @@ class ExpandPost extends React.Component {
         const { toggleReply, post, title, author, id } = this.state;
         const originalPost = (
             <div className="expanded-post-container">
-                <div className="post_author">Author: {author}</div>
-                <div className="post_title">Title: {title}</div>
+                 <div className="post_title"> {title}</div>
+                <div className="post_author">by: {author}</div>
+               
                 <div dangerouslySetInnerHTML={{ __html: post }} className="post_content" />
-                <button onClick={this.handleClick}>Reply</button>
+                <button className="sameCSSbtn" onClick={this.handleClick}>Reply</button>
             </div>
         )
         const replyContainer = (
             <div className="reply-container">
                 <input type="text" id="reply-bar"></input>
-                <button id="reply-button" onClick={() => { sendToDB(id) }}>Submit</button>
+                <button className="sameCSSbtn" id="reply-button" onClick={async () => { 
+                    try{
+                        const reply = await sendToDB(id)
+                        this.getReplies()
+                    } 
+                    catch(err) {
+                        console.log(err)
+                    }
+                    }}>Submit</button>
             </div>
         )
         const replies = (

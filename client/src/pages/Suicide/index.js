@@ -1,52 +1,58 @@
-import React from "react";
+import React, {Component} from "react";
 import "./style.css";
-function Suicide() {
+import {test} from './scripts.js'
+//import InfoCards from "../../components/InfoCards"
+
+class Suicide extends Component {
+  componentDidMount() {
+    test()
+  }
+  render() {
   return (
-    <div className="MoodPageContainer">
+    <div className="LifePageContainer">
       <div className="MoodPage">
-        <header className="moodHeader">
+        <div className="header-container">
           <div className="MHcontainer">
             <h1 className="MHtext1">Let's Talk</h1>
           </div>
-        </header>
-
-        <section className="MoodSection1">
           <div className="LifeSec1container">
             <div className="Lifetext-container">
               <h1 className="LifeColors">About Suicide</h1>
             </div>
+          </div>
+        </div>
+        <div className="SuicideBody">
+          <div>
             <h1 className="LifeText1">You</h1>
           </div>
-        </section>
+          <section className="MoodSectionPic">
+            <div className="LifeSecPicContainer"></div>
+          </section>
+          <center>
+            <div className="moodTextDiv">
+              <h1 className="mooddown"> </h1>
 
-        <section className="MoodSectionPic">
-          <div className="LifeSecPicContainer"></div>
-        </section>
-        <center>
-          <div className="moodTextDiv">
-            <h1 className="mooddown"> </h1>
-
-            <div className="borderDown">
-              <h1 className="mooddown2">:: be ::</h1>
+              <div className="borderDown">
+                <h1 className="mooddown2">:: be ::</h1>
+              </div>
             </div>
-          </div>
-          <h3 className="mooddown"> </h3>
-        </center>
-        <section className="MoodSectionPic">
-          <div className="LifeSecPicContainer"></div>
-        </section>
-        <p className="moodTextp1">
-          You are enough. You matter. Your life is worth fighting for. Suicide
-          is a leading cause of death. It’s also preventable. In U.S. alone, we
-          have the ability to save nearly 45,000 lives every year. Globally,
-          that number is closer to 800,000. But, hold up. Before we get to
-          saving the world, let’s check-in. If you’re feeling like ending your
-          life, you can always ask for help managing your emotions. Asking for
-          help is brave. You are brave. You are valuable! You are important!
-          And, the world needs you. Please share your gifts with the world,
-          little bee.
-        </p>
-
+            <h3 className="mooddown"> </h3>
+          </center>
+          <section className="MoodSectionPic">
+            <div className="LifeSecPicContainer"></div>
+          </section>
+          <p className="moodTextp1">
+            You are enough. You matter. Your life is worth fighting for. Suicide
+            is a leading cause of death. It’s also preventable. In U.S. alone, we
+            have the ability to save nearly 45,000 lives every year. Globally,
+            that number is closer to 800,000. But, hold up. Before we get to
+            saving the world, let’s check-in. If you’re feeling like ending your
+            life, you can always ask for help managing your emotions. Asking for
+            help is brave. You are brave. You are valuable! You are important!
+            And, the world needs you. Please share your gifts with the world,
+            little bee.
+          </p>
+        </div>
         <section className="MoodSection2">
           <div className="MoodSec2container">
             <h1 className="requestSupport">Requesting Support?</h1>
@@ -57,10 +63,11 @@ function Suicide() {
               <div className="informedInputs">
                 <input
                   type="text"
-                  className="zipcodeInput "
+                  className="zipcodeInput"
+                  id="zipcode-search"
                   placeholder="Enter Your Zipcode"
                 ></input>
-                <button className="informedButton">
+                <button className="informedButton" onClick={() => { test() }}>
                   <span className="informedSpan">Show Me</span>
                 </button>
               </div>
@@ -136,7 +143,7 @@ function Suicide() {
       <div className="lifedivCubes">
         <p className="LifeText3"></p>
       </div>
-      <h1 className="LifeText33">Matter!</h1>
+      <h1 className="LifeText33">Matter</h1>
       <div className="moodTextDiv3">
         <div className="youyou">
           <img
@@ -151,9 +158,19 @@ function Suicide() {
             sizes="auto"
           ></img>
         </div>
-
       </div>
 
+      <div className="infoCardsCard2">
+        <div className="infoCardsFront2">
+          What if I'm not worthy of life, love, abundance, freedom, or success?
+        </div>
+        <div className="infoCardsBack2">
+          How ironic! Only that which is worthy can question its own worthiness.
+          You are worthy just because you exist. There's nothing you need to do
+          or be to prove yourself. You are worthy beyond belief simply because
+          you're here - being. How cool is that!?
+        </div>
+      </div>
       <section className="MoodSection3">
         <div className="MoodSec3container MoodPage">
           <div className="moodBox">
@@ -199,6 +216,18 @@ function Suicide() {
               are so sorry you do. We're here to help. You are not alone.
             </p>
           </div>
+          <div className="infoCardsCard3">
+            <div className="infoCardsFront3">
+              What if Im not important or useful?
+            </div>
+            <div className="infoCardsBack3">
+              You matter so much that everything you do and think has a direct
+              effect on the entire world. You are a master creator made of
+              energy and frequency. Go play, little bee, and co-create with the
+              humans.
+            </div>
+          </div>
+
           <div classname="uMatterDiv">
             <h1 className="neon" data-text="[You Matter]">
               [You_Matter]
@@ -206,7 +235,6 @@ function Suicide() {
           </div>
         </div>
       </section>
-
       <section className="Informedfoot">
         <footer className="informedFooter">
           <p className="informedFooterText">
@@ -217,5 +245,7 @@ function Suicide() {
     </div>
   );
 }
+}
+
 
 export default Suicide;
