@@ -1,18 +1,9 @@
 .dropdown-div {
-  margin: 0 auto;
-  padding: 2%;
+    margin: 0 auto;
+    padding: 2%;
 }
 
 .avatar-box {
-<<<<<<< HEAD
-  border-radius: 6px;
-  margin: 0 auto;
-  /*moves avatar section*/
-}
-
-body > div > div:nth-child(1) > div.col-sm-3.a > div.col-3.logo > img {
-  width: 185%;
-=======
     margin: auto;
     /*moves avatar section*/
 }
@@ -44,57 +35,29 @@ body > div > div:nth-child(1) > div.col-sm-3.a > div.col-3.logo > img {
 
 body>div>div:nth-child(1)>div.col-sm-3.a>div.col-3.logo>img {
     width: 185%;
->>>>>>> b5487625fa4af18e39af5a210e53ceac93248635
 }
 
 #avatarmenu:hover {
-  margin-left: -9px;
-  filter: sepia();
-  font-family: monospace;
-  font-size: xx-large;
+    margin-left: -9px;
+    filter: sepia();
+    font-family: monospace;
+    font-size: xx-large;
 }
 
 .avatardisplay {
-<<<<<<< HEAD
-  height: 200px;
-  width: 300px;
-  border-radius: 6px;
-=======
     height: 200px;
     width: 300px;
     margin: 0 auto;
     border-radius: 6px;
->>>>>>> b5487625fa4af18e39af5a210e53ceac93248635
 }
 
 .avatardisplay:hover {
-  height: 200px;
-  width: 300px;
-  background-color: transparent;
+    height: 200px;
+    width: 300px;
+    background-color: transparent;
 }
 
 .es99 {
-<<<<<<< HEAD
-  object-fit: cover;
-  overflow: hidden;
-  background-position-x: center;
-  background-position: center;
-  border: 1px dashed hsl(0, 0%, 0%, 0.4);
-}
-
-body
-  > div
-  > div
-  > div.col-sm-9.b
-  > div.row.col-6.this
-  > div
-  > div
-  > div
-  > div
-  > div
-  > div:nth-child(2) {
-  margin-left: -301px;
-=======
     object-fit: cover;
     overflow: hidden;
     background-position-x: center;
@@ -105,193 +68,175 @@ body
 
 body>div>div>div.col-sm-9.b>div.row.col-6.this>div>div>div>div>div>div:nth-child(2) {
     margin-left: -301px;
->>>>>>> b5487625fa4af18e39af5a210e53ceac93248635
 }
 
 .Backround {
-  background-size: inherit;
+    background-size: inherit;
 }
 
-body > div > div > div.col-sm-9.b > div.row.col-6.this > div {
-  margin-top: -92px;
-  margin-left: -194px;
+body>div>div>div.col-sm-9.b>div.row.col-6.this>div {
+    margin-top: -92px;
+    margin-left: -194px;
 }
 
-body > div > div > div.col-sm-9.b > div:nth-child(3) > div > div {
-  margin-top: 39px;
-  margin-left: 248px;
+body>div>div>div.col-sm-9.b>div:nth-child(3)>div>div {
+    margin-top: 39px;
+    margin-left: 248px;
 }
 
 .bodya {
-  color: black;
-  background-color: white;
-  height: 20px;
-  overflow-y: scroll;
+    color: black;
+    background-color: white;
+    height: 20px;
+    overflow-y: scroll;
 }
 
 .bodya:hover {
-  cursor: pointer;
-  color: black;
-  background-color: white;
-  height: 100%;
-  overflow-y: scroll;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    height: 100%;
+    overflow-y: scroll;
 }
 
 .bodya::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 #bodyimage {
-  width: 99px;
-  margin-left: 68px;
-  margin-top: -257px;
+    width: 99px;
+    margin-left: 68px;
+    margin-top: -257px;
 }
 
 #bodyimages {
-  width: 99px;
-  margin-left: 68px;
-  margin-top: -208px;
+    width: 99px;
+    margin-left: 68px;
+    margin-top: -208px;
 }
 
 .eyesa {
-  color: black;
-  background-color: white;
-  height: 20px;
-  overflow-y: scroll;
+    color: black;
+    background-color: white;
+    height: 20px;
+    overflow-y: scroll;
 }
 
 .eyesa:hover {
-  cursor: pointer;
-  color: black;
-  background-color: white;
-  height: 99px;
-  overflow-y: scroll;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    height: 99px;
+    overflow-y: scroll;
 }
 
 .eyesa::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 #eyesimage {
-  width: 70px;
-  margin-left: 66px;
-  margin-top: -296px;
+    width: 70px;
+    margin-left: 66px;
+    margin-top: -296px;
 }
 
 #eyesimages {
-  width: 97px;
-  margin-left: 54px;
-  margin-top: -213px;
+    width: 70px;
+    margin-left: 66px;
+    margin-top: -248px;
 }
 
 .haira {
-  color: black;
-  background-color: white;
-  height: 20px;
-  overflow-y: scroll;
+    color: black;
+    background-color: white;
+    height: 20px;
+    overflow-y: scroll;
 }
 
 .haira:hover {
-  cursor: pointer;
-  color: black;
-  background-color: white;
-  height: 99px;
-  overflow-y: scroll;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    height: 99px;
+    overflow-y: scroll;
 }
 
 .haira::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 #hairimage {
-  width: 89px;
-  margin-left: 40px;
-  margin-top: -309px;
+    width: 89px;
+    margin-left: 40px;
+    margin-top: -309px;
 }
 
 #hairimages {
-  width: 102px;
-  margin-left: 38px;
-  margin-top: -222px;
-}
-#hairimage111 {
-  width: 94px;
-  margin-left: 38px;
-  margin-top: -207px;
-}
-
-#hairimage #hairimages11 {
-  width: 108px;
-  margin-left: 34px;
-  margin-top: -208px;
+    width: 89px;
+    margin-left: 42px;
+    margin-top: -261px;
 }
 
 #hairimages2 {
-  width: 104px;
-  margin-left: 33px;
-  margin-top: -203px;
+    width: 104px;
+    margin-left: 33px;
+    margin-top: -203px;
 }
 
 .cloth {
-  margin-left: -16px;
-  color: black;
-  background-color: white;
-  height: 20px;
-  overflow-y: scroll;
+    margin-left: -16px;
+    color: black;
+    background-color: white;
+    height: 20px;
+    overflow-y: scroll;
 }
 
 .cloth:hover {
-  margin-left: -16px;
-  cursor: pointer;
-  color: black;
-  background-color: white;
-  height: 99px;
-  overflow-y: scroll;
+    margin-left: -16px;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    height: 99px;
+    overflow-y: scroll;
 }
 
 .cloth::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .Backround {
-  color: black;
-  background-color: white;
-  margin-left: -16px;
-  height: 20px;
-  overflow-y: scroll;
+    color: black;
+    background-color: white;
+    margin-left: -16px;
+    height: 20px;
+    overflow-y: scroll;
 }
 
 .Backround:hover {
-  margin-left: -16px;
-  cursor: pointer;
-  color: black;
-  background-color: white;
-  height: 99px;
-  overflow-y: scroll;
+    margin-left: -16px;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    height: 99px;
+    overflow-y: scroll;
 }
 
 .Backround::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 #ropaimage {
-  width: 95px;
-  margin-left: 26px;
-  margin-top: -654px;
+    width: 95px;
+    margin-left: 26px;
+    margin-top: -654px;
 }
 
 #ropaimages {
-  width: 95px;
-  margin-left: 26px;
-  margin-top: -604px;
+    width: 95px;
+    margin-left: 26px;
+    margin-top: -604px;
 }
 
-<<<<<<< HEAD
-body > div > div > div.col-sm-9.b > div.row.col-6.this {
-  margin-top: -200px;
-  margin-left: 147px;
-}
-=======
 body>div>div>div.col-sm-9.b>div.row.col-6.this {
     margin-top: -200px;
     margin-left: 147px;
@@ -308,4 +253,3 @@ body>div>div>div.col-sm-9.b>div.row.col-6.this {
     cursor: pointer;
     color:white;
 }
->>>>>>> b5487625fa4af18e39af5a210e53ceac93248635
