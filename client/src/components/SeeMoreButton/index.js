@@ -13,7 +13,7 @@ class SeeMoreButton extends React.Component {
   render() {
     return (
       <div>
-        <Button type="primary" onClick={() => { this.loadPost(this.props) }
+        <Button className ="sameCSSbtn" type="primary" onClick={() => { this.loadPost(this.props) }
         }>
           ▼
         </Button>

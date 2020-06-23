@@ -22,7 +22,7 @@ function Post() {
         />
       </div>
       <div className="post-button-container">
-      <button onClick={() => { sendToDB(text) }}>Submit</button>
+      <button className="sameCSSbtn" onClick={() => { sendToDB(text) }}>Submit</button>
       </div>
     </div>
   )

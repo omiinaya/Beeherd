@@ -49,8 +49,8 @@ class TagSection extends React.Component {
         const { current_tag, current_id } = this.state; 
         const loggedInMenu = (
             <div>
-                <div>Current public tag: {current_tag}</div>
-                <input type="text" id="change-tag"></input><button onClick={() => {
+                <div className ="sameCSStext">Current public tag: {current_tag}</div>
+                <input type="text" id="change-tag"></input><button className ="sameCSSbtn" onClick={() => {
                     changeTag(current_id);
                     this.getCurrentTag(current_id);
                 }
@@ -58,7 +58,7 @@ class TagSection extends React.Component {
             </div>
         )
         const loggedOutMenu = (
-            <div>You are not logged in.</div>
+            <div className ="sameCSStext">You are not logged in.</div>
         )
         return (
             <div>
