@@ -59,7 +59,7 @@ class Home extends Component {
             </MDBCol>
           </MDBRow>
         </Hero>
-        <div className="mini-post">
+        <div className="mini-post" onClick={() => this.handleOnClickB()}>
           <input type="text" id="mini-post-text" size="50" placeholder="Say something." onClick={() => this.handleOnClickB()}></input>
         </div>
         <div>

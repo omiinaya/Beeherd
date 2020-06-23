@@ -58,8 +58,8 @@ posts.get("/user/:id", function (req, res) {
 
 //update post by id
 posts.put("/:id", function (req, res) {
-    Post.update(
-        { post_content: req.body.post_content },
+    Post.update({ 
+        post_content: req.body.post_content },
         {
             where: {
                 id: req.params.id
@@ -70,5 +70,14 @@ posts.put("/:id", function (req, res) {
         res.json(response)
     })
 })
+
+posts.delete("/:id", function (req, res) {
+    Post.destroy({
+        where: {
+            id: req.params.id
+        }
+    })
+})
+
 
 module.exports = posts

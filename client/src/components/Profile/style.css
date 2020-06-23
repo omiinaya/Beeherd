@@ -19,6 +19,12 @@
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
+.cp-button-container {
+    float: right;
+    margin: 2%;
+    margin-top: -10.5%;
+}
+
 .control-panel-option {
     padding: 3%;
     text-align: center;

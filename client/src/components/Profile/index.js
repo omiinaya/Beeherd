@@ -106,11 +106,17 @@ class Profile extends Component {
 
     handleOnClickA(a) {
         if (localStorage.usertoken != null) {
-          this.props.history.push("/posts/" + a.id)
+            this.props.history.push("/posts/" + a.id)
         } else {
-          this.props.history.push("/login")
+            this.props.history.push("/login")
         }
-      }
+    }
+
+    handleDelete(a) {
+        axios
+            .delete('/posts/'+a.id)
+        this.currentUser()
+    }
 
     render() {
         const { toggleEditor } = this.state;
@@ -144,7 +150,7 @@ class Profile extends Component {
                 <Row>
                     <Col size="md-3">
                         <div className="user-control-panel">
-                        <div className="control-panel-option">Change Tag</div>
+                            <div className="control-panel-option">Change Tag</div>
                             <div className="control-panel-option" onClick={() => console.log("currently under construction")}>Change Username</div>
                             <div className="control-panel-option" onClick={() => console.log("currently under construction")}>Change Password</div>
                             <div className="control-panel-option" onClick={() => console.log("currently under construction")}>Backup All Data</div>
@@ -157,7 +163,7 @@ class Profile extends Component {
                             <PostList>
                                 {this.state.savedPosts.slice(0).reverse().map(posts => {
                                     return (
-                                        <div className="post-card" onClick={() => this.handleOnClickA(posts)} >
+                                        <div className="post-card" /*onClick={() => this.handleOnClickA(posts)}*/ >
                                             <div>
                                                 <PostListItem
                                                     id={posts.author_id}
@@ -165,6 +171,9 @@ class Profile extends Component {
                                                     title={posts.post_title}
                                                     content={posts.post_content}
                                                 />
+                                            </div>
+                                            <div className="cp-button-container">
+                                                <button nameClass="cp-post-button" onClick={() => this.handleDelete(posts)}>Delete</button>
                                             </div>
                                         </div>
                                     );
