@@ -44,8 +44,20 @@ posts.get("/:id", function (req, res) {
         res.json(results);
     });
 });
+
+//find post by creator id
+posts.get("/user/:id", function (req, res) {
+    Post.findAll({
+        where: {
+            author_id: req.params.id
+        }
+    }).then(function (results) {
+        res.json(results);
+    });
+});
+
 //update post by id
-posts.put("/id/:id", function (req, res) {
+posts.put("/:id", function (req, res) {
     Post.update(
         { post_content: req.body.post_content },
         {

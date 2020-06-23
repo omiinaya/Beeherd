@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 //import jwt_decode from 'jwt-decode'
 import axios from 'axios'
+import jwt_decode from 'jwt-decode'
 import Footer from '../Footer';
 import Journals from '../Journals';
 import "./style.css";
@@ -11,11 +12,25 @@ class Profile extends Component {
         this.handleClick = this.handleClick.bind(this);
         this.state = {
             toggleEditor: false,
-            onlyOne: '1'
+            savedPosts: []
         }
     }
     componentDidMount() {
-        this.getJournals();
+        this.currentUser();
+    }
+
+    currentUser() {
+        if (localStorage.usertoken != null) {
+            const token = localStorage.usertoken
+            const decoded = jwt_decode(token)
+            const id = decoded.id
+            this.setState({
+                id: decoded.id
+            })
+            this.getUserPosts(id);
+        } else {
+            this.props.history.push("/login")
+        }
     }
 
     getJournals = () => {
@@ -30,6 +45,20 @@ class Profile extends Component {
                 }
             }).catch((err) => console.log(err));
     }
+
+    getUserPosts = (a) => {
+        axios
+            .get("/posts/user/" + a)
+            .then((res) => {
+                console.log(res.data)
+                this.setState({
+                    savedPosts: res.data
+                })
+                console.log(this.state.savedPosts);
+                this.createDiv3(this.state.savedPosts);
+            }).catch((err) => console.log(err));
+    }
+
     createDiv(a) {
         document.getElementById('journals-content').innerText = "";
         for (var i = 0; i < 1; i++) {
@@ -37,6 +66,7 @@ class Profile extends Component {
             const last = a.length - 1;
             div.setAttribute("class", "journal-card")
             div.innerHTML = ` 
+                <div class="profile-title">Latest Journal</div>
                 <div id="journal_author">Created `+ a[last].created + ` By: ` + a[last].author_tag + `</div>
                 <div id="journal_content">`+ a[last].journal_content + `</div>
             `;
@@ -57,6 +87,21 @@ class Profile extends Component {
         }
     }
 
+    createDiv3(a) {
+        document.getElementById('journals-content').innerText = "";
+        for (var i = 0; i < a.length; i++) {
+            const div = document.createElement('div');
+            div.setAttribute("class", "journal-card")
+            div.innerHTML = ` 
+                <div class="profile-title">User Posts</div>
+                <div id="journal_author">Created `+ a[i].created + ` By: ` + a[i].author_tag + `</div>
+                <div id="journal_content">`+ a[i].post_content + `</div>
+            `;
+            document.getElementById('journals-content').appendChild(div);
+        }
+    }
+
+
 
     handleClick() {
         if (this.state.toggleEditor === false) {
@@ -66,6 +111,7 @@ class Profile extends Component {
             this.getJournals()
             console.log(this.state.toggleEditor)
         } else {
+            this.createDiv3(this.state.savedPosts)
             this.setState({
                 toggleEditor: false
             })
