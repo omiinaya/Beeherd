@@ -5,6 +5,8 @@ import { generateRandomTag } from './scripts'
 import { Link } from 'react-router-dom'
 import { isUser } from './scripts'
 import Jumbo from "../Jumbo"
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "./style.css"
 
 class Register extends Component {
@@ -44,6 +46,15 @@ class Register extends Component {
                 })
             } else {
                 console.log("user already exists.")
+                toast.error('Please enter a different username', {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: true,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    });
             }
         })
     }

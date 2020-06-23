@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Sticky from 'react-stickynode'
 import publicIP from 'react-native-public-ip'
+import { ToastContainer, toast, Zoom } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 //components
 import Navbar from "./components/Navbar/";
@@ -49,6 +51,17 @@ class App extends Component {
           <Navbar />
         </Sticky>
         <Container>
+          <ToastContainer
+            position="bottom-center"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+          />
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />

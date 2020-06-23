@@ -8,6 +8,7 @@
     "@popperjs/core": "^2.4.2",
     "animate.css": "^4.1.0",
     "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
     "bootstrap": "^4.5.0",
     "framer-motion": "^1.11.1",
     "html-react-parser": "^0.13.0",
@@ -22,7 +23,8 @@
     "react-popper": "^2.2.3",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.1",
-    "react-stickynode": "^3.0.3"
+    "react-stickynode": "^3.0.3",
+    "react-toastify": "^6.0.6"
   },
   "scripts": {
     "start": "react-scripts start",
