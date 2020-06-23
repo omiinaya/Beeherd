@@ -14,7 +14,6 @@ class Navbar extends Component {
         document.body.style.background = "linear-gradient(to right, #EC6EAD, #3494E6)";
         document.getElementsByClassName('navbar')[0].style.background = "linear-gradient(to right, #EC6EAD, #3494E6)";
         document.getElementsByClassName('dropbtn')[0].style.background = "#EC6EAD";
-        document.getElementsByClassName('dropbtn')[0].style.background = "#EC6EAD";
     }
 
     logOut(e) {
@@ -80,10 +79,12 @@ class Navbar extends Component {
                 document.body.style.background = "linear-gradient(to right, #26262B, black)";
                 document.getElementsByClassName('navbar')[0].style.background = "linear-gradient(to right, #26262B, black)";
                 document.getElementsByClassName('dropbtn')[0].style.background = "#26262B";
+                document.getElementsByClassName('dropdown-content')[0].style.background = "#26262B";
             } else {
                 document.body.style.background = "linear-gradient(to right, #EC6EAD, #3494E6)";
                 document.getElementsByClassName('navbar')[0].style.background = "linear-gradient(to right, #EC6EAD, #3494E6)";
                 document.getElementsByClassName('dropbtn')[0].style.background = "#EC6EAD";
+                document.getElementsByClassName('dropdown-content')[0].style.background = "#EC6EAD";
             }
         }
         return (
