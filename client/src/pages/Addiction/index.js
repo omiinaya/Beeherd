@@ -8,20 +8,17 @@ function Addiction() {
   return (
     <div className="AddiPageContainer">
       <div className="MoodPage">
-        <header className="moodHeader">
+        <div className="addiction-header-container">
           <div className="MHcontainer">
             <h1 className="MHtext1">Let's Talk</h1>
           </div>
-        </header>
-
-        <section className="AddiSection1">
           <div className="MoodSec1container">
             <div className="Additext-container">
               <h1 className="lifeColorsh1">Substance Abuse </h1>
             </div>
             <h1 className="AddiText1">And</h1>
           </div>
-        </section>
+        </div>
 
         <section className="MoodSectionPic">
           <div className="AddiSecPicContainer"></div>
@@ -50,7 +47,7 @@ function Addiction() {
           changes are reversible after the substance use or behavior is
           discontinued.
         </p>
-<div className="addiSeparatorSupport"></div>
+        <div className="addiSeparatorSupport"></div>
         <section className="MoodSection2">
           <div className="MoodSec2container">
             <h1 className="requestSupport">Requesting Support?</h1>
@@ -71,7 +68,7 @@ function Addiction() {
             </div>
           </div>
           <div className="addiSeparatorSupport">
-          <h1 className="AddiText1">Addiction</h1>
+            <h1 className="AddiText1">Addiction</h1>
           </div>
         </section>
         <div className="LifeText3div">

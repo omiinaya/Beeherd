@@ -32,13 +32,13 @@ class TagSection extends React.Component {
     }
 
     getCurrentTag(a) {
-        axios.get('/users/id/'+a)
-        .then((res) => {
-            console.log(res.data.temp_tag)
-            this.setState({
-                current_tag: res.data.temp_tag
+        axios.get('/users/id/' + a)
+            .then((res) => {
+                console.log(res.data.temp_tag)
+                this.setState({
+                    current_tag: res.data.temp_tag
+                })
             })
-        })
     }
 
     getTagFromDB(a) {
@@ -46,19 +46,28 @@ class TagSection extends React.Component {
     }
 
     render() {
-        const { current_tag, current_id } = this.state; 
+        const { current_tag, current_id } = this.state;
         const loggedInMenu = (
             <div>
-                <div className ="sameCSStext">Current public tag: {current_tag}</div>
-                <input type="text" id="change-tag"></input><button className ="sameCSSbtn" onClick={() => {
-                    changeTag(current_id);
-                    this.getCurrentTag(current_id);
-                }
-                }>Change</button>
+                <div className="current-tag">
+                    <div className="sameCSStext text-center">Current public tag: </div>
+                    <div>{current_tag}</div>
+                </div>
+                <div className="tag-input text-center">
+                    <input type="text" id="change-tag"></input>
+                </div>
+                <div className="text-center">
+                    <button className="sameCSSbtn" onClick={() => {
+                        changeTag(current_id);
+                        this.getCurrentTag(current_id);
+                    }
+                    }>Change</button>
+                    <button className="sameCSSbtn">Random</button>
+                </div>
             </div>
         )
         const loggedOutMenu = (
-            <div className ="sameCSStext">You are not logged in.</div>
+            <div className="sameCSStext">You are not logged in.</div>
         )
         return (
             <div>
