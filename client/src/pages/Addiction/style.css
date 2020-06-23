@@ -5,6 +5,8 @@
   margin-left: 600px;
 }
 
+
+
 .wordsText1 {
   font-size: 45px;
 }
@@ -198,12 +200,11 @@
 }
 
 .AddiPageContainer{
-  background-color: black;
   font: 15px/1.5 sans-serif;
   font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
-  background-color: #020202;
+  background-color: rgba(192, 192, 192, 0.0);
   color: rgb(152, 150, 150);
   letter-spacing: 1px;
   letter-spacing: 2px;
@@ -258,7 +259,7 @@
   margin-top: 80px;
   color: rgba(248, 199, 242, 0.897);
   border-radius: 6px;
-  background-color: rgba(0, 0, 0, 0.29);
+  background-color: rgba(0, 0, 0, 0);
   text-align: center;
   margin-top: -25%;
   
@@ -279,4 +280,17 @@
 
 .moodBox{
   border: 1px solid pink;
+}
+
+.addidown{
+  color: rgb(232, 173, 64);
+  font-size: 30px;
+  letter-spacing: 3px;
+  padding-bottom: 25px;
+}
+
+.addi-header-container{
+  background-color: rgba(192, 192, 192, 0.3);
+  border-radius: 6px;
+  margin-bottom:1%;
 }

@@ -39,10 +39,7 @@
   letter-spacing: 2px;
 }
 
-.MHtext1 {
-  font-size: 26px;
-  color: rgb(151, 150, 152);
-}
+
 
 .MoodPage {
   width: 80%;
@@ -71,7 +68,7 @@
 
 .MHtext1 {
   font-size: 26px;
-  color: rgb(151, 150, 152);
+  color: rgb(241, 238, 244);
 }
 
 .MoodPage {
@@ -169,7 +166,7 @@
 .mooddown2 {
   font-weight: bolder;
   color: rgb(225, 167, 59);
-  border: 1px solid rgb(18, 42, 136);
+ 
   border-radius: 90px;
   font-size: 22px;
   text-align: center;
@@ -302,7 +299,7 @@
   font-size: small;
 }
 .Moodul .Moodli {
-  color: #797a7d;
+  color: #ffffff;
   /* set color of list item text */
   display: inline-block;
   list-style: none;
@@ -361,9 +358,9 @@ border-right: blueviolet;
 .informedFooter {
   padding: 20px;
   margin-top: 80px;
-  color: rgba(248, 199, 242, 0.897);
+  color: rgba(248, 199, 242, 0.797);
   border-radius: 6px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0);
   text-align: center;
 }
 .moodTextbox {
@@ -377,7 +374,7 @@ border-right: blueviolet;
   color: rgb(211, 44, 169);
   height: 200px;
   width: 200px;
-  background: black;
+ 
   font-size: 13px;
 }
 .moodBox {
@@ -481,7 +478,7 @@ border-right: blueviolet;
 .mooddown2 {
   font-weight: bolder;
   color: rgb(244, 168, 28);
-  border: 1px solid rgb(18, 42, 136);
+  
   border-radius: 90px;
   font-size: 22px;
   text-align: center;
@@ -504,6 +501,7 @@ border-right: blueviolet;
   text-align: left;
   font-size: 13px;
   line-height: 20px;
+  color: white;
 }
 
 .moodTextp2 {
@@ -619,7 +617,7 @@ border-right: blueviolet;
 }
 
 .Moodul .Moodli {
-  color: #797a7d;
+  color: #ffffff;
   /* set color of list item text */
   display: inline-block;
   list-style: none;
@@ -678,7 +676,7 @@ border-right: blueviolet;
 .informedFooter {
   padding: 20px;
   margin-top: 80px;
-  color: rgba(248, 199, 242, 0.897);
+  color: rgba(248, 199, 242, 0.824);
   border-radius: 6px;
   background-color: black;
   text-align: center;
@@ -695,7 +693,7 @@ border-right: blueviolet;
   color: rgb(211, 44, 169);
   height: 200px;
   width: 200px;
-  background: black;
+ 
   font-size: 13px;
 }
 
@@ -757,7 +755,7 @@ border-right: blueviolet;
   font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
-  background-color: #0d021c;
+  background-color: rgba(192, 192, 192, 0.0);
   color: rgb(152, 150, 150);
   letter-spacing: 1px;
   letter-spacing: 2px;
@@ -837,7 +835,7 @@ border-right: blueviolet;
 
 
 .MoodSec1container {
-  min-height: 200px;
+  margin-bottom: 2%;
   background: url(../../pages/../pages/Suicide/images/cubesPurple.jpg) no-repeat;
   text-align: left;
   color: rgb(151, 150, 152);

@@ -17,7 +17,7 @@
     margin-left: 0.7%;
     margin-right: 0.7%;
     padding: 2%;
-    padding-bottom: 5%;
+    padding-bottom: 5.5%;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -31,17 +31,18 @@
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     margin: 2%;
-    padding: 2%;
+    padding: 1%;
     width: 90%;
     transform: translateX(9.5%);
     margin-bottom: 0%;
+    min-height: 180px;
 }
 
 #reply-button {
     float: right;
 }
 
-.sameCSSbtn{
+.sameCSSbtn {
     margin-top: 8px;
     width: 90px;
     height: 30px;
@@ -58,30 +59,31 @@
     border-color: rgba(255, 255, 255, 0.345);
 }
 
-.post_content{
+.post_content {
     color: white;
     font-size: 14px;
-text-align:left;
+    text-align: left;
 }
-.post_title{
-    color:white;
+
+.post_title {
+    color: white;
     font-size: 29px;
     text-align: center;
-    margin:1px;
+    margin: 1px;
     font-style: italic;
     font-weight: bold;
     font-family: 'Shadows into Light', sans-serif;
 }
-.post_author{
-    color:rgb(255, 255, 255);
+
+.post_author {
+    color: rgb(255, 255, 255);
     font-size: 17px;
     text-align: right;
     padding-top: 0px;
-    margin:5px;
+    margin: 5px;
     font-weight: lighter;
 }
 
-.reply-card{
-    color:white;
+.reply-card {
+    color: white;
 }
-

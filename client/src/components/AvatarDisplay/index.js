@@ -25,7 +25,7 @@ export class AvatarDisplay extends Component {
             const token = localStorage.usertoken
             const decoded = jwt_decode(token)
             const id = decoded.id
-            console.log(id);
+            //console.log(id);
             this.setState({
                 id: decoded.id
             })
@@ -37,10 +37,10 @@ export class AvatarDisplay extends Component {
 
     getAvatar = (a) => {
         axios
-            .get("avatars/" + a)
+            .get("/avatars/" + a)
             .then((res) => {
                 var avatar = res.data[0];
-                console.log(avatar)
+                //console.log(avatar)
                 this.setState({
                     eye: avatar.eyes,
                     hair: avatar.hair,
@@ -55,13 +55,13 @@ export class AvatarDisplay extends Component {
     render() {
         const { eye, hair, outfit, place, skin } = this.state
         return (
-            <div style={{ position: 'relative', left: '0', top: '0' }}>
-                <img className="place-image" src={place} />
-                <img className="eyes-image" src={eye} />
-                <img className="hair-image" src={hair} />
-                <img className="outfit-image" src={outfit} />
-                <img className="skin-image" src={skin} />
-            </div>
+                <div style={{ position: 'relative', left: '0', top: '0' }}>
+                    <img className="place-image" src={place} />
+                    <img className="eyes-image" src={eye} />
+                    <img className="hair-image" src={hair} />
+                    <img className="outfit-image" src={outfit} />
+                    <img className="skin-image" src={skin} />
+                </div>
         )
     }
 }

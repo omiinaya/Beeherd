@@ -5,7 +5,6 @@ import Hero from "../Hero";
 import Footer from "../Footer";
 import axios from "axios";
 import EmptyList from "../EmptyList";
-import SeeMoreButton from "../SeeMoreButton";
 import TagSection from "../TagSection";
 import { AvatarTesting } from "../AvatarTesting";
 import "./style.css";
@@ -60,7 +59,7 @@ class Home extends Component {
             </MDBCol>
           </MDBRow>
         </Hero>
-        <div className="mini-post">
+        <div className="mini-post" onClick={() => this.handleOnClickB()}>
           <input type="text" id="mini-post-text" size="50" placeholder="Say something." onClick={() => this.handleOnClickB()}></input>
         </div>
         <div>
@@ -78,11 +77,6 @@ class Home extends Component {
                             title={posts.post_title}
                             content={posts.post_content}
                           />
-                          <div className="button-container">
-                            <SeeMoreButton
-                              id={posts.id}
-                            />
-                          </div>
                         </div>
                       </div>
                     );
@@ -95,10 +89,12 @@ class Home extends Component {
             <Col size="md-3">
               <div className="side-bar-top">
                 <AvatarTesting className="avatar-display-home" />
-                <button className="customize-button" onClick={() => {
+                <div className="button-container">
+                  <button className="customize-button" onClick={() => {
                     this.props.history.push("/customize")
-                }
-                }>Customize</button>
+                  }
+                  }>Customize</button>
+                </div>
               </div>
               <div className="side-bar-middle">
                 <TagSection />

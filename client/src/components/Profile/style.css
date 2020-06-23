@@ -9,6 +9,45 @@
     margin-top: 1%;
 }
 
+.user-control-panel {
+    padding: 2%;
+    margin-top: 3%;
+    margin-left: 3%;
+    height: 250px;
+    background-color: rgba(192, 192, 192, 0.3);
+    border-radius: 6px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.cp-button-container {
+    float: right;
+    margin: 2%;
+    margin-top: -10.5%;
+}
+
+.control-panel-option {
+    padding: 3%;
+    text-align: center;
+    width: 100%;
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+
+.control-panel-option:hover {
+    cursor: pointer;
+}
+
+.control-panel-option-last {
+    padding: 3%;
+    text-align: center;
+    width: 100%;
+}
+
+.control-panel-option-last:hover {
+    cursor: pointer;
+}
+
 .profile-title {
     font-family: 'Shadows into Light', sans-serif;
     color: white;
@@ -18,22 +57,23 @@
     padding-left: 5%;
     padding-right: 5%;
     background-color: rgba(192, 192, 192, 0.0);
-    color:white;
-    border: 2px solid white ;
+    color: white;
+    border: 2px solid white;
     border-radius: 6px;
 }
-.journals-content{
-    color:white;
-    padding:20px;
+
+.journals-content {
+    color: white;
+    padding: 20px;
 }
 
-.journal-list{
-    padding:20px;
-    color:white;
+.journal-list {
+    padding: 20px;
+    color: white;
 }
-.journal-card{
-    color:white;
-    padding:5px;
-  
+
+.journal-card {
+    color: white;
+    padding: 5px;
     text-align: center;
 }

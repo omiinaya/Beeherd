@@ -1,7 +1,7 @@
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic"
 import CKEditor from "@ckeditor/ckeditor5-react"
 import React, { useState } from "react"
-import { sendToDB } from "./scripts"
+import { sendToDB, init } from "./scripts"
 import "./style.css"
 
 function Post() {
@@ -22,7 +22,7 @@ function Post() {
         />
       </div>
       <div className="post-button-container">
-      <button className="sameCSSbtn" onClick={() => { sendToDB(text) }}>Submit</button>
+      <button className="sameCSSbtn" onClick={() => { init(text) }}>Submit</button>
       </div>
     </div>
   )

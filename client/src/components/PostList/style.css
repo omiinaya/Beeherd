@@ -1,7 +1,6 @@
 .content_text {
     margin-top: 2%;
     width: 100%;
-    margin-left: 5%;
     height: 90px;
     overflow: hidden;
     word-wrap: break-word;
@@ -10,6 +9,14 @@
 
 .content_text_expanded {
     word-wrap: break-word;
+}
+
+.reply-content-text {
+    margin-top: 1.5%;
+}
+
+.post-content-text {
+    margin-top: 2%;
 }
 
 .customize-button{

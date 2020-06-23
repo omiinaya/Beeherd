@@ -10,19 +10,17 @@ function MoodDisorders() {
    
     <div className="BlueMoodPageContainer">
       <div className="MoodPage">
-        <header className="moodHeader">
+        <div className="header-container">
           <div className="MHcontainer">
             <h1 className="MHtext1">Let's Talk</h1>
           </div>
-        </header>
-
-        <section className="MoodSection1">
           <div className="MoodSec1container">
             <div className="text-container">
               <h1 className="moodColors">Mood Disorders</h1>
             </div>
           </div>
-        </section>
+        
+        </div>
 
         <section className="MoodSectionPic">
           <div className="MoodSecPicContainer"></div>
@@ -35,7 +33,7 @@ function MoodDisorders() {
               <h1 className="mooddown2">:: ok ::</h1>
             </div>
           </div>
-          <h3 className="mooddown"> </h3>
+          <h3 className="mooddown"></h3>
         </center>
         <section className="MoodSectionPic">
           <div className="MoodSecPicContainer"></div>

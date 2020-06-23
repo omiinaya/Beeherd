@@ -30,7 +30,7 @@ class Suicide extends Component {
           </section>
           <center>
             <div className="moodTextDiv">
-              <h1 className="mooddown"> </h1>
+              <h1 className="mooddown"></h1>
 
               <div className="borderDown">
                 <h1 className="mooddown2">:: be ::</h1>
@@ -146,7 +146,7 @@ class Suicide extends Component {
       <h1 className="LifeText33">Matter</h1>
       <div className="moodTextDiv3">
         <div className="youyou">
-          <img
+         {/* <img
             className="youyoupic"
             width="200"
             height="150"
@@ -156,7 +156,7 @@ class Suicide extends Component {
             onload="this.parentNode.className += ' img-loaded'"
             src="https://media1.tenor.com/images/1084869ffc5b7a2761c5f79d32170dfc/tenor.gif?itemid=5131794"
             sizes="auto"
-          ></img>
+          ></img>*/}
         </div>
       </div>
 
@@ -192,8 +192,7 @@ class Suicide extends Component {
                 Text HOME to 741741: US & CANADA
               </span>
               <span className="moodTextbox">
-                Your life is worth living. I know it may not feel like that
-                right now. I invite you to place both hands over your heart and
+                Your life is worth living. This may be difficult to believe right now. I invite you to place both hands over your heart and
                 after a few deep breaths,
               </span>
               <span className="crisisHotline">
