@@ -35,7 +35,9 @@ class Navbar extends Component {
         const loginRegLink = (
             <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                    <Link to="#" className="nav-link" id="nav-link" onClick={() => { this.themeSwap() }}><img src={require('../../assets/images/lightbulb.png')} height="20px" width="20px" alt="" /></Link>
+                    <Link to="#" className="nav-link" id="nav-link" onClick={() => { this.themeSwap() }}>
+                        <img src={require('../../assets/images/lightbulb.png')} height="20px" width="20px" alt="" />
+                    </Link>
                 </li>
                 <li className="nav-item">
                     <Link to="/about" className="nav-link" id="nav-link">About</Link>
@@ -55,7 +57,9 @@ class Navbar extends Component {
         const userLink = (
             <ul className="navbar-nav">
                 <li className="nav-item">
-                    <Link to="#" className="nav-link" id="nav-link" onClick={() => { this.themeSwap() }}><img src={require('../../assets/images/lightbulb.png')} height="20px" width="20px" alt="" /></Link>
+                    <Link to="#" className="nav-link" id="nav-link" onClick={() => { this.themeSwap() }}>
+                        <img src={require('../../assets/images/lightbulb.png')} height="20px" width="20px" alt="" />
+                    </Link>
                 </li>
                 <li className="nav-item">
                     <Link to="/about" className="nav-link" id="nav-link">About</Link>

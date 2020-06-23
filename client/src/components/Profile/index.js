@@ -54,11 +54,11 @@ class Profile extends Component {
         axios
             .get("/posts/user/" + a)
             .then((res) => {
-                console.log(res.data)
+                //console.log(res.data)
                 this.setState({
                     savedPosts: res.data
                 })
-                console.log(this.state.savedPosts);
+                //console.log(this.state.savedPosts);
             }).catch((err) => console.log(err));
     }
 

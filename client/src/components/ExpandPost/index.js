@@ -79,17 +79,14 @@ class ExpandPost extends React.Component {
         const replyContainer = (
             <div className="reply-container">
                 <input type="text" id="reply-bar"></input>
-                <button className="sameCSSbtn" id="reply-button" onClick={async () => { 
-                    try{
-                        const reply = await sendToDB(id)
+                <button className="sameCSSbtn" id="reply-button" onClick={ () => { 
+                    
+                        sendToDB(id)
                         this.getReplies()
                         this.setState({
                             toggleReply: false
                         })
-                    } 
-                    catch(err) {
-                        console.log(err)
-                    }
+                
                     }}>Submit</button>
             </div>
         )

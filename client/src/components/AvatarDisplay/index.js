@@ -25,7 +25,7 @@ export class AvatarDisplay extends Component {
             const token = localStorage.usertoken
             const decoded = jwt_decode(token)
             const id = decoded.id
-            console.log(id);
+            //console.log(id);
             this.setState({
                 id: decoded.id
             })
@@ -40,7 +40,7 @@ export class AvatarDisplay extends Component {
             .get("/avatars/" + a)
             .then((res) => {
                 var avatar = res.data[0];
-                console.log(res.data[0])
+                //console.log(avatar)
                 this.setState({
                     eye: avatar.eyes,
                     hair: avatar.hair,
