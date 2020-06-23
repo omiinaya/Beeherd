@@ -6,6 +6,7 @@ import Footer from "../Footer";
 import axios from "axios";
 import EmptyList from "../EmptyList";
 import TagSection from "../TagSection";
+import Thumbnail from "../Thumbnail";
 import { AvatarTesting } from "../AvatarTesting";
 import "./style.css";
 import {
@@ -100,7 +101,7 @@ class Home extends Component {
                 <TagSection />
               </div>
               <div className="side-bar-bottom">
-                <p>Ad? Placeholder</p>
+                <Thumbnail />
               </div>
             </Col>
           </Row>
