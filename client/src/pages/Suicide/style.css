@@ -20,7 +20,7 @@
 }
 
 .SuicideBody {
-  background-color: rgba(192, 192, 192, 0.3);
+  background-color: rgba(192, 192, 192, 0.0);
   border-radius: 6px;
   padding: 2%;
 }
@@ -89,7 +89,7 @@
   margin-bottom: 80px;
   margin-top: -100px;
   font-size: 500px;
-  color: rgba(0, 0, 0, 0.099);
+  color: rgba(192, 192, 192, 0.3);
   height: 160px;
 }
 

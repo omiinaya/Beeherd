@@ -96,7 +96,6 @@ export class Avatar extends Component {
                                     <button className="avatar-dropbtn">Place ⯆</button>
                                     <div className="dropdown-content">
                                         <h6 id="bb1">Place1</h6>
-                                        <h6 id="bb2">Place2</h6>
                                     </div>
                                 </div>
                             </div>

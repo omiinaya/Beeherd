@@ -757,7 +757,7 @@ border-right: blueviolet;
   font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
-  background-color: #0d021c;
+  background-color: rgba(192, 192, 192, 0.0);
   color: rgb(152, 150, 150);
   letter-spacing: 1px;
   letter-spacing: 2px;
@@ -837,7 +837,7 @@ border-right: blueviolet;
 
 
 .MoodSec1container {
-  min-height: 200px;
+  margin-bottom: 2%;
   background: url(../../pages/../pages/Suicide/images/cubesPurple.jpg) no-repeat;
   text-align: left;
   color: rgb(151, 150, 152);
