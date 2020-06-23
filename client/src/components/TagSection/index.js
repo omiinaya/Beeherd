@@ -21,12 +21,11 @@ class TagSection extends React.Component {
         if (localStorage.usertoken != null) {
             var token = localStorage.usertoken
             var decoded = jwt_decode(token)
-            var temp_tag = decoded.temp_tag;
             var user_id = decoded.id;
             this.setState({
-                current_tag: temp_tag,
                 current_id: user_id
             })
+            this.getCurrentTag(user_id)
         } else {
             window.open("/login", "_self")
         }
