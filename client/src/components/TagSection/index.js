@@ -1,6 +1,6 @@
 import React from 'react'
 import jwt_decode from 'jwt-decode'
-import { changeTag } from './scripts'
+import { changeTag, generateWordList, randomizeTag } from './scripts'
 import axios from 'axios';
 
 class TagSection extends React.Component {
@@ -14,6 +14,7 @@ class TagSection extends React.Component {
 
     componentDidMount() {
         this.getCurrentId()
+        generateWordList()
     }
 
     getCurrentId() {
@@ -62,7 +63,11 @@ class TagSection extends React.Component {
                         this.getCurrentTag(current_id);
                     }
                     }>Change</button>
-                    <button className="sameCSSbtn">Random</button>
+                    <button className="sameCSSbtn" onClick={() => {
+                        randomizeTag(current_id);
+                        this.getCurrentTag(current_id);
+                    }
+                    }>Random</button>
                 </div>
             </div>
         )
