@@ -5,7 +5,6 @@ import Hero from "../Hero";
 import Footer from "../Footer";
 import axios from "axios";
 import EmptyList from "../EmptyList";
-import SeeMoreButton from "../SeeMoreButton";
 import TagSection from "../TagSection";
 import { AvatarTesting } from "../AvatarTesting";
 import "./style.css";
@@ -78,11 +77,6 @@ class Home extends Component {
                             title={posts.post_title}
                             content={posts.post_content}
                           />
-                          <div className="button-container">
-                            <SeeMoreButton
-                              id={posts.id}
-                            />
-                          </div>
                         </div>
                       </div>
                     );

@@ -20,7 +20,7 @@ export function PostList({children}) {
       <li>
         <Container>
           <Row>
-            <Col size="md-3">
+            <Col size="md-2">
               <AvatarDisplay />
             </Col>
             <Col size="xs-9 sm-9">
@@ -43,7 +43,7 @@ export function PostList({children}) {
       <li>
         <Container>
           <Row>
-            <Col size="md-3">
+            <Col size="md-2">
             <AvatarDisplay />
             </Col>
             <Col size="xs-9 sm-9">
