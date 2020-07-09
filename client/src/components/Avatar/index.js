@@ -76,6 +76,7 @@ export class Avatar extends Component {
                                     <div className="dropdown-content">
                                         <h6 id="eyes1">eyes1</h6>
                                         <h6 id="eyes2">eyes2</h6>
+                                        <h6 id="eyes3">eyes3</h6>
                                     </div>
                                 </div>
                                 <div className="dropdown">

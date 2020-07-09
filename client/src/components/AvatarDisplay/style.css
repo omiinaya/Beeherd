@@ -29,11 +29,11 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    top: 25px;
+    top: 46px;
     left: 0;
-    right: 0;
-    width: 55px;
-    z-index: 2;
+    right: 8px;
+    width: 31px;
+    z-index: 1;
 }
 
 .hair-image {
@@ -41,11 +41,11 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    top: 10px;
+    top: 26px;
     left: 0;
-    right: 0;
-    width: 70px;
-    z-index: 1;
+    right: 3px;
+    width: 50px;
+    z-index: 2;
 }
 
 .outfit-image {

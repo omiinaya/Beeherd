@@ -8,20 +8,12 @@ var current_outfit;
 var current_place;
 
 export function avatarBackend() {
-    //ifAThenB();
+    //
     $("#standard1").mouseenter(function () {
         $(".es1").append("<img id='bodyimage' src='/avatar/skin/white.png'></img>");
     });
 
     $("#standard1").mouseleave(function () {
-        $("#bodyimage").remove();
-    });
-
-    $("#standard2").mouseenter(function () {
-        $(".es1").append("<img id='bodyimage' src='/avatar/skin/black.png'></img>");
-    });
-
-    $("#standard2").mouseleave(function () {
         $("#bodyimage").remove();
     });
 
@@ -32,6 +24,15 @@ export function avatarBackend() {
         );
         current_skin = '/avatar/skin/white.png';
     });
+    //
+
+    $("#standard2").mouseenter(function () {
+        $(".es1").append("<img id='bodyimage' src='/avatar/skin/black.png'></img>");
+    });
+
+    $("#standard2").mouseleave(function () {
+        $("#bodyimage").remove();
+    });
 
     $("#standard2").click(function () {
         $(".cleani").remove();
@@ -40,6 +41,23 @@ export function avatarBackend() {
         );
         current_skin = '/avatar/skin/black.png';
     });
+
+    $("#standard3").mouseenter(function () {
+        $(".es1").append("<img id='bodyimage' src='/avatar/skin/white.png'></img>");
+    });
+
+    $("#standard3").mouseleave(function () {
+        $("#bodyimage").remove();
+    });
+
+    $("#standard3").click(function () {
+        $(".cleani").remove();
+        $("#bodyimage").replaceWith(
+            "<img class='cleani' id='bodyimages' src='/avatar/skin/white.png'></img>"
+        );
+        current_skin = '/avatar/skin/white.png';
+    });
+    
 
     //eyes/
 
@@ -51,14 +69,6 @@ export function avatarBackend() {
         $("#eyesimage").remove();
     });
 
-    $("#eyes2").mouseenter(function () {
-        $(".es2").append("<img id='eyesimage' src='/avatar/eye/eye2.png'></img>");
-    });
-
-    $("#eyes2").mouseleave(function () {
-        $("#eyesimage").remove();
-    });
-
     $("#eyes1").click(function () {
         $(".cleani2").remove();
         $("#eyesimage").replaceWith(
@@ -66,6 +76,14 @@ export function avatarBackend() {
         );
         current_eyes = "/avatar/eye/eye1.png";
         console.log(current_eyes);
+    });
+
+    $("#eyes2").mouseenter(function () {
+        $(".es2").append("<img id='eyesimage' src='/avatar/eye/eye2.png'></img>");
+    });
+
+    $("#eyes2").mouseleave(function () {
+        $("#eyesimage").remove();
     });
 
     $("#eyes2").click(function () {
@@ -87,14 +105,6 @@ export function avatarBackend() {
         $("#hairimage").remove();
     });
 
-    $("#hair2").mouseenter(function () {
-        $(".es3").append("<img id='hairimage' src='/avatar/hair/hair2.png'></img>");
-    });
-
-    $("#hair2").mouseleave(function () {
-        $("#hairimage").remove();
-    });
-
     $("#hair1").click(function () {
         $(".cleani3").remove();
         $("#hairimage").replaceWith(
@@ -102,6 +112,14 @@ export function avatarBackend() {
         );
         current_hair = "/avatar/hair/hair1.png";
         console.log(current_hair);
+    });
+
+    $("#hair2").mouseenter(function () {
+        $(".es3").append("<img id='hairimage' src='/avatar/hair/hair2.png'></img>");
+    });
+
+    $("#hair2").mouseleave(function () {
+        $("#hairimage").remove();
     });
 
     $("#hair2").click(function () {
@@ -123,14 +141,6 @@ export function avatarBackend() {
         $("#ropaimage").remove();
     });
 
-    $("#ropa2").mouseenter(function () {
-        $(".es4").append("<img id='ropaimage' src='/avatar/outfit/outfit2.png'></img>");
-    });
-
-    $("#ropa2").mouseleave(function () {
-        $("#ropaimage").remove();
-    });
-
     $("#ropa1").click(function () {
         $(".cleani4").remove();
         $("#ropaimage").replaceWith(
@@ -138,6 +148,14 @@ export function avatarBackend() {
         );
         current_outfit = '/avatar/outfit/outfit1.png';
         console.log(current_outfit);
+    });
+
+    $("#ropa2").mouseenter(function () {
+        $(".es4").append("<img id='ropaimage' src='/avatar/outfit/outfit2.png'></img>");
+    });
+
+    $("#ropa2").mouseleave(function () {
+        $("#ropaimage").remove();
     });
 
     $("#ropa2").click(function () {
